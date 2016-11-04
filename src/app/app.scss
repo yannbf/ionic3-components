@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/v2/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -15,12 +13,18 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 @import '../theme/animations';
-
-.center {
-    text-align: center;
+.align-center {
+  text-align: center;
 }
 
+.center {
+  display: block;
+  margin: 0 auto;
+}
 
-
-
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 

@@ -4,4 +4,30 @@
   </ion-navbar>
 </ion-header>
 <ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of items">
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img [src]="item.imageUrl">
+        </ion-thumbnail>
+        <h2>{{item.title}}</h2>
+        <p>{{item.place}} • {{item.date}}</p>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="secondary" (click)="viewComments(item)">
+        <ion-icon name="chatbubbles"></ion-icon>
+        Comments
+      </button>
+        <button ion-button color="primary" (click)="viewPlayers(item)">
+        <ion-icon name="contacts"></ion-icon>
+        Players
+      </button>
+        <button ion-button color="danger" (click)="delete(item)">
+        <ion-icon name="trash"></ion-icon>
+        Delete
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
+

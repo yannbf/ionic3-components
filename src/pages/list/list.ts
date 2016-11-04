@@ -1,6 +1,6 @@
+import { SliderListPage } from './slider-list/slider-list';
 import { SlidingItemListPage } from './sliding-item/sliding-item';
 import { SettingsListPage } from './settings/settings';
-import { ThumbnailListPage } from './thumbnail-list/thumbnail-list';
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
@@ -17,8 +17,8 @@ export class ListsPage {
     this.rootPage = ListsPage;
     this.items = [
       {
-        title: 'Thumbnail',
-        page: ThumbnailListPage
+        title: 'Slider list',
+        page: SliderListPage
       },
       {
         title: 'Settings',

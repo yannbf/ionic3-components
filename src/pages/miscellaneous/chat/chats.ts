@@ -1,17 +1,29 @@
 import { MessagesPage } from './messages/messages';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavController, App } from 'ionic-angular';
 
 @Component({
   templateUrl: 'chats.html',
 })
 
-export class ChatsPage implements OnInit {
+export class ChatsPage {
 
   chats = [{
-    pic: 'http://ionicframework.com/img/docs/venkman.jpg',
+    imageUrl: 'assets/img/avatar/marty-avatar.png',
     title: 'McFly',
     lastMessage: 'Hey, what happened yesterday?',
+    timestamp: new Date()
+  },
+  {
+    imageUrl: 'assets/img/avatar/ian-avatar.png',
+    title: 'Venkman',
+    lastMessage: 'Sup, dude',
+    timestamp: new Date()
+  }
+    , {
+    imageUrl: 'assets/img/avatar/sarah-avatar.jpg',
+    title: 'Sarah Mcconnor',
+    lastMessage: 'You still ow me that pizza.',
     timestamp: new Date()
   }]
 
@@ -20,12 +32,6 @@ export class ChatsPage implements OnInit {
 
   viewMessages(chat) {
     this.navCtrl.push(MessagesPage, { chatId: chat.id });
-  }
-
-  ngOnInit() {
-  }
-
-  retrieveChats() {
   }
 
   /*

@@ -1,3 +1,4 @@
+import { ToastService } from '../../../providers/util/toast.service';
 import { Component, ViewChild, ViewChildren, QueryList } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Http } from '@angular/http';
@@ -22,7 +23,7 @@ export class TinderCardsPage {
   stackConfig: StackConfig;
   recentCard: string = '';
 
-  constructor(public navCtrl: NavController, private http: Http) {
+  constructor(public navCtrl: NavController, public http: Http, public toastCtrl: ToastService) {
     this.stackConfig = {
       throwOutConfidence: (offset, element) => {
         return Math.min(Math.abs(offset) / (element.offsetWidth / 2), 1);
@@ -54,9 +55,9 @@ export class TinderCardsPage {
     let hexCode = this.decimalToHex(min, 2);
 
     if (x < 0) {
-      color = '#FF' + hexCode + hexCode;
-    } else {
       color = '#' + hexCode + 'FF' + hexCode;
+    } else {
+      color = '#FF' + hexCode + hexCode;
     }
 
     element.style.background = color;
@@ -68,10 +69,14 @@ export class TinderCardsPage {
     let removedCard = this.cards.pop();
     this.addNewCards(1);
     if (like) {
-      this.recentCard = 'You liked: ' + removedCard.email;
+      this.toastCtrl.create('You liked: ' + removedCard.email);
     } else {
-      this.recentCard = 'You disliked: ' + removedCard.email;
+      this.toastCtrl.create('You disliked: ' + removedCard.email);
     }
+  }
+
+  presentToast(message) {
+
   }
 
   // Add new cards to our array

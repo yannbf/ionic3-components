@@ -9,7 +9,7 @@ export class ClockPage {
 
   constructor(public navCtrl: NavController) { }
 
-  ionViewDidLoad() {
+  /*ionViewDidLoad() {
     console.log('Hello Clock Page');
   }
 
@@ -115,7 +115,7 @@ export class ClockPage {
     //   elements[i].className.replace('comment-body', '');
     // }
     //$('.block--active').removeClass('block--active');
-  }
+  }*/
 
 }
 

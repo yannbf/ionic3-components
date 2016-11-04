@@ -9,7 +9,7 @@
       <ion-avatar item-left>
         <img [src]="card.avatarImageUrl" (click)="avatarTapped(card)">
       </ion-avatar>
-      <h2>{{card.name}}</h2>
+      <h2 class="sticky">{{card.name}}</h2>
       <p>{{card.date}}</p>
     </ion-item>
     <img [src]="card.postImageUrl" (click)="imageTapped(card)">

@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Slider List</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list *ngFor="let item of items">
+    <ion-slides pager [options]="slideOptions">
+      <ion-slide *ngFor="let slide of item.slides" class="text-center slider-item" [ngStyle]="{'background-image': 'url(' + slide.imageUrl +')'}">
+        <div class="slide-text">
+          <h2>{{slide.title}}</h2>
+          <p>{{slide.songs}} songs</p>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </ion-list>
+</ion-content>
+

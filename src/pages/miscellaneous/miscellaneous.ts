@@ -1,7 +1,6 @@
 import { ChatsPage } from './chat/chats';
 import { WeatherPage } from './weather/weather';
 import { CurrencyConverterPage } from './currency-converter/currency-converter';
-import { ParallaxScrollerTwoPage } from './parallax-scroller-two/parallax-scroller-two';
 import { ClockPage } from './clock/clock';
 import { ParallaxScrollerPage } from './parallax-scroller/parallax-scroller';
 import { CountdownOnePage } from './countdown/countdown';
@@ -36,14 +35,6 @@ export class MiscellaneousListPage {
             {
                 title: 'Parallax Horizontal Scroller',
                 page: ParallaxScrollerPage
-            },
-            {
-                title: 'Parallax Scroller Type two',
-                page: ParallaxScrollerTwoPage
-            },
-            {
-                title: 'Clock',
-                page: ClockPage
             },
             {
                 title: 'Currency Converter',

@@ -1,3 +1,6 @@
+import { ToastService } from '../providers/util/toast.service';
+import { AlertService } from '../providers/util/alert.service';
+import { SliderListPage } from '../pages/list/slider-list/slider-list';
 import { MyApp } from './app.component';
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
@@ -25,7 +28,6 @@ import { CountdownOnePage } from '../pages/miscellaneous/countdown/countdown';
 import { TinderCardsPage } from '../pages/miscellaneous/tinder-cards/tinder-cards';
 import { TestimonialsPage } from '../pages/miscellaneous/testimonials/testimonials';
 import { ParallaxScrollerPage } from '../pages/miscellaneous/parallax-scroller/parallax-scroller';
-import { ParallaxScrollerTwoPage } from '../pages/miscellaneous/parallax-scroller-two/parallax-scroller-two';
 import { CurrencyConverterPage } from '../pages/miscellaneous/currency-converter/currency-converter';
 import { WeatherPage } from '../pages/miscellaneous/weather/weather';
 import { MessagesPage } from '../pages/miscellaneous/chat/messages/messages';
@@ -78,7 +80,6 @@ import { TemperaturePipe } from '../pages/miscellaneous/weather/temperature.pipe
     TinderCardsPage,
     CountdownOnePage,
     ParallaxScrollerPage,
-    ParallaxScrollerTwoPage,
     CurrencyConverterPage,
     ClockPage,
     WeatherPage,
@@ -97,6 +98,7 @@ import { TemperaturePipe } from '../pages/miscellaneous/weather/temperature.pipe
     ListsPage,
     SettingsListPage,
     SlidingItemListPage,
+    SliderListPage,
 
     // directives    
     Timer,
@@ -126,7 +128,6 @@ import { TemperaturePipe } from '../pages/miscellaneous/weather/temperature.pipe
     TinderCardsPage,
     CountdownOnePage,
     ParallaxScrollerPage,
-    ParallaxScrollerTwoPage,
     CurrencyConverterPage,
     ClockPage,
     WeatherPage,
@@ -145,7 +146,9 @@ import { TemperaturePipe } from '../pages/miscellaneous/weather/temperature.pipe
     ListsPage,
     SettingsListPage,
     SlidingItemListPage,
+    SliderListPage,
+
   ],
-  providers: [WeatherService]
+  providers: [WeatherService, AlertService, ToastService]
 })
 export class AppModule { }
