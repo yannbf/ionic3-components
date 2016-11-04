@@ -1,0 +1,275 @@
+/*===============================================
+
+General Animations
+
+===============================================*/
+// POP-IN (FLOAT ACTION BUTTON EFFECT) -------------
+.pop-in {
+    animation: pop-in 0.65s;
+}
+@keyframes pop-in {
+    0% {
+        transform: scale(0); 
+    }
+    45% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+// POP-OUT (FLOAT ACTION BUTTON EFFECT) -------------
+.pop-out {
+    animation: pop-out 2.5s;
+}
+
+@keyframes pop-out {
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+// SLIDE-UP ----------------------
+.slide-up {
+    top: 1000px;
+    animation: slide_up 0.4s 0.0625s cubic-bezier(0.07, 0.65, 0, 0.96) forwards !important;
+}
+@keyframes slide_up {
+    from {
+        top: 1000px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+// WAVE ----------------------
+.wave {
+    top: 1000px;
+    animation: wave 0.8s 0.125s cubic-bezier(0.43, 1.6, 0.57, 0.88) forwards !important;
+}
+@keyframes wave {
+    from {
+        top: 1000px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+// DROP IN ------------------
+.drop-in {
+    animation: drop_in 0.5s 0.0625s cubic-bezier(0.43, 1.6, 0.57, 0.88) forwards !important;
+}
+@keyframes drop_in {
+    from {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+// WOBBLE ------------------------
+.wobble {
+    animation: wobble linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+}
+@keyframes wobble {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    15% {
+        transform: translate(-25px, 0px) rotate(-5deg);
+    }
+    30% {
+        transform: translate(20px, 0px) rotate(3deg);
+    }
+    45% {
+        transform: translate(-15px, 0px) rotate(-3deg);
+    }
+    60% {
+        transform: translate(10px, 0px) rotate(2deg);
+    }
+    75% {
+        transform: translate(-5px, 0px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+// FADE-IN DOWN ------------------------
+.fadein-down {
+    animation: fadein-down ease 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+    /*when the spec is finished*/
+}
+@keyframes fadein-down {
+    0% {
+        opacity: 0;
+        transform: translate(0px, -25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+// TA-DA!! ------------------------
+.ta-da {
+    animation: ta-da linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+}
+@keyframes ta-da {
+    0% {
+        transform: rotate(0deg) scaleX(1.00) scaleY(1.00);
+    }
+    10% {
+        transform: rotate(-3deg) scaleX(0.80) scaleY(0.80);
+    }
+    20% {
+        transform: rotate(-3deg) scaleX(0.80) scaleY(0.80);
+    }
+    30% {
+        transform: rotate(3deg) scaleX(1.20) scaleY(1.20);
+    }
+    40% {
+        transform: rotate(-3deg) scaleX(1.20) scaleY(1.20);
+    }
+    50% {
+        transform: rotate(3deg) scaleX(1.20) scaleY(1.20);
+    }
+    60% {
+        transform: rotate(-3deg) scaleX(1.20) scaleY(1.20);
+    }
+    70% {
+        transform: rotate(3deg) scaleX(1.20) scaleY(1.20);
+    }
+    80% {
+        transform: rotate(-3deg) scaleX(1.20) scaleY(1.20);
+    }
+    90% {
+        transform: rotate(3deg) scaleX(1.20) scaleY(1.20);
+    }
+    100% {
+        transform: rotate(0deg) scaleX(1.20) scaleY(1.20);
+    }
+}
+
+// SWING ------------------------
+.swing {
+    animation: swing linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 0%;
+}
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+// SHAKE ------------------------
+.shake {
+    animation: shake linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+}
+@keyframes shake {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    10% {
+        transform: translate(-10px, 0px);
+    }
+    20% {
+        transform: translate(10px, 0px);
+    }
+    30% {
+        transform: translate(-10px, 0px);
+    }
+    40% {
+        transform: translate(10px, 0px);
+    }
+    50% {
+        transform: translate(-10px, 0px);
+    }
+    60% {
+        transform: translate(10px, 0px);
+    }
+    70% {
+        transform: translate(-10px, 0px);
+    }
+    80% {
+        transform: translate(10px, 0px);
+    }
+    90% {
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+// BOUNCE ------------------------
+.bounce {
+    animation: bounce linear 0.8s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+}
+@keyframes bounce {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    15% {
+        transform: translate(0px, -25px);
+    }
+    30% {
+        transform: translate(1px, 0px);
+    }
+    45% {
+        transform: translate(1px, -15px);
+    }
+    60% {
+        transform: translate(1px, -1px);
+    }
+    75% {
+        transform: translate(1px, -5px);
+    }
+    100% {
+        transform: translate(1px, 0px);
+    }
+}
+

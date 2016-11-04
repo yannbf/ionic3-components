@@ -1,0 +1,91 @@
+page-clock {
+  $ratio: 1.618033;
+$ratio--inv: 1 / $ratio;
+
+$color__background: #2c2c2c;
+$color__active: #eef;
+$color__active--glow: rgba($color__active, $ratio--inv);
+$color__disabled: #222;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $color__background;
+	color: $color__disabled;
+	font-family: montserrat;
+	text-transform: uppercase;
+}
+
+.clock {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	left: 50%;
+	max-width: 700px;
+	padding: $ratio--inv#{em};
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	
+	@media (min-width: 320px) {
+		font-size: $ratio#{em};	
+	}
+	
+	@media (min-width: 520px) {
+		font-size: pow($ratio, 2)#{em};	
+	}
+}
+
+.block {
+	margin: 0 pow($ratio--inv, 2)#{em};
+	transition: color 2s, text-shadow 2s;
+	
+	&--active {
+		animation: active--text 5s linear infinite;
+		color: $color__active;
+	}
+}
+
+.range {
+    height: pow($ratio--inv, 3)#{em};
+    margin: pow($ratio--inv, 2)#{em};
+    position: relative;
+    width: 100%;
+    
+    &__slider {
+		animation: active--box 5s linear infinite;
+        background: $color__active;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: width 1s linear;
+        width: 0;
+    }
+}
+
+@keyframes active--text {
+	0%,
+	100% {
+		text-shadow: 0px 0px $ratio--inv#{em} $color__active--glow;
+	}
+		
+	50% {
+		text-shadow: 0px 0px $ratio#{em} $color__active--glow;
+	}
+}
+
+@keyframes active--box {
+	0%,
+	100% {
+		box-shadow: 0px 0px $ratio--inv#{em} $color__active--glow;
+	}
+		
+	50% {
+		box-shadow: 0px 0px $ratio#{em} $color__active--glow;
+	}
+}
+}   

@@ -1,0 +1,22 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+		<ion-title>Testimonials</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content>
+	<div *ngFor="let testimonial of testimonials">
+		<figure class="snip1574">
+			<img [src]="testimonial.imageUrl" alt="profile-sample2" />
+			<figcaption>
+				<blockquote>
+					<p>{{testimonial.quote}}</p>
+				</blockquote>
+				<h3>{{testimonial.name}}</h3>
+				<h5>{{testimonial.position}}</h5>
+			</figcaption>
+		</figure>
+	</div>
+</ion-content>

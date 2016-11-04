@@ -1,0 +1,24 @@
+<ion-card *ngIf="timer">
+	<ion-card-header>
+		<button ion-button *ngIf="timeInSeconds && timeInSeconds > 0" large block clear class="timer-button x-large">{{timer.displayTime}}</button>
+		<button ion-button *ngIf="!timeInSeconds || timeInSeconds == 0" large block clear class="timer-button">Timer set up incorrectly</button>
+	</ion-card-header>
+	<ion-item *ngIf="timeInSeconds && timeInSeconds > 0">
+		<button ion-button clear class="large" color="danger" (click)="initTimer()" item-left *ngIf="!timer.runTimer && (timer.hasStarted || timer.hasFinished) || timer.hasFinished">
+            <ion-icon name="refresh"></ion-icon>
+            Restart
+        </button>
+		<button ion-button clear class="large" (click)="pauseTimer()" item-right *ngIf="timer.runTimer && timer.hasStarted && !timer.hasFinished">
+            <ion-icon name="pause"></ion-icon>
+            Pause
+        </button>
+		<button ion-button clear class="large" (click)="resumeTimer()" item-right *ngIf="!timer.runTimer && timer.hasStarted && !timer.hasFinished">
+            <ion-icon name="play"></ion-icon>
+            Resume
+        </button>
+		<button ion-button clear class="large" (click)="startTimer()" item-right *ngIf="!timer.hasStarted">
+            <ion-icon name="play"></ion-icon>
+            Start
+        </button>
+	</ion-item>
+</ion-card>

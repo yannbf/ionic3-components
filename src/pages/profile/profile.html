@@ -1,0 +1,29 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+		<ion-title>Profiles</ion-title>
+	</ion-navbar>
+</ion-header>
+<!--<ion-menu [content]="profilecontent" id="menu-profile">
+
+	<ion-content>
+		<ion-list>
+			<button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+        {{item.title}}
+      </button>
+		</ion-list>
+	</ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="root" #profilecontent swipeBackEnabled="false"></ion-nav>-->
+
+<ion-content>
+	<ion-list>
+		<button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      {{item.title}}
+    </button>
+	</ion-list>
+</ion-content>

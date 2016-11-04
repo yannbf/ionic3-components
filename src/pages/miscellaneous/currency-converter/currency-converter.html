@@ -1,0 +1,80 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Currency Converter</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<button ion-button color="danger" block (click)="doRadio(true)">FROM</button>
+	<button ion-button color="danger" block (click)="doRadio(false)">TO</button>
+	<ion-input></ion-input>
+	<ion-item>{{baseRate}}</ion-item>
+	<button ion-button (click)="getRate()">Convert</button>
+
+	<ion-grid>
+		<!-- Header -->
+		<ion-row>
+			<ion-col>
+				<strong>$1</strong>
+			</ion-col>
+			<ion-col>
+				<strong>$50</strong>
+			</ion-col>
+			<ion-col>
+				<strong>$100</strong>
+			</ion-col>
+			<ion-col>
+				<strong>$500</strong>
+			</ion-col>
+		</ion-row>
+		<ion-row class="success">
+			<ion-col>
+				{{1 / baseRate | currency:'BRL':true}}
+			</ion-col>
+			<ion-col>
+				{{50 / baseRate | currency:'BRL':true}}
+			</ion-col>
+			<ion-col>
+				{{100 / baseRate | currency:'BRL':true}}
+			</ion-col>
+			<ion-col>
+				{{500 / baseRate | currency:'BRL':true}}
+			</ion-col>
+		</ion-row>
+
+	</ion-grid>
+	<ion-grid>
+		<!-- Header -->
+		<ion-row>
+			<ion-col>
+				<strong>R$1</strong>
+			</ion-col>
+			<ion-col>
+				<strong>R$50</strong>
+			</ion-col>
+			<ion-col>
+				<strong>R$100</strong>
+			</ion-col>
+			<ion-col>
+				<strong>R$500</strong>
+			</ion-col>
+		</ion-row>
+
+		<!-- Body -->
+		<ion-row class="active">
+			<ion-col>
+				{{1 * baseRate | currency:'USD':true}}
+			</ion-col>
+			<ion-col>
+				{{50 * baseRate | currency:'USD':true}}
+			</ion-col>
+			<ion-col>
+				{{100 * baseRate | currency:'USD':true}}
+			</ion-col>
+			<ion-col>
+				{{500 * baseRate | currency:'USD':true}}
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>

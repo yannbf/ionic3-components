@@ -1,0 +1,53 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Chat</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content>
+	<div *ngFor="let message of messages" class="message-wrapper" on-hold="onMessageHold($event, $index, message)">
+		<div *ngIf="user._id !== message.userId">
+			<img (click)="viewProfile(message)" class="profile-pic left" [src]="toUser.pic" onerror="onProfilePicError(this)" />
+			<!--  wave-->
+			<div class="chat-bubble left slide-left">
+
+				<div class="message" [innerHTML]="message.text" autolinker>
+				</div>
+
+				<div class="message-detail">
+					<span (click)="viewProfile(message)" class="bold">{{toUser.username}}</span>,
+					<span>{{message.date | moment:"ago" | lowercase}}</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div *ngIf="user._id === message.userId">
+
+			<img (click)="viewProfile(message)" class="profile-pic right" [src]="user.pic" onerror="onProfilePicError(this)" />
+
+			<div class="chat-bubble right slide-right">
+
+				<div class="message" [innerHTML]="message.text" autolinker>
+				</div>
+
+				<div class="message-detail">
+					<span (click)="viewProfile(message)" class="bold">{{user.username}}</span>,
+					<span>{{message.date | moment:"ago" | lowercase}}</span>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="cf"></div>
+
+	</div>
+</ion-content>
+<ion-footer>
+	<form [formGroup]="messageForm" (submit)="send(chatBox)" novalidate>
+		<ion-item>
+			<ion-input formControlName="message" [(ngModel)]="chatBox" placeholder="Send {{toUser.username}} a message..."></ion-input>
+			<button ion-button clear (click)="send(chatBox)" item-right><ion-icon class="footer-btn" name="send"></ion-icon></button>
+		</ion-item>
+	</form>
+</ion-footer>

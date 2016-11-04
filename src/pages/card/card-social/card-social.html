@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Card with Images</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngFor="let card of cards">
+    <ion-item>
+      <ion-avatar item-left>
+        <img [src]="card.avatarImageUrl" (click)="avatarTapped(card)">
+      </ion-avatar>
+      <h2>{{card.name}}</h2>
+      <p>{{card.date}}</p>
+    </ion-item>
+    <img [src]="card.postImageUrl" (click)="imageTapped(card)">
+    <ion-card-content>
+      <p>{{card.postText}}</p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-left (click)="like(card)">
+        <ion-icon name='thumbs-up'></ion-icon>
+        {{card.likes}} Likes
+      </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-left (click)="comment(card)">
+        <ion-icon name='text'></ion-icon>
+        {{card.comments}} Comments
+      </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          {{card.timestamp}}
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
+
