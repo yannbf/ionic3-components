@@ -28,3 +28,15 @@
   transform: translateY(-50%);
 }
 
+.top-radius {
+  border-radius: 10% 10% 0 0;
+}
+
+.bottom-radius {
+  border-radius: 0 0 10% 10%;
+}
+
+.round {
+  border-radius: 3%;
+}
+

@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lists</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <button ion-button block (click)="openHintModal()">Hint Modal</button>
+  <button ion-button color="light" block (click)="openSignupModal()">Signup modal with slider</button>
+  <button ion-button color="secondary" block (click)="openWalkthroughModal()">Walkthrough modal</button>
+  <button ion-button color="danger" block (click)="doRadio()">Type four</button>
+  <button ion-button color="dark" block (click)="doCheckbox()">Type five</button>
+</ion-content>
+

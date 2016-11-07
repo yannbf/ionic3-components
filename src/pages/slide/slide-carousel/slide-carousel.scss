@@ -1,0 +1,67 @@
+page-slider-list-two {
+  background-color: #0000FF; //blue or test #fafad2; //lightgoldenrodyellow
+  ion-slides {
+    //background-color: greenyellow;  //not taken into account?
+  }
+  ion-slide {
+    //background-color: greenyellow;  //not taken into account?
+  }
+  .outerSlide {
+    //height: 59%;
+    //width: 90%;  //right side of slide touches the border
+    //background-color: #0000FF; //blue not taken into account?
+  }
+  .innerSlides {
+    //background-color: #0000FF; //#FFFBD0 - blue not taken into account?
+    width: 80%;
+  }
+  ion-item ion-label {
+    margin-left: 0px; //default at 0px
+    margin-right: 0px; //default at 8px
+    margin-top: 0px; //default at 13px
+    margin-bottom: 0px; //default at 13px
+  }
+  .outerIonItem {
+    padding-left: 0px; //default at 16px
+  }
+  .outerIonItem .item-inner {
+    padding-right: 0px; //default at 8px;
+  }
+  .profilePicCityName {
+    position: static; //Need to check scrolling is working, otherwise change to static
+  }
+  .profilePicAvatar {
+    position: absolute;
+    bottom: 17%;
+    right: 7%;
+    z-index: 2;
+  }
+  .profilePic {
+    width: 70px !important; //Ionic forum recommends not to use 100% value
+    height: 70px !important; //Ionic forum recommends not to use 100% value
+    max-width: 70px !important; //any size
+    max-height: 70px !important; //any size 
+    border-radius: 35px !important;
+    border: 3.5px solid #fff;
+  }
+  .favImgDiv {
+    position: relative;
+    z-index: 1;
+  }
+  .favDiv {
+    position: absolute;
+    top: 10%;
+    right: 6%;
+    font-size: 1.6em !important; //default large at 1.2em
+  }
+  .favDivInactiveHeart {
+    //color: white;  //Overwritting Danger colour attribute of the button
+    font-weight: bold;
+  }
+  .imgDiv {
+    //height: 10%;  //Why not taken into account?
+    width: auto;
+    height: 26.5vh;
+  }
+}
+

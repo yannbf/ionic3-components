@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Custom Pagination</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-item>
+    <ion-label>Select Style</ion-label>
+    <ion-select [(ngModel)]="pagination" (ionChange)="changeSlideStyle()">
+      <ion-option value="pagination-numbers" selected="true">Numbers</ion-option>
+      <ion-option value="pagination-numbers-2">Numbers 2</ion-option>
+      <ion-option value="pagination-icons">Icons</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-slides #slider [options]="options" (ionDidChange)="onSlideChanged()" *ngIf="showSlide" [dir]="rtl">
+    <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+      <h2>{{slide.title}}</h2>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+

@@ -1,3 +1,6 @@
+import { SlidesPage } from '../pages/slide/slide';
+import { AlertsPage } from '../pages/alert/alert';
+import { ModalsPage } from '../pages/modal/modal';
 import { ListsPage } from '../pages/list/list';
 import { ButtonsListPage } from '../pages/button/button';
 import { CardListPage } from '../pages/card/card';
@@ -9,7 +12,6 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/_home/home';
-
 
 @Component({
   templateUrl: 'app.html'
@@ -26,11 +28,14 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Profile', component: ProfileListPage },
       { title: 'Cards', component: CardListPage },
       { title: 'Buttons', component: ButtonsListPage },
+      { title: 'Alerts', component: AlertsPage },
+      { title: 'Modals', component: ModalsPage },
       { title: 'Lists', component: ListsPage },
+      { title: 'Slides', component: SlidesPage },
       { title: 'Popup Menu', component: PopupMenuListPage },
+      { title: 'Profile', component: ProfileListPage },
       { title: 'Miscellaneous', component: MiscellaneousListPage }
     ];
 

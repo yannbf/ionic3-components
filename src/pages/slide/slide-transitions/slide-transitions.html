@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Slide Transitions</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-item>
+    <ion-label>Select Style</ion-label>
+    <ion-select [(ngModel)]="transition" (ionChange)="changeSlideStyle()">
+      <ion-option value="slide" selected="true">Slide</ion-option>
+      <ion-option value="cube">Cube</ion-option>
+      <ion-option value="coverflow">Coverflow</ion-option>
+      <ion-option value="fade">Fade</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-slides #slider [options]="options" (ionDidChange)="onSlideChanged()" *ngIf="showSlide" [dir]="rtl">
+    <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+      <h2>{{slide.title}}</h2>
+    </ion-slide>
+    <!-- Add Pagination -->
+    <div *ngIf="showArrows">
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+  </ion-slides>
+</ion-content>
+

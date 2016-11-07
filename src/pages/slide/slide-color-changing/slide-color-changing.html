@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Color Changing Slide</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-slides #slider [options]="slideOptions" (ionDrag)="onSlideMove($event, element)" (ionDidChange)="onSlideChanged()">
+    <ion-slide *ngFor="let slide of slides" [style.background-color]="color">
+      <h2>{{slide.title}}</h2>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+

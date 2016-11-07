@@ -1,0 +1,65 @@
+page-walkthrough-modal {
+  .round {
+    border-radius: 8%;
+  }
+  .scroll-content {
+    overflow: hidden;
+  }
+  .swiper-pagination-bullet {
+    background-color: white;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #FA3;
+    transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+  }
+  ion-list {
+    margin: 0 !important;
+  }
+  ion-slides,
+  .swiper-container,
+  {
+    height: 85%;
+    border-radius: 8% 8% 0 0;
+  }
+  .slider-item {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+  }
+  .slide-zoom {
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.22)) !important;
+  }
+  .text-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+  .slide-text {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .text-center {
+    text-align: center;
+    color: white;
+  }
+  .scroll-content {
+    border-radius: 3%;
+  }
+  button.footer-button {
+    height: 15%;
+    background-color: #578be4;
+    bottom: 0px;
+    position: absolute;
+    margin: 0;
+  }
+}
+
+ion-modal {
+  // transparent black background overlay
+  background-color: rgba(0, 0, 0, .5) !important;
+  transition: opacity .25s ease-in-out;
+  padding: 50% 10%;
+}
+

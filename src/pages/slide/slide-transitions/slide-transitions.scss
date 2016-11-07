@@ -1,0 +1,80 @@
+page-slide-transitions {
+  h2 {
+    color: white;
+  }
+  ion-slides,
+  .swiper-container {
+    height: 70vh;
+    width: auto;
+  }
+  .swiper-slide {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .swiper-pagination-bullet {
+    background-color: white;
+  }
+  // Custom Pagination Style 1
+  .custom-pagination.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .custom-pagination.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #f52c2c;
+    transition: transform 0.3s;
+    transform: scale(1.5);
+  }
+  // Custom Pagination Style 2
+  .custom-pagination-2.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    opacity: 1;
+    line-height: 18px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+  }
+  .custom-pagination-2.swiper-pagination-bullet-active {
+    color: #fff;
+    border-color: #a0f;
+    background: transparent;
+  }
+  // Custom Pagination with Icons
+  .custom-pagination-3.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    border-radius: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  .custom-pagination-3.swiper-pagination-bullet-active {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s;
+    transform: scale(1.5);
+  }
+  // Icons developed by Paomedia: https://www.iconfinder.com/iconsets/small-n-flat
+  .swiper-pagination-bullet.bullet-icon-1 {
+    background: url(../assets/icon/camera.svg) no-repeat;
+  }
+  .bullet-icon-2 {
+    background: url(../assets/icon/map.svg) no-repeat;
+  }
+  .bullet-icon-3 {
+    background: url(../assets/icon/world.svg) no-repeat;
+  }
+  .bullet-icon-4 {
+    background: url(../assets/icon/heart.svg) no-repeat;
+  }
+}
+

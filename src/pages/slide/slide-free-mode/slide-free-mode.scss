@@ -1,0 +1,19 @@
+page-slide-free-mode {
+  h2 {
+    color: white;
+  }
+  ion-slides,
+  .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
+  .swiper-slide {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .swiper-pagination-bullet {
+    background-color: white;
+  }
+}
+

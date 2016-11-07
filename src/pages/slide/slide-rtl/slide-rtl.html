@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Right to Left Slides</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-slides #slider [options]="slideOptions" (ionDidChange)="onSlideChanged()" dir="rtl">
+    <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+      <h2>{{slide.title}}</h2>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+

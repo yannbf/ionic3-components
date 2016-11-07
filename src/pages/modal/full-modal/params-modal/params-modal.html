@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Setting a Price</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+      <ion-icon name='bulb'></ion-icon>
+    </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div [hidden]="!myParam">
+    <h5>Parameters passed:</h5>
+    <pre style="background-color: #f8f8f8">selections: [ {{myParam}} ]
+    </pre>
+  </div>
+  <div [hidden]="myParam">
+    <p>No parameters passed.</p>
+  </div>
+  <button ion-button color="danger" full (click)="dismiss()">Close Modal</button>
+</ion-content>
+<ion-footer>
+  <button ion-button full color="royal" (click)="dismiss()">Okay
+      </button>
+</ion-footer>
+

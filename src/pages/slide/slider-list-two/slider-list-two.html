@@ -1,0 +1,74 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Sliders</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<h2>Welcome to Sliders!</h2>
+
+	<ion-slides #mySlider [options]="mySlideOptions" class="outerSlide">
+
+		<ion-slide class="innerSlides" *ngFor="let city of citiesSlides">
+			<ion-item class="outerIonItem">
+				<div class="favImgDiv">
+					<div class="imgDiv">
+						<img (click)="goToCityPage(city, $event)" src="{{city.image}}"/>
+					</div>
+					
+					<button ion-button (click)="ToggleFavorite(city, $event)" clear color="danger" class="favDiv">
+						<ion-icon ios="ios-heart" md="md-heart" *ngIf="city.favorited"></ion-icon>
+						<ion-icon  class="favDivInactiveHeart" ios="ios-heart-outline" md="md-heart-outline" *ngIf="!city.favorited"></ion-icon>
+					</button>
+
+				</div>
+				
+				<ion-item no-lines class="profilePicCityName">
+					<h2>
+						{{city.name}}
+					</h2>
+					<ion-avatar (click)="goToProfilePage()" item-right class="profilePicAvatar">         
+							<img class="profilePic" src="{{city.authorPic}}"/>
+					</ion-avatar>
+				</ion-item>
+
+				<ion-row no-padding>
+					<ion-col>
+
+						<button ion-button icon-left (click)="ToggleFavorite(city, $event)" clear small color="primary">
+							<ion-icon ios="ios-heart" md="md-heart" *ngIf="city.favorited"></ion-icon>
+							<ion-icon ios="ios-heart-outline" md="md-heart-outline" *ngIf="!city.favorited"></ion-icon>
+							<label text-capitalize>{{city.favoriteCount}}</label>
+						</button>
+
+					</ion-col>
+					<ion-col text-center>
+						<button ion-button icon-left clear small color="primary">
+							<ion-icon name="chatbubbles"></ion-icon>
+							<label text-capitalize>{{" " + city.comments.length}}</label>
+						</button>
+					</ion-col>
+					<ion-col text-right>
+						<button ion-button icon-left clear small color="primary">
+							<ion-icon name='share-alt'></ion-icon>
+							<label text-capitalize>Share</label>
+						</button>
+					</ion-col>
+				</ion-row>
+
+			</ion-item>
+		</ion-slide>
+
+	</ion-slides>
+
+	<button ion-button (click)="addingNewCity()">
+		New Slide
+	</button>
+
+	<button ion-button (click)="changeCities()">
+		Exchange Sliders
+	</button>
+
+      
+  
+</ion-content>

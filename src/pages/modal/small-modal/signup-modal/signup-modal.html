@@ -1,0 +1,29 @@
+<ion-content class="round">
+  <ion-slides pager [options]="slideOptions" class="round">
+    <ion-slide *ngFor="let slide of slides" class="text-center slider-item" [ngStyle]="{'background-image': 'url(' + slide.imageUrl +')'}">
+    </ion-slide>
+  </ion-slides>
+  <ion-row class="align-center">
+    <p>Sign up now to get the most out of this app.</p>
+  </ion-row>
+  <ion-row class="align-center">
+    <ion-col>
+      <button ion-button full (click)="voteUp(true)">
+            Sign Up
+      </button>
+    </ion-col>
+  </ion-row>
+  <ion-row class="align-center">
+    <ion-col width-50>
+      <button ion-button full color="secondary" (click)="voteUp(true)">
+            Log in
+      </button>
+    </ion-col>
+    <ion-col width-50>
+      <button ion-button full color="danger" (click)="dismiss()">
+            Sign up Later
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-content>
+

@@ -1,4 +1,3 @@
-import { SliderListPage } from './slider-list/slider-list';
 import { SlidingItemListPage } from './sliding-item/sliding-item';
 import { SettingsListPage } from './settings/settings';
 import { Component } from '@angular/core';
@@ -16,10 +15,6 @@ export class ListsPage {
   constructor(public navCtrl: NavController) {
     this.rootPage = ListsPage;
     this.items = [
-      {
-        title: 'Slider list',
-        page: SliderListPage
-      },
       {
         title: 'Settings',
         page: SettingsListPage
