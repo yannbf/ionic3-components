@@ -1,62 +1,27 @@
 <ion-header>
-	<ion-navbar>
-		<button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-		<ion-title>Popup Four</ion-title>
-	</ion-navbar>
+  <ion-navbar>
+    <ion-title>Profile Page</ion-title>
+  </ion-navbar>
 </ion-header>
 <ion-content>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-	<nav class="menu">
-		<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-		<label class="menu-open-button" for="menu-open">
-    <span class="hamburger hamburger-1"></span>
-    <span class="hamburger hamburger-2"></span>
-    <span class="hamburger hamburger-3"></span>
-  </label>
-
-		<div class="menu-item">
-			<ion-icon name="heart"></ion-icon>
-		</div>
-		<div class="menu-item">
-			<ion-icon name="add"></ion-icon>
-		</div>
-		<div class="menu-item">
-			<ion-icon name="heart"></ion-icon>
-		</div>
-		<div class="menu-item">
-			<ion-icon name="heart"></ion-icon>
-		</div>
-		<div class="menu-item">
-			<ion-icon name="cog"></ion-icon>
-		</div>
-		<div class="menu-item">
-			<ion-icon name="heart"></ion-icon>
-		</div>
-
-	</nav>
-
-
-	<!-- filters -->
-	<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-		<defs>
-			<filter id="shadowed-goo">
-
-				<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-				<feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-				<feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-				<feOffset in="shadow" dx="1" dy="1" result="shadow" />
-				<feComposite in2="shadow" in="goo" result="goo" />
-				<feComposite in2="goo" in="SourceGraphic" result="mix" />
-			</filter>
-			<filter id="goo">
-				<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-				<feComposite in2="goo" in="SourceGraphic" result="mix" />
-			</filter>
-		</defs>
-	</svg>
+  <div id="profile-bg" [ngStyle]="{'background-image': 'url(' + imageUrl +')'}"></div>
+  <div id="content">
+    <div id="profile-info">
+      <img id="profile-image" src="assets/img/profile/profile-2.jpg">
+      <h3 id="profile-name">John</h3>
+      <span id="profile-description">Traveler, geek and animal lover.</span>
+      <p>Follow my <a href="http://twitter.com/ionicframework">@facebook</a> and
+        <a href="http://twitter.com/driftyco">@twitter</a> accounts.</p>
+    </div>
+    <!--<ion-list>
+      <ion-item *ngFor="let post of posts">
+        <img class="post-profile-image" src="assets/img/misc/cat.jpg"> {{post.text}}
+        <div class="post-time">{{post.created_at}} something</div>
+        <div class="post-options">
+          <ion-icon name="undo"></ion-icon>
+        </div>
+      </ion-item>
+    </ion-list>-->
+  </div>
 </ion-content>
+

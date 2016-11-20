@@ -1,58 +1,208 @@
 page-profile-three {
-    @font-face {
-        font-family: 'Sucrose Bold Two';
-        src: url('assets/fonts/sucrose.woff2') format('woff2');
-    }
-    @font-face {
-        font-family: 'IM Fell French Canon Pro';
-        src: url('assets/fonts/im-fell-french-canon-pro.woff2') format('woff2');
-    }
-
-    * {
+  @font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/ProximaNova-Regular.eot");
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/ProximaNova-Regular.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/ProximaNova-Regular.ttf") format("truetype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/ProximaNova-Regular.svg#rocketdesign-font") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  $gradient: #F96B4C,
+  #F23182;
+  $radius: 10px;
+  $visual-height: 68%;
+  $datas-height: calc(100% - #{$visual-height}+2px);
+   :root {
+    font-size: 16px;
+  }
+  * {
     box-sizing: border-box;
-    }
-
-    body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
     margin: 0;
+    padding: 0;
+    float: left;
+  }
+  body {
+    background: #F0EFED;
+    background-image: linear-gradient(to bottom, #E5E4E5, #C2C1C2);
+    font-family: 'ProximaNova-Regular', Helvetica neue, sans-serif;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+  }
+  .card-profile {
+    float: left;
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    width: 100%;
+    height: 80vh;
+    // height: 530px;
+    background: #fff;
+    // border-radius: $radius;
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(black, 0.1);
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      bottom: 0;
+      box-shadow: 0 36px 64px -34px rgba(black, 1), 0 16px 14px -14px rgba(black, 0.6), 0 22px 18px -18px rgba(black, 0.4), 0 22px 38px -18px rgba(black, 1);
+      transform: scaleX(0.7) scaleY(1.3) translateY(-15%);
+      z-index: -1;
+      opacity: 0.25;
     }
-
-    header { 
-        background-image: url('../assets/img/blog/mountain-range.jpg');
-        padding-top: 61.73333333%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: 'Sucrose Bold Two';
-        overflow: hidden;
-    }
-    header img {
+    &_visual {
+      height: $visual-height;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(to bottom, darken(#545559, 10%), saturate(darken(#3A4A7B, 2%), 20%), saturate(darken(#3A4A7B, 15%), 20%));
+      border-top-left-radius: $radius;
+      border-top-right-radius: $radius;
+      &:before,
+      &:after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
         position: absolute;
-        top: 0;
+        z-index: 0;
+        background: url(https://s-media-cache-ak0.pinimg.com/236x/c5/86/e6/c586e6afd87ee357bbab52df241480ac.jpg)no-repeat center center/cover;
+        opacity: 0.5;
+        mix-blend-mode: lighten;
+      }
+      &:before {
+        filter: grayscale(100%);
+      }
+      &:after {
+        z-index: 2;
+        mix-blend-mode: lighten;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAElBMVEUAAABUUlRERkRMSkxMTkxEQkT490VOAAAAAXRSTlMAQObYZgAAAoxJREFUOI0dlImR5DAIRRXDbgaAEwCcAOAEZE/+qczTdFf1JQH/otd4SJWWf5+m7GjR28Z0TZW38pLjj1aWJl9eWaGfaCq/y4y012hPhqySnnbXe7Q6ulK6nZeV5bpjhyo9xLj7apvFSk3zSXEmtEZmNngYbhWhkmKne7XalnDrYcZMNwMlwuQuj/ezS2dJmpjEFwLe7T7zWE0zo22icr4dNZnfOLUp72rNcA8vcx3Y8r3MZpYOPSAC6mfSGRQBD1sZyFPd9b0mohN70CQTSa6+Ik15RifUaCjWq6zp2/9T697e5VsRKGUl4I4WnWpOxVAI7FoMEsrp2gLUCgH9J84B8o1Sgrb+0auEdrpocIQzU94mHBmMuliIlFemt0s8w3mUe0ssLnaecjllDunTW20d33ZxkUOoSIJbrWxZiHjdhV190e5AzjwONn4ASvTCC5CcKfywuFMBe1QpYjG0x38nJYAcR26k54o8YiXqeC7Hcth54lfwSPlHOBfOE9F0rGguJsr1V+GroafdEC+3qK2HX8Qsf0lWEwX0J29Pkh2lmFB33wKZBB8Rlhpj5AVBd6mTMYBC4cZzKNb6SygJJ3dnNIqkHnuwVgvaoCFcomyI6c+QEvxq0tKEiQCe9QoS18kaKFMl7wqEqJ2A6XkQMejE1dEcu7G/g1JRmHMOkjGIvqXHErayVgdJIIJsGBw1LzaijlFdExOIInKEOZ/oReBCsDlepSPBvRCAj/n10gfjFIml8rVSUDz2ISKeDxmFuviLVSzJOCqxtXToeJpNJr9Pnij+LQ4A/cgXDyuATWyPkrJ1En1cvPk3sB8VfMLIvwO5CKu+uC1OFNLvvoe0h97ieKNjsUkc/zQ6V/0CAoboTZwdKY4AAAAASUVORK5CYII=);
+        opacity: 1;
+      }
+    }
+    &_user-infos {
+      position: absolute;
+      z-index: 3;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: calc(#{$visual-height} - 100px);
+      color: #fff;
+      text-align: center;
+      a {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        left: 0;
         right: 0;
-        width: 45.8%;
+        // margin: auto;
+        background: {
+          color: #F96B4C;
+          image: linear-gradient($gradient);
+        }
+        display: block;
+        clear: both;
+        margin: auto;
+        border-radius: 100%;
+        top: calc(500%+66px);
+        box-shadow: 0 2px 0 #D42D78,
+        0 3px 10px rgba(#F33180,
+        0.15),
+        0 0px 10px rgba(#F33180,
+        0.15),
+        0 0px 4px rgba(darken(#F33180,
+        80%),
+        0.35),
+        0 5px 20px rgba(#F33180,
+        0.25),
+        0 15px 40px rgba(#F33180,
+        0.75),
+        inset 0 0 15px rgba(#FFFFFF,
+        0.05);
+        overflow: hidden;
+        &:after {
+          content: '';
+          font-style: normal;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: {
+            image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/icon-add-f.svg");
+            repeat: no-repeat;
+            size: 30%;
+            position: center center;
+          }
+          left: 0;
+          top: 0;
+        }
+      }
+      .infos_name,
+      .infos_nick {
+        display: block;
+        clear: both;
+        padding: .5em 0;
+        padding-top: 0;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        top: 8px;
+        font-weight: 800;
+      }
+      .infos_nick {
+        top: 32px;
+        font-size: 14px;
+        font-weight: 300;
+      }
     }
-    header h1 { 
-        position: fixed;
-        top: 2rem;
-        right: 2rem;
-    font-size: 12vw;
-    line-height: .8;
-    margin-top: 15%;
-    text-align: center;
-    }
-    header h1 span {
-    display: block;
-    font-size: 8.75vw;
-    }
-    main { 
-        background: #fff;
+    &_user-stats {
+      background: #fff;
+      float: left;
+      width: 100%;
+      height: $datas-height;
+      border-bottom-left-radius: $radius;
+      border-bottom-right-radius: $radius;
+      .stats-holder {
         position: relative;
-        border: 1px solid #fff;
-        font-family: 'IM Fell French Canon Pro';
-        font-size: 1.4rem;
-        padding: 2rem 25%;
-        line-height: 1.6;
+        margin-top: 1.5em;
+        width: 100%;
+        // top: calc( 70% + 4em);
+        display: flex;
+      }
+      .user-stats {
+        flex: 1;
+        text-align: center;
+        strong {
+          display: block;
+          float: left;
+          clear: both;
+          width: 100%;
+          color: #B3B1B2;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: -0.2px;
+        }
+        span {
+          font-size: 26px;
+          color: #5E5E5E;
+          padding: .18em 0;
+          display: inline-block;
+        }
+      }
     }
-    @media all and (max-width: 400px) {
-        main { padding: 2rem; }
-    }
+  }
 }
+

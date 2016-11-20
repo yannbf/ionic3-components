@@ -1,4 +1,3 @@
-import { Swiper } from 'ionic-angular/components/slides/swiper-widget';
 import { Component } from '@angular/core';
 import { AlertController, NavController, Slides } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
@@ -58,24 +57,24 @@ export class SlideColorChangingPage {
 
     return hex;
   }
+
   color: any;
   onSlideMove(event) {
     console.log(event);
     let maxValue = event.virtualSize - event.width;
     let normalizedValue = this.normalize(event.translate * -1, maxValue);
     let hexCode = this.decimalToHex(normalizedValue, 2);
-
+    // let slideCount = event.slidesGrid.length;
+    let inverseHexCode = this.decimalToHex(255 - normalizedValue, 2);
     if (event.activeIndex == 0) {
-      this.color = '#FF' + hexCode + hexCode;
+      this.color = '#' + inverseHexCode + hexCode + hexCode;
     } else if (event.activeIndex == 1) {
-      this.color = '#' + hexCode + 'FF' + hexCode;
+      this.color = '#' + hexCode + inverseHexCode + hexCode;
     } if (event.activeIndex == 2) {
-      this.color = '#' + hexCode + hexCode + 'FF';
+      this.color = '#' + hexCode + hexCode + inverseHexCode;
     } else {
       this.color = '#' + hexCode + hexCode + hexCode;
     }
-
-    console.log('cor ', this.color);
   }
 
   normalize(value, maxValue) {

@@ -5,6 +5,21 @@
 </ion-header>
 <ion-content>
   <ion-slides #slider [options]="slideOptions" (ionDrag)="onSlideMove($event, element)" (ionDidChange)="onSlideChanged()">
+    <ion-slide>
+      <div id="test">
+        <h1>
+          <span>Love </span>
+          <ul>
+            <li>him</li>
+            <li>her</li>
+            <li>you</li>
+            <li>me</li>
+            <li>them</li>
+            <li>everyone</li>
+          </ul>
+        </h1>
+      </div>
+    </ion-slide>
     <ion-slide *ngFor="let slide of slides" [style.background-color]="color">
       <h2>{{slide.title}}</h2>
     </ion-slide>

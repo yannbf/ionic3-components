@@ -1,169 +1,94 @@
 page-profile-two {
-  .popup-menu ion-icon {
+  @import url(http://weloveiconfonts.com/api/?family=zocial);
+  /* zocial */
+  [class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    margin: 10% auto 0;
+    background: #f0f0f0;
+    border-radius: 3px;
+    &:hover {
+      .social li {
+        margin: 0;
+      }
+    }
+  }
+  .header {
     text-align: center;
-    color: white;
-    font-size: 2.5em;
+    padding: 40px 30px 0 30px;
+    h1,
+    h2 {
+      font-weight: 300;
+    }
+    h1 {
+      margin: 0;
+    }
+    h2 {
+      margin: 0 0 15px 0;
+      color: #505064;
+    }
   }
-  .popup-menu-overlay {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: 6;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
-    background-image: -webkit-linear-gradient(rgba(68, 68, 68, 0.5) 0%, rgba(68, 68, 68, 0.25) 100%);
-    background-image: linear-gradient(rgba(68, 68, 68, 0.5) 0%, rgba(68, 68, 68, 0.25) 100%);
+  .profile {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 20px 0 -70px 0;
+    border: 3px solid #f37346;
+    transition: all 1.5s ease;
+    &:hover {
+      border: 3px solid red;
+    }
   }
-  .popup-menu-overlay.in {
-    opacity: 1;
-    visibility: visible;
-  }
-  .popup-menu-toggle {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    bottom: 20px;
-    left: 50%;
-    margin-left: -20px;
-    background-color: #886aea;
-    border: 1px solid #5227e1;
-    z-index: 7;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
-  }
-  .popup-menu-toggle:before {
-    position: absolute;
-    content: '\f30c';
-    font-family: "Ionicons";
-    width: 40px;
-    height: 40px;
-    top: 0px;
-    left: 0px;
-    line-height: 40px;
+  .content {
+    background: #f37346;
+    color: #f0f0f0;
+    padding: 75px 0 0 0;
     text-align: center;
-    font-size: 28px;
-    color: white;
-    opacity: 1;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    height: auto;
+    p {
+      padding: 20px 40px;
+      font-weight: 300;
+    }
   }
-  .popup-menu-toggle.out {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
+  .social {
+    padding: 40px 0 0 0;
+    ul {
+      list-style-type: none;
+      width: 100%;
+      height: 50px;
+      overflow: hidden;
+      li {
+        margin: 50px 0 0 0;
+        float: left;
+        width: 33.3333%;
+        height: 100%;
+        line-height: 50px;
+        @for $i from 1 through 3 {
+          &:nth-child(#{$i}) {
+            transition: ($i * .3s);
+          }
+        }
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
   }
-  .popup-menu-toggle.out:before {
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
-    -webkit-transform: scale(0);
-    transform: scale(0);
+  .zocial-facebook {
+    background: #3B5998;
+    display: block;
   }
-  .popup-menu-panel {
-    position: fixed;
-    width: 300px;
-    height: 200px;
-    bottom: 20px;
-    left: 50%;
-    margin-left: -150px;
-    padding: 0px 5px;
-    background-color: #886aea;
-    z-index: 8;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
-    -webkit-transition-delay: 0.15s;
-    transition-delay: 0.15s;
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  .zocial-twitter {
+    background: #55ACEE;
+    display: block;
   }
-  .popup-menu-panel .popup-menu-item {
-    margin: auto;
-    -webkit-box-flex: 1 0 30%;
-    -webkit-flex: 1 0 30%;
-    -moz-box-flex: 1 0 30%;
-    -moz-flex: 1 0 30%;
-    -ms-flex: 1 0 30%;
-    flex: 1 0 30%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 0;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
-  }
-  .popup-menu-panel .popup-menu-item i {
-    margin: auto 0px 5px 0px;
-    padding: 0px;
-    font-size: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: white;
-  }
-  .popup-menu-panel .popup-menu-item span {
-    padding: 0px;
-    margin: 0px 0px auto 0px;
-    color: white;
-    text-align: center;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 11px;
-  }
-  .popup-menu-panel .popup-menu-item:active i {
-    color: gold;
-    -webkit-transition: all 0.15s;
-    transition: all 0.15s;
-  }
-  .popup-menu-panel .popup-menu-item:active span {
-    color: gold;
-    -webkit-transition: all 0.15s;
-    transition: all 0.15s;
-  }
-  .popup-menu-panel.in {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-  }
-  .popup-menu-panel.in .popup-menu-item {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    -webkit-transition-delay: 0.15s;
-    transition-delay: 0.15s;
+  .zocial-instagram {
+    background: #3F729B;
+    display: block;
   }
 }
 

@@ -19,12 +19,12 @@ page-tinder-cards {
     transition: 0.2s opacity linear;
     opacity: 0;
   }
+  ion-footer {
+    height: 15%;
+  }
   .footer {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 318px;
-    width: 100%;
-    padding-left: 40px;
+    width: 50%;
+    margin: auto;
     padding-top: 6px;
   }
   .rate {

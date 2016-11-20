@@ -1,0 +1,74 @@
+.theme-light {
+  transition: all 1.1s ease;
+  background-color: #fff;
+  // background: #0c1a2c;
+  // background: linear-gradient(to bottom,rgba(9,16,25,1) 0,rgba(30,28,58,1) 25%,rgba(30,28,58,1) 75%,rgba(11,12,22,1) 100%);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  .toolbar-title,
+  .bar-button-default,
+  body,
+  div {
+    transition: all 1.1s ease;
+    color: white;
+  }
+  .onboard {
+    border-color: #212121 !important;
+  }
+  .toolbar-background,
+  .toggle-checked {
+    transition: all 1.1s ease;
+    background-color: #212121 !important;
+  }
+  .item-note,
+  .themeButton,
+  .swiper-pagination-bullet {
+    transition: all 1.1s ease;
+    //background-color: #fff;
+    //border-style: solid;
+    //border-width: 1px;
+    //border-color: white;
+  }
+  ion-content,
+  .input-wrapper,
+  .item-inner,
+  .item,
+  ion-footer,
+  ion-item,
+  ion-label {
+    transition: all 1.1s ease;
+    background-color: #303030 !important;
+    background: #303030 !important;
+    color: black !important;
+  }
+  ion-list {
+    background-color: #100815;
+  }
+  .time {
+    background-color: white;
+  }
+  .item {
+    transition: all 1s ease;
+    background-color: white;
+    color: black;
+  }
+  .range-bar {
+    background-color: #463E3F !important;
+  }
+  .s2,
+  .s3,
+  .toggle-inner,
+  .range-pin,
+  .range-pin::before,
+  .range-knob,
+  .range-bar-active {
+    background-color: white !important;
+    color: black !important;
+  }
+}
+

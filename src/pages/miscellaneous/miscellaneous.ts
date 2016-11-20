@@ -1,7 +1,8 @@
+import { BlogPostPage } from './blog-post/blog-post';
 import { ChatsPage } from './chat/chats';
 import { WeatherPage } from './weather/weather';
 import { CurrencyConverterPage } from './currency-converter/currency-converter';
-import { ClockPage } from './clock/clock';
+// import { ClockPage } from './clock/clock';
 import { ParallaxScrollerPage } from './parallax-scroller/parallax-scroller';
 import { CountdownOnePage } from './countdown/countdown';
 import { TestimonialsPage } from './testimonials/testimonials';
@@ -47,6 +48,10 @@ export class MiscellaneousListPage {
             {
                 title: 'Chat',
                 page: ChatsPage
+            },
+            {
+                title: 'Blog Post',
+                page: BlogPostPage
             },
         ]
     }

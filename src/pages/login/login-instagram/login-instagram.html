@@ -1,0 +1,29 @@
+<!--<ion-content padding [ngStyle]="{'background': gradient}">-->
+<ion-content padding>
+  <ion-header>
+    <ion-navbar>
+    </ion-navbar>
+  </ion-header>
+  <img class="logo" src="assets/img/logo/logo-instagram.png" />
+  <div padding>
+    <ion-item>
+      <ion-input type="text" placeholder="Username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+    <button ion-button block outline (click)="login()" color="light" class="login-button">Login</button>
+  </div>
+  <div class="strike">
+    <span>OR</span>
+  </div>
+  <button ion-button block clear (click)="login()" color="light" class="login-button"><ion-icon name="logo-facebook"></ion-icon> Login with Facebook</button>
+</ion-content>
+<ion-footer>
+  <ion-toolbar class="footer">
+    <div (click)="goToSignup()">
+      <span>Don't have an account? <strong>Sign up here</strong>.</span>
+    </div>
+  </ion-toolbar>
+</ion-footer>
+

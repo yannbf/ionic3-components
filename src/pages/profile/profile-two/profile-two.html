@@ -1,38 +1,30 @@
 <ion-header>
-	<ion-navbar>
-		<ion-title>Popup Menu</ion-title>
-	</ion-navbar>
+  <ion-navbar>
+    <ion-title>Popup Menu</ion-title>
+  </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-	<div class="popup-menu">
-		<div class="popup-menu-overlay" [ngClass]="{'in': menu_is_open}" (click)="togglePopupMenu()"></div>
-		<div class="popup-menu-toggle" (click)="togglePopupMenu()" [ngClass]="{'out': menu_is_open}"></div>
-		<div class="popup-menu-panel" [ngClass]="{'in': menu_is_open}">
-			<div class="popup-menu-item" (click)="goToHome()">
-				<ion-icon name="home"></ion-icon>
-				<span>HOME</span>
-			</div>
-			<div class="popup-menu-item" (click)="goToCups()">
-				<ion-icon name="trophy"></ion-icon>
-				<span>CUPS</span>
-			</div>
-			<div class="popup-menu-item" (click)="goToLeaderboard()">
-				<ion-icon name="podium"></ion-icon>
-				<span>LEADERBOARD</span>
-			</div>
-			<div class="popup-menu-item" (click)="goToHelp()">
-				<ion-icon name="help"></ion-icon>
-				<span>HELP</span>
-			</div>
-			<div class="popup-menu-item" (click)="goToAccount()">
-				<ion-icon name="person"></ion-icon>
-				<span>ACCOUNT</span>
-			</div>
-			<div class="popup-menu-item" (click)="goToShop()">
-				<ion-icon name="cart"></ion-icon>
-				<span>SHOP</span>
-			</div>
-		</div>
-	</div>
+<ion-content class="container">
+  <div class="header">
+    <h1>Richard Karsten</h1>
+    <h2>Frontend</h2>
+    <img src="http://clikr.de/wp-content/uploads/2015/02/richard-150x150.jpg" class="profile" />
+  </div>
+  <div class="content">
+    <h3>about me</h3>
+    <p>Hey - I am Richie, a 20 years old frontend dev from germany. Feel free to follow me. </p>
+    <div class="social">
+      <ul>
+        <li>
+          <a href="#" class="zocial-facebook"></a>
+        </li>
+        <li>
+          <a href="#" class="zocial-twitter"></a>
+        </li>
+        <li>
+          <a href="#" class="zocial-instagram"> </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </ion-content>
+

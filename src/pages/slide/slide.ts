@@ -1,9 +1,9 @@
 import { SlideColorChangingPage } from './slide-color-changing/slide-color-changing';
 import { SliderListPage } from './slider-list/slider-list';
 import { SlideCustomPaginationPage } from './slide-custom-pagination/slide-custom-pagination';
-import { SlideMultirowPage } from './slide-multirow/slide-multirow';
+// import { SlideMultirowPage } from './slide-multirow/slide-multirow';
 import { SlideFreeModePage } from './slide-free-mode/slide-free-mode';
-import { SlideNestedPage } from './slide-nested/slide-nested';
+// import { SlideNestedPage } from './slide-nested/slide-nested';
 import { SlideRightToLeftPage } from './slide-rtl/slide-rtl';
 import { SlideCarouselPage } from './slide-carousel/slide-carousel';
 import { SlideTransitionsPage } from './slide-transitions/slide-transitions';
@@ -31,14 +31,14 @@ export class SlidesPage {
         title: 'Slide Right to Left',
         page: SlideRightToLeftPage
       },
-      {
-        title: 'Nested Slides',
-        page: SlideNestedPage
-      },
+      // {
+      //   title: 'Nested Slides',
+      //   page: SlideNestedPage
+      // },
       {
         title: 'List of Sliders',
         page: SliderListPage
-      }, 
+      },
       {
         title: 'Color Changing Sliders',
         page: SlideColorChangingPage
@@ -46,10 +46,6 @@ export class SlidesPage {
       {
         title: 'Free Mode Slide (no fixed positions)',
         page: SlideFreeModePage
-      },
-      {
-        title: 'Multirow Slides',
-        page: SlideMultirowPage
       },
       {
         title: 'Custom Pagination',

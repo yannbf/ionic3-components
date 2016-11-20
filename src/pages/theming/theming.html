@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Theming</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h3>Setting theme</h3>
+  <button class="pop-in" ion-button (click)="changeTheme('')">Default</button>
+  <button class="pop-in" ion-button color="dark" (click)="changeTheme('theme-dark')">Dark</button>
+</ion-content>
+

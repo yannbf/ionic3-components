@@ -1,0 +1,58 @@
+page-blog-post {
+  @font-face {
+    font-family: 'Sucrose Bold Two';
+    src: url('assets/fonts/sucrose.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'IM Fell French Canon Pro';
+    src: url('assets/fonts/im-fell-french-canon-pro.woff2') format('woff2');
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  header {
+    background-image: url('../assets/img/blog/mountain-range.jpg');
+    padding-top: 61.73333333%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Sucrose Bold Two';
+    overflow: hidden;
+  }
+  header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45.8%;
+  }
+  header h1 {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 12vw;
+    line-height: .8;
+    margin-top: 15%;
+    text-align: center;
+  }
+  header h1 span {
+    display: block;
+    font-size: 8.75vw;
+  }
+  main {
+    background: #fff;
+    position: relative;
+    border: 1px solid #fff;
+    font-family: 'IM Fell French Canon Pro';
+    font-size: 1.4rem;
+    padding: 2rem 25%;
+    line-height: 1.6;
+  }
+  @media all and (max-width: 400px) {
+    main {
+      padding: 2rem;
+    }
+  }
+}
+

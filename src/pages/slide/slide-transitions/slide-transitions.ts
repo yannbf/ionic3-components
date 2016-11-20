@@ -1,4 +1,3 @@
-import { Swiper } from 'ionic-angular/components/slides/swiper-widget';
 import { Component } from '@angular/core';
 import { AlertController, NavController, Slides } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
@@ -18,6 +17,7 @@ export class SlideTransitionsPage {
     pager: true,
     autoplay: 2000,
     paginationClickable: true,
+    autoplayDisableOnInteraction: false
   };
 
   cubeOptions = {

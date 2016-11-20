@@ -1,6 +1,11 @@
-import { SlideColorChangingPage } from '../pages/slide/slide-color-changing/slide-color-changing';
+// Global state (used for theming)
+import { AppState } from './app.global';
+
 // Home Page
 import { HomePage } from '../pages/_home/home';
+
+// Theme
+import { ThemingPage } from '../pages/theming/theming';
 
 // Profile list
 import { ProfileListPage } from '../pages/profile/profile';
@@ -14,6 +19,11 @@ import { ListsPage } from '../pages/list/list';
 import { SlidingItemListPage } from '../pages/list/sliding-item/sliding-item';
 import { SettingsListPage } from '../pages/list/settings/settings';
 
+// Login
+import { LoginListPage } from '../pages/login/login';
+import { LoginOnePage } from '../pages/login/login-one/login-one';
+import { LoginInstagramPage } from '../pages/login/login-instagram/login-instagram';
+import { LoginSliderPage } from '../pages/login/login-slider/login-slider';
 // Miscellaneous list
 import { MiscellaneousListPage } from '../pages/miscellaneous/miscellaneous';
 import { ClockPage } from '../pages/miscellaneous/clock/clock';
@@ -25,6 +35,8 @@ import { CurrencyConverterPage } from '../pages/miscellaneous/currency-converter
 import { WeatherPage } from '../pages/miscellaneous/weather/weather';
 import { MessagesPage } from '../pages/miscellaneous/chat/messages/messages';
 import { ChatsPage } from '../pages/miscellaneous/chat/chats';
+import { BlogPostPage } from '../pages/miscellaneous/blog-post/blog-post';
+import { ProfileSettingsPage } from '../pages/profile/profile-settings/profile-settings';
 
 // Popup Menu list
 import { PopupMenuListPage } from '../pages/popup-menu/popup-menu';
@@ -69,6 +81,7 @@ import { SlideMultirowPage } from '../pages/slide/slide-multirow/slide-multirow'
 import { SlideRightToLeftPage } from '../pages/slide/slide-rtl/slide-rtl';
 import { SlideFreeModePage } from '../pages/slide/slide-free-mode/slide-free-mode';
 import { SlideNestedPage } from '../pages/slide/slide-nested/slide-nested';
+import { SlideColorChangingPage } from '../pages/slide/slide-color-changing/slide-color-changing';
 
 // Providers
 import { WeatherService } from '../pages/miscellaneous/weather/weather.service';
@@ -83,6 +96,8 @@ import { TypingEffect } from '../components/typing-effect/typing-effect';
 import { MomentPipe } from '../pipes/moment.pipe';
 import { TemperaturePipe } from '../pipes/temperature.pipe';
 import { OrderByPipe } from '../pipes/orderby.pipe';
+import { ShortenStringPipe } from '../pipes/shorten.pipe';
+import { CapitalizePipe } from '../pipes/capitalize.pipe';
 
 export class AppImports {
 
@@ -90,12 +105,21 @@ export class AppImports {
         // Home
         HomePage,
 
+        // Theming
+        ThemingPage,
+
         // Profile
         ProfileListPage,
         ProfileOnePage,
         ProfileTwoPage,
         ProfileThreePage,
         ProfileFourPage,
+        ProfileSettingsPage,
+
+        LoginListPage,
+        LoginOnePage,
+        LoginInstagramPage,
+        LoginSliderPage,
 
         // Miscellaneous
         MiscellaneousListPage,
@@ -110,6 +134,7 @@ export class AppImports {
         WeatherPage,
         ChatsPage,
         MessagesPage,
+        BlogPostPage,
 
         // Cards
         CardListPage,
@@ -163,11 +188,11 @@ export class AppImports {
     ]
 
     public static Pipes = [
-        TemperaturePipe, MomentPipe, OrderByPipe,
+        TemperaturePipe, MomentPipe, OrderByPipe, CapitalizePipe, ShortenStringPipe
     ]
 
     public static Providers = [
-        WeatherService, AlertService, ToastService
+        WeatherService, AlertService, ToastService, AppState
     ]
 
     public static Directives = [

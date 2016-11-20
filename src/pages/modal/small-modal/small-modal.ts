@@ -2,7 +2,7 @@ import { HintModalPage } from './hint-modal/hint-modal';
 import { SignupModalPage } from './signup-modal/signup-modal';
 import { WalkthroughModalPage } from './walkthrough-modal/walkthrough-modal';
 import { Component } from '@angular/core';
-import { ModalController, NavController } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 
 @Component({
   selector: 'page-small-modal',

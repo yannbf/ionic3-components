@@ -1,7 +1,7 @@
 import { BasicModalPage } from './basic-modal/basic-modal';
 import { ParamsModalPage } from './params-modal/params-modal';
 import { Component } from '@angular/core';
-import { ModalController, NavController } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 
 @Component({
     selector: 'page-full-modal',

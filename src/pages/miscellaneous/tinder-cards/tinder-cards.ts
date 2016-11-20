@@ -54,7 +54,7 @@ export class TinderCardsPage {
     let min = Math.trunc(Math.min(16 * 16 - abs, 16 * 16));
     let hexCode = this.decimalToHex(min, 2);
 
-    if (x < 0) {
+    if (x > 0) {
       color = '#' + hexCode + 'FF' + hexCode;
     } else {
       color = '#FF' + hexCode + hexCode;

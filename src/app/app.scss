@@ -13,6 +13,8 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 @import '../theme/animations';
+@import '../theme/dark.theme';
+@import '../theme/light.theme';
 .align-center {
   text-align: center;
 }

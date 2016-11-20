@@ -1,3 +1,6 @@
+import { LoginListPage } from '../pages/login/login';
+import { ThemingPage } from '../pages/theming/theming';
+import { AppState } from './app.global';
 import { SlidesPage } from '../pages/slide/slide';
 import { AlertsPage } from '../pages/alert/alert';
 import { ModalsPage } from '../pages/modal/modal';
@@ -22,20 +25,23 @@ export class MyApp {
   rootPage: any = HomePage;
 
   pages: Array<{ title: string, component: any }>;
+  state: any;
 
-  constructor(public platform: Platform) {
+  constructor(public platform: Platform, public global: AppState) {
     this.initializeApp();
-    // used for an example of ngFor and navigation
+
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Cards', component: CardListPage },
+      { title: 'Theming', component: ThemingPage },
       { title: 'Buttons', component: ButtonsListPage },
       { title: 'Alerts', component: AlertsPage },
-      { title: 'Modals', component: ModalsPage },
       { title: 'Lists', component: ListsPage },
+      { title: 'Cards', component: CardListPage },
+      { title: 'Modals', component: ModalsPage },
       { title: 'Slides', component: SlidesPage },
       { title: 'Popup Menu', component: PopupMenuListPage },
       { title: 'Profile', component: ProfileListPage },
+      { title: 'Login', component: LoginListPage },
       { title: 'Miscellaneous', component: MiscellaneousListPage }
     ];
 
@@ -43,6 +49,7 @@ export class MyApp {
 
   initializeApp() {
     this.platform.ready().then(() => {
+      this.global.set('theme', '');
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();

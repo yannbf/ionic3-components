@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar primary>
+    <ion-title>User Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-avatar item-left (click)="updateProfileImage()">
+        <img [src]="user.imageUrl ? user.imageUrl : placeholder_picture">
+      </ion-avatar>
+      <p class="username">{{user.name}}</p>
+      <p>Owner</p>
+    </ion-list-header>
+  </ion-list>
+  <ion-list no-border>
+    <ion-list-header>
+      General
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name='settings' item-left></ion-icon>
+      <ion-label>App Language</ion-label>
+      <ion-select [(ngModel)]="language">
+        <ion-option *ngFor="let language of languages" [value]="language">{{language}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-toggle [(ngModel)]="enableNotifications" (click)="toggleNotifications()"></ion-toggle>
+      <ion-label class="label"> Enable notifications </ion-label>
+      <ion-icon name='notifications' item-left></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+      Currency
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name='card' item-left></ion-icon>
+      <ion-label>Payment Method</ion-label>
+      <ion-select [(ngModel)]="paymentMethod">
+        <ion-option *ngFor="let method of paymentMethods" [value]="method">{{method}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-icon name='logo-usd' item-left></ion-icon>
+      <ion-label>Currency</ion-label>
+      <ion-select [(ngModel)]="currency">
+        <ion-option *ngFor="let currency of currencies" [value]="currency">{{currency}}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+      Other
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name='power' item-left></ion-icon>
+      <button ion-button (click)="logOut()" item-right>
+      Logout
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+

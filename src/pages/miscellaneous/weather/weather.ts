@@ -1,6 +1,6 @@
 import { WeatherService } from './weather.service';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { LoadingController, NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-weather',
@@ -11,7 +11,7 @@ export class WeatherPage {
   cityForecast: any;
   forecast = [];
 
-  constructor(public navCtrl: NavController, public weatherService: WeatherService) {
+  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public weatherService: WeatherService) {
 
   }
 
@@ -19,16 +19,30 @@ export class WeatherPage {
     console.log('Hello Weather Scroller Page');
   }
 
+  loading: any;
+  presentLoading() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Getting forecast...'
+    });
+
+    this.loading.present();
+  }
+
   getCurrentForecast() {
     if (this.city) {
+      this.presentLoading();
       this.weatherService.city(this.city)
         .map(data => data.json())
         .subscribe(
         data => {
+          this.loading.dismiss();
           console.log(data);
           this.cityForecast = data;
         },
-        err => console.log('err: ' + err),
+        (err) => {
+          this.loading.dismiss();
+          alert('error: ' + err)
+        },
         () => console.log('forecast complete')
         )
     }
@@ -36,28 +50,38 @@ export class WeatherPage {
 
   getWeekForecast() {
     if (this.city) {
+      this.presentLoading();
       this.weatherService.forecast(this.city, 7)
         .map(data => data.json())
         .subscribe(
         data => {
+          this.loading.dismiss();
           console.log(data);
           this.forecast = data.list;
         },
-        err => console.log('err: ' + err),
+        (err) => {
+          this.loading.dismiss();
+          alert('error: ' + err)
+        },
         () => console.log('forecast complete')
         )
     }
   }
 
   getLocalForecast() {
+    this.presentLoading();
     this.weatherService.local()
       .map(data => data.json())
       .subscribe(
       data => {
+        this.loading.dismiss();
         console.log(data);
         this.cityForecast = data;
       },
-      err => console.log('err: ' + err),
+      (err) => {
+        this.loading.dismiss();
+        alert('error: ' + err)
+      },
       () => console.log('forecast complete')
       )
   }

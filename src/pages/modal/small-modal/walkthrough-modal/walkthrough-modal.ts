@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { NavController, ViewController } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { ViewController } from 'ionic-angular';
 @Component({
   selector: 'page-walkthrough-modal',
   templateUrl: 'walkthrough-modal.html'
