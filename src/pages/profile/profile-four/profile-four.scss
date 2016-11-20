@@ -1,24 +1,59 @@
 page-profile-four {
-  p {
-    color: #444;
+  // This is just to make the header transparent and button/icon with white color
+  .toolbar-content,
+  .back-button {
+    color: white;
   }
+  .toolbar-background,
+  ion-navbar,
+  ion-header {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+  .header-md::after,
+  .toolbar-background-ios {
+    background-image: none;
+    border-bottom: 0;
+  }
+  // ---
   ion-content {
     background: linear-gradient(0deg, #eeeef1 0%, white 80%, white 100%);
   }
+  button,
+  ion-button,
+  .button-md,
+  .button-ios {
+    text-transform: none !important;
+  }
+  p {
+    color: #444;
+  }
+  // Cover image
   #profile-bg {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 150px;
+    margin-top: -16px;
+    height: 160px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
   }
+  // Profile content
   #content {
     position: relative;
     margin-top: 150px;
     padding-top: 200px;
+    text-align: center;
+  }
+  #profile-image {
+    display: block;
+    border-radius: 50%;
+    width: auto;
+    height: 100px;
+    margin: 0 auto 0;
+    box-shadow: 0px 11px 20px -3px rgba(142, 136, 146, 0.75);
   }
   #profile-info {
     position: absolute;
@@ -27,6 +62,24 @@ page-profile-four {
     z-index: 2;
     text-align: center;
   }
+  #profile-name {
+    color: #444;
+    font-size: 26px;
+  }
+  .profile-description {
+    font-size: 15px;
+    color: #888;
+  }
+  .follow-button {
+    text-transform: none;
+    border-radius: 3px !important;
+    ion-icon {
+      font-weight: bold;
+      padding-left: 5px;
+      font-size: 2.5rem;
+    }
+  }
+  // Following, Followers and all..
   .profile-numbers {
     p {
       color: #444;
@@ -45,30 +98,9 @@ page-profile-four {
     background: #444;
     background: -webkit-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, rgb(188, 198, 214) 50%, hsla(0, 0%, 0%, 0) 100%);
   }
-  #profile-name {
-    color: #444;
-    font-size: 26px;
-  }
-  .profile-description {
-    font-size: 15px;
-    color: #888;
-  }
-  #profile-image {
-    display: block;
-    border-radius: 50%;
-    width: auto;
-    height: 100px;
-    margin: 0 auto 0;
-    box-shadow: 0px 11px 20px -3px rgba(142, 136, 146, 0.75);
-  }
-  .follow-button {
-    text-transform: none;
-    border-radius: 3px !important;
-    ion-icon {
-      font-weight: bold;
-      padding-left: 5px;
-      font-size: 2.5rem;
-    }
+  // Posts feed
+  #posts {
+    text-align: justify;
   }
 }
 

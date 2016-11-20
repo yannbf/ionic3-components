@@ -1,18 +1,19 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Profile Page</ion-title>
-  </ion-navbar>
-</ion-header>
 <ion-content>
-  <div id="profile-bg" [ngStyle]="{'background-image': 'url(' + user.coverImage +')'}"></div>
-  <div id="content">
-    <div id="profile-info" padding>
-      <img id="profile-image" [src]="user.profileImage">
-      <h3 id="profile-name">{{user.name}}</h3>
-      <p>{{user.occupation}} &bull; {{user.location}}</p>
-      <p class="profile-description">{{user.description}}</p>
-      <button ion-button *ngIf="!following" small color="purple" (click)="follow()">Follow</button>
-      <button ion-button *ngIf="following" class="follow-button" small color="purple" (click)="follow()">Following<ion-icon name="checkmark"></ion-icon></button>
+  <ion-content padding>
+    <ion-header>
+      <ion-navbar>
+      </ion-navbar>
+    </ion-header>
+    <div id="profile-bg" [ngStyle]="{'background-image': 'url(' + user.coverImage +')'}"></div>
+    <div id="content">
+      <div id="profile-info" padding>
+        <img id="profile-image" [src]="user.profileImage">
+        <h3 id="profile-name">{{user.name}}</h3>
+        <p>{{user.occupation}} &bull; {{user.location}}</p>
+        <p class="profile-description">{{user.description}}</p>
+        <button ion-button *ngIf="!following" small color="purple" (click)="follow()">Follow</button>
+        <button ion-button *ngIf="following" class="follow-button" small color="purple" (click)="follow()">Following<ion-icon name="checkmark"></ion-icon></button>
+      </div>
       <hr/>
       <ion-row class="profile-numbers">
         <ion-col width-33>
@@ -63,15 +64,5 @@
         </ion-card>
       </div>
     </div>
-    <!--<ion-list>
-      <ion-item *ngFor="let post of posts">
-        <img class="post-profile-image" src="assets/img/misc/cat.jpg"> {{post.text}}
-        <div class="post-time">{{post.created_at}} something</div>
-        <div class="post-options">
-          <ion-icon name="undo"></ion-icon>
-        </div>
-      </ion-item>
-    </ion-list>-->
-  </div>
-</ion-content>
+  </ion-content>
 
