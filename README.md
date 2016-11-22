@@ -42,3 +42,11 @@ After installing the needed dependencies you are done, launch your app with a si
 ```sh
 $ ionic serve
 ```
+
+
+CHANGELOG: 
+
+
+#November 11th, 2016
+- Many fixes to make it run on device
+- Added Credit card scanning feature
