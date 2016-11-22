@@ -13,6 +13,8 @@ import { ProfileOnePage } from '../pages/profile/profile-one/profile-one';
 import { ProfileTwoPage } from '../pages/profile/profile-two/profile-two';
 import { ProfileThreePage } from '../pages/profile/profile-three/profile-three';
 import { ProfileFourPage } from '../pages/profile/profile-four/profile-four';
+import { ProfileFivePage } from '../pages/profile/profile-five/profile-five';
+import { ProfileSettingsPage } from '../pages/profile/profile-settings/profile-settings';
 
 // Lists list
 import { ListsPage } from '../pages/list/list';
@@ -24,19 +26,6 @@ import { LoginListPage } from '../pages/login/login';
 import { LoginOnePage } from '../pages/login/login-one/login-one';
 import { LoginInstagramPage } from '../pages/login/login-instagram/login-instagram';
 import { LoginSliderPage } from '../pages/login/login-slider/login-slider';
-// Miscellaneous list
-import { MiscellaneousListPage } from '../pages/miscellaneous/miscellaneous';
-import { ClockPage } from '../pages/miscellaneous/clock/clock';
-import { CountdownOnePage } from '../pages/miscellaneous/countdown/countdown';
-import { TinderCardsPage } from '../pages/miscellaneous/tinder-cards/tinder-cards';
-import { TestimonialsPage } from '../pages/miscellaneous/testimonials/testimonials';
-import { ParallaxScrollerPage } from '../pages/miscellaneous/parallax-scroller/parallax-scroller';
-import { CurrencyConverterPage } from '../pages/miscellaneous/currency-converter/currency-converter';
-import { WeatherPage } from '../pages/miscellaneous/weather/weather';
-import { MessagesPage } from '../pages/miscellaneous/chat/messages/messages';
-import { ChatsPage } from '../pages/miscellaneous/chat/chats';
-import { BlogPostPage } from '../pages/miscellaneous/blog-post/blog-post';
-import { ProfileSettingsPage } from '../pages/profile/profile-settings/profile-settings';
 
 // Popup Menu list
 import { PopupMenuListPage } from '../pages/popup-menu/popup-menu';
@@ -83,6 +72,20 @@ import { SlideFreeModePage } from '../pages/slide/slide-free-mode/slide-free-mod
 import { SlideNestedPage } from '../pages/slide/slide-nested/slide-nested';
 import { SlideColorChangingPage } from '../pages/slide/slide-color-changing/slide-color-changing';
 
+// Miscellaneous list
+import { MiscellaneousListPage } from '../pages/miscellaneous/miscellaneous';
+import { ClockPage } from '../pages/miscellaneous/clock/clock';
+import { CountdownOnePage } from '../pages/miscellaneous/countdown/countdown';
+import { TinderCardsPage } from '../pages/miscellaneous/tinder-cards/tinder-cards';
+import { TestimonialsPage } from '../pages/miscellaneous/testimonials/testimonials';
+import { ParallaxScrollerPage } from '../pages/miscellaneous/parallax-scroller/parallax-scroller';
+import { CurrencyConverterPage } from '../pages/miscellaneous/currency-converter/currency-converter';
+import { WeatherPage } from '../pages/miscellaneous/weather/weather';
+import { MessagesPage } from '../pages/miscellaneous/chat/messages/messages';
+import { ChatsPage } from '../pages/miscellaneous/chat/chats';
+import { BlogPostPage } from '../pages/miscellaneous/blog-post/blog-post';
+import { CreditCardScanPage } from '../pages/miscellaneous/credit-card-scan/credit-card-scan';
+
 // Providers
 import { WeatherService } from '../pages/miscellaneous/weather/weather.service';
 import { ToastService } from '../providers/util/toast.service';
@@ -99,104 +102,104 @@ import { OrderByPipe } from '../pipes/orderby.pipe';
 import { ShortenStringPipe } from '../pipes/shorten.pipe';
 import { CapitalizePipe } from '../pipes/capitalize.pipe';
 
-export class AppImports {
 
-    public static Pages = [
-        // Home
-        HomePage,
+export const Pages = [
+    // Home
+    HomePage,
 
-        // Theming
-        ThemingPage,
+    // Theming
+    ThemingPage,
 
-        // Profile
-        ProfileListPage,
-        ProfileOnePage,
-        ProfileTwoPage,
-        ProfileThreePage,
-        ProfileFourPage,
-        ProfileSettingsPage,
+    // Profile
+    ProfileListPage,
+    ProfileOnePage,
+    ProfileTwoPage,
+    ProfileThreePage,
+    ProfileFourPage,
+    ProfileFivePage,
+    ProfileSettingsPage,
 
-        LoginListPage,
-        LoginOnePage,
-        LoginInstagramPage,
-        LoginSliderPage,
+    LoginListPage,
+    LoginOnePage,
+    LoginInstagramPage,
+    LoginSliderPage,
 
-        // Miscellaneous
-        MiscellaneousListPage,
-        PopupMenuListPage,
-        PopupMenuOnePage,
-        TestimonialsPage,
-        TinderCardsPage,
-        CountdownOnePage,
-        ParallaxScrollerPage,
-        CurrencyConverterPage,
-        ClockPage,
-        WeatherPage,
-        ChatsPage,
-        MessagesPage,
-        BlogPostPage,
+    // Miscellaneous
+    MiscellaneousListPage,
+    PopupMenuListPage,
+    PopupMenuOnePage,
+    TestimonialsPage,
+    TinderCardsPage,
+    CountdownOnePage,
+    ParallaxScrollerPage,
+    CurrencyConverterPage,
+    CreditCardScanPage,
+    ClockPage,
+    WeatherPage,
+    ChatsPage,
+    MessagesPage,
+    BlogPostPage,
 
-        // Cards
-        CardListPage,
-        CardBackgroundPage,
-        CardMapPage,
-        CardImagePage,
-        CardSocialPage,
-        CardBadgePage,
+    // Cards
+    CardListPage,
+    CardBackgroundPage,
+    CardMapPage,
+    CardImagePage,
+    CardSocialPage,
+    CardBadgePage,
 
-        // Modals
-        ModalsPage,
-        FullModalsPage,
-        BasicModalPage,
-        ParamsModalPage,
-        SmallModalsPage,
-        SignupModalPage,
-        WalkthroughModalPage,
-        HintModalPage,
+    // Modals
+    ModalsPage,
+    FullModalsPage,
+    BasicModalPage,
+    ParamsModalPage,
+    SmallModalsPage,
+    SignupModalPage,
+    WalkthroughModalPage,
+    HintModalPage,
 
-        // Buttons
-        ButtonsListPage,
-        IconButtonsPage,
-        ButtonComponentsPage,
-        ButtonStylesPage,
+    // Buttons
+    ButtonsListPage,
+    IconButtonsPage,
+    ButtonComponentsPage,
+    ButtonStylesPage,
 
-        // Lists
-        ListsPage,
-        SettingsListPage,
-        SlidingItemListPage,
+    // Lists
+    ListsPage,
+    SettingsListPage,
+    SlidingItemListPage,
 
-        // Alerts
-        AlertsPage,
+    // Alerts
+    AlertsPage,
 
-        // Slides
-        SlidesPage,
-        SlideCarouselPage,
-        SlideTransitionsPage,
-        SlidePhotoGalleryPage,
-        SlideNestedPage,
-        SlideFreeModePage,
-        SlideRightToLeftPage,
-        SlideMultirowPage,
-        SliderListPage,
-        SliderListTwoPage,
-        SlideCustomPaginationPage,
-        SlideColorChangingPage,
+    // Slides
+    SlidesPage,
+    SlideCarouselPage,
+    SlideTransitionsPage,
+    SlidePhotoGalleryPage,
+    SlideNestedPage,
+    SlideFreeModePage,
+    SlideRightToLeftPage,
+    SlideMultirowPage,
+    SliderListPage,
+    SliderListTwoPage,
+    SlideCustomPaginationPage,
+    SlideColorChangingPage,
 
-        // Popup Menu
-        PopupMenuListPage,
-        PopupMenuOnePage,
-    ]
+    // Popup Menu
+    PopupMenuListPage,
+    PopupMenuOnePage,
+]
 
-    public static Pipes = [
-        TemperaturePipe, MomentPipe, OrderByPipe, CapitalizePipe, ShortenStringPipe
-    ]
+export const Pipes = [
+    TemperaturePipe, MomentPipe, OrderByPipe, CapitalizePipe, ShortenStringPipe
+]
 
-    public static Providers = [
-        WeatherService, AlertService, ToastService, AppState
-    ]
+export const Providers = [
+    WeatherService, AlertService, ToastService, AppState
+]
 
-    public static Directives = [
-        Timer,
-        TypingEffect,
-    ]
-}
+export const Directives = [
+    Timer,
+    TypingEffect,
+]

@@ -26,6 +26,14 @@ export class SignupModalPage {
   constructor(public viewCtrl: ViewController) {
   }
 
+  signup() {
+
+  }
+
+  login() {
+
+  }
+
   dismiss() {
     this.viewCtrl.dismiss();
   }

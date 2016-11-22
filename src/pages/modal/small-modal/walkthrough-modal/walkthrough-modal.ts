@@ -87,7 +87,7 @@ export class WalkthroughModalPage {
   //   return Color.rgb((int) r, (int) g, (int) b);
   // }
 
-  onItemMove(element, x, y, r) {
+  onItemMove(el, x, y, r) {
     var color = '';
     var abs = Math.abs(x);
     let min = Math.trunc(Math.min(16 * 16 - abs, 16 * 16));
@@ -99,7 +99,7 @@ export class WalkthroughModalPage {
       color = '#FF' + hexCode + hexCode;
     }
 
-    element.style.background = color;
-    element.style['transform'] = `translate3d(0, 0, 0) translate(${x}px, ${y}px) rotate(${r}deg)`;
+    el.style.background = color;
+    el.style['transform'] = `translate3d(0, 0, 0) translate(${x}px, ${y}px) rotate(${r}deg)`;
   }
 }

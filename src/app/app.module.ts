@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { SwingModule } from 'angular2-swing';
 
-import { AppImports } from './app.imports';
+import { Pages, Directives, Pipes, Providers } from './app.imports';
 
 @NgModule({
   declarations: [
@@ -11,13 +11,13 @@ import { AppImports } from './app.imports';
     MyApp,
 
     // Pages
-    AppImports.Pages,
+    Pages,
 
     // directives    
-    AppImports.Directives,
+    Directives,
 
     // pipes
-    AppImports.Pipes
+    Pipes
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -26,8 +26,8 @@ import { AppImports } from './app.imports';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AppImports.Pages
+    Pages
   ],
-  providers: [AppImports.Providers]
+  providers: [Providers]
 })
 export class AppModule { }

@@ -33,6 +33,10 @@ export class LoginInstagramPage {
 
   }
 
+  goToSignup() {
+    // this.navCtrl.push(SignupPage);
+  }
+
   // Gradient logic from https://codepen.io/quasimondo/pen/lDdrF
   // NOTE: I'm not using this logic anymore, but if you want to use somehow, somewhere,
   // A programmatically way to make a nice rainbow effect, there you go.

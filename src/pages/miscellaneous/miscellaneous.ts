@@ -1,3 +1,4 @@
+import { CreditCardScanPage } from './credit-card-scan/credit-card-scan';
 import { BlogPostPage } from './blog-post/blog-post';
 import { ChatsPage } from './chat/chats';
 import { WeatherPage } from './weather/weather';
@@ -40,6 +41,10 @@ export class MiscellaneousListPage {
             {
                 title: 'Currency Converter',
                 page: CurrencyConverterPage
+            },
+            {
+                title: 'Credit Card Scanner',
+                page: CreditCardScanPage
             },
             {
                 title: 'Weather',

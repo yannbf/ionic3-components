@@ -1,3 +1,4 @@
+import { ProfileFivePage } from './profile-five/profile-five';
 import { ProfileSettingsPage } from './profile-settings/profile-settings';
 import { ProfileFourPage } from './profile-four/profile-four';
 import { ProfileThreePage } from './profile-three/profile-three';
@@ -34,6 +35,10 @@ export class ProfileListPage {
       {
         title: 'Type Four',
         page: ProfileFourPage
+      },
+      {
+        title: 'Type Five',
+        page: ProfileFivePage
       },
       {
         title: 'Profile Settings',

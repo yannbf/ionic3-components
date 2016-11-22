@@ -1,0 +1,91 @@
+<ion-content>
+  <ion-content>
+    <ion-header>
+      <ion-navbar>
+      </ion-navbar>
+    </ion-header>
+    <div id="profile-bg" [ngStyle]="{'background-image': 'url(' + user.coverImage +')'}">
+      <h3 id="profile-name">{{user.name}}</h3>
+      <p>{{user.occupation}} &bull; {{user.location}}</p>
+      <button ion-button *ngIf="!following" small outline round color="light" (click)="follow()">Follow</button>
+      <button ion-button *ngIf="following" class="follow-button" small outline round color="light" (click)="follow()">Following<ion-icon name="checkmark"></ion-icon></button>
+    </div>
+    <ion-row padding class="follow-info" style="background-color: #9266bd">
+      <ion-col width-50 style="text-align: right">
+        <p>Followers</p>
+        <span>{{user.followers}}</span>
+      </ion-col>
+      <ion-col width-50 style="text-align: left">
+        <p>Following</p>
+        <span>{{user.following}}</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <p>ASJDSADJISAJDISAJDSAIDSJDSJA</p>
+    </ion-row>
+    <ion-row padding class="follow-info" style="height: 20vh; width: 20vh; background-color: #9266bd">
+      <ion-col width-50 style="text-align: right">
+        <p>Followers</p>
+        <span>{{user.followers}}</span>
+      </ion-col>
+      <ion-col width-50 style="text-align: left">
+        <p>Following</p>
+        <span>{{user.following}}</span>
+      </ion-col>
+    </ion-row>
+    <div id="content">
+      <div id="profile-info" padding>
+        <img id="profile-image" [src]="user.profileImage">
+      </div>
+      <hr/>
+      <ion-row class="profile-numbers">
+        <ion-col width-33>
+          <p>Followers</p>
+          <span>{{user.followers}}</span>
+        </ion-col>
+        <ion-col width-33>
+          <p>Following</p>
+          <span>{{user.following}}</span>
+        </ion-col>
+        <ion-col width-33>
+          <p>Posts</p>
+          <span>{{user.posts}}</span>
+        </ion-col>
+      </ion-row>
+      <div id="posts">
+        <ion-card *ngFor="let post of posts">
+          <ion-item>
+            <ion-avatar item-left>
+              <img [src]="user.profileImage">
+            </ion-avatar>
+            <h2 class="sticky">{{user.name}}</h2>
+            <p>{{post.date}}</p>
+          </ion-item>
+          <img [src]="post.postImageUrl" (click)="imageTapped(post)">
+          <ion-card-content>
+            <p>{{post.text}}</p>
+          </ion-card-content>
+          <ion-row>
+            <ion-col>
+              <button ion-button color="purple" clear small icon-left (click)="like(post)">
+                <ion-icon name='thumbs-up'></ion-icon>
+                {{post.likes}} Likes
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="purple" clear small icon-left (click)="comment(post)">
+                <ion-icon name='text'></ion-icon>
+                {{post.comments}} Comments
+              </button>
+            </ion-col>
+            <ion-col center text-center>
+              <p>
+                {{post.timestamp}}
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </div>
+    </div>
+  </ion-content>
+
