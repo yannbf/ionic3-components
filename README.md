@@ -7,14 +7,22 @@ The content here is a mix of tutorials found online, a few adapted codepen stuff
 
 **HOPEFULLY** you will like this repo and feel like contributing, so please if you can, contribute so we can have even more amazing content!  
 
+## Ionic View Code: 5b5dc3a7
+
+If you just want to check this project out, you can use [Ionic View](http://view.ionic.io/) with the code on the title.
+*Please notice though, some plugins may **only work** when using a real device, so don't expect everything to work on ionic view.
+
+****
+
+
 ## Setup
 
-Requirements to use this starter:
+Requirements to use this project:
 
 ##### Node.js (https://nodejs.org/download/)
 
 ##### npm (Node Package Manager, it comes with node.js installation)
-Just in case, if you want to update to npm latest version:
+In case you're not with the latest version of npm:
 ```sh
 $ sudo npm install npm -g
 ```
