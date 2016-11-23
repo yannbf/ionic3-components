@@ -10,6 +10,7 @@ The content here is a mix of tutorials found online, a few adapted codepen stuff
 ## Ionic View Code: 5b5dc3a7
 
 If you just want to check this project out, you can use [Ionic View](http://view.ionic.io/) with the code on the title.
+
 Please notice though, some plugins may **only work** when using a real device, so don't expect everything to work on ionic view.
 
 ****
