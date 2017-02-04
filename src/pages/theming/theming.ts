@@ -11,6 +11,18 @@ export class ThemingPage {
   /*
     Thanks to Scott: https://github.com/ScottMBerger for this feature! 
   */
+  fontSize: any;
+  paillarde = {
+    title: 'oi',
+    categories: [
+      {
+        name: 'oasd'
+      },
+      {
+        name: 'oasasd'
+      }
+    ]
+  }
   constructor(public navCtrl: NavController, public global: AppState) {
   }
 

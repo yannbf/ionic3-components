@@ -1,4 +1,3 @@
-// import { TranslateService, TranslatePipe, TranslateLoader, TranslateStaticLoader } from 'ng2-translate/ng2-translate';
 import { ToastService } from '../../../providers/util/toast.service';
 import { AlertService } from '../../../providers/util/alert.service';
 import { NavController, App } from 'ionic-angular';
@@ -32,12 +31,10 @@ export class ProfileSettingsPage {
 
   constructor(private navCtrl: NavController, public alertService: AlertService,
     public toastCtrl: ToastService, public app: App) {
-    //private translate: TranslateService
 
   }
 
   toggleNotifications() {
-    // this.translate.use('pt-br');
     if (this.enableNotifications) {
       this.toastCtrl.create("Notifications enabled.");
     } else {

@@ -1,3 +1,4 @@
+import { ChartsPage } from '../pages/miscellaneous/charts/charts';
 // Global state (used for theming)
 import { AppState } from './app.global';
 
@@ -139,6 +140,7 @@ export const Pages = [
     ChatsPage,
     MessagesPage,
     BlogPostPage,
+    ChartsPage,
 
     // Cards
     CardListPage,

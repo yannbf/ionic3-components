@@ -1,3 +1,4 @@
+import { ChartsPage } from './charts/charts';
 import { CreditCardScanPage } from './credit-card-scan/credit-card-scan';
 import { BlogPostPage } from './blog-post/blog-post';
 import { ChatsPage } from './chat/chats';
@@ -25,6 +26,10 @@ export class MiscellaneousListPage {
             {
                 title: 'Tinder Cards',
                 page: TinderCardsPage
+            },
+            {
+                title: 'Charts',
+                page: ChartsPage
             },
             {
                 title: 'Countdown',

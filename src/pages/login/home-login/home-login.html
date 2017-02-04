@@ -1,0 +1,16 @@
+<ion-content padding>
+  <ion-content padding [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+    <img class="logo" src="assets/img/logo/logo.png" />
+    <div class="buttons">
+      <button ion-button class="login-button email" (click)="goToSignup()">{{'CREATE_ACCOUNT' | translate }}</button>
+      <button ion-button class="login-button google" (click)="goToLogin()">{{'LOGIN' | translate }}</button>
+    </div>
+    <!--<video #player playsinline autoplay muted loop poster="assets/video-cover.jpg" id="bgvid">
+    <source src="assets/background-480.mp4" type="video/mp4"> Your browser does not support the video tag.
+  </video>-->
+  </ion-content>
+  <!--<button class="goback-button disable-hover button button-ios button-clear button-clear-ios" clear="" ion-button=""><span class="button-inner">
+    <ion-icon name="arrow-back" role="img" class="icon icon-ios ion-ios-arrow-back" aria-label="arrow back" ng-reflect-name="arrow-back"></ion-icon>
+    Back
+  </span><div class="button-effect"></div></button>-->
+
