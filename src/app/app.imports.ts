@@ -14,7 +14,6 @@ import { ProfileOnePage } from '../pages/profile/profile-one/profile-one';
 import { ProfileTwoPage } from '../pages/profile/profile-two/profile-two';
 import { ProfileThreePage } from '../pages/profile/profile-three/profile-three';
 import { ProfileFourPage } from '../pages/profile/profile-four/profile-four';
-import { ProfileFivePage } from '../pages/profile/profile-five/profile-five';
 import { ProfileSettingsPage } from '../pages/profile/profile-settings/profile-settings';
 
 // Lists list
@@ -117,7 +116,6 @@ export const Pages = [
     ProfileTwoPage,
     ProfileThreePage,
     ProfileFourPage,
-    ProfileFivePage,
     ProfileSettingsPage,
 
     LoginListPage,

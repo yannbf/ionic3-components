@@ -53,6 +53,7 @@ export class ProfileFourPage {
   ionViewDidLoad() {
     console.log('Hello ProfileFour Page');
   }
+  
   follow() {
     this.following = !this.following;
     this.toastCtrl.create('Follow user clicked');

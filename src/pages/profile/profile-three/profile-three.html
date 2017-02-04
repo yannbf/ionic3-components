@@ -7,26 +7,60 @@
   <div class="card-profile">
     <div class="card-profile_visual"></div>
     <div class="card-profile_user-infos">
-      <span class="infos_name">Emma Watson</span>
-      <span class="infos_nick">@EmWatson</span>
+      <span class="infos_name">{{user.name}}</span>
+      <span class="infos_nick">{{user.twitter}}</span>
       <a href="#"></a>
     </div>
     <div class="card-profile_user-stats">
       <div class="stats-holder">
         <div class="user-stats">
           <strong>Tweets</strong>
-          <span>1,337</span>
+          <span>{{user.tweets}}</span>
         </div>
         <div class="user-stats">
           <strong>Following</strong>
-          <span>561</span>
+          <span>{{user.following}}</span>
         </div>
         <div class="user-stats">
           <strong>Followers</strong>
-          <span>718</span>
+          <span>{{user.followers}}</span>
         </div>
       </div>
     </div>
+    <div id="posts">
+        <ion-card *ngFor="let post of posts">
+          <ion-item>
+            <ion-avatar item-left>
+              <img [src]="user.profileImage">
+            </ion-avatar>
+            <h2 class="sticky">{{user.name}}</h2>
+            <p>{{post.date}}</p>
+          </ion-item>
+          <img [src]="post.postImageUrl" (click)="imageTapped(post)">
+          <ion-card-content>
+            <p>{{post.text}}</p>
+          </ion-card-content>
+          <ion-row>
+            <ion-col>
+              <button ion-button color="purple" clear small icon-left (click)="like(post)">
+                <ion-icon name='thumbs-up'></ion-icon>
+                {{post.likes}} Likes
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button color="purple" clear small icon-left (click)="comment(post)">
+                <ion-icon name='text'></ion-icon>
+                {{post.comments}} Comments
+              </button>
+            </ion-col>
+            <ion-col center text-center>
+              <p>
+                {{post.timestamp}}
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </div>
   </div>
 </ion-content>
 
