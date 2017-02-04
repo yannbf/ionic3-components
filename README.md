@@ -53,9 +53,11 @@ $ ionic serve
 ```
 
 
-CHANGELOG: 
+#CHANGELOG: 
 
+February 2nd, 2017
+- Added charts feature (under miscelaneous)
 
-#November 11th, 2016
+November 11th, 2016
 - Many fixes to make it run on device
-- Added Credit card scanning feature
+- Added Credit card scanning feature (under miscelaneous)
