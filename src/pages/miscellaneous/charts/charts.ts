@@ -32,10 +32,18 @@ export class ChartsPage {
     this.doughnutChart = this.getDoughnutChart();
     this.lineChart = this.getLineChart();
     this.radarChart = this.getRadarChart();
-    this.pieChart = this.getPieChart();
+
     this.polarAreaChart = this.getPolarAreaChart();
     this.bubbleChart = this.getBubbleChart();
     this.mixedChart = this.getMixedChart();
+    this.pieChart = this.getPieChart();
+  }
+
+  updateData() {
+    // After instantiating your chart, its data is accessible and can be changed anytime with the function update().
+    // It takes care of everything and even redraws the animations :D
+    this.pieChart.data.datasets[0].data = [Math.random() * 1000, Math.random() * 1000, Math.random() * 1000];
+    this.pieChart.update();
   }
 
   getChart(context, chartType, data, options?) {
