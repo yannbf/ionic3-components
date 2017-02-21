@@ -93,6 +93,7 @@ import { AlertService } from '../providers/util/alert.service';
 
 // Directives
 import { Timer } from '../components/countdown-timer/timer';
+import { SlidingDrawer } from '../components/sliding-drawer/sliding-drawer';
 import { TypingEffect } from '../components/typing-effect/typing-effect';
 
 // Pipes
@@ -200,6 +201,7 @@ export const Providers = [
 ]
 
 export const Directives = [
+    SlidingDrawer,
     Timer,
     TypingEffect,
 ]
