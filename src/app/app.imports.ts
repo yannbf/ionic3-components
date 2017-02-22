@@ -85,6 +85,7 @@ import { MessagesPage } from '../pages/miscellaneous/chat/messages/messages';
 import { ChatsPage } from '../pages/miscellaneous/chat/chats';
 import { BlogPostPage } from '../pages/miscellaneous/blog-post/blog-post';
 import { CreditCardScanPage } from '../pages/miscellaneous/credit-card-scan/credit-card-scan';
+import { RuntimePermissionsPage } from '../pages/miscellaneous/runtime-permissions/runtime-permissions';
 
 // Providers
 import { WeatherService } from '../pages/miscellaneous/weather/weather.service';
@@ -140,6 +141,7 @@ export const Pages = [
     MessagesPage,
     BlogPostPage,
     ChartsPage,
+    RuntimePermissionsPage,
 
     // Cards
     CardListPage,

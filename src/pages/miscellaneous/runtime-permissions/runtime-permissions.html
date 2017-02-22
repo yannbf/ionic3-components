@@ -1,0 +1,46 @@
+<!--
+  Generated template for the RuntimePermissions page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>RuntimePermissions</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button full (click)="requestPermission(PERMISSION.READ_EXTERNAL)">Read External</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button full (click)="requestPermission(PERMISSION.WRITE_EXTERNAL)">Write External</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button full (click)="requestPermission(PERMISSION.CAMERA)">Use Camera</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button full (click)="requestPermission(PERMISSION.READ_CONTACTS)">Read Contacts</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button full (click)="requestPermission(PERMISSION.RECORD_AUDIO)">Record Audio</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button full (click)="requestPermission(PERMISSION.CALL_PHONE)">Call Phone</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <button ion-button full (click)="requestAllPermissions()">All requests at once</button>
+
+
+</ion-content>

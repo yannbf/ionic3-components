@@ -10,6 +10,7 @@ import { CountdownOnePage } from './countdown/countdown';
 import { TestimonialsPage } from './testimonials/testimonials';
 import { TinderCardsPage } from './tinder-cards/tinder-cards';
 import { Component } from '@angular/core';
+import { RuntimePermissionsPage } from './runtime-permissions/runtime-permissions';
 
 import { NavController, MenuController } from 'ionic-angular';
 
@@ -62,6 +63,10 @@ export class MiscellaneousListPage {
             {
                 title: 'Blog Post',
                 page: BlogPostPage
+            },
+            {
+                title: 'Runtime User Permissions',
+                page: RuntimePermissionsPage
             },
         ]
     }
