@@ -1,0 +1,1 @@
+This amazing component was adapted for ionic 2 and was originally created for ionic 1 by [macchie](https://github.com/macchie/popupMenu) and can be found [here](https://github.com/macchie/popupMenu).

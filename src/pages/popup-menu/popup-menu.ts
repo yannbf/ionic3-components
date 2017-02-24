@@ -22,7 +22,6 @@ export class PopupMenuListPage {
   }
 
   itemTapped(event, item) {
-    console.log('asjdiashd');
     this.navCtrl.push(item.page);
   }
 }

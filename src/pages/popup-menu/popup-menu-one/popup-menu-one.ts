@@ -13,10 +13,6 @@ export class PopupMenuOnePage {
     return this.menu_is_open = !this.menu_is_open;
   };
 
-  ionViewDidLoad() {
-    console.log('Hello ProfileTwo Page');
-  }
-
   goToAccount() {
     alert('Account clicked.');
     this.togglePopupMenu();
