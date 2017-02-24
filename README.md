@@ -7,7 +7,7 @@ The content here is a mix of tutorials found online, a few adapted codepen stuff
 
 **HOPEFULLY** you will like this repo and feel like contributing, so please if you can, contribute so we can have even more amazing content!
 
-## Ionic View Code: 5b5dc3a7
+## Ionic View Code: bd1b6d71
 
 If you just want to check this project out, you can use [Ionic View](http://view.ionic.io/) with the code on the title.
 
