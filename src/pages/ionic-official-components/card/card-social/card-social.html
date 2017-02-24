@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Card with Images</ion-title>
+    <ion-title>Social Cards</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content>
@@ -9,7 +9,7 @@
       <ion-avatar item-left>
         <img [src]="card.avatarImageUrl" (click)="avatarTapped(card)">
       </ion-avatar>
-      <h2 class="sticky">{{card.name}}</h2>
+      <h2>{{card.name}}</h2>
       <p>{{card.date}}</p>
     </ion-item>
     <img [src]="card.postImageUrl" (click)="imageTapped(card)">
@@ -37,4 +37,3 @@
     </ion-row>
   </ion-card>
 </ion-content>
-
