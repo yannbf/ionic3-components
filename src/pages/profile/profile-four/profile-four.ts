@@ -1,5 +1,4 @@
 import { ToastService } from '../../../providers/util/toast.service';
-import { AlertService } from '../../../providers/util/alert.service';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -53,7 +52,7 @@ export class ProfileFourPage {
   ionViewDidLoad() {
     console.log('Hello ProfileFour Page');
   }
-  
+
   follow() {
     this.following = !this.following;
     this.toastCtrl.create('Follow user clicked');

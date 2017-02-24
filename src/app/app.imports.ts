@@ -1,3 +1,4 @@
+import { IonicOfficialComponentsPage } from '../pages/ionic-official-components/ionic-official-components';
 import { ChartsPage } from '../pages/miscellaneous/charts/charts';
 // Global state (used for theming)
 import { AppState } from './app.global';
@@ -32,18 +33,18 @@ import { PopupMenuListPage } from '../pages/popup-menu/popup-menu';
 import { PopupMenuOnePage } from '../pages/popup-menu/popup-menu-one/popup-menu-one';
 
 // Cards list
-import { CardListPage } from '../pages/card/card';
-import { CardSocialPage } from '../pages/card/card-social/card-social';
-import { CardImagePage } from '../pages/card/card-image/card-image';
-import { CardMapPage } from '../pages/card/card-map/card-map';
-import { CardBackgroundPage } from '../pages/card/card-background/card-background';
-import { CardBadgePage } from '../pages/card/card-badge/card-badge';
+import { CardListPage } from '../pages/ionic-official-components/card/card';
+import { CardSocialPage } from '../pages/ionic-official-components/card/card-social/card-social';
+import { CardImagePage } from '../pages/ionic-official-components/card/card-image/card-image';
+import { CardMapPage } from '../pages/ionic-official-components/card/card-map/card-map';
+import { CardBackgroundPage } from '../pages/ionic-official-components/card/card-background/card-background';
+import { CardBadgePage } from '../pages/ionic-official-components/card/card-badge/card-badge';
 
 // Buttons list
-import { ButtonsListPage } from '../pages/button/button';
-import { ButtonStylesPage } from '../pages/button/button-styles/button-styles';
-import { IconButtonsPage } from '../pages/button/icon-buttons/icon-buttons';
-import { ButtonComponentsPage } from '../pages/button/button-components/button-components';
+import { ButtonsListPage } from '../pages/ionic-official-components/button/button';
+import { ButtonStylesPage } from '../pages/ionic-official-components/button/button-styles/button-styles';
+import { IconButtonsPage } from '../pages/ionic-official-components/button/icon-buttons/icon-buttons';
+import { ButtonComponentsPage } from '../pages/ionic-official-components/button/button-components/button-components';
 
 // Modals
 import { ModalsPage } from '../pages/modal/modal';
@@ -56,7 +57,7 @@ import { SignupModalPage } from '../pages/modal/small-modal/signup-modal/signup-
 import { WalkthroughModalPage } from '../pages/modal/small-modal/walkthrough-modal/walkthrough-modal';
 
 // Alerts
-import { AlertsPage } from '../pages/alert/alert';
+import { AlertsPage } from '../pages/ionic-official-components/alert/alert';
 
 // Slides
 import { SlidesPage } from '../pages/slide/slide';
@@ -112,6 +113,31 @@ export const Pages = [
     // Theming
     ThemingPage,
 
+    // Ionic Official Components
+    IonicOfficialComponentsPage,
+
+    // Buttons
+    ButtonsListPage,
+    IconButtonsPage,
+    ButtonComponentsPage,
+    ButtonStylesPage,
+
+    // Lists
+    ListsPage,
+    SettingsListPage,
+    SlidingItemListPage,
+
+    // Alerts
+    AlertsPage,
+
+    // Cards
+    CardListPage,
+    CardBackgroundPage,
+    CardMapPage,
+    CardImagePage,
+    CardSocialPage,
+    CardBadgePage,
+
     // Profile
     ProfileListPage,
     ProfileOnePage,
@@ -143,13 +169,6 @@ export const Pages = [
     ChartsPage,
     RuntimePermissionsPage,
 
-    // Cards
-    CardListPage,
-    CardBackgroundPage,
-    CardMapPage,
-    CardImagePage,
-    CardSocialPage,
-    CardBadgePage,
 
     // Modals
     ModalsPage,
@@ -160,20 +179,6 @@ export const Pages = [
     SignupModalPage,
     WalkthroughModalPage,
     HintModalPage,
-
-    // Buttons
-    ButtonsListPage,
-    IconButtonsPage,
-    ButtonComponentsPage,
-    ButtonStylesPage,
-
-    // Lists
-    ListsPage,
-    SettingsListPage,
-    SlidingItemListPage,
-
-    // Alerts
-    AlertsPage,
 
     // Slides
     SlidesPage,

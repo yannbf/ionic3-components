@@ -1,12 +1,10 @@
+import { IonicOfficialComponentsPage } from '../pages/ionic-official-components/ionic-official-components';
 import { LoginListPage } from '../pages/login/login';
 import { ThemingPage } from '../pages/theming/theming';
 import { AppState } from './app.global';
 import { SlidesPage } from '../pages/slide/slide';
-import { AlertsPage } from '../pages/alert/alert';
 import { ModalsPage } from '../pages/modal/modal';
 import { ListsPage } from '../pages/list/list';
-import { ButtonsListPage } from '../pages/button/button';
-import { CardListPage } from '../pages/card/card';
 import { PopupMenuListPage } from '../pages/popup-menu/popup-menu';
 import { MiscellaneousListPage } from '../pages/miscellaneous/miscellaneous';
 import { ProfileListPage } from '../pages/profile/profile';
@@ -32,18 +30,16 @@ export class MyApp {
 
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Theming', component: ThemingPage },
-      { title: 'Buttons', component: ButtonsListPage },
-      { title: 'Alerts', component: AlertsPage },
+      { title: 'Ionic Official Components', component: IonicOfficialComponentsPage },
+      { title: 'Login', component: LoginListPage },
       { title: 'Lists', component: ListsPage },
-      { title: 'Cards', component: CardListPage },
       { title: 'Modals', component: ModalsPage },
-      // Removed for now as there were breaking changes in slides
-      { title: 'Slides', component: SlidesPage },
+      { title: 'Miscellaneous', component: MiscellaneousListPage },
       { title: 'Popup Menu', component: PopupMenuListPage },
       { title: 'Profile', component: ProfileListPage },
-      { title: 'Login', component: LoginListPage },
-      { title: 'Miscellaneous', component: MiscellaneousListPage }
+      // Removed for now as there were breaking changes in slides
+      // { title: 'Slides', component: SlidesPage },
+      { title: 'Theming', component: ThemingPage },
     ];
 
   }

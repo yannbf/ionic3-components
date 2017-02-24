@@ -66,7 +66,7 @@ export class AlertsPage {
         {
           text: 'Save',
           handler: (data: any) => {
-            console.log('Saved clicked');
+            console.log('Saved clicked', data);
           }
         }
       ]
