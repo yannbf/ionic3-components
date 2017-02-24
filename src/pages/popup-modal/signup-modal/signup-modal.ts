@@ -6,9 +6,6 @@ import { ViewController } from 'ionic-angular';
   templateUrl: 'signup-modal.html'
 })
 export class SignupModalPage {
-  slideOptions = {
-    pager: true
-  };
 
   slides = [{
     id: 1,
@@ -27,11 +24,11 @@ export class SignupModalPage {
   }
 
   signup() {
-
+    this.viewCtrl.dismiss();
   }
 
   login() {
-
+    this.viewCtrl.dismiss();
   }
 
   dismiss() {

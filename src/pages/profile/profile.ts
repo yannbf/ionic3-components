@@ -23,10 +23,10 @@ export class ProfileListPage {
         title: 'Type One',
         page: ProfileOnePage
       },
-      {
-        title: 'Type Two',
-        page: ProfileTwoPage
-      },
+      // {
+      //   title: 'Type Two',
+      //   page: ProfileTwoPage
+      // },
       {
         title: 'Type Three',
         page: ProfileThreePage

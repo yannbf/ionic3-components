@@ -5,7 +5,6 @@ import { ChatsPage } from './chat/chats';
 import { WeatherPage } from './weather/weather';
 import { CurrencyConverterPage } from './currency-converter/currency-converter';
 // import { ClockPage } from './clock/clock';
-import { ParallaxScrollerPage } from './parallax-scroller/parallax-scroller';
 import { CountdownOnePage } from './countdown/countdown';
 import { TestimonialsPage } from './testimonials/testimonials';
 import { TinderCardsPage } from './tinder-cards/tinder-cards';
@@ -25,49 +24,45 @@ export class MiscellaneousListPage {
     constructor(public navCtrl: NavController, public menu: MenuController) {
         this.items = [
             {
-                title: 'Tinder Cards',
-                page: TinderCardsPage
+                title: 'Blog Post',
+                page: BlogPostPage
             },
             {
                 title: 'Charts',
                 page: ChartsPage
             },
             {
+                title: 'Chat',
+                page: ChatsPage
+            },
+            {
                 title: 'Countdown',
                 page: CountdownOnePage
+            },
+            {
+                title: 'Credit Card Scanner',
+                page: CreditCardScanPage
+            },
+            // {
+            //     title: 'Currency Converter',
+            //     page: CurrencyConverterPage
+            // },
+            {
+                title: 'Runtime User Permissions',
+                page: RuntimePermissionsPage
             },
             {
                 title: 'Testimonials',
                 page: TestimonialsPage
             },
             {
-                title: 'Parallax Horizontal Scroller',
-                page: ParallaxScrollerPage
+                title: 'Tinder Cards',
+                page: TinderCardsPage
             },
-            {
-                title: 'Currency Converter',
-                page: CurrencyConverterPage
-            },
-            {
-                title: 'Credit Card Scanner',
-                page: CreditCardScanPage
-            },
-            {
-                title: 'Weather',
-                page: WeatherPage
-            },
-            {
-                title: 'Chat',
-                page: ChatsPage
-            },
-            {
-                title: 'Blog Post',
-                page: BlogPostPage
-            },
-            {
-                title: 'Runtime User Permissions',
-                page: RuntimePermissionsPage
-            },
+            // {
+            //     title: 'Weather',
+            //     page: WeatherPage
+            // },
         ]
     }
 

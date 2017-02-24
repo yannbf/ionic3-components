@@ -18,7 +18,7 @@ page-walkthrough-modal {
   ion-slides,
   .swiper-container,
   {
-    height: 85%;
+    height: 90%;
     border-radius: 8% 8% 0 0;
   }
   .slider-item {
@@ -55,11 +55,3 @@ page-walkthrough-modal {
     margin: 0;
   }
 }
-
-ion-modal {
-  // transparent black background overlay
-  background-color: rgba(0, 0, 0, .5) !important;
-  transition: opacity .25s ease-in-out;
-  padding: 50% 10%;
-}
-

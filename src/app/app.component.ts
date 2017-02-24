@@ -3,7 +3,7 @@ import { LoginListPage } from '../pages/login/login';
 import { ThemingPage } from '../pages/theming/theming';
 import { AppState } from './app.global';
 import { SlidesPage } from '../pages/slide/slide';
-import { ModalsPage } from '../pages/modal/modal';
+import { PopupModalsPage } from '../pages/popup-modal/popup-modal';
 import { ListsPage } from '../pages/list/list';
 import { PopupMenuListPage } from '../pages/popup-menu/popup-menu';
 import { MiscellaneousListPage } from '../pages/miscellaneous/miscellaneous';
@@ -33,7 +33,7 @@ export class MyApp {
       { title: 'Ionic Official Components', component: IonicOfficialComponentsPage },
       { title: 'Login', component: LoginListPage },
       { title: 'Lists', component: ListsPage },
-      { title: 'Modals', component: ModalsPage },
+      { title: 'Popup Modal', component: PopupModalsPage },
       { title: 'Miscellaneous', component: MiscellaneousListPage },
       { title: 'Popup Menu', component: PopupMenuListPage },
       { title: 'Profile', component: ProfileListPage },

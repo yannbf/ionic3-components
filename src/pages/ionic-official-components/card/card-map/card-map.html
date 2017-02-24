@@ -19,8 +19,8 @@
       <p>{{place.address}}</p>
     </ion-item>
     <ion-item actions>
-      <span item-left color="secondary" class="item-bold">{{card.ETA}}</span>
-      <span item-left color="subtle">{{card.distance}}</span>
+      <span item-left ion-text color="secondary" class="item-bold">{{card.ETA}}</span>
+      <span item-left ion-text color="subtle">{{card.distance}}</span>
       <button ion-button color="primary" clear item-right icon-left (click)="getDirections(card)">
       <ion-icon name='navigate'></ion-icon>
       Start
@@ -28,4 +28,3 @@
     </ion-item>
   </ion-card>
 </ion-content>
-

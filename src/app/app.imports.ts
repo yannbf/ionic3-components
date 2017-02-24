@@ -47,14 +47,10 @@ import { IconButtonsPage } from '../pages/ionic-official-components/button/icon-
 import { ButtonComponentsPage } from '../pages/ionic-official-components/button/button-components/button-components';
 
 // Modals
-import { ModalsPage } from '../pages/modal/modal';
-import { FullModalsPage } from '../pages/modal/full-modal/full-modal';
-import { BasicModalPage } from '../pages/modal/full-modal/basic-modal/basic-modal';
-import { ParamsModalPage } from '../pages/modal/full-modal/params-modal/params-modal';
-import { SmallModalsPage } from '../pages/modal/small-modal/small-modal';
-import { HintModalPage } from '../pages/modal/small-modal/hint-modal/hint-modal';
-import { SignupModalPage } from '../pages/modal/small-modal/signup-modal/signup-modal';
-import { WalkthroughModalPage } from '../pages/modal/small-modal/walkthrough-modal/walkthrough-modal';
+import { PopupModalsPage } from '../pages/popup-modal/popup-modal';
+import { HintModalPage } from '../pages/popup-modal/hint-modal/hint-modal';
+import { SignupModalPage } from '../pages/popup-modal/signup-modal/signup-modal';
+import { WalkthroughModalPage } from '../pages/popup-modal/walkthrough-modal/walkthrough-modal';
 
 // Alerts
 import { AlertsPage } from '../pages/ionic-official-components/alert/alert';
@@ -79,7 +75,6 @@ import { ClockPage } from '../pages/miscellaneous/clock/clock';
 import { CountdownOnePage } from '../pages/miscellaneous/countdown/countdown';
 import { TinderCardsPage } from '../pages/miscellaneous/tinder-cards/tinder-cards';
 import { TestimonialsPage } from '../pages/miscellaneous/testimonials/testimonials';
-import { ParallaxScrollerPage } from '../pages/miscellaneous/parallax-scroller/parallax-scroller';
 import { CurrencyConverterPage } from '../pages/miscellaneous/currency-converter/currency-converter';
 import { WeatherPage } from '../pages/miscellaneous/weather/weather';
 import { MessagesPage } from '../pages/miscellaneous/chat/messages/messages';
@@ -158,7 +153,6 @@ export const Pages = [
     TestimonialsPage,
     TinderCardsPage,
     CountdownOnePage,
-    ParallaxScrollerPage,
     CurrencyConverterPage,
     CreditCardScanPage,
     ClockPage,
@@ -171,11 +165,7 @@ export const Pages = [
 
 
     // Modals
-    ModalsPage,
-    FullModalsPage,
-    BasicModalPage,
-    ParamsModalPage,
-    SmallModalsPage,
+    PopupModalsPage,
     SignupModalPage,
     WalkthroughModalPage,
     HintModalPage,

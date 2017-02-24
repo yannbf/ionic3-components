@@ -14,10 +14,10 @@ page-signup-modal {
   }
   ion-slides,
   .swiper-container {
-    height: 35vh;
+    height: 30vh;
   }
   .slider-item {
-    height: 35vh;
+    height: 30vh;
     width: 100%;
     background-size: cover;
   }
@@ -29,11 +29,3 @@ page-signup-modal {
     border-radius: 3%;
   }
 }
-
-// ion-modal {
-//   // transparent black background overlay
-//   background-color: rgba(0, 0, 0, .5) !important;
-//   transition: opacity .25s ease-in-out;
-//   padding: 30% 10%;
-// }
-

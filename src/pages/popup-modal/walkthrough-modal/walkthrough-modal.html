@@ -1,5 +1,5 @@
 <ion-content [style.background-color]="color" class="round">
-  <ion-slides pager [options]="slideOptions" class="round-top">
+  <ion-slides pager class="round-top">
     <ion-slide *ngFor="let slide of slides" class="text-center slider-item" [ngStyle]="{'background-image': 'url(' + slide.imageUrl +')'}">
       <div class="slide-text">
         <h2>{{slide.title}}</h2>
@@ -9,4 +9,3 @@
   </ion-slides>
   <button ion-button full class="footer-button" (click)="dismiss()">Let's get started!</button>
 </ion-content>
-
