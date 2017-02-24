@@ -13,7 +13,7 @@
       <ion-option value="fade">Fade</ion-option>
     </ion-select>
   </ion-item>
-  <ion-slides #slider [options]="options" (ionDidChange)="onSlideChanged()" *ngIf="showSlide" [dir]="rtl">
+  <ion-slides #slider autoplay="2000" effect="{{slideEffect}}" (ionSlideDidChange)="onSlideChanged()" *ngIf="showSlide">
     <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
       <h2>{{slide.title}}</h2>
     </ion-slide>
@@ -24,4 +24,3 @@
     </div>
   </ion-slides>
 </ion-content>
-

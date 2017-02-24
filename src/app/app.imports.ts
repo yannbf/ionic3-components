@@ -85,6 +85,7 @@ import { MessagesPage } from '../pages/miscellaneous/chat/messages/messages';
 import { ChatsPage } from '../pages/miscellaneous/chat/chats';
 import { BlogPostPage } from '../pages/miscellaneous/blog-post/blog-post';
 import { CreditCardScanPage } from '../pages/miscellaneous/credit-card-scan/credit-card-scan';
+import { RuntimePermissionsPage } from '../pages/miscellaneous/runtime-permissions/runtime-permissions';
 
 // Providers
 import { WeatherService } from '../pages/miscellaneous/weather/weather.service';
@@ -93,6 +94,7 @@ import { AlertService } from '../providers/util/alert.service';
 
 // Directives
 import { Timer } from '../components/countdown-timer/timer';
+import { SlidingDrawer } from '../components/sliding-drawer/sliding-drawer';
 import { TypingEffect } from '../components/typing-effect/typing-effect';
 
 // Pipes
@@ -139,6 +141,7 @@ export const Pages = [
     MessagesPage,
     BlogPostPage,
     ChartsPage,
+    RuntimePermissionsPage,
 
     // Cards
     CardListPage,
@@ -200,6 +203,7 @@ export const Providers = [
 ]
 
 export const Directives = [
+    SlidingDrawer,
     Timer,
     TypingEffect,
 ]

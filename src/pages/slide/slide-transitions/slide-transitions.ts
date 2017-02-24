@@ -13,45 +13,7 @@ export class SlideTransitionsPage {
   showArrows = false;
   showSlide = true;
 
-  slideOptions = {
-    pager: true,
-    autoplay: 2000,
-    paginationClickable: true,
-    autoplayDisableOnInteraction: false
-  };
-
-  cubeOptions = {
-    effect: 'cube',
-    cube: {
-      // For better perfomance, turn shadows off.
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 20,
-      shadowScale: 0.94
-    },
-    pager: true,
-    speed: 600,
-    autoplay: 2000,
-    paginationClickable: true,
-  }
-
-  coverflowOptions = {
-    coverflow: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      // For better perfomance, turn shadows off.
-      slideShadows: true
-    },
-    pager: true,
-    autoplay: 2000,
-    speed: 600,
-    effect: 'coverflow',
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    paginationClickable: true,
-  }
+  slideEffect = "";
 
   fadeOptions = {
     // pager: true,
@@ -95,31 +57,14 @@ export class SlideTransitionsPage {
   }
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
-    this.options = this.slideOptions;
   }
 
-  transition = 'Slide';
+  transition = 'slide';
 
   changeSlideStyle() {
-    this.showArrows = this.showSlide = false;
-    switch (this.transition) {
-      case 'slide':
-        this.options = this.slideOptions;
-        break;
-      case 'cube':
-        this.options = this.cubeOptions;
-        break;
-      case 'coverflow':
-        this.options = this.coverflowOptions;
-        break;
-      case 'fade':
-        this.showArrows = true;
-        this.options = this.fadeOptions;
-        break;
-    }
-
+    this.slider.noSwiping = true;
     // Hack just to make the styles change. Without it, changing options dinamically won't work.
     // NOTE: You DON'T need to do this if you are using only one type of slider.
-    setTimeout(() => this.showSlide = true, 10);
+    setTimeout(() => this.showSlide = true, 100);
   }
 }

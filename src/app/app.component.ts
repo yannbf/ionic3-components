@@ -38,6 +38,7 @@ export class MyApp {
       { title: 'Lists', component: ListsPage },
       { title: 'Cards', component: CardListPage },
       { title: 'Modals', component: ModalsPage },
+      // Removed for now as there were breaking changes in slides
       { title: 'Slides', component: SlidesPage },
       { title: 'Popup Menu', component: PopupMenuListPage },
       { title: 'Profile', component: ProfileListPage },

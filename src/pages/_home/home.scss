@@ -2,5 +2,12 @@ page-home {
   p {
     text-align: justify;
   }
+  sliding-drawer {
+      background-color: #34495e !important;
+  }
+
+  sliding-drawer .content {
+      padding: 20px;
+  }
 }
 
