@@ -1,9 +1,8 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Profile Three</ion-title>
-  </ion-navbar>
-</ion-header>
-<ion-content class="container">
+<ion-content class="container transparent-header">
+  <ion-header>
+    <ion-navbar>
+    </ion-navbar>
+  </ion-header>
   <div class="card-profile">
     <div class="card-profile_visual"></div>
     <div class="card-profile_user-infos">
@@ -28,39 +27,38 @@
       </div>
     </div>
     <div id="posts">
-        <ion-card *ngFor="let post of posts">
-          <ion-item>
-            <ion-avatar item-left>
-              <img [src]="user.profileImage">
-            </ion-avatar>
-            <h2 class="sticky">{{user.name}}</h2>
-            <p>{{post.date}}</p>
-          </ion-item>
-          <img [src]="post.postImageUrl" (click)="imageTapped(post)">
-          <ion-card-content>
-            <p>{{post.text}}</p>
-          </ion-card-content>
-          <ion-row>
-            <ion-col>
-              <button ion-button color="purple" clear small icon-left (click)="like(post)">
+      <ion-card *ngFor="let post of posts">
+        <ion-item>
+          <ion-avatar item-left>
+            <img [src]="user.profileImage">
+          </ion-avatar>
+          <h2 class="sticky">{{user.name}}</h2>
+          <p>{{post.date}}</p>
+        </ion-item>
+        <img [src]="post.postImageUrl" (click)="imageTapped(post)">
+        <ion-card-content>
+          <p>{{post.text}}</p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col>
+            <button ion-button color="purple" clear small icon-left (click)="like(post)">
                 <ion-icon name='thumbs-up'></ion-icon>
                 {{post.likes}} Likes
               </button>
-            </ion-col>
-            <ion-col>
-              <button ion-button color="purple" clear small icon-left (click)="comment(post)">
+          </ion-col>
+          <ion-col>
+            <button ion-button color="purple" clear small icon-left (click)="comment(post)">
                 <ion-icon name='text'></ion-icon>
                 {{post.comments}} Comments
               </button>
-            </ion-col>
-            <ion-col center text-center>
-              <p>
-                {{post.timestamp}}
-              </p>
-            </ion-col>
-          </ion-row>
-        </ion-card>
-      </div>
+          </ion-col>
+          <ion-col center text-center>
+            <p>
+              {{post.timestamp}}
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </div>
   </div>
 </ion-content>
-

@@ -41,3 +41,27 @@
 .round {
   border-radius: 3%;
 }
+
+.transparent-header {
+  // This is just to make the header transparent and button/icon with white color
+  .toolbar-content,
+  .back-button {
+    color: white;
+  }
+  .toolbar-background,
+  ion-navbar,
+  ion-header {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+  .header-md::after,
+  .toolbar-background-ios {
+    background-image: none;
+    border-bottom: 0;
+  }
+  .header-ios .toolbar-background-ios,
+  .footer-ios .toolbar-background-ios {
+    border: 0;
+  }
+  // ---
+}

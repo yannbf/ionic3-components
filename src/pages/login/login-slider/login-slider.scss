@@ -1,21 +1,5 @@
 page-login-slider {
   $base-color: rgb(24, 72, 90);
-  // This is just to make the header transparent
-  .toolbar-content {
-    color: white;
-  }
-  .toolbar-background,
-  ion-navbar,
-  ion-header {
-    background: transparent !important;
-    background-color: transparent !important;
-  }
-  .header-md::after,
-  .toolbar-background-ios {
-    background-image: none;
-    border-bottom: 0;
-  }
-  // ----------
   // Fullscreen centered image background
   ion-content {
     background-size: cover;
@@ -23,7 +7,7 @@ page-login-slider {
     background-repeat: no-repeat;
     border-color: transparent;
   }
-  // Slider 
+  // Slider
   .content-slider {
     ion-slides,
     .swiper-container {
@@ -96,7 +80,7 @@ page-login-slider {
     span {
       color: $base-color !important;
     }
-    // border: 1px solid #fff; 
+    // border: 1px solid #fff;
   }
   .forgot-button {
     font-weight: bold;
@@ -130,4 +114,3 @@ page-login-slider {
     width: 200px;
   }
 }
-

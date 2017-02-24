@@ -1,21 +1,4 @@
 page-profile-four {
-  // This is just to make the header transparent and button/icon with white color
-  .toolbar-content,
-  .back-button {
-    color: white;
-  }
-  .toolbar-background,
-  ion-navbar,
-  ion-header {
-    background: transparent !important;
-    background-color: transparent !important;
-  }
-  .header-md::after,
-  .toolbar-background-ios {
-    background-image: none;
-    border-bottom: 0;
-  }
-  // ---
   ion-content {
     background: linear-gradient(0deg, #eeeef1 0%, white 80%, white 100%);
   }
@@ -103,4 +86,3 @@ page-profile-four {
     text-align: justify;
   }
 }
-

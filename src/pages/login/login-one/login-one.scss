@@ -1,20 +1,4 @@
 page-login-one {
-  // This is just to make the header transparent
-  .toolbar-content {
-    color: white;
-  }
-  .toolbar-background,
-  ion-navbar,
-  ion-header {
-    background: transparent !important;
-    background-color: transparent !important;
-  }
-  .header-md::after,
-  .toolbar-background-ios {
-    background-image: none;
-    border-bottom: 0;
-  }
-  // ----------
   // Fullscreen centered image background
   ion-content {
     background-size: cover;
@@ -64,4 +48,3 @@ page-login-one {
     background-color: #39acdc;
   }
 }
-
