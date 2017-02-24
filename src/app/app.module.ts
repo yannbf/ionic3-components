@@ -1,6 +1,8 @@
+import { NgModule, ErrorHandler } from '@angular/core';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { NgModule } from '@angular/core';
-import { IonicApp, IonicModule } from 'ionic-angular';
+import { Page1 } from '../pages/page1/page1';
+import { Page2 } from '../pages/page2/page2';
 import { SwingModule } from 'angular2-swing';
 
 import { Pages, Directives, Pipes, Providers } from './app.imports';
@@ -13,7 +15,7 @@ import { Pages, Directives, Pipes, Providers } from './app.imports';
     // Pages
     Pages,
 
-    // directives    
+    // directives
     Directives,
 
     // pipes
@@ -28,6 +30,6 @@ import { Pages, Directives, Pipes, Providers } from './app.imports';
     MyApp,
     Pages
   ],
-  providers: [Providers]
+  providers: [Providers, { provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
 export class AppModule { }
