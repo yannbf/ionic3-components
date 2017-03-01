@@ -12,7 +12,7 @@ export class CameraProvider {
   }
 
   getPictureFromPhotoLibrary() {
-    return this.getImage(Camera.PictureSourceType.PHOTOLIBRARY, true);
+    return this.getImage(Camera.PictureSourceType.PHOTOLIBRARY);
   }
 
   // This method takes optional parameters to make it more customizable
