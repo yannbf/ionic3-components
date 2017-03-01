@@ -1,3 +1,4 @@
+import { SideMenuPage } from '../pages/side-menu/side-menu';
 import { IonicOfficialComponentsPage } from '../pages/ionic-official-components/ionic-official-components';
 import { LoginListPage } from '../pages/login/login';
 import { ThemingPage } from '../pages/theming/theming';
@@ -37,6 +38,7 @@ export class MyApp {
       { title: 'Miscellaneous', component: MiscellaneousListPage },
       { title: 'Popup Menu', component: PopupMenuListPage },
       { title: 'Profile', component: ProfileListPage },
+      { title: 'Side Menu', component: SideMenuPage },
       // Removed for now as there were breaking changes in slides
       // { title: 'Slides', component: SlidesPage },
       { title: 'Theming', component: ThemingPage },

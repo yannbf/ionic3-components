@@ -1,4 +1,5 @@
 <div class="{{global.state['theme']}}">
+  <!--Default Menu-->
   <ion-menu [content]="content" id="menu-components" class="animated-menu">
     <ion-header>
       <ion-toolbar>
@@ -12,6 +13,38 @@
       </button>
       </ion-list>
     </ion-content>
+  </ion-menu>
+  <!--Side Menu with avatar-->
+  <ion-menu [content]="content" id="menu-avatar" class="animated-menu">
+    <ion-content>
+      <ion-row style="align-items:center;">
+        <ion-col width-25>
+          <img class="round" [src]="chosenPicture || placeholder" onerror="this.src='assets/img/avatar/girl-avatar.png'" />
+        </ion-col>
+        <ion-col width-50>
+          <img class="round" [src]="chosenPicture || placeholder" onerror="this.src='assets/img/avatar/girl-avatar.png'" />
+        </ion-col>
+        <ion-col width-25>
+          <img class="round" [src]="chosenPicture || placeholder" onerror="this.src='assets/img/avatar/girl-avatar.png'" />
+        </ion-col>
+      </ion-row>
+      <ion-row style="justify-content: center;">
+        <h3>Paula Bolliger</h3>
+      </ion-row>
+      <ion-list>
+        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          {{p.title}}
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <!--Right side menu-->
+  <ion-menu class="right-side-menu" side="right" [content]="content" id="menu-right">
+    <ion-list>
+      <!--<button menuClose icon-only ion-item *ngFor="let p of pages">
+        </button>-->
+      <ion-icon ion-item *ngFor="let p of pages" name="home"></ion-icon>
+    </ion-list>
   </ion-menu>
   <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
   <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

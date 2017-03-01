@@ -39,7 +39,7 @@
 }
 
 .round {
-  border-radius: 3%;
+  border-radius: 50%;
 }
 
 .transparent-header {
@@ -64,4 +64,12 @@
     border: 0;
   }
   // ---
+}
+
+// right side menu
+.right-side-menu {
+  .menu-inner {
+    width: 10vh;
+    background: rgba(120, 40, 215, .8);
+  }
 }
