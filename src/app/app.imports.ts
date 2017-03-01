@@ -1,10 +1,10 @@
-import { IonicOfficialComponentsPage } from '../pages/ionic-official-components/ionic-official-components';
-import { ChartsPage } from '../pages/miscellaneous/charts/charts';
 // Global state (used for theming)
 import { AppState } from './app.global';
 
 // Home Page
 import { HomePage } from '../pages/_home/home';
+
+import { IonicOfficialComponentsPage } from '../pages/ionic-official-components/ionic-official-components';
 
 // Theme
 import { ThemingPage } from '../pages/theming/theming';
@@ -82,11 +82,14 @@ import { ChatsPage } from '../pages/miscellaneous/chat/chats';
 import { BlogPostPage } from '../pages/miscellaneous/blog-post/blog-post';
 import { CreditCardScanPage } from '../pages/miscellaneous/credit-card-scan/credit-card-scan';
 import { RuntimePermissionsPage } from '../pages/miscellaneous/runtime-permissions/runtime-permissions';
+import { ChartsPage } from '../pages/miscellaneous/charts/charts';
+import { GetImagePage } from '../pages/miscellaneous/get-image/get-image';
 
 // Providers
 import { WeatherService } from '../pages/miscellaneous/weather/weather.service';
 import { ToastService } from '../providers/util/toast.service';
 import { AlertService } from '../providers/util/alert.service';
+import { CameraProvider } from '../providers/util/camera.provider';
 
 // Directives
 import { Timer } from '../components/countdown-timer/timer';
@@ -162,7 +165,7 @@ export const Pages = [
     BlogPostPage,
     ChartsPage,
     RuntimePermissionsPage,
-
+    GetImagePage,
 
     // Modals
     PopupModalsPage,
@@ -194,7 +197,7 @@ export const Pipes = [
 ]
 
 export const Providers = [
-    WeatherService, AlertService, ToastService, AppState
+    WeatherService, AlertService, ToastService, AppState, CameraProvider
 ]
 
 export const Directives = [

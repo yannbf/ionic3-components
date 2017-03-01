@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Get Image</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-avatar (click)="changePicture()">
+    <img [src]="chosenPicture || placeholder" onerror="this.src='assets/img/avatar/girl-avatar.png'" />
+    <button ion-button color="danger">Change image</button>
+  </ion-avatar>
+</ion-content>

@@ -1,3 +1,4 @@
+import { GetImagePage } from './get-image/get-image';
 import { ChartsPage } from './charts/charts';
 import { CreditCardScanPage } from './credit-card-scan/credit-card-scan';
 import { BlogPostPage } from './blog-post/blog-post';
@@ -42,6 +43,10 @@ export class MiscellaneousListPage {
             {
                 title: 'Credit Card Scanner',
                 page: CreditCardScanPage
+            },
+            {
+                title: 'Get image from camera/gallery',
+                page: GetImagePage
             },
             // {
             //     title: 'Currency Converter',
