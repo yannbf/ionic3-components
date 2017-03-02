@@ -27,7 +27,7 @@ export class SideMenuPage {
   }
 
   toggleRightMenu() {
-    this.menuCtrl.open("right").then(result => console.log(result));
+    this.menuCtrl.open("menu-right");
   }
 
 }

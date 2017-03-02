@@ -1,24 +1,19 @@
 <ion-header>
   <ion-navbar>
-    <ion-buttons start>
+    <ion-buttons left>
       <button ion-button icon-only menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
     <ion-title>Side Menu</ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="toggleRightMenu()">
         <ion-icon name="home"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-  <h3>Advanced Ionic 2 Components</h3>
-  <p>
-    This app aims to help developers speed up their development process and learn how components work. It would be really nice
-    if you checked out the <a href="https://github.com/yannbf/ionic2-components">repository</a> and contribute!
-  </p>
-  <button class="pop-in" ion-button full color="secondary" (click)="changeMenu(MENU.DEFAULT)">Default sidemenu</button>
-  <button class="pop-in" ion-button full color="secondary" (click)="changeMenu(MENU.AVATAR)">Sidemenu with avatar</button>
+  <button ion-button block color="secondary" (click)="changeMenu(MENU.DEFAULT)">Default sidemenu</button>
+  <button ion-button block color="danger" (click)="changeMenu(MENU.AVATAR)">Sidemenu with avatar</button>
 </ion-content>

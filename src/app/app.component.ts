@@ -24,10 +24,14 @@ export class MyApp {
   rootPage: any = HomePage;
 
   pages: Array<{ title: string, component: any }>;
+  icons: Array<string>;
   state: any;
 
   constructor(public platform: Platform, public global: AppState) {
     this.initializeApp();
+    this.icons = [
+      'home', 'alarm', 'analytics', 'archive', 'basket', 'body', 'bookmarks', 'camera', 'beer', 'power'
+    ]
 
     this.pages = [
       { title: 'Home', component: HomePage },

@@ -15,36 +15,44 @@
     </ion-content>
   </ion-menu>
   <!--Side Menu with avatar-->
-  <ion-menu [content]="content" id="menu-avatar" class="animated-menu">
+  <ion-menu [content]="content" id="menu-avatar" class="animated-menu font-montserrat">
     <ion-content>
-      <ion-row style="align-items:center;">
-        <ion-col width-25>
-          <img class="round" [src]="chosenPicture || placeholder" onerror="this.src='assets/img/avatar/girl-avatar.png'" />
-        </ion-col>
-        <ion-col width-50>
-          <img class="round" [src]="chosenPicture || placeholder" onerror="this.src='assets/img/avatar/girl-avatar.png'" />
-        </ion-col>
-        <ion-col width-25>
-          <img class="round" [src]="chosenPicture || placeholder" onerror="this.src='assets/img/avatar/girl-avatar.png'" />
-        </ion-col>
-      </ion-row>
-      <ion-row style="justify-content: center;">
-        <h3>Paula Bolliger</h3>
-      </ion-row>
-      <ion-list>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <div #header>
+        <ion-row style="align-items:center;">
+          <ion-col width-25>
+            <img src="assets/icon/icon-email.svg" />
+            <span class="icon-badge">4</span>
+          </ion-col>
+          <ion-col width-50>
+            <img class="user-avatar round" [src]="chosenPicture || placeholder" onerror="this.src='assets/img/avatar/girl-avatar.png'"
+            />
+          </ion-col>
+          <ion-col width-25>
+            <img src="assets/icon/icon-calendar.svg" />
+          </ion-col>
+        </ion-row>
+        <ion-row style="justify-content: center;">
+          <h3>Paula Bolliger</h3>
+        </ion-row>
+      </div>
+      <ion-list no-lines>
+        <button menuClose ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">
           {{p.title}}
         </button>
       </ion-list>
     </ion-content>
   </ion-menu>
   <!--Right side menu-->
-  <ion-menu class="right-side-menu" side="right" [content]="content" id="menu-right">
-    <ion-list>
-      <!--<button menuClose icon-only ion-item *ngFor="let p of pages">
-        </button>-->
-      <ion-icon ion-item *ngFor="let p of pages" name="home"></ion-icon>
-    </ion-list>
+  <ion-menu side="right" [content]="content" id="menu-right">
+    <ion-content>
+      <ion-list no-lines>
+        <!--Here you should put a logic to make the item active and show the its active arrow-->
+        <button menuClose icon-only ion-item detail-none *ngFor="let icon of icons; let i = index">
+          <div *ngIf="i == 0" class="active-menu-item"></div>
+          <ion-icon name="{{icon}}"></ion-icon>
+        </button>
+      </ion-list>
+    </ion-content>
   </ion-menu>
   <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
   <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
