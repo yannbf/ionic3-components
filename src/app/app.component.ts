@@ -14,6 +14,8 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/_home/home';
 
+import { Subject } from 'rxjs';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -21,27 +23,32 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
+  activePage = new Subject();
 
-  pages: Array<{ title: string, component: any }>;
+  pages: Array<{ title: string, component: any, active: Boolean }>;
   state: any;
 
   constructor(public platform: Platform, public global: AppState) {
     this.initializeApp();
 
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Ionic Official Components', component: IonicOfficialComponentsPage },
-      { title: 'Login', component: LoginListPage },
-      { title: 'Lists', component: ListsPage },
-      { title: 'Popup Modal', component: PopupModalsPage },
-      { title: 'Miscellaneous', component: MiscellaneousListPage },
-      { title: 'Popup Menu', component: PopupMenuListPage },
-      { title: 'Profile', component: ProfileListPage },
+      { title: 'Home', component: HomePage, active: true },
+      { title: 'Ionic Official Components', component: IonicOfficialComponentsPage, active: false },
+      { title: 'Login', component: LoginListPage, active: false },
+      { title: 'Lists', component: ListsPage, active: false },
+      { title: 'Popup Modal', component: PopupModalsPage, active: false },
+      { title: 'Miscellaneous', component: MiscellaneousListPage, active: false },
+      { title: 'Popup Menu', component: PopupMenuListPage, active: false },
+      { title: 'Profile', component: ProfileListPage, active: false },
       // Removed for now as there were breaking changes in slides
       // { title: 'Slides', component: SlidesPage },
-      { title: 'Theming', component: ThemingPage },
+      { title: 'Theming', component: ThemingPage, active: false },
     ];
 
+    this.activePage.subscribe((value: any) => {
+      this.pages.map(x => x.active = false);
+      this.pages[this.pages.findIndex(x => x.title === value.title)].active = true;
+    });
   }
 
   initializeApp() {
@@ -58,5 +65,6 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+    this.activePage.next(page);
   }
 }
