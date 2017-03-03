@@ -9,7 +9,8 @@ export class SideMenuPage {
 
   MENU = {
     DEFAULT: "menu-components",
-    AVATAR: "menu-avatar"
+    AVATAR: "menu-avatar",
+    MATERIAL: "menu-material"
   }
 
   constructor(public navCtrl: NavController, public menuCtrl: MenuController) { }

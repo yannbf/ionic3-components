@@ -37,20 +37,39 @@
       </div>
       <ion-list no-lines>
         <button menuClose ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">
+          <!--<ion-icon [name]="p.icon" item-left></ion-icon>-->
           {{p.title}}
         </button>
       </ion-list>
     </ion-content>
   </ion-menu>
   <!--Right side menu-->
-  <ion-menu side="right" [content]="content" id="menu-right">
+  <ion-menu side="right" type="push" [content]="content" id="menu-right">
     <ion-content>
       <ion-list no-lines>
         <!--Here you should put a logic to make the item active and show the its active arrow-->
         <button menuClose icon-only ion-item detail-none *ngFor="let icon of icons; let i = index">
           <div *ngIf="i == 0" class="active-menu-item"></div>
-          <ion-icon name="{{icon}}"></ion-icon>
+          <ion-icon [name]="icon"></ion-icon>
         </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <!--Material Design Menu-->
+  <ion-menu [content]="content" id="menu-material" class="animated-menu">
+    <ion-header class="menu-header">
+      <!--material-design-background-->
+      <img class="user-avatar round" [src]="chosenPicture || placeholder" onerror="this.src='assets/img/avatar/girl-avatar.png'"
+      />
+      <p class="name">Paula Bolliger</p>
+      <p class="e-mail">pbolliger@email.com</p>
+    </ion-header>
+    <ion-content>
+      <ion-list no-lines>
+        <button menuClose ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon [name]="p.icon" item-left></ion-icon>
+        {{p.title}}
+      </button>
       </ion-list>
     </ion-content>
   </ion-menu>

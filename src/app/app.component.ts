@@ -23,7 +23,7 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{ title: string, component: any }>;
+  pages: Array<{ title: string, component: any, icon: string }>;
   icons: Array<string>;
   state: any;
 
@@ -34,18 +34,18 @@ export class MyApp {
     ]
 
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Ionic Official Components', component: IonicOfficialComponentsPage },
-      { title: 'Login', component: LoginListPage },
-      { title: 'Lists', component: ListsPage },
-      { title: 'Popup Modal', component: PopupModalsPage },
-      { title: 'Miscellaneous', component: MiscellaneousListPage },
-      { title: 'Popup Menu', component: PopupMenuListPage },
-      { title: 'Profile', component: ProfileListPage },
-      { title: 'Side Menu', component: SideMenuPage },
+      { title: 'Home', component: HomePage, icon: 'home' },
+      { title: 'Ionic Official Components', component: IonicOfficialComponentsPage, icon: 'alarm' },
+      { title: 'Login', component: LoginListPage, icon: 'archive' },
+      { title: 'Lists', component: ListsPage, icon: 'body' },
+      { title: 'Popup Modal', component: PopupModalsPage, icon: 'basket' },
+      { title: 'Miscellaneous', component: MiscellaneousListPage, icon: 'bookmarks' },
+      { title: 'Popup Menu', component: PopupMenuListPage, icon: 'beer' },
+      { title: 'Profile', component: ProfileListPage, icon: 'camera' },
+      { title: 'Side Menu', component: SideMenuPage, icon: 'bookmark' },
       // Removed for now as there were breaking changes in slides
-      // { title: 'Slides', component: SlidesPage },
-      { title: 'Theming', component: ThemingPage },
+      // { title: 'Slides', component: SlidesPage, icon: 'home' },
+      { title: 'Theming', component: ThemingPage, icon: 'power' },
     ];
 
   }
