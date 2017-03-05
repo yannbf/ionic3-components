@@ -25,7 +25,7 @@ export class MyApp {
   rootPage: any = HomePage;
   activePage = new Subject();
 
-  pages: Array<{ title: string, component: any, active: Boolean }>;
+  pages: Array<{ title: string, component: any, active: boolean }>;
   state: any;
 
   constructor(public platform: Platform, public global: AppState) {
@@ -45,9 +45,10 @@ export class MyApp {
       { title: 'Theming', component: ThemingPage, active: false },
     ];
 
-    this.activePage.subscribe((value: any) => {
-      this.pages.map(x => x.active = false);
-      this.pages[this.pages.findIndex(x => x.title === value.title)].active = true;
+    this.activePage.subscribe((selectedPage: any) => {
+          this.pages.map(page => {
+            page.active = page.title === selectedPage.title;
+          });
     });
   }
 
