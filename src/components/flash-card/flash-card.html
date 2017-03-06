@@ -1,0 +1,9 @@
+<ion-card class="fc-container" (click)="toggle()" [class.fc-back]="toggled" #fcContainer>
+    <div class="front" #front>
+        <ng-content class="" select=".fc-front"></ng-content>
+    </div>
+ 
+    <div class="back" #back>
+        <ng-content select=".fc-back"></ng-content>
+    </div>
+</ion-card>

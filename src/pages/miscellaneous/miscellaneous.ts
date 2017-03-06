@@ -5,6 +5,7 @@ import { BlogPostPage } from './blog-post/blog-post';
 import { ChatsPage } from './chat/chats';
 import { WeatherPage } from './weather/weather';
 import { CurrencyConverterPage } from './currency-converter/currency-converter';
+import { FlashCardPage } from './flash-card/flash-card';
 // import { ClockPage } from './clock/clock';
 import { CountdownOnePage } from './countdown/countdown';
 import { TestimonialsPage } from './testimonials/testimonials';
@@ -63,6 +64,10 @@ export class MiscellaneousListPage {
             {
                 title: 'Tinder Cards',
                 page: TinderCardsPage
+            },
+            {
+                title: 'Flash Card',
+                page: FlashCardPage
             },
             // {
             //     title: 'Weather',

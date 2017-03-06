@@ -55,6 +55,10 @@ import { WalkthroughModalPage } from '../pages/popup-modal/walkthrough-modal/wal
 // Alerts
 import { AlertsPage } from '../pages/ionic-official-components/alert/alert';
 
+// FlashCard
+import { FlashCardComponent } from '../components/flash-card/flash-card';
+import { FlashCardPage } from '../pages/miscellaneous/flash-card/flash-card';
+
 // Slides
 import { SlidesPage } from '../pages/slide/slide';
 import { SlideTransitionsPage } from '../pages/slide/slide-transitions/slide-transitions';
@@ -166,6 +170,8 @@ export const Pages = [
     ChartsPage,
     RuntimePermissionsPage,
     GetImagePage,
+    FlashCardComponent,
+    FlashCardPage,
 
     // Modals
     PopupModalsPage,
