@@ -20,8 +20,8 @@ addons:
 
 branches:
   only:
-    - master 
-	- travis
+    - master
+    - travis
 
 #
 # Build Lifecycle:
