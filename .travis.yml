@@ -40,8 +40,9 @@ before_script:
   - sh -e /etc/init.d/xvfb start
 
 script:
-  - npm run test-ci  # unit tests
-  - npm run e2e      # run e2e tests against ionic
+  - ionic serve
+  #- npm run test-ci  # unit tests
+  #- npm run e2e      # run e2e tests against ionic
 
 after_success:
   # Send coverage info off to cloud ppl
