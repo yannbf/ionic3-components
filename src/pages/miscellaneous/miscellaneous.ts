@@ -27,6 +27,10 @@ export class MiscellaneousListPage {
     constructor(public navCtrl: NavController, public menu: MenuController) {
         this.items = [
             {
+                title: 'Barcode Scanner',
+                page: BarcodescannerPage
+            },
+            {
                 title: 'Blog Post',
                 page: BlogPostPage
             },
@@ -69,10 +73,6 @@ export class MiscellaneousListPage {
             {
                 title: 'Flash Card',
                 page: FlashCardPage
-            },
-            {
-                title: 'Barcode Scanner',
-                page: BarcodescannerPage
             },
             // {
             //     title: 'Weather',
