@@ -1,7 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { LoginPage } from '../login/login';
-import { SignupPage } from '../signup/signup';
 
 @Component({
   selector: 'page-home-login',
@@ -9,22 +7,18 @@ import { SignupPage } from '../signup/signup';
 })
 export class HomeLoginPage {
 
-  public backgroundImage: any;
   @ViewChild('player') player;
 
-  constructor(public navCtrl: NavController) {
-    this.backgroundImage = this.getRandomPicture();
-  }
+  constructor(public navCtrl: NavController) { }
 
   ionViewWillLeave() {
-    console.log('partiu');
-    // the .nativeElement property of the ViewChild is the reference to the <video> 
+    // the .nativeElement property of the ViewChild is the reference to the <video>
     this.player.nativeElement.src = '';
     this.player.nativeElement.load();
   }
 
   ionViewWillEnter() {
-    this.player.nativeElement.src = 'assets/background-480.mp4';
+    this.player.nativeElement.src = 'assets/video/background-480.mp4';
     this.player.nativeElement.load();
   }
 
@@ -32,17 +26,10 @@ export class HomeLoginPage {
     console.log('Hello HomeLoginPage Page');
   }
 
-  getRandomPicture() {
-    let randomNumber = Math.floor(Math.random() * 4) + 1;
-    return "assets/img/login/login-" + randomNumber + ".jpg";
-  }
-
   goToSignup() {
-    this.navCtrl.push(SignupPage);
   }
 
   goToLogin() {
-    this.navCtrl.push(LoginPage);
   }
 
 }

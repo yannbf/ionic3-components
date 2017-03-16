@@ -1,3 +1,4 @@
+import { HomeLoginPage } from '../pages/login/home-login/home-login';
 // Global state (used for theming)
 import { AppState } from './app.global';
 
@@ -152,6 +153,7 @@ export const Pages = [
     LoginOnePage,
     LoginInstagramPage,
     LoginSliderPage,
+    HomeLoginPage,
 
     // Miscellaneous
     MiscellaneousListPage,

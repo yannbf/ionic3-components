@@ -1,3 +1,4 @@
+import { HomeLoginPage } from './home-login/home-login';
 import { LoginSliderPage } from './login-slider/login-slider';
 import { LoginInstagramPage } from './login-instagram/login-instagram';
 import { Component } from '@angular/core';
@@ -26,8 +27,12 @@ export class LoginListPage {
         page: LoginInstagramPage
       },
       {
-        title: 'Login with slider text',
+        title: 'Login with slider text (not working)',
         page: LoginSliderPage
+      },
+      {
+        title: 'Login with video background',
+        page: HomeLoginPage
       },
     ]
   }
