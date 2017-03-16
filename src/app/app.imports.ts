@@ -89,6 +89,7 @@ import { CreditCardScanPage } from '../pages/miscellaneous/credit-card-scan/cred
 import { RuntimePermissionsPage } from '../pages/miscellaneous/runtime-permissions/runtime-permissions';
 import { ChartsPage } from '../pages/miscellaneous/charts/charts';
 import { GetImagePage } from '../pages/miscellaneous/get-image/get-image';
+import { BarcodescannerPage } from '../pages/miscellaneous/barcodescanner/barcodescanner';
 
 // Providers
 import { WeatherService } from '../pages/miscellaneous/weather/weather.service';
@@ -174,6 +175,7 @@ export const Pages = [
     GetImagePage,
     FlashCardComponent,
     FlashCardPage,
+    BarcodescannerPage,
 
     // Modals
     PopupModalsPage,
