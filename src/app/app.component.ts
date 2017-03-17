@@ -24,13 +24,22 @@ export class MyApp {
   rootPage: any = HomePage;
 
   pages: Array<{ title: string, component: any, icon: string }>;
-  icons: Array<string>;
+  rightMenuItems: Array<{ icon: string, active: boolean }>;
   state: any;
 
   constructor(public platform: Platform, public global: AppState) {
     this.initializeApp();
-    this.icons = [
-      'home', 'alarm', 'analytics', 'archive', 'basket', 'body', 'bookmarks', 'camera', 'beer', 'power'
+    this.rightMenuItems = [
+      { icon: 'home', active: true },
+      { icon: 'alarm', active: false },
+      { icon: 'analytics', active: false },
+      { icon: 'archive', active: false },
+      { icon: 'basket', active: false },
+      { icon: 'body', active: false },
+      { icon: 'bookmarks', active: false },
+      { icon: 'camera', active: false },
+      { icon: 'beer', active: false },
+      { icon: 'power', active: false },
     ]
 
     this.pages = [
@@ -64,5 +73,10 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+  }
+
+  rightMenuClick(item) {
+    this.rightMenuItems.map(menuItem => menuItem.active = false);
+    item.active = true;
   }
 }

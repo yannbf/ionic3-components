@@ -9,13 +9,19 @@ export class SideMenuPage {
 
   MENU = {
     DEFAULT: "menu-components",
+    MATERIAL: "menu-material",
     AVATAR: "menu-avatar",
-    MATERIAL: "menu-material"
   }
 
   constructor(public navCtrl: NavController, public menuCtrl: MenuController) { }
 
-  ionViewDidLoad() {
+  // Only enables right side menu for this page. Testing purposes.
+  ionViewWillEnter() {
+    this.menuCtrl.enable(true, "menu-right");
+  }
+
+  ionViewWillLeave() {
+    this.menuCtrl.enable(false, "menu-right");
   }
 
   changeMenu(menu) {
@@ -26,9 +32,4 @@ export class SideMenuPage {
     this.menuCtrl.enable(true, menu);
     this.menuCtrl.open(menu);
   }
-
-  toggleRightMenu() {
-    this.menuCtrl.open("menu-right");
-  }
-
 }
