@@ -1,4 +1,4 @@
-import { HomeLoginPage } from './home-login/home-login';
+import { LoginBackgroundVideoPage } from './login-background-video/login-background-video';
 import { LoginSliderPage } from './login-slider/login-slider';
 import { LoginInstagramPage } from './login-instagram/login-instagram';
 import { Component } from '@angular/core';
@@ -32,7 +32,7 @@ export class LoginListPage {
       },
       {
         title: 'Login with video background',
-        page: HomeLoginPage
+        page: LoginBackgroundVideoPage
       },
     ]
   }

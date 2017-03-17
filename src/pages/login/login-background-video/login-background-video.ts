@@ -2,17 +2,19 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-home-login',
-  templateUrl: 'home-login.html'
+  selector: 'page-login-background-video',
+  templateUrl: 'login-background-video.html'
 })
-export class HomeLoginPage {
+export class LoginBackgroundVideoPage {
 
   @ViewChild('player') player;
 
   constructor(public navCtrl: NavController) { }
 
+  // It's interesting to remove the src and put it back
+  // when entering and leaving the page so there are no memory leaks.
   ionViewWillLeave() {
-    // the .nativeElement property of the ViewChild is the reference to the <video>
+    // the .nativeElement property of the ViewChild is the reference to the tag <video>
     this.player.nativeElement.src = '';
     this.player.nativeElement.load();
   }
@@ -23,7 +25,7 @@ export class HomeLoginPage {
   }
 
   ionViewDidLoad() {
-    console.log('Hello HomeLoginPage Page');
+    console.log('Hello LoginBackgroundVideo Page');
   }
 
   goToSignup() {

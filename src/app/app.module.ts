@@ -3,20 +3,15 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { SwingModule } from 'angular2-swing';
 
-import { Pages, Directives, Pipes, Providers } from './app.imports';
+import { Pages, Directives, Pipes, Providers, Components } from './app.imports';
 
 @NgModule({
   declarations: [
     // App Core
     MyApp,
-
-    // Pages
     Pages,
-
-    // directives
+    Components,
     Directives,
-
-    // pipes
     Pipes
   ],
   imports: [
