@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Barcode Scanner</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>NOTE: THIS ONLY WORKS ON MOBILE!</p>
+
+  <div class="json">{{ barcodeData | json }}</div>
+
+  <div text-center>
+    <button ion-button icon-left color="primary" (click)="scan()">
+      <ion-icon name="qr-scanner"></ion-icon>
+      Scan
+    </button>
+  </div>
+
+</ion-content>

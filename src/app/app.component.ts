@@ -15,6 +15,8 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/_home/home';
 
+import { Subject } from 'rxjs';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -22,8 +24,9 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
+  activePage = new Subject();
 
-  pages: Array<{ title: string, component: any, icon: string }>;
+  pages: Array<{ title: string, component: any, active: boolean, icon: string }>;
   rightMenuItems: Array<{ icon: string, active: boolean }>;
   state: any;
 
@@ -43,20 +46,25 @@ export class MyApp {
     ]
 
     this.pages = [
-      { title: 'Home', component: HomePage, icon: 'home' },
-      { title: 'Ionic Official Components', component: IonicOfficialComponentsPage, icon: 'alarm' },
-      { title: 'Login', component: LoginListPage, icon: 'archive' },
-      { title: 'Lists', component: ListsPage, icon: 'body' },
-      { title: 'Popup Modal', component: PopupModalsPage, icon: 'basket' },
-      { title: 'Miscellaneous', component: MiscellaneousListPage, icon: 'bookmarks' },
-      { title: 'Popup Menu', component: PopupMenuListPage, icon: 'beer' },
-      { title: 'Profile', component: ProfileListPage, icon: 'camera' },
+      { title: 'Home', component: HomePage, active: true, icon: 'home'  },
+      { title: 'Ionic Official Components', component: IonicOfficialComponentsPage, active: false, icon: 'alarm' },
+      { title: 'Login', component: LoginListPage, active: false, icon: 'archive'  },
+      { title: 'Lists', component: ListsPage, active: false },
+      { title: 'Popup Modal', component: PopupModalsPage, active: false, icon: 'basket' },
+      { title: 'Miscellaneous', component: MiscellaneousListPage, active: false, icon: 'bookmarks' },
+      { title: 'Popup Menu', component: PopupMenuListPage, active: false, icon: 'beer'  },
+      { title: 'Profile', component: ProfileListPage, active: false, icon: 'camera' },
       { title: 'Side Menu', component: SideMenuPage, icon: 'bookmark' },
       // Removed for now as there were breaking changes in slides
-      // { title: 'Slides', component: SlidesPage, icon: 'home' },
-      { title: 'Theming', component: ThemingPage, icon: 'power' },
+      // { title: 'Slides', component: SlidesPage },
+      { title: 'Theming', component: ThemingPage, active: false, icon: 'power'  },
     ];
 
+    this.activePage.subscribe((selectedPage: any) => {
+          this.pages.map(page => {
+            page.active = page.title === selectedPage.title;
+          });
+    });
   }
 
   initializeApp() {
@@ -73,6 +81,7 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+    this.activePage.next(page);
   }
 
   rightMenuClick(item) {

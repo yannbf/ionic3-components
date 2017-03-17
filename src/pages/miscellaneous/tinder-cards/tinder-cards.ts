@@ -75,10 +75,6 @@ export class TinderCardsPage {
     }
   }
 
-  presentToast(message) {
-
-  }
-
   // Add new cards to our array
   addNewCards(count: number) {
     this.http.get('https://randomuser.me/api/?results=' + count)

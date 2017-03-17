@@ -28,6 +28,7 @@ import { LoginListPage } from '../pages/login/login';
 import { LoginOnePage } from '../pages/login/login-one/login-one';
 import { LoginInstagramPage } from '../pages/login/login-instagram/login-instagram';
 import { LoginSliderPage } from '../pages/login/login-slider/login-slider';
+import { LoginBackgroundVideoPage } from '../pages/login/login-background-video/login-background-video';
 
 // Popup Menu list
 import { PopupMenuListPage } from '../pages/popup-menu/popup-menu';
@@ -85,6 +86,8 @@ import { CreditCardScanPage } from '../pages/miscellaneous/credit-card-scan/cred
 import { RuntimePermissionsPage } from '../pages/miscellaneous/runtime-permissions/runtime-permissions';
 import { ChartsPage } from '../pages/miscellaneous/charts/charts';
 import { GetImagePage } from '../pages/miscellaneous/get-image/get-image';
+import { BarcodescannerPage } from '../pages/miscellaneous/barcodescanner/barcodescanner';
+import { FlashCardPage } from '../pages/miscellaneous/flash-card/flash-card';
 
 // Providers
 import { WeatherService } from '../pages/miscellaneous/weather/weather.service';
@@ -93,9 +96,12 @@ import { AlertService } from '../providers/util/alert.service';
 import { CameraProvider } from '../providers/util/camera.provider';
 
 // Directives
-import { Timer } from '../components/countdown-timer/timer';
 import { SlidingDrawer } from '../components/sliding-drawer/sliding-drawer';
+
+// Components
+import { Timer } from '../components/countdown-timer/timer';
 import { TypingEffect } from '../components/typing-effect/typing-effect';
+import { FlashCardComponent } from '../components/flash-card/flash-card';
 
 // Pipes
 import { MomentPipe } from '../pipes/moment.pipe';
@@ -149,6 +155,7 @@ export const Pages = [
     LoginOnePage,
     LoginInstagramPage,
     LoginSliderPage,
+    LoginBackgroundVideoPage,
 
     // Side Menu
     SideMenuPage,
@@ -170,6 +177,8 @@ export const Pages = [
     ChartsPage,
     RuntimePermissionsPage,
     GetImagePage,
+    FlashCardPage,
+    BarcodescannerPage,
 
     // Modals
     PopupModalsPage,
@@ -202,6 +211,10 @@ export const Pipes = [
 
 export const Providers = [
     WeatherService, AlertService, ToastService, AppState, CameraProvider
+]
+
+export const Components = [
+    FlashCardComponent,
 ]
 
 export const Directives = [

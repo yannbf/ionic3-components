@@ -8,7 +8,7 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <button menuClose ion-item *ngFor="let p of pages" [class.highlight]="p.active" (click)="openPage(p)">
         {{p.title}}
       </button>
       </ion-list>
