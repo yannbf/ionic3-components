@@ -1,3 +1,4 @@
+import { SideMenuPage } from '../pages/side-menu/side-menu';
 // Global state (used for theming)
 import { AppState } from './app.global';
 
@@ -155,6 +156,9 @@ export const Pages = [
     LoginInstagramPage,
     LoginSliderPage,
     LoginBackgroundVideoPage,
+
+    // Side Menu
+    SideMenuPage,
 
     // Miscellaneous
     MiscellaneousListPage,

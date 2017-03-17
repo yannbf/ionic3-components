@@ -1,7 +1,7 @@
 import { ProfileSettingsPage } from './profile-settings/profile-settings';
 import { ProfileFourPage } from './profile-four/profile-four';
 import { ProfileThreePage } from './profile-three/profile-three';
-import { ProfileTwoPage } from './profile-two/profile-two';
+// import { ProfileTwoPage } from './profile-two/profile-two';
 import { ProfileOnePage } from './profile-one/profile-one';
 import { Component } from '@angular/core';
 
