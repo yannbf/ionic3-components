@@ -1,3 +1,4 @@
+import { LoginBackgroundSliderPage } from './login-background-slider/login-background-slider';
 import { LoginBackgroundVideoPage } from './login-background-video/login-background-video';
 import { LoginSliderPage } from './login-slider/login-slider';
 import { LoginInstagramPage } from './login-instagram/login-instagram';
@@ -33,6 +34,10 @@ export class LoginListPage {
       {
         title: 'Login with video background',
         page: LoginBackgroundVideoPage
+      },
+      {
+        title: 'Login with slider background',
+        page: LoginBackgroundSliderPage
       },
     ]
   }

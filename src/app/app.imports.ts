@@ -1,3 +1,4 @@
+import { LoginBackgroundSliderPage } from '../pages/login/login-background-slider/login-background-slider';
 import { SideMenuPage } from '../pages/side-menu/side-menu';
 // Global state (used for theming)
 import { AppState } from './app.global';
@@ -156,6 +157,7 @@ export const Pages = [
     LoginInstagramPage,
     LoginSliderPage,
     LoginBackgroundVideoPage,
+    LoginBackgroundSliderPage,
 
     // Side Menu
     SideMenuPage,
