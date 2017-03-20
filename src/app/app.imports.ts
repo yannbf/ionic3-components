@@ -101,6 +101,7 @@ import { SlidingDrawer } from '../components/sliding-drawer/sliding-drawer';
 
 // Components
 import { Timer } from '../components/countdown-timer/timer';
+import { TimerProgress } from '../components/timer-progress/timer-progress';
 import { TypingEffect } from '../components/typing-effect/typing-effect';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 
@@ -217,6 +218,7 @@ export const Providers = [
 
 export const Components = [
     FlashCardComponent,
+    TimerProgress
 ]
 
 export const Directives = [
