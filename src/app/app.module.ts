@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { SwingModule } from 'angular2-swing';
+import { RoundProgressModule } from 'angular-svg-round-progressbar';
 
 import { Pages, Directives, Pipes, Providers, Components } from './app.imports';
 
@@ -16,7 +17,8 @@ import { Pages, Directives, Pipes, Providers, Components } from './app.imports';
   ],
   imports: [
     IonicModule.forRoot(MyApp),
-    SwingModule
+    SwingModule,
+    RoundProgressModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -8,6 +8,12 @@
 </ion-header>
 <ion-content padding>
   <h3>Advanced Ionic 2 Components</h3>
+  <div class="progress-wrapper">
+    <round-progress #progress [current]="currentValue" [max]="60" [color]="'#45ccce'" [background]="'#eee'" [radius]="125" [stroke]="20"
+      [semicircle]="false" [rounded]="false" [clockwise]="false" [responsive]="false" [duration]="800" [animation]="'easeInOutQuart'"
+      [animationDelay]="0"></round-progress>
+    <div class="text">{{currentValue}}/60</div>
+  </div>
   <p>
     This app aims to help developers speed up their development process and learn how components work. It would be really nice
     if you checked out the <a href="https://github.com/yannbf/ionic2-components">repository</a> and contribute!
