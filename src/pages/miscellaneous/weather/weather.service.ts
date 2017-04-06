@@ -1,7 +1,7 @@
 import { Platform } from 'ionic-angular';
 import { Injectable } from '@angular/core';
 import { Http } from "@angular/http";
-import { Geolocation } from 'ionic-native';
+import { Geolocation } from '@ionic-native/geolocation';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
@@ -11,7 +11,7 @@ export class WeatherService {
     private appId = '16fa7fe6fab8c648bee7e5d70266906e';
     private baseUrl = 'https://crossorigin.me/' + 'http://api.openweathermap.org/data/2.5/';
 
-    constructor(public http: Http, public platform: Platform) { }
+    constructor(public http: Http, public geolocation: Geolocation, public platform: Platform) { }
 
     city(city: string): Observable<any> {
 
@@ -38,7 +38,7 @@ export class WeatherService {
 
             this.platform.ready().then(() => {
 
-                Geolocation.getCurrentPosition({ timeout: 10000, enableHighAccuracy: true })
+                this.geolocation.getCurrentPosition({ timeout: 10000, enableHighAccuracy: true })
                     .then((resp) => {
                         let lat = resp.coords.latitude;
                         let lng = resp.coords.longitude;

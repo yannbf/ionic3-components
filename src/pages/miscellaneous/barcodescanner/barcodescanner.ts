@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
-import { BarcodeScanner } from 'ionic-native';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 @Component({
     selector: 'page-barcodescanner',
@@ -10,7 +10,8 @@ export class BarcodescannerPage {
 
     public barcodeData;
 
-    constructor(public navCtrl: NavController, public alertCtrl: AlertController) { }
+    constructor(public navCtrl: NavController,
+        public barcodeScanner: BarcodeScanner, public alertCtrl: AlertController) { }
 
     ionViewDidLoad() {
         console.log('ionViewDidLoad BarcodescannerPage');
@@ -32,7 +33,7 @@ export class BarcodescannerPage {
                 disableSuccessBeep: false // iOS
             };
 
-        BarcodeScanner.scan(options)
+        this.barcodeScanner.scan(options)
             .then((data) => {
                 this.barcodeData = data;
                 let alert = this.alertCtrl.create({

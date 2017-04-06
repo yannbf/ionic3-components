@@ -2,7 +2,7 @@ import { ToastService } from '../../../providers/util/toast.service';
 import { AlertService } from '../../../providers/util/alert.service';
 import { NavController, App } from 'ionic-angular';
 import { Component } from '@angular/core';
-import { Camera } from 'ionic-native';
+import { Camera } from '@ionic-native/camera';
 
 @Component({
   selector: 'page-profile-settings',
@@ -30,7 +30,7 @@ export class ProfileSettingsPage {
   }
 
   constructor(private navCtrl: NavController, public alertService: AlertService,
-    public toastCtrl: ToastService, public app: App) {
+    public toastCtrl: ToastService, public app: App, public camera: Camera) {
 
   }
 
@@ -47,7 +47,12 @@ export class ProfileSettingsPage {
   }
 
   updateProfileImage() {
-    Camera.getPicture({ quality: 50, allowEdit: true, cameraDirection: Camera.Direction.FRONT, destinationType: Camera.DestinationType.DATA_URL }).then((imageData) => {
+    this.camera.getPicture({
+      quality: 50,
+      allowEdit: true,
+      cameraDirection: this.camera.Direction.FRONT,
+      destinationType: this.camera.DestinationType.DATA_URL
+    }).then((imageData) => {
       this.user.imageUrl = imageData;
     }, (err) => {
       this.toastCtrl.create("Error: " + err);
