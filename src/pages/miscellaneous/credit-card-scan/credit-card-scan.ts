@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { CardIO } from 'ionic-native';
-
+import { CardIO } from '@ionic-native/card-io';
 
 @Component({
   selector: 'page-credit-card-scan',
@@ -9,7 +8,7 @@ import { CardIO } from 'ionic-native';
 })
 export class CreditCardScanPage {
 
-  constructor(public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController, public cardIO: CardIO) { }
 
   ionViewDidLoad() {
     console.log('Hello CreditCardScan Page');
@@ -28,7 +27,7 @@ export class CreditCardScanPage {
   }
 
   scanCard() {
-    CardIO.canScan()
+    this.cardIO.canScan()
       .then(
       (res: boolean) => {
         if (res) {
@@ -41,7 +40,7 @@ export class CreditCardScanPage {
             requireExpiry: true,
             requirePostalCode: false
           };
-          CardIO.scan(options).then(response => {
+          this.cardIO.scan(options).then(response => {
             console.log("Scan complete");
 
             let { cardType, cardNumber, redactedCardNumber, expiryMonth, expiryYear, cvv, postalCode } = response;

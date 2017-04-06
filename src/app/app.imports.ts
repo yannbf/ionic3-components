@@ -1,5 +1,3 @@
-import { LoginBackgroundSliderPage } from '../pages/login/login-background-slider/login-background-slider';
-import { SideMenuPage } from '../pages/side-menu/side-menu';
 // Global state (used for theming)
 import { AppState } from './app.global';
 
@@ -30,6 +28,7 @@ import { LoginOnePage } from '../pages/login/login-one/login-one';
 import { LoginInstagramPage } from '../pages/login/login-instagram/login-instagram';
 import { LoginSliderPage } from '../pages/login/login-slider/login-slider';
 import { LoginBackgroundVideoPage } from '../pages/login/login-background-video/login-background-video';
+import { LoginBackgroundSliderPage } from '../pages/login/login-background-slider/login-background-slider';
 
 // Popup Menu list
 import { PopupMenuListPage } from '../pages/popup-menu/popup-menu';
@@ -90,12 +89,22 @@ import { GetImagePage } from '../pages/miscellaneous/get-image/get-image';
 import { BarcodescannerPage } from '../pages/miscellaneous/barcodescanner/barcodescanner';
 import { ExpandableHeaderPage } from '../pages/miscellaneous/expandable-header/expandable-header';
 import { FlashCardPage } from '../pages/miscellaneous/flash-card/flash-card';
+import { SideMenuPage } from '../pages/side-menu/side-menu';
 
 // Providers
 import { WeatherService } from '../pages/miscellaneous/weather/weather.service';
 import { ToastService } from '../providers/util/toast.service';
 import { AlertService } from '../providers/util/alert.service';
 import { CameraProvider } from '../providers/util/camera.provider';
+
+// Ionic native providers
+import { CardIO } from '@ionic-native/card-io';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { Camera } from '@ionic-native/camera';
+import { Diagnostic } from '@ionic-native/diagnostic';
+import { Geolocation } from '@ionic-native/geolocation';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 // Directives
 import { SlidingDrawer } from '../components/sliding-drawer/sliding-drawer';
@@ -114,6 +123,16 @@ import { OrderByPipe } from '../pipes/orderby.pipe';
 import { ShortenStringPipe } from '../pipes/shorten.pipe';
 import { CapitalizePipe } from '../pipes/capitalize.pipe';
 
+// Modules
+import { SwingModule } from 'angular2-swing';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+
+export const Modules = [
+    SwingModule,
+    BrowserModule,
+    HttpModule,
+]
 
 export const Pages = [
     // Home
@@ -216,7 +235,20 @@ export const Pipes = [
 ]
 
 export const Providers = [
-    WeatherService, AlertService, ToastService, AppState, CameraProvider
+    WeatherService,
+    AlertService,
+    ToastService,
+    AppState,
+    CameraProvider,
+
+    // Ionic native specific providers
+    BarcodeScanner,
+    Camera,
+    Diagnostic,
+    Geolocation,
+    CardIO,
+    StatusBar,
+    SplashScreen,
 ]
 
 export const Components = [

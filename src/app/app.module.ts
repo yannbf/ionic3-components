@@ -1,9 +1,8 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { SwingModule } from 'angular2-swing';
 
-import { Pages, Directives, Pipes, Providers, Components } from './app.imports';
+import { Modules, Pages, Directives, Pipes, Providers, Components } from './app.imports';
 
 @NgModule({
   declarations: [
@@ -15,8 +14,8 @@ import { Pages, Directives, Pipes, Providers, Components } from './app.imports';
     Pipes
   ],
   imports: [
-    IonicModule.forRoot(MyApp),
-    SwingModule
+    Modules,
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [

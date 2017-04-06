@@ -15,15 +15,15 @@
     </div>
     <hr/>
     <ion-row class="profile-numbers">
-      <ion-col width-33>
+      <ion-col col-4>
         <p>Followers</p>
         <span>{{user.followers}}</span>
       </ion-col>
-      <ion-col width-33>
+      <ion-col col-4>
         <p>Following</p>
         <span>{{user.following}}</span>
       </ion-col>
-      <ion-col width-33>
+      <ion-col col-4>
         <p>Posts</p>
         <span>{{user.posts}}</span>
       </ion-col>
@@ -42,19 +42,19 @@
           <p>{{post.text}}</p>
         </ion-card-content>
         <ion-row>
-          <ion-col>
+          <ion-col col-4>
             <button ion-button color="purple" clear small icon-left (click)="like(post)">
                 <ion-icon name='thumbs-up'></ion-icon>
                 {{post.likes}} Likes
               </button>
           </ion-col>
-          <ion-col>
-            <button ion-button color="purple" clear small icon-left (click)="comment(post)">
+          <ion-col col-5>
+            <button ion-button no-padding color="purple" clear small icon-left (click)="comment(post)">
                 <ion-icon name='text'></ion-icon>
                 {{post.comments}} Comments
               </button>
           </ion-col>
-          <ion-col center text-center>
+          <ion-col col-3 align-self-center text-center>
             <p>
               {{post.timestamp}}
             </p>

@@ -36,9 +36,9 @@ export class ProfileThreePage {
   ];
 
   user = {
-    name: 'Emma Watson',
-    twitter: '@EmWatson',
-    profileImage: 'https://s-media-cache-ak0.pinimg.com/236x/c5/86/e6/c586e6afd87ee357bbab52df241480ac.jpg',
+    name: 'Cosima Niehaus',
+    twitter: '@CheekyEvoDevo',
+    profileImage: '../assets/img/avatar/cosima-avatar.jpg',
     followers: 456,
     following: 1052,
     tweets: 35

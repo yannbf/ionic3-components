@@ -11,7 +11,8 @@ import { MiscellaneousListPage } from '../pages/miscellaneous/miscellaneous';
 import { ProfileListPage } from '../pages/profile/profile';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
-import { StatusBar, Splashscreen } from 'ionic-native';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/_home/home';
 
@@ -30,7 +31,7 @@ export class MyApp {
   rightMenuItems: Array<{ icon: string, active: boolean }>;
   state: any;
 
-  constructor(public platform: Platform, public global: AppState) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashscreen: SplashScreen, public global: AppState) {
     this.initializeApp();
     this.rightMenuItems = [
       { icon: 'home', active: true },
@@ -72,8 +73,8 @@ export class MyApp {
       this.global.set('theme', '');
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      StatusBar.styleDefault();
-      Splashscreen.hide();
+      this.statusBar.styleDefault();
+      this.splashscreen.hide();
     });
   }
 
