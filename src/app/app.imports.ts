@@ -88,6 +88,7 @@ import { RuntimePermissionsPage } from '../pages/miscellaneous/runtime-permissio
 import { ChartsPage } from '../pages/miscellaneous/charts/charts';
 import { GetImagePage } from '../pages/miscellaneous/get-image/get-image';
 import { BarcodescannerPage } from '../pages/miscellaneous/barcodescanner/barcodescanner';
+import { ExpandableHeaderPage } from '../pages/miscellaneous/expandable-header/expandable-header';
 import { FlashCardPage } from '../pages/miscellaneous/flash-card/flash-card';
 
 // Providers
@@ -102,6 +103,7 @@ import { SlidingDrawer } from '../components/sliding-drawer/sliding-drawer';
 // Components
 import { Timer } from '../components/countdown-timer/timer';
 import { TimerProgress } from '../components/timer-progress/timer-progress';
+import { ExpandableHeader } from '../components/expandable-header/expandable-header';
 import { TypingEffect } from '../components/typing-effect/typing-effect';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 
@@ -182,6 +184,7 @@ export const Pages = [
     GetImagePage,
     FlashCardPage,
     BarcodescannerPage,
+    ExpandableHeaderPage,
 
     // Modals
     PopupModalsPage,
@@ -218,7 +221,8 @@ export const Providers = [
 
 export const Components = [
     FlashCardComponent,
-    TimerProgress
+    TimerProgress,
+    ExpandableHeader
 ]
 
 export const Directives = [
