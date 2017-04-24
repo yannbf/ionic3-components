@@ -14,6 +14,7 @@ import { TinderCardsPage } from './tinder-cards/tinder-cards';
 import { Component } from '@angular/core';
 import { RuntimePermissionsPage } from './runtime-permissions/runtime-permissions';
 import { ExpandableHeaderPage } from './expandable-header/expandable-header';
+import { AutosizingTextarea } from './autosizing-textarea/autosizing-textarea'
 
 import { NavController, MenuController } from 'ionic-angular';
 
@@ -79,6 +80,10 @@ export class MiscellaneousListPage {
                 title: 'Expandable Header',
                 page: ExpandableHeaderPage
             },
+            {
+                title: 'Autosizing Textarea',
+                page: AutosizingTextarea
+            }
             // {
             //     title: 'Weather',
             //     page: WeatherPage

@@ -90,6 +90,7 @@ import { BarcodescannerPage } from '../pages/miscellaneous/barcodescanner/barcod
 import { ExpandableHeaderPage } from '../pages/miscellaneous/expandable-header/expandable-header';
 import { FlashCardPage } from '../pages/miscellaneous/flash-card/flash-card';
 import { SideMenuPage } from '../pages/side-menu/side-menu';
+import { AutosizingTextarea } from '../pages/miscellaneous/autosizing-textarea/autosizing-textarea';
 
 // Providers
 import { WeatherService } from '../pages/miscellaneous/weather/weather.service';
@@ -108,6 +109,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 // Directives
 import { SlidingDrawer } from '../components/sliding-drawer/sliding-drawer';
+import { Autosize } from '../components/autosize/autosize';
 
 // Components
 import { Timer } from '../components/countdown-timer/timer';
@@ -204,6 +206,7 @@ export const Pages = [
     FlashCardPage,
     BarcodescannerPage,
     ExpandableHeaderPage,
+    AutosizingTextarea,
 
     // Modals
     PopupModalsPage,
@@ -261,4 +264,5 @@ export const Directives = [
     SlidingDrawer,
     Timer,
     TypingEffect,
+    Autosize,
 ]
