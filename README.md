@@ -9,11 +9,11 @@ The content here is a mix of tutorials found online, a few adapted codepen stuff
 
 **HOPEFULLY** you will like this repo and feel like contributing, so please if you can, contribute so we can have even more amazing content!
 
-## Ionic View Code: bd1b6d71
 
-If you just want to check this project out, you can use [Ionic View](http://view.ionic.io/) with the code on the title.
+## Demo
+If you just want to check this project out, you can see the online demo at https://ioniccomponents.yannbraga.com/ or use [Ionic View](http://view.ionic.io/) with the code **bd1b6d71**.
 
-Please notice that some plugins may **only work** when using a real device, so don't expect everything to work on ionic view.
+Please notice that some plugins may **only work** when using a real device, so don't expect everything to work on ionic view or the browser.
 
 ****
 
