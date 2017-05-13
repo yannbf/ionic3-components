@@ -11,6 +11,7 @@
 		<div class="popup-menu-panel" [ngClass]="{'in': menu_is_open}">
 			<div class="popup-menu-item" (click)="goToHome()">
 				<ion-icon name="home"></ion-icon>
+				<ion-badge>25</ion-badge>
 				<span>HOME</span>
 			</div>
 			<div class="popup-menu-item" (click)="goToCups()">
@@ -19,6 +20,7 @@
 			</div>
 			<div class="popup-menu-item" (click)="goToLeaderboard()">
 				<ion-icon name="podium"></ion-icon>
+				<ion-badge>10</ion-badge>
 				<span>LEADERBOARD</span>
 			</div>
 			<div class="popup-menu-item" (click)="goToHelp()">
@@ -27,10 +29,12 @@
 			</div>
 			<div class="popup-menu-item" (click)="goToAccount()">
 				<ion-icon name="person"></ion-icon>
+				<ion-badge>5</ion-badge>
 				<span>ACCOUNT</span>
 			</div>
 			<div class="popup-menu-item" (click)="goToShop()">
 				<ion-icon name="cart"></ion-icon>
+				<ion-badge>25</ion-badge>
 				<span>SHOP</span>
 			</div>
 		</div>
