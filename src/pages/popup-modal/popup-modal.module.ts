@@ -1,16 +1,16 @@
-import { PopupModalPage } from './popup-modal';
+import { PopupModalsPage } from './popup-modal';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
     declarations: [
-        PopupModalPage,
+        PopupModalsPage,
     ],
     imports: [
-        IonicPageModule.forChild(PopupModalPage),
+        IonicPageModule.forChild(PopupModalsPage),
     ],
     exports: [
-        PopupModalPage
+        PopupModalsPage
     ]
 })
 

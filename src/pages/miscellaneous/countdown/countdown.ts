@@ -6,7 +6,7 @@ import { NavController, MenuController } from 'ionic-angular';
     selector: 'page-countdown',
     templateUrl: 'countdown.html'
 })
-export class CountdownOnePage {
+export class CountdownPage {
 
     constructor(public navCtrl: NavController, public menu: MenuController) {
     }

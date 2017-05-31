@@ -1,17 +1,17 @@
-import { SlideRtlPage } from './slide-rtl';
+import { SlideRightToLeftPage } from './slide-rtl';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
     declarations: [
-        SlideRtlPage,
+        SlideRightToLeftPage,
     ],
     imports: [
-        IonicPageModule.forChild(SlideRtlPage),
+        IonicPageModule.forChild(SlideRightToLeftPage),
     ],
     exports: [
-        SlideRtlPage
+        SlideRightToLeftPage
     ]
 })
 
-export class SlideRtlPageModule { };
+export class SlideRightToLeftPageModule { };

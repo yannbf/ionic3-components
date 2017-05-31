@@ -1,4 +1,4 @@
-import { SlidingItemListPage } from './sliding-item/sliding-item';
+import { SlidingItemPage } from './sliding-item/sliding-item';
 import { SettingsListPage } from './settings/settings';
 import { Component } from '@angular/core';
 
@@ -21,7 +21,7 @@ export class ListsPage {
       },
       {
         title: 'Sliding Item',
-        page: SlidingItemListPage
+        page: SlidingItemPage
       },
     ]
   }

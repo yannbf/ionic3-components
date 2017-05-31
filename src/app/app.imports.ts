@@ -19,7 +19,7 @@ import { ProfileSettingsPage } from '../pages/profile/profile-settings/profile-s
 
 // Lists list
 import { ListsPage } from '../pages/list/list';
-import { SlidingItemListPage } from '../pages/list/sliding-item/sliding-item';
+import { SlidingItemPage } from '../pages/list/sliding-item/sliding-item';
 import { SettingsListPage } from '../pages/list/settings/settings';
 
 // Login
@@ -74,7 +74,7 @@ import { SlideColorChangingPage } from '../pages/slide/slide-color-changing/slid
 // Miscellaneous list
 import { MiscellaneousListPage } from '../pages/miscellaneous/miscellaneous';
 import { ClockPage } from '../pages/miscellaneous/clock/clock';
-import { CountdownOnePage } from '../pages/miscellaneous/countdown/countdown';
+import { CountdownPage } from '../pages/miscellaneous/countdown/countdown';
 import { TinderCardsPage } from '../pages/miscellaneous/tinder-cards/tinder-cards';
 import { TestimonialsPage } from '../pages/miscellaneous/testimonials/testimonials';
 import { CurrencyConverterPage } from '../pages/miscellaneous/currency-converter/currency-converter';
@@ -155,7 +155,7 @@ export const Pages = [
     // Lists
     ListsPage,
     SettingsListPage,
-    SlidingItemListPage,
+    SlidingItemPage,
 
     // Alerts
     AlertsPage,
@@ -192,7 +192,7 @@ export const Pages = [
     PopupMenuOnePage,
     TestimonialsPage,
     TinderCardsPage,
-    CountdownOnePage,
+    CountdownPage,
     CurrencyConverterPage,
     CreditCardScanPage,
     ClockPage,

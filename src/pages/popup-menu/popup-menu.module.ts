@@ -1,17 +1,17 @@
-import { PopupMenuPage } from './popup-menu';
+import { PopupMenuListPage } from './popup-menu';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
     declarations: [
-        PopupMenuPage,
+        PopupMenuListPage,
     ],
     imports: [
-        IonicPageModule.forChild(PopupMenuPage),
+        IonicPageModule.forChild(PopupMenuListPage),
     ],
     exports: [
-        PopupMenuPage
+        PopupMenuListPage
     ]
 })
 
-export class PopupMenuPageModule { };
+export class PopupMenuListPageModule { };

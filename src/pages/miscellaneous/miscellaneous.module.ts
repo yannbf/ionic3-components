@@ -1,17 +1,17 @@
-import { MiscellaneousPage } from './miscellaneous';
+import { MiscellaneousListPage } from './miscellaneous';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
     declarations: [
-        MiscellaneousPage,
+        MiscellaneousListPage,
     ],
     imports: [
-        IonicPageModule.forChild(MiscellaneousPage),
+        IonicPageModule.forChild(MiscellaneousListPage),
     ],
     exports: [
-        MiscellaneousPage
+        MiscellaneousListPage
     ]
 })
 
-export class MiscellaneousPageModule { };
+export class MiscellaneousListPageModule { };

@@ -1,16 +1,16 @@
-import { AutosizingTextareaPage } from './autosizing-textarea';
+import { AutosizingTextarea } from './autosizing-textarea';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
     declarations: [
-        AutosizingTextareaPage,
+        AutosizingTextarea,
     ],
     imports: [
-        IonicPageModule.forChild(AutosizingTextareaPage),
+        IonicPageModule.forChild(AutosizingTextarea),
     ],
     exports: [
-        AutosizingTextareaPage
+        AutosizingTextarea
     ]
 })
 

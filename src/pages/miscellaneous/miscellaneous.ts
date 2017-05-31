@@ -8,7 +8,7 @@ import { ChatsPage } from './chat/chats';
 import { FlashCardPage } from './flash-card/flash-card';
 import { BarcodescannerPage } from './barcodescanner/barcodescanner';
 // import { ClockPage } from './clock/clock';
-import { CountdownOnePage } from './countdown/countdown';
+import { CountdownPage } from './countdown/countdown';
 import { TestimonialsPage } from './testimonials/testimonials';
 import { TinderCardsPage } from './tinder-cards/tinder-cards';
 import { Component } from '@angular/core';
@@ -46,7 +46,7 @@ export class MiscellaneousListPage {
             },
             {
                 title: 'Countdown',
-                page: CountdownOnePage
+                page: CountdownPage
             },
             {
                 title: 'Credit Card Scanner',
