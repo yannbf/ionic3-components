@@ -57,13 +57,13 @@
   <!--Material Design Menu-->
   <ion-menu [content]="content" id="menu-material">
     <ion-content>
-      <ion-header class="menu-header">
+      <div class="menu-header">
         <!--material-design-background-->
         <img class="user-avatar round" [src]="chosenPicture || placeholder" onerror="this.src='assets/img/avatar/girl-avatar.png'"
         />
         <p class="name">Paula Bolliger</p>
         <p class="e-mail">pbolliger@email.com</p>
-      </ion-header>
+      </div>
       <ion-list no-lines>
         <button menuClose="left" ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">
         <ion-icon [name]="p.icon" item-left></ion-icon>
