@@ -20,7 +20,7 @@
     </ion-col>
   </ion-row>
   <ion-item *ngIf="cityForecast">
-    <ion-thumbnail item-left>
+    <ion-thumbnail item-start>
       <img src="http://openweathermap.org/img/w/{{cityForecast.weather[0].icon}}.png">
     </ion-thumbnail>
     <h1>{{city}}</h1>
@@ -31,7 +31,7 @@
   <ion-list>
     <ion-list-header *ngIf="forecast"> 7 Day forecast of {{city}}</ion-list-header>
     <ion-item *ngFor="let weather of forecast">
-      <ion-thumbnail item-left>
+      <ion-thumbnail item-start>
         <img src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png">
       </ion-thumbnail>
       <h2>{{weather.dt * 1000 | date: 'EEEE' }} - {{weather.weather[0].description}}</h2>

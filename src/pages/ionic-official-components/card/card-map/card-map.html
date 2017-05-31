@@ -14,14 +14,14 @@
       </ion-fab>
     </div>
     <ion-item *ngFor="let place of card.places" (click)="placeTapped(place)">
-      <ion-icon color="subtle" large item-left [name]='place.icon'></ion-icon>
+      <ion-icon color="subtle" large item-start [name]='place.icon'></ion-icon>
       <h2>{{place.name}}</h2>
       <p>{{place.address}}</p>
     </ion-item>
     <ion-item actions>
-      <span item-left ion-text color="secondary" class="item-bold">{{card.ETA}}</span>
-      <span item-left ion-text color="subtle">{{card.distance}}</span>
-      <button ion-button color="primary" clear item-right icon-left (click)="getDirections(card)">
+      <span item-start ion-text color="secondary" class="item-bold">{{card.ETA}}</span>
+      <span item-start ion-text color="subtle">{{card.distance}}</span>
+      <button ion-button color="primary" clear item-end icon-left (click)="getDirections(card)">
       <ion-icon name='navigate'></ion-icon>
       Start
     </button>
