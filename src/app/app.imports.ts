@@ -82,15 +82,18 @@ import { WeatherPage } from '../pages/miscellaneous/weather/weather';
 import { MessagesPage } from '../pages/miscellaneous/chat/messages/messages';
 import { ChatsPage } from '../pages/miscellaneous/chat/chats';
 import { BlogPostPage } from '../pages/miscellaneous/blog-post/blog-post';
-import { CreditCardScanPage } from '../pages/miscellaneous/credit-card-scan/credit-card-scan';
-import { RuntimePermissionsPage } from '../pages/miscellaneous/runtime-permissions/runtime-permissions';
 import { ChartsPage } from '../pages/miscellaneous/charts/charts';
-import { GetImagePage } from '../pages/miscellaneous/get-image/get-image';
-import { BarcodescannerPage } from '../pages/miscellaneous/barcodescanner/barcodescanner';
 import { ExpandableHeaderPage } from '../pages/miscellaneous/expandable-header/expandable-header';
 import { FlashCardPage } from '../pages/miscellaneous/flash-card/flash-card';
 import { SideMenuPage } from '../pages/side-menu/side-menu';
 import { AutosizingTextarea } from '../pages/miscellaneous/autosizing-textarea/autosizing-textarea';
+
+// Ionic Native Features
+import { IonicNativePage } from '../pages/ionic-native/ionic-native';
+import { CreditCardScanPage } from '../pages/ionic-native/credit-card-scan/credit-card-scan';
+import { RuntimePermissionsPage } from '../pages/ionic-native/runtime-permissions/runtime-permissions';
+import { BarcodescannerPage } from '../pages/ionic-native/barcodescanner/barcodescanner';
+import { GetImagePage } from '../pages/ionic-native/get-image/get-image';
 
 // Providers
 import { WeatherService } from '../pages/miscellaneous/weather/weather.service';
@@ -145,6 +148,8 @@ export const Pages = [
 
     // Ionic Official Components
     IonicOfficialComponentsPage,
+
+    IonicNativePage,
 
     // Buttons
     ButtonsListPage,

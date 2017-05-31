@@ -1,18 +1,14 @@
-import { GetImagePage } from './get-image/get-image';
 import { ChartsPage } from './charts/charts';
-import { CreditCardScanPage } from './credit-card-scan/credit-card-scan';
 import { BlogPostPage } from './blog-post/blog-post';
 import { ChatsPage } from './chat/chats';
 // import { WeatherPage } from './weather/weather';
 // import { CurrencyConverterPage } from './currency-converter/currency-converter';
 import { FlashCardPage } from './flash-card/flash-card';
-import { BarcodescannerPage } from './barcodescanner/barcodescanner';
 // import { ClockPage } from './clock/clock';
 import { CountdownPage } from './countdown/countdown';
 import { TestimonialsPage } from './testimonials/testimonials';
 import { TinderCardsPage } from './tinder-cards/tinder-cards';
 import { Component } from '@angular/core';
-import { RuntimePermissionsPage } from './runtime-permissions/runtime-permissions';
 import { ExpandableHeaderPage } from './expandable-header/expandable-header';
 import { AutosizingTextarea } from './autosizing-textarea/autosizing-textarea'
 
@@ -29,8 +25,8 @@ export class MiscellaneousListPage {
     constructor(public navCtrl: NavController, public menu: MenuController) {
         this.items = [
             {
-                title: 'Barcode Scanner',
-                page: BarcodescannerPage
+                title: 'Autosizing Textarea',
+                page: AutosizingTextarea
             },
             {
                 title: 'Blog Post',
@@ -49,21 +45,17 @@ export class MiscellaneousListPage {
                 page: CountdownPage
             },
             {
-                title: 'Credit Card Scanner',
-                page: CreditCardScanPage
+                title: 'Expandable Header',
+                page: ExpandableHeaderPage
             },
             {
-                title: 'Get image from camera/gallery',
-                page: GetImagePage
+                title: 'Flash Card',
+                page: FlashCardPage
             },
             // {
             //     title: 'Currency Converter',
             //     page: CurrencyConverterPage
             // },
-            {
-                title: 'Runtime User Permissions',
-                page: RuntimePermissionsPage
-            },
             {
                 title: 'Testimonials',
                 page: TestimonialsPage
@@ -72,18 +64,6 @@ export class MiscellaneousListPage {
                 title: 'Tinder Cards',
                 page: TinderCardsPage
             },
-            {
-                title: 'Flash Card',
-                page: FlashCardPage
-            },
-            {
-                title: 'Expandable Header',
-                page: ExpandableHeaderPage
-            },
-            {
-                title: 'Autosizing Textarea',
-                page: AutosizingTextarea
-            }
             // {
             //     title: 'Weather',
             //     page: WeatherPage

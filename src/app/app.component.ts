@@ -1,3 +1,4 @@
+import { IonicNativePage } from '../pages/ionic-native/ionic-native';
 import { SideMenuPage } from '../pages/side-menu/side-menu';
 import { IonicOfficialComponentsPage } from '../pages/ionic-official-components/ionic-official-components';
 import { LoginListPage } from '../pages/login/login';
@@ -49,6 +50,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage, active: true, icon: 'home' },
       { title: 'Ionic Official Components', component: IonicOfficialComponentsPage, active: false, icon: 'alarm' },
+      { title: 'Ionic Native Features', component: IonicNativePage, active: false, icon: 'alarm' },
       { title: 'Login', component: LoginListPage, active: false, icon: 'archive' },
       { title: 'Lists', component: ListsPage, active: false, icon: 'body' },
       { title: 'Popup Modal', component: PopupModalsPage, active: false, icon: 'basket' },
