@@ -6,7 +6,7 @@
 <ion-content>
   <ion-list>
     <ion-list-header>
-      <ion-avatar item-left (click)="updateProfileImage()">
+      <ion-avatar item-start (click)="updateProfileImage()">
         <img [src]="user.imageUrl ? user.imageUrl : placeholder_picture">
       </ion-avatar>
       <p class="username">{{user.name}}</p>
@@ -18,7 +18,7 @@
       General
     </ion-list-header>
     <ion-item>
-      <ion-icon name='settings' item-left></ion-icon>
+      <ion-icon name='settings' item-start></ion-icon>
       <ion-label>App Language</ion-label>
       <ion-select [(ngModel)]="language">
         <ion-option *ngFor="let language of languages" [value]="language">{{language}}</ion-option>
@@ -27,7 +27,7 @@
     <ion-item>
       <ion-toggle [(ngModel)]="enableNotifications" (click)="toggleNotifications()"></ion-toggle>
       <ion-label class="label"> Enable notifications </ion-label>
-      <ion-icon name='notifications' item-left></ion-icon>
+      <ion-icon name='notifications' item-start></ion-icon>
     </ion-item>
   </ion-list>
   <ion-list>
@@ -35,14 +35,14 @@
       Currency
     </ion-list-header>
     <ion-item>
-      <ion-icon name='card' item-left></ion-icon>
+      <ion-icon name='card' item-start></ion-icon>
       <ion-label>Payment Method</ion-label>
       <ion-select [(ngModel)]="paymentMethod">
         <ion-option *ngFor="let method of paymentMethods" [value]="method">{{method}}</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
-      <ion-icon name='logo-usd' item-left></ion-icon>
+      <ion-icon name='logo-usd' item-start></ion-icon>
       <ion-label>Currency</ion-label>
       <ion-select [(ngModel)]="currency">
         <ion-option *ngFor="let currency of currencies" [value]="currency">{{currency}}</ion-option>
@@ -54,11 +54,10 @@
       Other
     </ion-list-header>
     <ion-item>
-      <ion-icon name='power' item-left></ion-icon>
-      <button ion-button (click)="logOut()" item-right>
+      <ion-icon name='power' item-start></ion-icon>
+      <button ion-button (click)="logOut()" item-end>
       Logout
       </button>
     </ion-item>
   </ion-list>
 </ion-content>
-

@@ -14,23 +14,23 @@
             <div class="inset">
                 <div class="percentage">{{timer.displayTime}}</div>
             </div>
-        </div> 
+        </div>
 		<button ion-button *ngIf="!timeInSeconds || timeInSeconds == 0" large block clear class="timer-button">Timer set up incorrectly</button>
 	</ion-card-header>
 	<ion-item *ngIf="timeInSeconds && timeInSeconds > 0">
-		<button ion-button clear class="large" color="danger" (click)="initTimer()" item-left *ngIf="!timer.runTimer && (timer.hasStarted || timer.hasFinished) || timer.hasFinished">
+		<button ion-button clear class="large" color="danger" (click)="initTimer()" item-start *ngIf="!timer.runTimer && (timer.hasStarted || timer.hasFinished) || timer.hasFinished">
             <ion-icon name="refresh"></ion-icon>
             Restart
         </button>
-		<button ion-button clear class="large" (click)="pauseTimer()" item-right *ngIf="timer.runTimer && timer.hasStarted && !timer.hasFinished">
+		<button ion-button clear class="large" (click)="pauseTimer()" item-end *ngIf="timer.runTimer && timer.hasStarted && !timer.hasFinished">
             <ion-icon name="pause"></ion-icon>
             Pause
         </button>
-		<button ion-button clear class="large" (click)="resumeTimer()" item-right *ngIf="!timer.runTimer && timer.hasStarted && !timer.hasFinished">
+		<button ion-button clear class="large" (click)="resumeTimer()" item-end *ngIf="!timer.runTimer && timer.hasStarted && !timer.hasFinished">
             <ion-icon name="play"></ion-icon>
             Resume
         </button>
-		<button ion-button clear class="large" (click)="startTimer()" item-right *ngIf="!timer.hasStarted">
+		<button ion-button clear class="large" (click)="startTimer()" item-end *ngIf="!timer.hasStarted">
             <ion-icon name="play"></ion-icon>
             Start
         </button>

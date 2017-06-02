@@ -1,6 +1,6 @@
-# Ionic 2 Advanced Components [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
+# Ionic Advanced Components [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
 
-_Currently this project is using the latest versions of all: Ionic 3 and Angular 4_
+_Currently this project is using the latest versions of all: Ionic and Angular 4_
 
 This repository was made in order to help people learn and speed up their development process.
 You will find many many different components, pages, pipes, services, of which can be very useful to you. Note though that these are all experimental!

@@ -7,7 +7,7 @@
   <ion-list>
     <ion-item-sliding *ngFor="let item of items">
       <ion-item>
-        <ion-thumbnail item-left>
+        <ion-thumbnail item-start>
           <img [src]="item.imageUrl">
         </ion-thumbnail>
         <h2>{{item.title}}</h2>
@@ -24,10 +24,9 @@
       </button>
         <button ion-button color="danger" (click)="delete(item)">
         <ion-icon name="trash"></ion-icon>
-        Delete
+        Deleteå
       </button>
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
 </ion-content>
-
