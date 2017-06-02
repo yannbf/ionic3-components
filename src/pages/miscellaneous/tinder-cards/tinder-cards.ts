@@ -24,17 +24,17 @@ export class TinderCardsPage {
   recentCard: string = '';
 
   constructor(public navCtrl: NavController, public http: Http, public toastCtrl: ToastService) {
-    // this.stackConfig = {
-    //   throwOutConfidence: (offset, element) => {
-    //     return Math.min(Math.abs(offset) / (element.offsetWidth / 2), 1);
-    //   },
-    //   transform: (element, x, y, r) => {
-    //     this.onItemMove(element, x, y, r);
-    //   },
-    //   throwOutDistance: (d) => {
-    //     return 800;
-    //   }
-    // };
+    this.stackConfig = {
+      throwOutConfidence: (offset, element: any) => {
+        return Math.min(Math.abs(offset) / (element.offsetWidth / 2), 1);
+      },
+      transform: (element, x, y, r) => {
+        this.onItemMove(element, x, y, r);
+      },
+      throwOutDistance: (d) => {
+        return 800;
+      }
+    };
   }
 
   ngAfterViewInit() {
