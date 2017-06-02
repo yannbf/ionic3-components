@@ -5,11 +5,10 @@ _Currently this project is using the latest versions of all: Ionic and Angular 4
 This repository was made in order to help people learn and speed up their development process.
 You will find many many different components, pages, pipes, services, of which can be very useful to you. Note though that these are all experimental!
 
-The content here is a mix of tutorials found online, a few adapted codepen stuff, a few dribbble inspired layouts, and also other stuff made by me.
+The content here is a mix of tutorials found online, a few adapted codepen stuff, a few dribbble inspired layouts, and also other stuff made by the contributors of this project.
 
 **HOPEFULLY** you will like this repo and feel like contributing, so please if you can, contribute so we can have even more amazing content!
-
-
+ 
 ## Demo
 If you just want to check this project out, you can see the online demo at https://ioniccomponents.yannbraga.com/ or use [Ionic View](http://view.ionic.io/) with the code **bd1b6d71**.
 
@@ -53,3 +52,10 @@ After installing the needed dependencies you are done, launch your app with a si
 ```sh
 $ ionic serve
 ```
+
+## Amazing contributors
+- [Damodar Lohani](https://github.com/lohanidamodar)
+- [Fernando del Olmo](https://github.com/Fdom92)
+- [Daniel Sogl](https://github.com/danielsogl)
+- [Javier](https://github.com/javico2609)
+- [Miguel Carrasco](https://github.com/miguelcarrascoq)
