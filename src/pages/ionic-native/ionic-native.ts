@@ -3,7 +3,7 @@ import { GetImagePage } from './get-image/get-image';
 import { CreditCardScanPage } from './credit-card-scan/credit-card-scan';
 import { BarcodescannerPage } from './barcodescanner/barcodescanner';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 
 @IonicPage()
 @Component({

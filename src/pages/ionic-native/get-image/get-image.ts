@@ -16,52 +16,62 @@ export class GetImagePage {
   }
 
   changePicture() {
-    let loading = this.loadingCtrl.create();
 
-    let actionSheet = this.actionsheetCtrl.create({
-      title: 'Upload picture',
-      cssClass: 'action-sheets-basic-page',
+    let actionsheet = this.actionsheetCtrl.create({
+      title: 'upload picture',
       buttons: [
         {
-          text: 'Camera',
+          text: 'camera',
           icon: !this.platform.is('ios') ? 'camera' : null,
           handler: () => {
-            loading.present();
-            return this.cameraProvider.getPictureFromCamera().then(picture => {
-              if (picture) {
-                this.chosenPicture = picture;
-              }
-              loading.dismiss();
-            }, error => {
-              alert(error);
-            });
+            this.takePicture();
           }
         },
         {
-          text: !this.platform.is('ios') ? 'Gallery' : 'Camera Roll',
+          text: !this.platform.is('ios') ? 'gallery' : 'camera roll',
           icon: !this.platform.is('ios') ? 'image' : null,
           handler: () => {
-            loading.present();
-            return this.cameraProvider.getPictureFromPhotoLibrary().then(picture => {
-              if (picture) {
-                this.chosenPicture = picture;
-              }
-              loading.dismiss();
-            }, error => {
-              alert(error);
-            });
+            this.getPicture();
           }
         },
         {
-          text: 'Cancel',
+          text: 'cancel',
           icon: !this.platform.is('ios') ? 'close' : null,
           role: 'destructive',
           handler: () => {
-            console.log('The user has cancelled the interaction.');
+            console.log('the user has cancelled the interaction.');
           }
         }
       ]
     });
-    return actionSheet.present();
+    return actionsheet.present();
+  }
+
+  takePicture() {
+    let loading = this.loadingCtrl.create();
+
+    loading.present();
+    return this.cameraProvider.getPictureFromCamera().then(picture => {
+      if (picture) {
+        this.chosenPicture = picture;
+      }
+      loading.dismiss();
+    }, error => {
+      alert(error);
+    });
+  }
+
+  getPicture() {
+    let loading = this.loadingCtrl.create();
+
+    loading.present();
+    return this.cameraProvider.getPictureFromPhotoLibrary().then(picture => {
+      if (picture) {
+        this.chosenPicture = picture;
+      }
+      loading.dismiss();
+    }, error => {
+      alert(error);
+    });
   }
 }
