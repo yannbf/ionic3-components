@@ -99,6 +99,7 @@ export const Providers = [
 export const Components = [
     FlashCardComponent,
     TimerProgress,
+    Timer,
     ExpandableHeader
 ]
 

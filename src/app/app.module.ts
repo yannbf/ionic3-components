@@ -1,3 +1,4 @@
+import { SharedModule } from './shared.module';
 import {
     IonicOfficialComponentsPageModule
 } from '../pages/ionic-official-components/ionic-official-components.module';
@@ -21,23 +22,14 @@ import { Modules, Pages, Directives, Pipes, Providers, Components } from './app.
     // App Core
     MyApp,
     Pages,
-    Components,
-    Directives,
-    Pipes
+    // Components,
+    // Directives,
+    // Pipes
   ],
   imports: [
     Modules,
     IonicModule.forRoot(MyApp),
-    BarcodeScannerPageModule,
-    LoginListPageModule,
-    ListsPageModule,
-    ProfileListPageModule,
-    MiscellaneousListPageModule,
-    PopupMenuListPageModule,
-    PopupModalPageModule,
-    ThemingPageModule,
-    SideMenuPageModule,
-    IonicOfficialComponentsPageModule,
+    SharedModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [

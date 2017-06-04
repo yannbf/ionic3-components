@@ -1,3 +1,4 @@
+import { SharedModule } from '../../../app/shared.module';
 import { ExpandableHeaderPage } from './expandable-header';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
@@ -8,6 +9,7 @@ import { IonicPageModule } from 'ionic-angular';
     ],
     imports: [
         IonicPageModule.forChild(ExpandableHeaderPage),
+        SharedModule,
     ],
     exports: [
         ExpandableHeaderPage

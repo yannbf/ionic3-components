@@ -32,7 +32,7 @@ export class ChatsPage {
   }
 
   viewMessages(chat) {
-    this.navCtrl.push(MessagesPage, { chatId: chat.id });
+    this.navCtrl.push('MessagesPage', { chatId: chat.id });
   }
 
   /*
