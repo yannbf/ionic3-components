@@ -1,27 +1,25 @@
-import { SlidingItemPage } from './sliding-item/sliding-item';
-import { SettingsListPage } from './settings/settings';
 import { Component } from '@angular/core';
+import { NavController, IonicPage } from 'ionic-angular';
 
-import { NavController } from 'ionic-angular';
-
+@IonicPage()
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html'
 })
-export class ListsPage {
+export class ListPage {
   rootPage: any;
   items: Array<{ title: string, page: any }>;
 
   constructor(public navCtrl: NavController) {
-    this.rootPage = ListsPage;
+    this.rootPage = 'ListsPage';
     this.items = [
       {
         title: 'Settings',
-        page: SettingsListPage
+        page : 'SettingsListPage'
       },
       {
         title: 'Sliding Item',
-        page: SlidingItemPage
+        page : 'SlidingItemPage'
       },
     ]
   }

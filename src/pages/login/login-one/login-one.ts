@@ -1,7 +1,8 @@
-import { AlertController, App, LoadingController, NavController } from 'ionic-angular';
 // import { FormBuilder, FormControl, Validator } from '@angular/forms';
 import { Component } from '@angular/core';
+import { AlertController, App, LoadingController, NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-login-one',
   templateUrl: 'login-one.html',

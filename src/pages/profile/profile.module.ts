@@ -1,4 +1,4 @@
-import { ProfileListPage } from './profile-list';
+import { ProfileListPage } from './profile';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 

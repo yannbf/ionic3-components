@@ -1,7 +1,3 @@
-import { RuntimePermissionsPage } from './runtime-permissions/runtime-permissions';
-import { GetImagePage } from './get-image/get-image';
-import { CreditCardScanPage } from './credit-card-scan/credit-card-scan';
-import { BarcodescannerPage } from './barcodescanner/barcodescanner';
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 
@@ -16,24 +12,24 @@ export class IonicNativePage {
     items: Array<{ title: string, page: any }>;
 
     constructor(public navCtrl: NavController) {
-        this.rootPage = IonicNativePage;
+        this.rootPage = 'IonicNativePage';
 
         this.items = [
             {
                 title: 'Barcode scan',
-                page: BarcodescannerPage
+                page: 'BarcodeScannerPage'
             },
             {
                 title: 'Credit card scanning',
-                page: CreditCardScanPage
+                page: 'CreditCardScanPage'
             },
             {
                 title: 'Get image from camera/gallery',
-                page: GetImagePage
+                page: 'GetImagePage'
             },
             {
                 title: 'Runtime permissions',
-                page: RuntimePermissionsPage
+                page: 'RuntimePermissionsPage'
             },
         ]
     }

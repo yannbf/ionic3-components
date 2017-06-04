@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { CardIO } from '@ionic-native/card-io';
+import { NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-credit-card-scan',
   templateUrl: 'credit-card-scan.html'

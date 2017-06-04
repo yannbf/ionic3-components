@@ -1,7 +1,8 @@
 import { MessagesPage } from './messages/messages';
 import { Component } from '@angular/core';
-import { NavController, App } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   templateUrl: 'chats.html',
 })
@@ -27,7 +28,7 @@ export class ChatsPage {
     timestamp: new Date()
   }]
 
-  constructor(public navCtrl: NavController, public app: App) {
+  constructor(public navCtrl: NavController) {
   }
 
   viewMessages(chat) {
@@ -70,7 +71,7 @@ export class ChatsPage {
         },
     }
   }
-  
+
   456 {
     messages: {
       {
@@ -85,7 +86,7 @@ export class ChatsPage {
           text: 'What up?',
           timestamp: '12093422310'
         },
-    }  
+    }
   }
   */
 }

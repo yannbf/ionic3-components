@@ -1,6 +1,5 @@
 import { ToastService } from '../../../providers/util/toast.service';
 import { Component, ViewChild, ViewChildren, QueryList } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/Rx';
 
@@ -10,7 +9,9 @@ import {
   SwingStackComponent,
   SwingCardComponent
 } from 'angular2-swing';
+import { NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-tinder-cards',
   templateUrl: 'tinder-cards.html'

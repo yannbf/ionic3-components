@@ -1,19 +1,7 @@
-import { ChartsPage } from './charts/charts';
-import { BlogPostPage } from './blog-post/blog-post';
-import { ChatsPage } from './chat/chats';
-// import { WeatherPage } from './weather/weather';
-// import { CurrencyConverterPage } from './currency-converter/currency-converter';
-import { FlashCardPage } from './flash-card/flash-card';
-// import { ClockPage } from './clock/clock';
-import { CountdownPage } from './countdown/countdown';
-import { TestimonialsPage } from './testimonials/testimonials';
-import { TinderCardsPage } from './tinder-cards/tinder-cards';
 import { Component } from '@angular/core';
-import { ExpandableHeaderPage } from './expandable-header/expandable-header';
-import { AutosizingTextarea } from './autosizing-textarea/autosizing-textarea'
+import { NavController, MenuController, IonicPage } from 'ionic-angular';
 
-import { NavController, MenuController } from 'ionic-angular';
-
+@IonicPage()
 @Component({
     selector: 'page-miscellaneous',
     templateUrl: 'miscellaneous.html'
@@ -26,31 +14,31 @@ export class MiscellaneousListPage {
         this.items = [
             {
                 title: 'Autosizing Textarea',
-                page: AutosizingTextarea
+                page: 'AutosizingTextarea'
             },
             {
                 title: 'Blog Post',
-                page: BlogPostPage
+                page: 'BlogPostPage'
             },
             {
                 title: 'Charts',
-                page: ChartsPage
+                page: 'ChartsPage'
             },
             {
                 title: 'Chat',
-                page: ChatsPage
+                page: 'ChatsPage'
             },
             {
                 title: 'Countdown',
-                page: CountdownPage
+                page: 'CountdownPage'
             },
             {
                 title: 'Expandable Header',
-                page: ExpandableHeaderPage
+                page: 'ExpandableHeaderPage'
             },
             {
                 title: 'Flash Card',
-                page: FlashCardPage
+                page: 'FlashCardPage'
             },
             // {
             //     title: 'Currency Converter',
@@ -58,11 +46,11 @@ export class MiscellaneousListPage {
             // },
             {
                 title: 'Testimonials',
-                page: TestimonialsPage
+                page: 'TestimonialsPage'
             },
             {
                 title: 'Tinder Cards',
-                page: TinderCardsPage
+                page: 'TinderCardsPage'
             },
             // {
             //     title: 'Weather',

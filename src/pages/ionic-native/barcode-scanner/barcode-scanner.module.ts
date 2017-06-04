@@ -1,6 +1,6 @@
-import { BarcodeScannerPage } from './barcode-scanner';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
+import { BarcodeScannerPage } from './barcode-scanner';
 
 @NgModule({
     declarations: [

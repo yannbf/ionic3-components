@@ -1,4 +1,4 @@
-import { ButtonsListPage } from './buttons-list';
+import { ButtonsListPage } from './button';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 

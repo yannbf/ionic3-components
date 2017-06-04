@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { AlertController } from 'ionic-angular';
+import { AlertController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-alert',
   templateUrl: 'alert.html'

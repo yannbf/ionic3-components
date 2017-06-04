@@ -1,4 +1,4 @@
-import { LoginListPage } from './login-list';
+import { LoginListPage } from './login';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 

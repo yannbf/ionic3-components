@@ -1,9 +1,10 @@
 import { ToastService } from '../../../providers/util/toast.service';
 import { AlertService } from '../../../providers/util/alert.service';
-import { NavController, App } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { Camera } from '@ionic-native/camera';
+import { NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-profile-settings',
   templateUrl: 'profile-settings.html',
@@ -30,7 +31,7 @@ export class ProfileSettingsPage {
   }
 
   constructor(private navCtrl: NavController, public alertService: AlertService,
-    public toastCtrl: ToastService, public app: App, public camera: Camera) {
+    public toastCtrl: ToastService, public camera: Camera) {
 
   }
 

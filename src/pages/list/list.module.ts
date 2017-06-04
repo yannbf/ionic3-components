@@ -1,17 +1,17 @@
-import { WeatherPage } from './weather';
+import { ListPage } from './list';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
     declarations: [
-        WeatherPage,
+        ListPage,
     ],
     imports: [
-        IonicPageModule.forChild(WeatherPage),
+        IonicPageModule.forChild(ListPage),
     ],
     exports: [
-        WeatherPage
+        ListPage
     ]
 })
 
-export class WeatherPageModule { };
+export class ListsPageModule { };

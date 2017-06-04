@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { Diagnostic } from '@ionic-native/diagnostic';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-runtime-permissions',
   templateUrl: 'runtime-permissions.html'

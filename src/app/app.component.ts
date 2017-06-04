@@ -1,22 +1,8 @@
-import { IonicNativePage } from '../pages/ionic-native/ionic-native';
-import { SideMenuPage } from '../pages/side-menu/side-menu';
-import { IonicOfficialComponentsPage } from '../pages/ionic-official-components/ionic-official-components';
-import { LoginListPage } from '../pages/login/login';
-import { ThemingPage } from '../pages/theming/theming';
 import { AppState } from './app.global';
-// import { SlidesPage } from '../pages/slide/slide';
-import { PopupModalsPage } from '../pages/popup-modal/popup-modal';
-import { ListsPage } from '../pages/list/list';
-import { PopupMenuListPage } from '../pages/popup-menu/popup-menu';
-import { MiscellaneousListPage } from '../pages/miscellaneous/miscellaneous';
-import { ProfileListPage } from '../pages/profile/profile';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
-import { HomePage } from '../pages/_home/home';
-
 import { Subject } from 'rxjs';
 
 @Component({
@@ -25,7 +11,7 @@ import { Subject } from 'rxjs';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = 'HomePage';
   activePage = new Subject();
 
   pages: Array<{ title: string, component: any, active: boolean, icon: string }>;
@@ -48,19 +34,19 @@ export class MyApp {
     ]
 
     this.pages = [
-      { title: 'Home', component: HomePage, active: true, icon: 'home' },
-      { title: 'Ionic Official Components', component: IonicOfficialComponentsPage, active: false, icon: 'alarm' },
-      { title: 'Ionic Native Features', component: IonicNativePage, active: false, icon: 'alarm' },
-      { title: 'Login', component: LoginListPage, active: false, icon: 'archive' },
-      { title: 'Lists', component: ListsPage, active: false, icon: 'body' },
-      { title: 'Popup Modal', component: PopupModalsPage, active: false, icon: 'basket' },
-      { title: 'Miscellaneous', component: MiscellaneousListPage, active: false, icon: 'bookmarks' },
-      { title: 'Popup Menu', component: PopupMenuListPage, active: false, icon: 'beer' },
-      { title: 'Profile', component: ProfileListPage, active: false, icon: 'camera' },
-      { title: 'Side Menu', component: SideMenuPage, active: false, icon: 'bookmark' },
+      { title: 'Home', component: 'HomePage', active: true, icon: 'home' },
+      { title: 'Ionic Official Components', component: 'IonicOfficialComponentsPage', active: false, icon: 'ionic' },
+      { title: 'Ionic Native Features', component: 'IonicNativePage', active: false, icon: 'ionic' },
+      { title: 'Login', component: 'LoginListPage', active: false, icon: 'archive' },
+      { title: 'Lists', component: 'ListPage', active: false, icon: 'body' },
+      { title: 'Popup Modal', component: 'PopupModalsPage', active: false, icon: 'basket' },
+      { title: 'Miscellaneous', component: 'MiscellaneousListPage', active: false, icon: 'bookmarks' },
+      { title: 'Popup Menu', component: 'PopupMenuListPage', active: false, icon: 'beer' },
+      { title: 'Profile', component: 'ProfileListPage', active: false, icon: 'camera' },
+      { title: 'Side Menu', component: 'SideMenuPage', active: false, icon: 'bookmark' },
       // Removed for now as there were breaking changes in slides
       // { title: 'Slides', component: SlidesPage },
-      { title: 'Theming', component: ThemingPage, active: false, icon: 'power' },
+      { title: 'Theming', component: 'ThemingPage', active: false, icon: 'power' },
     ];
 
     this.activePage.subscribe((selectedPage: any) => {

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController } from 'ionic-angular';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { NavController, AlertController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
-    selector: 'page-barcodescanner',
-    templateUrl: 'barcodescanner.html'
+    selector: 'page-barcode-scanner',
+    templateUrl: 'barcode-scanner.html'
 })
-export class BarcodescannerPage {
+export class BarcodeScannerPage {
 
     public barcodeData;
 

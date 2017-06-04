@@ -1,7 +1,8 @@
 import { CameraProvider } from '../../../providers/util/camera.provider';
 import { Component } from '@angular/core';
-import { NavController, Platform, ActionSheetController, LoadingController } from 'ionic-angular';
+import { NavController, Platform, ActionSheetController, LoadingController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-get-image',
   templateUrl: 'get-image.html'

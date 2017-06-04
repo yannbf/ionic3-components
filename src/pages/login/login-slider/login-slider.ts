@@ -1,8 +1,9 @@
-import { AlertController, App, LoadingController, NavController, Slides } from 'ionic-angular';
 // import { FormBuilder, FormControl, Validator } from '@angular/forms';
 import { Component } from '@angular/core';
 import { ViewChild } from '@angular/core';
+import { AlertController, App, LoadingController, NavController, Slides, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-login-slider',
   templateUrl: 'login-slider.html',
@@ -18,6 +19,7 @@ export class LoginSliderPage {
   @ViewChild('innerSlider') innerSlider: Slides;
 
   goToLogin() {
+    console.log('chamou');
     this.slider.slideTo(1);
   }
 
