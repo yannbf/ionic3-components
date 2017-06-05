@@ -1,0 +1,27 @@
+page-masonry-cards {
+    .pins {
+        column-count: 2;
+    }
+
+    .pin {
+        display: inline-block;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+
+    ion-avatar {
+        margin: 0 !important;
+    }
+
+    .item ion-avatar img {
+        width: 9vw ;
+        height: 9vw;
+    }
+
+    .post-description {
+        padding: 8px;
+        border-bottom: 1px solid #eee;
+    }
+}

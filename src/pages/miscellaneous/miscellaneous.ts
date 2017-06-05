@@ -40,10 +40,10 @@ export class MiscellaneousListPage {
                 title: 'Flash Card',
                 page: 'FlashCardPage'
             },
-            // {
-            //     title: 'Currency Converter',
-            //     page: CurrencyConverterPage
-            // },
+            {
+                title: 'Masonry Cards',
+                page: 'MasonryCardsPage'
+            },
             {
                 title: 'Testimonials',
                 page: 'TestimonialsPage'
