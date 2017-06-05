@@ -3,6 +3,7 @@ page-masonry-cards {
         column-count: 2;
     }
 
+
     .pin {
         display: inline-block;
     }
@@ -23,5 +24,27 @@ page-masonry-cards {
     .post-description {
         padding: 8px;
         border-bottom: 1px solid #eee;
+    }
+
+    // Media queries
+    @media (min-width: 480px) {
+        .pins {
+            column-count: 3;
+        }
+        .item ion-avatar img {
+            width:  7vw !important;
+            height: 7vw !important;
+        }
+    }
+
+    @media (min-width: 640px) {
+        .pins {
+            column-count: 4;
+        }
+        .item ion-avatar img {
+            width:  5vw !important;
+            height: 5vw !important;
+            margin: 6px;
+        }
     }
 }

@@ -41,7 +41,7 @@ export class MiscellaneousListPage {
                 page: 'FlashCardPage'
             },
             {
-                title: 'Masonry Cards',
+                title: 'Pinterest Masonry Cards',
                 page: 'MasonryCardsPage'
             },
             {
