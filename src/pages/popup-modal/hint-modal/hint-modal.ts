@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavParams, ViewController } from 'ionic-angular';
+import { NavParams, ViewController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-hint-modal',
   templateUrl: 'hint-modal.html'

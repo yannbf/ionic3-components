@@ -1,10 +1,8 @@
-import { AlertsPage } from './alert/alert';
-import { ButtonsListPage } from './button/button';
-import { CardListPage } from './card/card';
 import { Component } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
     selector: 'page-ionic-official-components',
     templateUrl: 'ionic-official-components.html'
@@ -14,20 +12,20 @@ export class IonicOfficialComponentsPage {
     items: Array<{ title: string, page: any }>;
 
     constructor(public navCtrl: NavController) {
-        this.rootPage = CardListPage;
+        this.rootPage = 'CardListPage';
 
         this.items = [
             {
                 title: 'Buttons',
-                page: ButtonsListPage
+                page: 'ButtonsListPage'
             },
             {
                 title: 'Alerts',
-                page: AlertsPage
+                page: 'AlertsPage'
             },
             {
                 title: 'Cards',
-                page: CardListPage
+                page: 'CardsListPage'
             },
         ]
     }

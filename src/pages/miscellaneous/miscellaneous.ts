@@ -1,19 +1,7 @@
-import { GetImagePage } from './get-image/get-image';
-import { ChartsPage } from './charts/charts';
-import { CreditCardScanPage } from './credit-card-scan/credit-card-scan';
-import { BlogPostPage } from './blog-post/blog-post';
-import { ChatsPage } from './chat/chats';
-import { WeatherPage } from './weather/weather';
-import { CurrencyConverterPage } from './currency-converter/currency-converter';
-// import { ClockPage } from './clock/clock';
-import { CountdownOnePage } from './countdown/countdown';
-import { TestimonialsPage } from './testimonials/testimonials';
-import { TinderCardsPage } from './tinder-cards/tinder-cards';
 import { Component } from '@angular/core';
-import { RuntimePermissionsPage } from './runtime-permissions/runtime-permissions';
+import { NavController, MenuController, IonicPage } from 'ionic-angular';
 
-import { NavController, MenuController } from 'ionic-angular';
-
+@IonicPage()
 @Component({
     selector: 'page-miscellaneous',
     templateUrl: 'miscellaneous.html'
@@ -25,44 +13,44 @@ export class MiscellaneousListPage {
     constructor(public navCtrl: NavController, public menu: MenuController) {
         this.items = [
             {
+                title: 'Autosizing Textarea',
+                page: 'AutosizingTextarea'
+            },
+            {
                 title: 'Blog Post',
-                page: BlogPostPage
+                page: 'BlogPostPage'
             },
             {
                 title: 'Charts',
-                page: ChartsPage
+                page: 'ChartsPage'
             },
             {
                 title: 'Chat',
-                page: ChatsPage
+                page: 'ChatsPage'
             },
             {
                 title: 'Countdown',
-                page: CountdownOnePage
+                page: 'CountdownPage'
             },
             {
-                title: 'Credit Card Scanner',
-                page: CreditCardScanPage
+                title: 'Expandable Header',
+                page: 'ExpandableHeaderPage'
             },
             {
-                title: 'Get image from camera/gallery',
-                page: GetImagePage
+                title: 'Flash Card',
+                page: 'FlashCardPage'
             },
-            // {
-            //     title: 'Currency Converter',
-            //     page: CurrencyConverterPage
-            // },
             {
-                title: 'Runtime User Permissions',
-                page: RuntimePermissionsPage
+                title: 'Pinterest Masonry Cards',
+                page: 'MasonryCardsPage'
             },
             {
                 title: 'Testimonials',
-                page: TestimonialsPage
+                page: 'TestimonialsPage'
             },
             {
                 title: 'Tinder Cards',
-                page: TinderCardsPage
+                page: 'TinderCardsPage'
             },
             // {
             //     title: 'Weather',

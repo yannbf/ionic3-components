@@ -1,6 +1,5 @@
 import { ToastService } from '../../../providers/util/toast.service';
 import { Component, ViewChild, ViewChildren, QueryList } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/Rx';
 
@@ -10,7 +9,9 @@ import {
   SwingStackComponent,
   SwingCardComponent
 } from 'angular2-swing';
+import { NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-tinder-cards',
   templateUrl: 'tinder-cards.html'
@@ -25,7 +26,7 @@ export class TinderCardsPage {
 
   constructor(public navCtrl: NavController, public http: Http, public toastCtrl: ToastService) {
     this.stackConfig = {
-      throwOutConfidence: (offset, element) => {
+      throwOutConfidence: (offset, element: any) => {
         return Math.min(Math.abs(offset) / (element.offsetWidth / 2), 1);
       },
       transform: (element, x, y, r) => {
@@ -73,10 +74,6 @@ export class TinderCardsPage {
     } else {
       this.toastCtrl.create('You disliked: ' + removedCard.email);
     }
-  }
-
-  presentToast(message) {
-
   }
 
   // Add new cards to our array

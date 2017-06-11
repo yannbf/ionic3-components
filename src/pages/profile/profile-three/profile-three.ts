@@ -1,7 +1,8 @@
 import { ToastService } from '../../../providers/util/toast.service';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-profile-three',
   templateUrl: 'profile-three.html'
@@ -36,9 +37,9 @@ export class ProfileThreePage {
   ];
 
   user = {
-    name: 'Emma Watson',
-    twitter: '@EmWatson',
-    profileImage: 'https://s-media-cache-ak0.pinimg.com/236x/c5/86/e6/c586e6afd87ee357bbab52df241480ac.jpg',
+    name: 'Cosima Niehaus',
+    twitter: '@CheekyEvoDevo',
+    profileImage: '../assets/img/avatar/cosima-avatar.jpg',
     followers: 456,
     following: 1052,
     tweets: 35

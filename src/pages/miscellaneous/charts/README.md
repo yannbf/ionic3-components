@@ -6,8 +6,6 @@ The content used here was a mix of [this tutorial](https://www.joshmorony.com/ad
 `npm install chart.js --save`
 
 ### Importing
-```javascript
-  import Chart from 'chart.js
-``` 
+`import Chart from 'chart.js'` 
 
 Special thanks to [Joshua Morony](https://github.com/joshuamorony) for always providing amazing material! 

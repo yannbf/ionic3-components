@@ -1,0 +1,15 @@
+<ion-header no-border>
+  <ion-navbar transparent>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen padding text-center>
+  <img class="logo" src="assets/img/logo/logo-canon.png" />
+  <div class="buttons">
+    <button ion-button class="login-button facebook" (click)="goToLogin()">Continue with Facebook</button>
+    <button ion-button class="login-button google" (click)="goToLogin()">Login</button>
+    <button ion-button class="login-button" color="dark" (click)="goToSignup()">Create account</button>
+  </div>
+  <video #player playsinline autoplay muted loop poster="assets/video-cover.jpg" id="bgvid">
+    <source src="assets/video/background-480.mp4" type="video/mp4"> Your browser does not support the video tag.
+  </video>
+</ion-content>

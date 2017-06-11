@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Masonry Cards</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <div class="pins">
+    <ion-card class="pin" *ngFor="let post of posts">
+      <img [src]="post.image" />
+      <div *ngIf="post.description" class="post-description">
+        <small>{{ post.description }}</small>
+      </div>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/img/avatar/marty-avatar.png">
+        </ion-avatar>
+        <small>McFly</small>
+        <p><small>Category</small></p>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>

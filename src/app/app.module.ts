@@ -1,27 +1,20 @@
+import { SharedModule } from './shared.module';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { SwingModule } from 'angular2-swing';
 
-import { Pages, Directives, Pipes, Providers } from './app.imports';
+import { Modules, Pages, Providers } from './app.imports';
 
 @NgModule({
   declarations: [
     // App Core
     MyApp,
-
-    // Pages
     Pages,
-
-    // directives
-    Directives,
-
-    // pipes
-    Pipes
   ],
   imports: [
+    Modules,
     IonicModule.forRoot(MyApp),
-    SwingModule
+    SharedModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [

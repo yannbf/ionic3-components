@@ -1,0 +1,50 @@
+page-login-background-video {
+  video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+  }
+  .logo {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  span {
+    color: white;
+  }
+  .buttons {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    width: 90%;
+    transition: all 1s ease;
+  }
+  .login-button {
+    width: 100%;
+    height: 5rem;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: none !important;
+  }
+  .facebook {
+    background-color: rgba(59, 89, 152, .7);
+    &.activated {
+      background-color: rgba(59, 89, 152, 1) !important;
+    }
+  }
+  .google {
+    background-color: rgba(219, 68, 55, .7);
+    &.activated {
+      background-color: rgba(219, 68, 55, 1) !important;
+    }
+  }
+}

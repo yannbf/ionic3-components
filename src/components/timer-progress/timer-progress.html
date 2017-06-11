@@ -1,0 +1,38 @@
+<ion-card *ngIf="timer">
+	<ion-card-header>
+         <div class="radial-progress" data-progress="0">
+            <div class="circle">
+                <div class="mask full" [style.transform]="transform">
+                <div class="fill" [style.transform]="transform"></div>
+                </div>
+                <div class="mask half">
+                <div class="fill" [style.transform]="transform"></div>
+                <div class="fill fix" [style.transform]="fixTransform"></div>
+                </div>
+                <div class="shadow"></div>
+            </div>
+            <div class="inset">
+                <div class="percentage">{{timer.displayTime}}</div>
+            </div>
+        </div>
+		<button ion-button *ngIf="!timeInSeconds || timeInSeconds == 0" large block clear class="timer-button">Timer set up incorrectly</button>
+	</ion-card-header>
+	<ion-item *ngIf="timeInSeconds && timeInSeconds > 0">
+		<button ion-button clear class="large" color="danger" (click)="initTimer()" item-start *ngIf="!timer.runTimer && (timer.hasStarted || timer.hasFinished) || timer.hasFinished">
+            <ion-icon name="refresh"></ion-icon>
+            Restart
+        </button>
+		<button ion-button clear class="large" (click)="pauseTimer()" item-end *ngIf="timer.runTimer && timer.hasStarted && !timer.hasFinished">
+            <ion-icon name="pause"></ion-icon>
+            Pause
+        </button>
+		<button ion-button clear class="large" (click)="resumeTimer()" item-end *ngIf="!timer.runTimer && timer.hasStarted && !timer.hasFinished">
+            <ion-icon name="play"></ion-icon>
+            Resume
+        </button>
+		<button ion-button clear class="large" (click)="startTimer()" item-end *ngIf="!timer.hasStarted">
+            <ion-icon name="play"></ion-icon>
+            Start
+        </button>
+	</ion-item>
+</ion-card>

@@ -1,7 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import Chart from 'chart.js';
+import { NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-charts',
   templateUrl: 'charts.html'
@@ -9,6 +10,7 @@ import Chart from 'chart.js';
 export class ChartsPage {
   @ViewChild('barCanvas') barCanvas;
   @ViewChild('doughnutCanvas') doughnutCanvas;
+  @ViewChild('halfDoughnutCanvas') halfDoughnutCanvas;
   @ViewChild('lineCanvas') lineCanvas;
   @ViewChild('radarCanvas') radarCanvas;
   @ViewChild('polarCanvas') polarCanvas;
@@ -18,6 +20,7 @@ export class ChartsPage {
 
   barChart: any;
   doughnutChart: any;
+  halfDoughnutChart: any;
   lineChart: any;
   radarChart: any;
   polarAreaChart: any;
@@ -30,6 +33,7 @@ export class ChartsPage {
   ionViewDidLoad() {
     this.barChart = this.getBarChart();
     this.doughnutChart = this.getDoughnutChart();
+    this.halfDoughnutChart = this.getHalfDoughnutChart();
     this.lineChart = this.getLineChart();
     this.radarChart = this.getRadarChart();
 
@@ -200,6 +204,32 @@ export class ChartsPage {
     };
 
     return this.getChart(this.doughnutCanvas.nativeElement, "doughnut", data);
+  }
+
+  getHalfDoughnutChart() {
+    let data = {
+      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)'
+        ],
+        hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#FF6384", "#36A2EB", "#FFCE56"]
+      }]
+    };
+
+    let options = {
+      circumference: Math.PI,
+      rotation: 1.0 * Math.PI
+    }
+
+    return this.getChart(this.halfDoughnutCanvas.nativeElement, "doughnut", data, options);
   }
 
   getBarChart() {

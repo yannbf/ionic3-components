@@ -7,7 +7,7 @@
   <ion-list>
     <ion-item-sliding *ngFor="let item of items">
       <ion-item>
-        <ion-thumbnail item-left>
+        <ion-thumbnail item-start>
           <img [src]="item.imageUrl">
         </ion-thumbnail>
         <h2>{{item.title}}</h2>
@@ -30,4 +30,3 @@
     </ion-item-sliding>
   </ion-list>
 </ion-content>
-

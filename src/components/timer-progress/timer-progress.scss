@@ -1,0 +1,73 @@
+.radial-progress {
+    $circle-size: 150px;
+    $circle-background: #d6dadc;
+    $circle-color: tomato;
+    $inset-size: 120px;
+    $inset-color: #fbfbfb;
+    $transition-length: 1s;
+    $shadow: 6px 6px 10px rgba(0,0,0,0.2);
+    $percentage-color: tomato;
+    $percentage-font-size: 22px;
+
+    margin: 50px;
+    width: $circle-size;
+    height: $circle-size;
+    background-color: $circle-background;
+    border-radius: 50%;
+
+    .circle {
+      .fill,
+      .mask,
+      .shadow {
+        width: $circle-size;
+        height: $circle-size;
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      .shadow {
+        box-shadow: $shadow inset;
+      }
+
+      .fill,
+      .mask {
+        -webkit-backface-visibility: hidden;
+        transition: -webkit-transform $transition-length;
+        transition: -ms-transform $transition-length;
+        transition: transform $transition-length;
+        border-radius: 50%;
+      }
+
+      .mask {
+        clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+
+        .fill {
+          clip: rect(0px, $circle-size/2, $circle-size, 0px);
+          background-color: $circle-color;
+        }
+      }
+    }
+
+    .inset {
+      width: $inset-size;
+      height: $inset-size;
+      position: absolute;
+      margin-left: ($circle-size - $inset-size)/2;
+      margin-top: ($circle-size - $inset-size)/2;
+      background-color: $inset-color;
+      border-radius: 50%;
+      box-shadow: $shadow;
+
+      .percentage {
+        width: 100%;
+        position: absolute;
+        top: ($inset-size - $percentage-font-size) / 2;
+        line-height: 1;
+        text-align: center;
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: $percentage-color;
+        font-weight: 800;
+        font-size: $percentage-font-size;
+      }
+    }
+  }

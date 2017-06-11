@@ -1,7 +1,8 @@
-import { AlertController, App, LoadingController, NavController } from 'ionic-angular';
 // import { FormBuilder, FormControl, Validator } from '@angular/forms';
 import { Component } from '@angular/core';
+import { AlertController, App, LoadingController, NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-login-instagram',
   templateUrl: 'login-instagram.html',
@@ -50,7 +51,7 @@ export class LoginInstagramPage {
     [255, 128, 0]);
 
   step = 0;
-  //color table indices for: 
+  //color table indices for:
   // [current color left,next color left,current color right,next color right]
   colorIndices = [0, 1, 2, 3];
 

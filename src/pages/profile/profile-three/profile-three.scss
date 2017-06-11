@@ -44,35 +44,16 @@ page-profile-three {
   .card-profile {
     float: left;
     position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
     width: 100%;
     height: 80vh;
-    // height: 530px;
     background: #fff;
-    // border-radius: $radius;
     z-index: 1;
     box-shadow: 0 0 5px rgba(black, 0.1);
-    &:after {
-      // content: '';
-      // display: block;
-      // position: absolute;
-      // width: 100%;
-      // height: 100px;
-      // bottom: 0;
-      // box-shadow: 0 36px 64px -34px rgba(black, 1), 0 16px 14px -14px rgba(black, 0.6), 0 22px 18px -18px rgba(black, 0.4), 0 22px 38px -18px rgba(black, 1);
-      // transform: scaleX(0.7) scaleY(1.3) translateY(-15%);
-      // z-index: -1;
-      // opacity: 0.25;
-    }
     &_visual {
       height: $visual-height;
       overflow: hidden;
       position: relative;
       background: linear-gradient(to bottom, darken(#545559, 10%), saturate(darken(#3A4A7B, 2%), 20%), saturate(darken(#3A4A7B, 15%), 20%));
-      border-top-left-radius: $radius;
-      border-top-right-radius: $radius;
       &:before,
       &:after {
         display: block;
@@ -81,7 +62,7 @@ page-profile-three {
         height: 100%;
         position: absolute;
         z-index: 0;
-        background: url(https://s-media-cache-ak0.pinimg.com/236x/c5/86/e6/c586e6afd87ee357bbab52df241480ac.jpg)no-repeat center center/cover;
+        background: url(../assets/img/avatar/cosima-avatar.jpg)no-repeat center center/cover;
         opacity: 0.5;
         mix-blend-mode: lighten;
       }
@@ -110,7 +91,6 @@ page-profile-three {
         position: absolute;
         left: 0;
         right: 0;
-        // margin: auto;
         background: {
           color: #F96B4C;
           image: linear-gradient($gradient);
@@ -182,7 +162,6 @@ page-profile-three {
         position: relative;
         margin-top: 2.8em;
         width: 100%;
-        // top: calc( 70% + 4em);
         display: flex;
       }
       .user-stats {

@@ -19,6 +19,10 @@
   text-align: center;
 }
 
+.highlight {
+  background-color: #f4f4f4;
+}
+
 .center {
   display: block;
   margin: 0 auto;
@@ -39,7 +43,7 @@
 }
 
 .round {
-  border-radius: 3%;
+  border-radius: 50%;
 }
 
 .transparent-header {
@@ -64,4 +68,103 @@
     border: 0;
   }
   // ---
+}
+
+// right side menu
+#menu-right {
+  button {
+    padding-left: 16px;
+  }
+  ion-content {
+    background: rgba(255, 36, 36, 0.82);
+  }
+  .menu-inner {
+    width: 10vh;
+  }
+  .active-menu-item {
+    position: absolute;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #ffffff;
+  }
+  .label {
+    display: flex;
+    align-items: center;
+  }
+  .list-md[no-lines] .item-block,
+  .list-md[no-lines] ion-item-options,
+  .list-md[no-lines] .item .item-inner,
+  .list-ios[no-lines] .item-block,
+  .list-ios[no-lines] ion-item-options,
+  .list-ios[no-lines] .item .item-inner {
+    padding: .3rem 0;
+    background: transparent;
+    color: white;
+  }
+  ion-icon {
+    line-height: 1;
+  }
+}
+
+.icon-badge {
+  top: 0px;
+  right: 0px;
+  background: #FF5D5D;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  padding: 5px 8px;
+  border-radius: 15px;
+}
+
+// Sidemenu with avatar
+#menu-avatar {
+  .user-avatar {
+    padding: .5em;
+  }
+  h3,
+  .label {
+    color: white;
+    font-weight: bold;
+  }
+  .item {
+    background: transparent;
+  }
+  ion-content {
+    background: linear-gradient(48deg, rgba(157, 72, 173, 0.8) 0%, rgba(157, 72, 173, 0.86) 28%, rgba(0, 168, 168, 0.98) 93%, rgba(0, 168, 168, 1) 100%);
+  }
+  .menu-inner {
+    background: rgba(255, 255, 255, .3);
+  }
+}
+
+// Material Design Sidemenu
+#menu-material {
+  .menu-header {
+    padding: 5px 15px;
+    background-image: url('../assets/img/misc/material-design-background.jpg');
+    background-size: cover;
+    color: white;
+    .name {
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+    .e-mail {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+  }
+  .user-avatar {
+    padding: .5em;
+    height: 12vh;
+  }
+  h3,
+  .label,
+  {
+    color: #999;
+    font-weight: 400;
+  }
+  ion-icon {
+    color: #777;
+  }
 }

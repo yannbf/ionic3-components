@@ -1,0 +1,1 @@
+This was inspired by [this tutorial](https://www.joshmorony.com/creating-a-pinterest-layout-in-ionic/) created by Josh Morony.

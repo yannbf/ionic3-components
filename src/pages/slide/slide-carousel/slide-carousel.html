@@ -7,7 +7,7 @@
 <ion-content padding>
 	<h2>Welcome to Sliders!</h2>
 
-	<ion-slides #mySlider [options]="mySlideOptions" class="outerSlide">
+	<ion-slides #mySlider class="outerSlide">
 
 		<ion-slide class="innerSlides" *ngFor="let city of citiesSlides">
 			<ion-item class="outerIonItem">
@@ -15,19 +15,19 @@
 					<div class="imgDiv">
 						<img (click)="goToCityPage(city, $event)" src="{{city.image}}"/>
 					</div>
-					
+
 					<button ion-button (click)="ToggleFavorite(city, $event)" clear color="danger" class="favDiv">
 						<ion-icon ios="ios-heart" md="md-heart" *ngIf="city.favorited"></ion-icon>
 						<ion-icon  class="favDivInactiveHeart" ios="ios-heart-outline" md="md-heart-outline" *ngIf="!city.favorited"></ion-icon>
 					</button>
 
 				</div>
-				
+
 				<ion-item no-lines class="profilePicCityName">
 					<h2>
 						{{city.name}}
 					</h2>
-					<ion-avatar (click)="goToProfilePage()" item-right class="profilePicAvatar">         
+					<ion-avatar (click)="goToProfilePage()" item-end class="profilePicAvatar">
 							<img class="profilePic" src="{{city.authorPic}}"/>
 					</ion-avatar>
 				</ion-item>
@@ -69,6 +69,6 @@
 		Exchange Sliders
 	</button>
 
-      
-  
+
+
 </ion-content>

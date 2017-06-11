@@ -5,7 +5,7 @@
 </ion-header>
 <ion-content>
   <!--<ion-slides #slider [options]="slideOptions" (ionDrag)="onSlideMove($event, element)" (ionDidChange)="onSlideChanged()">-->
-  <ion-slides #slider [options]="slideOptions" (ionDidChange)="onSlideChanged()">
+  <ion-slides #slider (ionDidChange)="onSlideChanged()">
     <ion-slide>
       <div id="test">
         <h1>

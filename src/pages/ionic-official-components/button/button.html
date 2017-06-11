@@ -6,10 +6,149 @@
     <ion-title>Buttons</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      {{item.title}}
+
+<ion-content text-center>
+  <h4>Colors</h4>
+  <button ion-button>Default</button>
+  <button ion-button color="secondary">Secondary</button>
+  <button ion-button color="danger">Danger</button>
+  <button ion-button color="light">Light</button>
+  <button ion-button color="dark">Dark</button>
+
+  <h4>Shapes</h4>
+  <button ion-button full>Full Button</button>
+  <button ion-button block>Block Button</button>
+  <button ion-button round>Round Button</button>
+
+  <h4>Outlines</h4>
+  <button ion-button color="secondary" full outline>Outline + Full</button>
+  <button ion-button color="secondary" block outline>Outline + Block</button>
+  <button ion-button color="secondary" round outline>Outline + Round</button>
+
+  <h4>Icons</h4>
+  <button ion-button icon-left color="dark">
+    <ion-icon name="star"></ion-icon>
+    Left Icon
+  </button>
+  <button ion-button icon-right color="dark">
+    Right Icon
+    <ion-icon name="star"></ion-icon>
+  </button>
+  <button ion-button icon-only color="dark">
+    <ion-icon name="star"></ion-icon>
+  </button>
+   <button ion-button color="light" icon-left>
+    <ion-icon name='arrow-back'></ion-icon>
+    Back
+  </button>
+  <button ion-button color="light" icon-only>
+    <ion-icon name='arrow-down'></ion-icon>
+  </button>
+  <button ion-button color="light" icon-only>
+    <ion-icon name='arrow-up'></ion-icon>
+  </button>
+  <button ion-button color="light" icon-right>
+    Next
+    <ion-icon name='arrow-forward'></ion-icon>
+  </button>
+  <button ion-button icon-left>
+    <ion-icon name='home'></ion-icon>
+    Home
+  </button>
+  <button ion-button outline icon-left>
+    <ion-icon name='briefcase' is-active="false"></ion-icon>
+    Work
+  </button>
+  <button ion-button clear icon-left>
+    <ion-icon name='beer' is-active="false"></ion-icon>
+    Pub
+  </button>
+  <button ion-button color="secondary" icon-left>
+    <ion-icon name='people'></ion-icon>
+    Friends
+  </button>
+  <button ion-button color="secondary" outline icon-left>
+    <ion-icon name='paw' is-active="false"></ion-icon>
+    Best Friend
+  </button>
+  <button ion-button color="danger" icon-left>
+    <ion-icon name='close'></ion-icon>
+    Remove
+  </button>
+  <button ion-button color="danger" outline icon-only>
+    <ion-icon name='remove-circle' is-active="false"></ion-icon>
+  </button>
+  <button ion-button color="danger" clear icon-only>
+    <ion-icon name='trash' is-active="false"></ion-icon>
+  </button>
+  <button ion-button color="dark" round icon-left>
+    <ion-icon name='construct' is-active="false"></ion-icon>
+    Tools
+  </button>
+  <button ion-button color="dark" clear icon-only>
+    <ion-icon name='hammer' is-active="false"></ion-icon>
+  </button>
+
+  <h4>Sizes</h4>
+  <button ion-button color="light" large>Large</button>
+  <button ion-button color="light">Default</button>
+  <button ion-button color="light" small>Small</button>
+
+  <!-- Float Action Buttons -->
+  <ion-fab right top edge>
+    <button ion-fab class="pop-in" color="dark">
+        FAB
     </button>
+  </ion-fab>
+  <ion-fab bottom right >
+    <button ion-fab class="pop-in" color="danger">Share</button>
+    <ion-fab-list side="top">
+      <button ion-fab color="primary">
+        <ion-icon  name="logo-facebook"></ion-icon>
+      </button>
+      <button ion-fab color="secondary">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </button>
+      <button ion-fab color="dark">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </button>
+    </ion-fab-list>
+    <ion-fab-list side="left">
+      <button ion-fab>
+        <ion-icon name="logo-github"></ion-icon>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <h4>In components</h4>
+  <ion-card>
+    <ion-card-content>
+      <img src="assets/img/misc/img-icon.png" />
+    </ion-card-content>
+    <ion-item>
+      <button ion-button clear item-start>Like</button>
+      <button ion-button clear item-end>Comment</button>
+    </ion-item>
+  </ion-card>
+  <ion-list>
+    <ion-item>
+      Inner Button
+      <button ion-button item-end outline>Outline</button>
+    </ion-item>
+    <ion-item>
+      Left Icon Button
+      <button ion-button item-end outline icon-left>
+        <ion-icon name='star'></ion-icon>
+        Left Icon
+      </button>
+    </ion-item>
+    <ion-item>
+      Right Icon Button
+      <button ion-button item-end outline icon-right>
+        Right Icon
+        <ion-icon name='star'></ion-icon>
+      </button>
+    </ion-item>
   </ion-list>
 </ion-content>
+

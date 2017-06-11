@@ -9,50 +9,50 @@
   <ion-list>
     <ion-list-header>Today</ion-list-header>
     <ion-item *ngFor="let chat of chats" (click)="viewMessages(chat)">
-      <ion-avatar item-left>
+      <ion-avatar item-start>
         <img [src]="chat.imageUrl">
       </ion-avatar>
       <h2>{{chat.title}}</h2>
       <p>{{chat.lastMessage}}</p>
-      <ion-note item-right>{{chat.timestamp | moment:"hh:mm a" | lowercase}}</ion-note>
+      <ion-note item-end>{{chat.timestamp | moment:"hh:mm a" | lowercase}}</ion-note>
     </ion-item>
   </ion-list>
   <ion-list>
     <ion-list-header>Yesterday</ion-list-header>
     <ion-item>
-      <ion-avatar item-left>
+      <ion-avatar item-start>
         <img src="assets/img/avatar/marty-avatar.png">
       </ion-avatar>
       <h2>McFly</h2>
       <p>Lorem ipsum dolor sit amet..</p>
-      <ion-note item-right>11:11 pm</ion-note>
+      <ion-note item-end>11:11 pm</ion-note>
     </ion-item>
     <ion-item>
-      <ion-avatar item-left>
+      <ion-avatar item-start>
         <img src="assets/img/avatar/marty-avatar.png">
       </ion-avatar>
       <h2>McFly</h2>
       <p>Lorem ipsum dolor sit amet..</p>
-      <ion-note item-right>11:11 pm</ion-note>
+      <ion-note item-end>11:11 pm</ion-note>
     </ion-item>
     <ion-item>
-      <ion-avatar item-left>
+      <ion-avatar item-start>
         <img src="assets/img/avatar/marty-avatar.png">
       </ion-avatar>
       <h2>McFly</h2>
       <p>Lorem ipsum dolor sit amet..</p>
-      <ion-note item-right>11:11 pm</ion-note>
+      <ion-note item-end>11:11 pm</ion-note>
     </ion-item>
   </ion-list>
   <ion-list>
     <ion-list-header>Last Week</ion-list-header>
     <ion-item>
-      <ion-avatar item-left>
+      <ion-avatar item-start>
         <img src="assets/img/avatar/marty-avatar.png">
       </ion-avatar>
       <h2>McFly</h2>
       <p>Lorem ipsum dolor sit amet..</p>
-      <ion-note item-right>11:11 pm</ion-note>
+      <ion-note item-end>11:11 pm</ion-note>
     </ion-item>
   </ion-list>
 </ion-content>

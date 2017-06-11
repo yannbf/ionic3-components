@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+     <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>FlashCard</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+      <flash-card *ngFor="let card of flashCards" >
+        <div class="fc-front">
+          <img *ngIf="card.front.image"  [src]="card.front.image" />
+          <h2 text-center>{{card.front.title}}</h2>
+          <h3 text-center>{{card.front.subtitle}}</h3>
+          <hr />
+          <p *ngIf="card.front.title" >{{card.front.content}}</p>
+        </div>
+        <div class="fc-back">
+          <img *ngIf="card.back.image"  [src]="card.back.image" />
+          <h2 text-center>{{card.back.title}}</h2>
+          <h3 text-center>{{card.back.subtitle}}</h3>
+          <hr />
+          <p *ngIf="card.back.title" >{{card.back.content}}</p>
+        </div>
+      </flash-card>
+</ion-content>

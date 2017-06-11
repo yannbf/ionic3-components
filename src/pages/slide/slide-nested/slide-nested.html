@@ -4,9 +4,11 @@
   </ion-navbar>
 </ion-header>
 <ion-content>
-  <ion-slides #slider [options]="horizontalSlideOptions" (ionDidChange)="onSlideChanged()">
+  <!--<ion-slides #slider [options]="horizontalSlideOptions" (ionDidChange)="onSlideChanged()">-->
+  <ion-slides #slider (ionDidChange)="onSlideChanged()">
     <ion-slide>
-      <ion-slides #slider [options]="verticalSlideOptions" (ionDidChange)="onSlideChanged()">
+      <!--<ion-slides #slider [options]="verticalSlideOptions" (ionDidChange)="onSlideChanged()">-->
+      <ion-slides #slider (ionDidChange)="onSlideChanged()">
         <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
           <h2>{{slide.title}}</h2>
         </ion-slide>

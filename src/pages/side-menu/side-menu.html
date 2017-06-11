@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle="left">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Side Menu</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only menuToggle="right">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <p>The home icon on the right is a small width sidemenu.</p>
+  <button ion-button block color="secondary" (click)="changeMenu(MENU.DEFAULT)">Default sidemenu</button>
+  <button ion-button block color="danger" (click)="changeMenu(MENU.AVATAR)">Sidemenu with avatar</button>
+  <button ion-button block color="black" (click)="changeMenu(MENU.MATERIAL)">Material Design</button>
+</ion-content>

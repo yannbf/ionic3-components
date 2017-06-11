@@ -1,8 +1,7 @@
-import { PopupMenuOnePage } from './popup-menu-one/popup-menu-one';
 import { Component } from '@angular/core';
+import { NavController, MenuController, IonicPage } from 'ionic-angular';
 
-import { NavController, MenuController } from 'ionic-angular';
-
+@IonicPage()
 @Component({
   selector: 'page-popup-menu',
   templateUrl: 'popup-menu.html'
@@ -16,7 +15,7 @@ export class PopupMenuListPage {
     this.items = [
       {
         title: 'Type One',
-        page: PopupMenuOnePage
+        page: 'PopupMenuOnePage'
       },
     ]
   }

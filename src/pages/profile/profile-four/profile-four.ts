@@ -1,7 +1,8 @@
 import { ToastService } from '../../../providers/util/toast.service';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-profile-four',
   templateUrl: 'profile-four.html'

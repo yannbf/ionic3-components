@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 
-import { NavController, MenuController } from 'ionic-angular';
+import { NavController, MenuController, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
     selector: 'page-countdown',
     templateUrl: 'countdown.html'
 })
-export class CountdownOnePage {
+export class CountdownPage {
 
     constructor(public navCtrl: NavController, public menu: MenuController) {
     }

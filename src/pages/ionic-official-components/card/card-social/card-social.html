@@ -6,7 +6,7 @@
 <ion-content>
   <ion-card *ngFor="let card of cards">
     <ion-item>
-      <ion-avatar item-left>
+      <ion-avatar item-start>
         <img [src]="card.avatarImageUrl" (click)="avatarTapped(card)">
       </ion-avatar>
       <h2>{{card.name}}</h2>
