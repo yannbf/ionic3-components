@@ -100,7 +100,8 @@ export const Components = [
     FlashCardComponent,
     TimerProgress,
     Timer,
-    ExpandableHeader
+    ExpandableHeader,
+    Autosize
 ]
 
 export const Directives = [
