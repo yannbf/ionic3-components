@@ -8,24 +8,21 @@ import { NavController, ModalController, IonicPage } from 'ionic-angular';
 })
 export class PopupModalsPage {
     rootPage: any;
-    items: Array<{ title: string, page: any }>;
 
-    constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
-
-    }
+    constructor(public navCtrl: NavController, public modalCtrl: ModalController) { }
 
     openHintModal() {
-        let myModal = this.modalCtrl.create('HintModalPage');
+        let myModal = this.modalCtrl.create('HintModalPage', null, { cssClass: 'inset-modal'});
         myModal.present();
     }
 
     openWalkthroughModal() {
-        let myModal = this.modalCtrl.create('WalkthroughModalPage');
+        let myModal = this.modalCtrl.create('WalkthroughModalPage', null, { cssClass: 'inset-modal'});
         myModal.present();
     }
 
     openSignupModal() {
-        let myModal = this.modalCtrl.create('SignupModalPage');
+        let myModal = this.modalCtrl.create('SignupModalPage', null, { cssClass: 'inset-modal'});
         myModal.present();
     }
 }

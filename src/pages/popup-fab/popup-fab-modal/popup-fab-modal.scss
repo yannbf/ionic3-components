@@ -1,0 +1,16 @@
+page-popup-fab-modal {
+  animation: fade-in .8s ease-in-out;
+  @keyframes fade-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .scroll-content {
+    background: #00ccb2;
+  }
+
+  ion-icon, div {
+      color: white;
+      font-weight: bold;
+  }
+}

@@ -1,0 +1,25 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+		<ion-title>Popup Fab</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card padding>
+    <img src="assets/img/lists/wishlist-4.jpg">
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+    <h4>Let's take a look</h4>
+  </ion-card>
+  <ion-fab right bottom middle>
+    <button class="pop-in"
+            [ngClass]="{ 'expand' : expanded, 'contract': contracted }"
+            ion-fab mini
+            (click)="expand()">
+      <ion-icon [hidden]="!showIcon" name="ios-arrow-forward"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

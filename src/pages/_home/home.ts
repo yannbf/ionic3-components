@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, IonicPage } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -7,6 +7,7 @@ import { NavController, IonicPage } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+
   drawerOptions: any;
   constructor(public navCtrl: NavController) {
     this.drawerOptions = {
@@ -15,8 +16,5 @@ export class HomePage {
       thresholdFromTop: 200,
       bounceBack: true
     };
-  }
-
-  ionViewDidLoad() {
   }
 }
