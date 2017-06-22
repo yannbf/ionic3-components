@@ -17,6 +17,10 @@ export class PopupMenuListPage {
         title: 'Type One',
         page: 'PopupMenuOnePage'
       },
+      {
+        title: 'Type Two',
+        page: 'PopupMenuTwoPage'
+      },
     ]
   }
 

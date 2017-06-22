@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { NavController, IonicPage } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-popup-menu-one',
-  templateUrl: 'popup-menu-one.html'
+  selector: 'page-popup-menu-two',
+  templateUrl: 'popup-menu-two.html',
 })
-export class PopupMenuOnePage {
+export class PopupMenuTwoPage {
   openMenu = false;
   constructor(public navCtrl: NavController) { }
 

@@ -1,4 +1,15 @@
-page-popup-menu-one {
+page-popup-menu-two {
+
+  ion-badge{
+    right: calc(50% - 30px) !important;
+    top: -5px;
+    position: absolute;
+    right: 4%;
+    padding: 1px 6px;
+    height: auto;
+    font-size: 12px;
+    line-height: 16px;
+  }
 
   .popup-menu ion-icon {
     text-align: center;
@@ -11,7 +22,7 @@ page-popup-menu-one {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    z-index: 6;
+    z-index: 100;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.15s ease-in-out;
@@ -27,18 +38,18 @@ page-popup-menu-one {
     position: fixed;
     width: 40px;
     height: 40px;
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     margin-left: -20px;
-    background-color: #886aea;
-    border: 1px solid #5227e1;
-    z-index: 7;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
+    background-color: rgb(15,157,88);
+    border-radius: 50%;
+    z-index: 101;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
   }
   .popup-menu-toggle:before {
     position: absolute;
-    content: '\f30c';
+    content: '\f10a';
     font-family: "Ionicons";
     width: 40px;
     height: 40px;
@@ -49,8 +60,8 @@ page-popup-menu-one {
     font-size: 28px;
     color: white;
     opacity: 1;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
     -webkit-transform: scale(1);
@@ -73,15 +84,16 @@ page-popup-menu-one {
   .popup-menu-panel {
     position: fixed;
     width: 300px;
-    height: 200px;
+    height: 180px;
+    border-radius: 5%;
     bottom: 20px;
     left: 50%;
     margin-left: -150px;
     padding: 0px 5px;
-    background-color: #886aea;
-    z-index: 8;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
+    background-color: rgb(15,157,88);
+    z-index: 102;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s;
     -webkit-transform-origin: 50% 100%;
@@ -122,8 +134,8 @@ page-popup-menu-one {
     -webkit-transform: scale(0);
     transform: scale(0);
     opacity: 0;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
   }
   .popup-menu-panel .popup-menu-item i {
     margin: auto 0px 5px 0px;
@@ -144,12 +156,12 @@ page-popup-menu-one {
     line-height: 11px;
   }
   .popup-menu-panel .popup-menu-item:active i {
-    color: gold;
+    color: rgb(221,65,53);
     -webkit-transition: all 0.15s;
     transition: all 0.15s;
   }
   .popup-menu-panel .popup-menu-item:active span {
-    color: gold;
+    color: rgb(221,65,53);
     -webkit-transition: all 0.15s;
     transition: all 0.15s;
   }
@@ -167,4 +179,3 @@ page-popup-menu-one {
     transition-delay: 0.15s;
   }
 }
-
