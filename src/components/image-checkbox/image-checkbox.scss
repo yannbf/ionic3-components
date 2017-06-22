@@ -1,0 +1,76 @@
+image-checkbox {
+    $my-red: rgb(255,50,81);
+    ion-scroll[scrollX] {
+        white-space: nowrap;
+        height: 75px;
+        overflow: hidden;
+
+        .scroll-content {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        .scroll-item {
+            display: inline-block;
+        }
+
+        .selectable-icon{
+            padding: 6px;
+            color: black;
+        }
+    }
+
+    .pulse {
+        animation-name: pulsate;
+        animation-duration: .3s;
+        animation-timing-function: linear;
+    }
+
+    @keyframes pulsate {
+        0% {transform: scale(1, 1);}
+        50% {transform: scale(1.1, 1.1);}
+        100% {transform: scale(1, 1);}
+    }
+
+    ion-col {
+        position: relative;
+        text-align: center;
+
+        img{
+            transition: all .2s linear;
+
+            border-radius: 50%;
+            border: 1px solid $my-red;
+            padding: 1.5rem;
+        }
+
+        p {
+            margin: 0;
+            padding-top: 1rem;
+            color: $my-red;
+        }
+
+        ion-icon {
+            color: $my-red;
+            background: white;
+            position: absolute;
+            top: 8%;
+            right: 8%;
+        }
+
+        &:not(.selected) {
+            ion-icon {
+                display: none;
+            }
+
+            img {
+                opacity: .7;
+                filter: grayscale(100%);
+            }
+
+            p {
+                color: #aaa;
+            }
+        }
+    }
+}

@@ -40,6 +40,7 @@ import { TimerProgress } from '../components/timer-progress/timer-progress';
 import { ExpandableHeader } from '../components/expandable-header/expandable-header';
 import { TypingEffect } from '../components/typing-effect/typing-effect';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
+import { ImageCheckboxComponent } from '../components/image-checkbox/image-checkbox';
 
 // Pipes
 import { MomentPipe } from '../pipes/moment.pipe';
@@ -101,7 +102,8 @@ export const Components = [
     TimerProgress,
     Timer,
     ExpandableHeader,
-    Autosize
+    Autosize,
+    ImageCheckboxComponent,
 ]
 
 export const Directives = [
