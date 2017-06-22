@@ -81,6 +81,11 @@
   .menu-inner {
     width: 10vh;
   }
+  @media screen and (orientation: landscape) {
+    .menu-inner {
+      width: 15vh;
+    }
+  }
   .active-menu-item {
     position: absolute;
     border-top: 6px solid transparent;
