@@ -28,6 +28,10 @@ export class IonicNativePage {
                 page: 'GetImagePage'
             },
             {
+                title: 'Google Maps',
+                page: 'NativeGoogleMapsPage'
+            },
+            {
                 title: 'Runtime permissions',
                 page: 'RuntimePermissionsPage'
             },

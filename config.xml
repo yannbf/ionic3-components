@@ -65,4 +65,8 @@
     <plugin name="cordova.plugins.diagnostic" spec="~3.4.1" />
     <plugin name="cordova-plugin-geolocation" spec="~2.4.2" />
     <plugin name="card.io.cordova.mobilesdk" spec="https://github.com/card-io/card.io-Cordova-Plugin" />
+    <plugin name="cordova-plugin-googlemaps" spec="~1.4.0">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyBaTVlHDndpSgbdDnRsCy2xFJt2tB41NB0" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyBaTVlHDndpSgbdDnRsCy2xFJt2tB41NB0" />
+    </plugin>
 </widget>

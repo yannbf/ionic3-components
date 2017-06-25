@@ -20,6 +20,7 @@ import { SlideColorChangingPage } from '../pages/slide/slide-color-changing/slid
 import { ToastService } from '../providers/util/toast.service';
 import { AlertService } from '../providers/util/alert.service';
 import { CameraProvider } from '../providers/util/camera.provider';
+import { NativeGoogleMapsProvider } from '../providers/native-google-maps/native-google-maps';
 
 // Ionic native providers
 import { CardIO } from '@ionic-native/card-io';
@@ -29,6 +30,7 @@ import { Diagnostic } from '@ionic-native/diagnostic';
 import { Geolocation } from '@ionic-native/geolocation';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { GoogleMaps } from '@ionic-native/google-maps';
 
 // Directives
 import { SlidingDrawer } from '../components/sliding-drawer/sliding-drawer';
@@ -85,6 +87,7 @@ export const Providers = [
     ToastService,
     AppState,
     CameraProvider,
+    NativeGoogleMapsProvider,
 
     // Ionic native specific providers
     BarcodeScanner,
@@ -94,6 +97,7 @@ export const Providers = [
     CardIO,
     StatusBar,
     SplashScreen,
+    GoogleMaps,
 ]
 
 export const Components = [

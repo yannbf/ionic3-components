@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>NativeGoogleMaps</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content text-center>
+  <div #map id="map" style="height: 100%"></div>
+</ion-content>
+<ion-footer>
+  <button ion-button
+          no-margin large
+          full color="secondary"
+          (click)="addMarker()">
+    Add Marker
+  </button>
+</ion-footer>
