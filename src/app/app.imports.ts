@@ -16,7 +16,6 @@ import { SlideNestedPage } from '../pages/slide/slide-nested/slide-nested';
 import { SlideColorChangingPage } from '../pages/slide/slide-color-changing/slide-color-changing';
 
 // Providers
-// import { WeatherService } from '../pages/miscellaneous/weather/weather.service';
 import { ToastService } from '../providers/util/toast.service';
 import { AlertService } from '../providers/util/alert.service';
 import { CameraProvider } from '../providers/util/camera.provider';
@@ -40,7 +39,6 @@ import { Autosize } from '../components/autosize/autosize';
 import { Timer } from '../components/countdown-timer/timer';
 import { TimerProgress } from '../components/timer-progress/timer-progress';
 import { ExpandableHeader } from '../components/expandable-header/expandable-header';
-import { TypingEffect } from '../components/typing-effect/typing-effect';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 
 // Pipes
@@ -61,28 +59,11 @@ export const Modules = [
     HttpModule,
 ]
 
-export const Pages = [
-    // Slides
-    SlidesPage,
-    SlideCarouselPage,
-    SlideTransitionsPage,
-    SlidePhotoGalleryPage,
-    SlideNestedPage,
-    SlideFreeModePage,
-    SlideRightToLeftPage,
-    SlideMultirowPage,
-    SliderListPage,
-    SliderListTwoPage,
-    SlideCustomPaginationPage,
-    SlideColorChangingPage,
-]
-
 export const Pipes = [
     TemperaturePipe, MomentPipe, OrderByPipe, CapitalizePipe, ShortenStringPipe
 ]
 
 export const Providers = [
-    // WeatherService,
     AlertService,
     ToastService,
     AppState,
