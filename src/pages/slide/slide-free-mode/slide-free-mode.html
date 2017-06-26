@@ -4,8 +4,9 @@
   </ion-navbar>
 </ion-header>
 <ion-content>
-  <ion-slides #slider  (ionDidChange)="onSlideChanged()">
-    <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+  <ion-slides #slider spaceBetween="10" slidesPerView="2">
+    <ion-slide *ngFor="let slide of slides"
+               [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
       <h2>{{slide.title}}</h2>
     </ion-slide>
   </ion-slides>
