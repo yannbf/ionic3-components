@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { AlertController, NavController, Slides } from 'ionic-angular';
-import { ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { AlertController, NavController, Slides, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-slide-transitions',
   templateUrl: 'slide-transitions.html'
@@ -62,7 +62,8 @@ export class SlideTransitionsPage {
   transition = 'slide';
 
   changeSlideStyle() {
-    this.slider.noSwiping = true;
+    this.slideEffect = 'cube';
+    // this.slider.noSwiping = true;
     // Hack just to make the styles change. Without it, changing options dinamically won't work.
     // NOTE: You DON'T need to do this if you are using only one type of slider.
     setTimeout(() => this.showSlide = true, 100);

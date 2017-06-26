@@ -1,20 +1,6 @@
 // Global state (used for theming)
 import { AppState } from './app.global';
 
-// Slides
-import { SlidesPage } from '../pages/slide/slide';
-import { SlideTransitionsPage } from '../pages/slide/slide-transitions/slide-transitions';
-import { SlideCarouselPage } from '../pages/slide/slide-carousel/slide-carousel';
-import { SlidePhotoGalleryPage } from '../pages/slide/slide-photo-gallery/slide-photo-gallery';
-import { SlideCustomPaginationPage } from '../pages/slide/slide-custom-pagination/slide-custom-pagination';
-import { SliderListTwoPage } from '../pages/slide/slider-list-two/slider-list-two';
-import { SliderListPage } from '../pages/slide/slider-list/slider-list';
-import { SlideMultirowPage } from '../pages/slide/slide-multirow/slide-multirow';
-import { SlideRightToLeftPage } from '../pages/slide/slide-rtl/slide-rtl';
-import { SlideFreeModePage } from '../pages/slide/slide-free-mode/slide-free-mode';
-import { SlideNestedPage } from '../pages/slide/slide-nested/slide-nested';
-import { SlideColorChangingPage } from '../pages/slide/slide-color-changing/slide-color-changing';
-
 // Providers
 import { ToastService } from '../providers/util/toast.service';
 import { AlertService } from '../providers/util/alert.service';

@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { AlertController, NavController, Slides } from 'ionic-angular';
-import { ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { AlertController, NavController, Slides, IonicPage } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-slide-rtl',
   templateUrl: 'slide-rtl.html'
