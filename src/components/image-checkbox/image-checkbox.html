@@ -1,17 +1,17 @@
 <ion-grid>
   <ion-row>
-    <ion-col *ngFor="let option of options"
-              (click)="select(option)"
-              [class.selected]="option.selected"
-              [class.pulse]="option.selected"
+    <ion-col *ngFor="let item of items"
+              (click)="select(item)"
+              [class.selected]="item.selected"
+              [class.pulse]="item.selected && animated"
               class="scroll-item selectable-icon">
-      <img [src]="option.image"
+      <img [src]="item.image"
            [style.border-color]="borderColor"/>
       <p text-center
          [style.color]="textColor">
-         {{option.text}}
+         {{item.text}}
       </p>
-      <ion-icon name="ios-checkmark-circle"
+      <ion-icon [name]="checkIcon"
                 [style.color]="textColor">
       </ion-icon>
     </ion-col>

@@ -1,5 +1,4 @@
 image-checkbox {
-    $my-red: rgb(255,50,81);
     ion-scroll[scrollX] {
         white-space: nowrap;
         height: 75px;
@@ -40,18 +39,16 @@ image-checkbox {
             transition: all .2s linear;
 
             border-radius: 50%;
-            border: 1px solid $my-red;
+            border: 1px solid;
             padding: 1.5rem;
         }
 
         p {
             margin: 0;
             padding-top: 1rem;
-            color: $my-red;
         }
 
         ion-icon {
-            color: $my-red;
             background: white;
             position: absolute;
             top: 8%;

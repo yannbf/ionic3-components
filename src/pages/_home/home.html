@@ -16,7 +16,8 @@
     Also, the best way to understand the ionic framework is by reading the <a href="http://ionicframework.com/docs/v2">docs</a>,
     which are really great.
   </p>
-  <image-checkbox [options]="options"></image-checkbox>
+  <image-checkbox [items]="items" [(ngModel)]="teste"></image-checkbox>
+  <button ion-button (click)="show()" (ionChange)="show()">test</button>
   <button class="pop-in" ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>
 
