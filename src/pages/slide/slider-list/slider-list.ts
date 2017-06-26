@@ -8,10 +8,6 @@ import { NavController, IonicPage } from 'ionic-angular';
 })
 export class SliderListPage {
 
-  slideOptions = {
-    pager: true
-  };
-
   items = [
     {
       name: 'one',
@@ -104,13 +100,5 @@ export class SliderListPage {
     }
   ]
 
-  constructor(public navCtrl: NavController) {
-    // for (let i = 0; i < 100; i++) {
-    //   this.items.push(this.items[i % 3]);
-    // }
-  }
-
-  viewDetail(item) {
-    // this.navCtrl.push(VehicleDetailPage, 'one');
-  }
+  constructor(public navCtrl: NavController) { }
 }
