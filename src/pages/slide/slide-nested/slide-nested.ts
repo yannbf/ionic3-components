@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { AlertController, NavController, Slides, IonicPage } from 'ionic-angular';
+import { NavController, Slides, IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -8,18 +8,6 @@ import { AlertController, NavController, Slides, IonicPage } from 'ionic-angular
 })
 export class SlideNestedPage {
   @ViewChild('slider') slider: Slides;
-
-  horizontalSlideOptions = {
-    pager: true,
-    autoplay: 2000,
-  };
-
-  verticalSlideOptions = {
-    pager: true,
-    autoplay: 2000,
-    direction: 'vertical',
-    spaceBetween: 50
-  };
 
   slides = [{
     title: "Dream's Adventure",
@@ -39,11 +27,5 @@ export class SlideNestedPage {
   }
   ]
 
-  onSlideChanged() {
-    let currentIndex = this.slider.getActiveIndex();
-    console.log("Slide changed! Current index is", currentIndex);
-  }
-
-  constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
-  }
+  constructor(public navCtrl: NavController) { }
 }

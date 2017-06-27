@@ -21,10 +21,10 @@ export class SlidesPage {
         title: 'Slide Right to Left',
         page: 'SlideRightToLeftPage'
       },
-      // {
-      //   title: 'Nested Slides',
-      //   page: SlideNestedPage
-      // },
+      {
+        title: 'Nested Slides',
+        page: 'SlideNestedPage'
+      },
       {
         title: 'List of Sliders',
         page: 'SliderListPage'
