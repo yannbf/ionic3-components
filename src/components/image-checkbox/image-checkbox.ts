@@ -1,4 +1,4 @@
-import { Component, Input, Output, forwardRef} from '@angular/core';
+import { Component, Input, Output, forwardRef, EventEmitter} from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
@@ -18,6 +18,7 @@ export class ImageCheckboxComponent implements ControlValueAccessor {
   @Input() disabled:boolean = false;
   @Input('options') options;
   @Output() onSelected;
+  @Output() onSelect: EventEmitter<any> = new EventEmitter();
 
   defaultColor = '#FF3251';
   borderColor = this.defaultColor;
