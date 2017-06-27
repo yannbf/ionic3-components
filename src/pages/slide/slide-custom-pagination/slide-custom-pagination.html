@@ -3,17 +3,29 @@
     <ion-title>Custom Pagination</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
-  <ion-item>
-    <ion-label>Select Style</ion-label>
-    <ion-select [(ngModel)]="pagination" (ionChange)="changeSlideStyle()">
-      <ion-option value="pagination-numbers" selected="true">Numbers</ion-option>
-      <ion-option value="pagination-numbers-2">Numbers 2</ion-option>
-      <ion-option value="pagination-icons">Icons</ion-option>
-    </ion-select>
-  </ion-item>
-  <ion-slides #slider  (ionDidChange)="onSlideChanged()" *ngIf="showSlide" [dir]="rtl">
-    <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+<ion-content text-center>
+  <h3>Pagination numbers</h3>
+  <ion-slides #sliderOne pager (ionDidChange)="onSlideChanged()">
+    <ion-slide *ngFor="let slide of slides"
+               [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+      <h2>{{slide.title}}</h2>
+    </ion-slide>
+  </ion-slides>
+
+
+  <h3>Pagination numbers 2</h3>
+  <ion-slides #sliderTwo pager (ionDidChange)="onSlideChanged()">
+    <ion-slide *ngFor="let slide of slides"
+               [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+      <h2>{{slide.title}}</h2>
+    </ion-slide>
+  </ion-slides>
+
+
+  <h3>Pagination icons</h3>
+  <ion-slides #sliderThree pager (ionDidChange)="onSlideChanged()">
+    <ion-slide *ngFor="let slide of slides"
+               [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
       <h2>{{slide.title}}</h2>
     </ion-slide>
   </ion-slides>

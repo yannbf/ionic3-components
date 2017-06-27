@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { AlertController, NavController, Slides, IonicPage } from 'ionic-angular';
+import { NavController, Slides, IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -7,95 +7,50 @@ import { AlertController, NavController, Slides, IonicPage } from 'ionic-angular
   templateUrl: 'slide-custom-pagination.html'
 })
 export class SlideCustomPaginationPage {
-  @ViewChild('slider') slider: Slides;
+  @ViewChild('sliderOne') sliderOne: Slides;
+  @ViewChild('sliderTwo') sliderTwo: Slides;
+  @ViewChild('sliderThree') sliderThree: Slides;
 
-  options: any;
-  showSlide = true;
-
-  customPaginationNumbers = {
-    pager: true,
-    autoplay: 2000,
-    paginationClickable: true,
-    paginationBulletRender: (index, className) => {
-      return '<span class="custom-pagination ' + className + '">' + (index + 1) + '</span>';
+  slides = [
+    {
+      title: "Dream's Adventure",
+      imageUrl: "assets/img/lists/wishlist-1.jpg",
+      songs: 2,
+      private: false
     },
-    onInit: function (swiper) {
-      this.slider = swiper;
-      // Now you can do whatever you want with the swiper
+    {
+      title: "For the Weekend",
+      imageUrl: "assets/img/lists/wishlist-2.jpg",
+      songs: 4,
+      private: false
     },
-  };
-
-  customPaginationNumbers2 = {
-    pager: true,
-    autoplay: 2000,
-    paginationClickable: true,
-    paginationBulletRender: (index, className) => {
-      return '<span class="custom-pagination-2 ' + className + '">' + (index + 1) + '</span>';
+    {
+      title: "Family Time",
+      imageUrl: "assets/img/lists/wishlist-3.jpg",
+      songs: 5,
+      private: true
+    },
+    {
+      title: "My Trip",
+      imageUrl: "assets/img/lists/wishlist-4.jpg",
+      songs: 12,
+      private: true
     }
-  };
-
-  customPaginationIcons = {
-    pager: true,
-    autoplay: 2000,
-    paginationClickable: true,
-    paginationBulletRender: (index, className) => {
-      return '<span class="custom-pagination-3 ' + 'bullet-icon-' + (index + 1) + ' ' + className + '"></span></span>';
-    }
-  };
-
-  slides = [{
-    title: "Dream's Adventure",
-    imageUrl: "assets/img/lists/wishlist-1.jpg",
-    songs: 2,
-    private: false
-  },
-  {
-    title: "For the Weekend",
-    imageUrl: "assets/img/lists/wishlist-2.jpg",
-    songs: 4,
-    private: false
-  },
-  {
-    title: "Family Time",
-    imageUrl: "assets/img/lists/wishlist-3.jpg",
-    songs: 5,
-    private: true
-  },
-  {
-    title: "My Trip",
-    imageUrl: "assets/img/lists/wishlist-4.jpg",
-    songs: 12,
-    private: true
-  }
   ]
 
-  onSlideChanged() {
-    let currentIndex = this.slider.getActiveIndex();
-    console.log("Slide changed! Current index is", currentIndex);
-  }
+  constructor(public navCtrl: NavController) { }
 
-  constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
-    this.options = this.customPaginationNumbers;
-  }
+  ngAfterViewInit() {
+    this.sliderOne.paginationBulletRender = (index, className) => {
+      return '<span class="custom-pagination ' + className + '">' + (index + 1) + '</span>';
+    };
 
-  pagination = 'pagination-numbers';
-
-  changeSlideStyle() {
-    this.showSlide = false;
-    switch (this.pagination) {
-      case 'pagination-numbers':
-        this.options = this.customPaginationNumbers;
-        break;
-      case 'pagination-numbers-2':
-        this.options = this.customPaginationNumbers2;
-        break;
-      case 'pagination-icons':
-        this.options = this.customPaginationIcons;
-        break;
+    this.sliderTwo.paginationBulletRender = (index, className) => {
+      return '<span class="custom-pagination-2 ' + className + '">' + (index + 1) + '</span>';
     }
 
-    // Hack just to make the styles change. Without it, changing options dinamically won't work.
-    // NOTE: You DON'T need to do this if you are using only one type of slider.
-    setTimeout(() => this.showSlide = true, 10);
+    this.sliderThree.paginationBulletRender = (index, className) => {
+      return '<span class="custom-pagination-3 ' + 'bullet-icon-' + (index + 1) + ' ' + className + '"></span></span>';
+    }
   }
 }
