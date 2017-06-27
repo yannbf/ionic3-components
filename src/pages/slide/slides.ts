@@ -13,42 +13,46 @@ export class SlidesPage {
   constructor(public navCtrl: NavController) {
     this.rootPage = SlidesPage;
     this.items = [
+      // {
+      //   title: 'Carousel',
+      //   page: 'SlideCarouselPage'
+      // },
       {
-        title: 'Slide Transitions',
-        page: 'SlideTransitionsPage'
+        title: 'Color changing sliders',
+        page: 'SlideColorChangingPage'
       },
       {
-        title: 'Slide Right to Left',
-        page: 'SlideRightToLeftPage'
+        title: 'Custom pagination',
+        page: 'SlideCustomPaginationPage'
       },
       {
-        title: 'Nested Slides',
-        page: 'SlideNestedPage'
+        title: 'Free mode slide (no fixed positions)',
+        page: 'SlideFreeModePage'
       },
       {
         title: 'List of Sliders',
         page: 'SliderListPage'
       },
       {
-        title: 'Color Changing Sliders',
-        page: 'SlideColorChangingPage'
+        title: 'Nested slides',
+        page: 'SlideNestedPage'
       },
       {
-        title: 'Free Mode Slide (no fixed positions)',
-        page: 'SlideFreeModePage'
+        title: 'Slide transitions',
+        page: 'SlideTransitionsPage'
       },
       {
-        title: 'Custom Pagination',
-        page: 'SlideCustomPaginationPage'
+        title: 'Slide right to left',
+        page: 'SlideRightToLeftPage'
       },
       {
-        title: 'Carousel',
-        page: 'SlideCarouselPage'
+        title: 'Slide with pagination arrows',
+        page: 'SliderWithArrowsPage'
       },
-      {
-        title: 'Photo Gallery (not working)',
-        page: 'SlidePhotoGalleryPage'
-      },
+      // {
+      //   title: 'Photo Gallery (not working)',
+      //   page: 'SlidePhotoGalleryPage'
+      // },
     ]
   }
 

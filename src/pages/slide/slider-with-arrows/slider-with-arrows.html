@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Slider with arrows</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides #slider effect="fade" (ionSlideWillChange)="onSlideChanged()">
+    <ion-slide *ngFor="let slide of slides"
+               class="swiper-no-swiping"
+               [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+      <h2>{{slide.title}}</h2>
+    </ion-slide>
+    <!-- Add Pagination -->
+    <div *ngIf="currentIndex > 0"
+         class="swiper-button-prev swiper-button-white"
+         (click)="previousSlide()"></div>
+    <div *ngIf="currentIndex < slides.length-1"
+         class="swiper-button-next swiper-button-white"
+         (click)="nextSlide()"></div>
+  </ion-slides>
+</ion-content>
