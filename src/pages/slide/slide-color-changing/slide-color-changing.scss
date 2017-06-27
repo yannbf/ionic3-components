@@ -1,4 +1,14 @@
 page-slide-color-changing {
+  .bar-buttons,
+  .toolbar-title {
+    color: #fff;
+  }
+  .scroll-content {
+    padding-top: 0 !important;
+  }
+  ion-slide {
+    transition: all 1s linear;
+  }
   .swiper-container {
     width: 100%;
     height: 100%;
@@ -13,7 +23,7 @@ page-slide-color-changing {
     align-items: center;
   }
   ////
-  #test {
+  #container {
     width: 80%;
     margin: 10% auto 0;
   }
@@ -25,12 +35,14 @@ page-slide-color-changing {
     position: relative;
     font-size: 30px;
     font-family: Helvetica;
-    color: red;
     font-family: Sans-serif;
     font-weight: 800;
     letter-spacing: 2px;
     text-align: left;
     padding-left: 10px;
+  }
+  h1, span, h2 {
+    color: white;
   }
   ul {
     margin: 0 0 0 40px;

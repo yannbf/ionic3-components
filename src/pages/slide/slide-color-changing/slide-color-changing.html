@@ -1,13 +1,13 @@
-<ion-header>
-  <ion-navbar>
+<ion-header no-border>
+  <ion-navbar transparent>
     <ion-title>Color Changing Slide</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
-  <!--<ion-slides #slider [options]="slideOptions" (ionDrag)="onSlideMove($event, element)" (ionDidChange)="onSlideChanged()">-->
-  <ion-slides #slider (ionDidChange)="onSlideChanged()">
-    <ion-slide>
-      <div id="test">
+<ion-content fullscreen>
+  <ion-slides #slider pager
+              (ionSlideDidChange)="onSlideChanged()">
+    <ion-slide [style.background-color]="color">
+      <div class="container">
         <h1>
           <span>Love </span>
           <ul>
