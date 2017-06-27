@@ -9,21 +9,6 @@ import { NavController, Slides, IonicPage } from 'ionic-angular';
 export class SlideTransitionsPage {
   @ViewChild('slider') slider: Slides;
 
-  showArrows = false;
-  showSlide = true;
-
-  slideEffect = "cube";
-
-  fadeOptions = {
-    // pager: true,
-    effect: 'fade',
-    autoplay: 2000,
-    speed: 600,
-    spaceBetween: 30,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-  }
-
   slides = [
     {
       title: "Dream's Adventure",
@@ -51,19 +36,5 @@ export class SlideTransitionsPage {
     }
   ]
 
-  onSlideChanged() {
-    let currentIndex = this.slider.getActiveIndex();
-    console.log("Slide changed! Current index is", currentIndex);
-  }
-
   constructor(public navCtrl: NavController ) { }
-
-  changeSlideStyle() {
-    // this.slideEffect = 'cube';
-    this.slider.freeMode = true;
-    // debugger;
-    // Hack just to make the styles change. Without it, changing options dinamically won't work.
-    // NOTE: You DON'T need to do this if you are using only one type of slider.
-    // setTimeout(() => this.showSlide = true, 100);
-  }
 }

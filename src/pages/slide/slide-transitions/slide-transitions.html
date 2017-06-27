@@ -3,24 +3,32 @@
     <ion-title>Slide Transitions</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
-  <ion-item>
-    <ion-label>Select Style</ion-label>
-    <ion-select [(ngModel)]="transition" (ionChange)="changeSlideStyle()">
-      <ion-option value="slide" selected="true">Slide</ion-option>
-      <ion-option value="cube">Cube</ion-option>
-      <ion-option value="coverflow">Coverflow</ion-option>
-      <ion-option value="fade">Fade</ion-option>
-    </ion-select>
-  </ion-item>
-  <ion-slides #slider autoplay="2000" effect="{{slideEffect}}" (ionSlideDidChange)="onSlideChanged()" *ngIf="showSlide">
+<ion-content text-center>
+  <h3>Slide (default)</h3>
+  <ion-slides autoplay="2500" loop="true">
     <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
       <h2>{{slide.title}}</h2>
     </ion-slide>
-    <!-- Add Pagination -->
-    <div *ngIf="showArrows">
-      <div class="swiper-button-prev swiper-button-white"></div>
-      <div class="swiper-button-next swiper-button-white"></div>
-    </div>
+  </ion-slides>
+
+  <h3>Cube</h3>
+  <ion-slides autoplay="2500" loop="true" effect="cube">
+    <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+      <h2>{{slide.title}}</h2>
+    </ion-slide>
+  </ion-slides>
+
+  <h3>Coverflow</h3>
+  <ion-slides autoplay="2500" loop="true" effect="coverflow">
+    <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+      <h2>{{slide.title}}</h2>
+    </ion-slide>
+  </ion-slides>
+
+  <h3>Fade</h3>
+  <ion-slides autoplay="2500" loop="true" effect="fade">
+    <ion-slide *ngFor="let slide of slides" [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
+      <h2>{{slide.title}}</h2>
+    </ion-slide>
   </ion-slides>
 </ion-content>
