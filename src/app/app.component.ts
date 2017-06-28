@@ -1,6 +1,6 @@
 import { AppState } from './app.global';
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Subject } from 'rxjs';
@@ -18,7 +18,13 @@ export class MyApp {
   rightMenuItems: Array<{ icon: string, active: boolean }>;
   state: any;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashscreen: SplashScreen, public global: AppState) {
+  constructor(
+    public platform: Platform,
+    public statusBar: StatusBar,
+    public splashscreen: SplashScreen,
+    public global: AppState,
+    public menuCtrl: MenuController
+  ) {
     this.initializeApp();
     this.rightMenuItems = [
       { icon: 'home', active: true },
@@ -64,6 +70,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashscreen.hide();
+      this.menuCtrl.enable(false, 'right');
     });
   }
 
