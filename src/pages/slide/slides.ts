@@ -49,6 +49,10 @@ export class SlidesPage {
         title: 'Slide with pagination arrows',
         page: 'SliderWithArrowsPage'
       },
+      {
+        title: 'Slide Walkthrough',
+        page: 'SlideWalkthroughPage'
+      }
       // {
       //   title: 'Photo Gallery (not working)',
       //   page: 'SlidePhotoGalleryPage'

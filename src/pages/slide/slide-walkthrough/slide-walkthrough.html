@@ -1,0 +1,27 @@
+<ion-header no-border>
+  <ion-navbar transparent>
+    <ion-buttons right>
+      <button ion-button color="light"
+              *ngIf="slideIndex < slides.length - 1"
+              class="skip-button"
+              (click)="skip()">SKIP</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen="true" class="no-padding-top">
+  <ion-slides #slider pager="true" autoplay="3000" (ionSlideWillChange)="onSlideChanged()">
+    <ion-slide *ngFor="let slide of slides"
+               class="slide-background"
+               [ngStyle]="{'background-image': 'url(' + slide.imageUrl +')'}">
+      <div class="text-wrapper">
+        <div class="slide-text">
+          <h2 class="slide-title" [innerHTML]="slide.title"></h2><br>
+          <p [innerHTML]="slide.description"></p>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <div class="floating-buttons pop-in" *ngIf="slideIndex >= slides.length - 1">
+    <button ion-button clear large full (click)="goToApp()">Let's go!</button>
+  </div>
+</ion-content>

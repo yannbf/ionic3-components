@@ -1,0 +1,77 @@
+page-slide-walkthrough {
+  .swiper-pagination-bullet {
+    background-color: #fff;
+  }
+  .no-padding-top .scroll-content{
+      padding-top: 0 !important;
+  }
+  .skip-button {
+    text-transform: none;
+    padding: 15px 15px;
+    font-weight: bold;
+  }
+  .floating-buttons {
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 50px;
+    transition: all .4s linear;
+    // background-color: $base-color-transparent;
+  }
+  .floating-buttons button {
+    color: white;
+    min-height: 7vh;
+    text-transform: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    background: rgba(49, 161, 216, 0.67);
+  }
+  .slide-background {
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: transparent;
+  }
+  .toolbar-background {
+    border-color: transparent;
+  }
+  .slide-zoom {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)) !important;
+    height: 100%;
+  }
+  .text-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+  .slide-text {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .slide-title {
+    color: white;
+    font-weight: bold;
+  }
+  .slide-image {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 18px 0;
+  }
+  .last-slide {
+    background-image: url('img/welcome-4.jpg');
+  }
+  b {
+    font-weight: 500;
+  }
+  p {
+    padding: 0 40px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #FFF;
+    b {
+      color: #000000;
+    }
+  }
+}
