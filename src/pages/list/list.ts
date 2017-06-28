@@ -21,6 +21,10 @@ export class ListPage {
         title: 'Sliding Item',
         page : 'SlidingItemPage'
       },
+      {
+        title: 'Delete Items',
+        page: 'DeleteItemsPage'
+      }
     ]
   }
 
