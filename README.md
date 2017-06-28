@@ -59,3 +59,4 @@ $ ionic serve
 - [Daniel Sogl](https://github.com/danielsogl)
 - [Javier](https://github.com/javico2609)
 - [Miguel Carrasco](https://github.com/miguelcarrascoq)
+- [Cory](https://github.com/corysmc)
