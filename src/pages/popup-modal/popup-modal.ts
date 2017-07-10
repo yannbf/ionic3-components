@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController, IonicPage } from 'ionic-angular';
 
+
 @IonicPage()
 @Component({
     selector: 'page-popup-modal',
@@ -23,6 +24,13 @@ export class PopupModalsPage {
 
     openSignupModal() {
         let myModal = this.modalCtrl.create('SignupModalPage', null, { cssClass: 'inset-modal'});
+        myModal.present();
+    }
+    openModalNav(){
+        let myModal = this.modalCtrl.create('ModalNavPage', {page: 'MoveDocumentPage'});
+        myModal.onDidDismiss(data => {
+         console.log('move to folder', data);
+       });
         myModal.present();
     }
 }
