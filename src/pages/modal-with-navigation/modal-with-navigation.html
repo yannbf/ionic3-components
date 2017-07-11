@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+		<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Modal with Navigation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <p padding>This sample simulates the behavior of moving files/folders of known apps like dropbox or google drive:</p>
+  <ion-list>
+    <ion-list-header border-bottom>Files</ion-list-header>
+    <ion-item *ngFor="let document of documents">
+      <ion-icon name="document" item-start></ion-icon>
+      <ion-label>
+        {{document.name}}
+      </ion-label>
+      <button ion-button icon-only item-end clear (click)="presentActionSheet(document)">
+              <ion-icon name="more"></ion-icon>
+          </button>
+    </ion-item>
+  </ion-list>
+</ion-content>

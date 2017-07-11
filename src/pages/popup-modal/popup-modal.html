@@ -1,13 +1,15 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Popup Modal</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Popup Modal</ion-title>
+    </ion-navbar>
 </ion-header>
-<ion-content padding>
-  <button ion-button block (click)="openHintModal()">Hint Modal</button>
-  <button ion-button color="danger" block (click)="openSignupModal()">Signup with slider</button>
-  <button ion-button color="secondary" block (click)="openWalkthroughModal()">Walkthrough modal</button>
+<ion-content>
+    <div padding>
+        <button ion-button block (click)="openHintModal()">Hint Modal</button>
+        <button ion-button color="danger" block (click)="openSignupModal()">Signup with slider</button>
+        <button ion-button color="secondary" block (click)="openWalkthroughModal()">Walkthrough modal</button>
+    </div>
 </ion-content>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController, IonicPage } from 'ionic-angular';
+import { ActionSheetController, AlertController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -9,7 +10,7 @@ import { NavController, ModalController, IonicPage } from 'ionic-angular';
 export class PopupModalsPage {
     rootPage: any;
 
-    constructor(public navCtrl: NavController, public modalCtrl: ModalController) { }
+    constructor(public navCtrl: NavController, public modalCtrl: ModalController, public alertCtrl: AlertController) { }
 
     openHintModal() {
         let myModal = this.modalCtrl.create('HintModalPage', null, { cssClass: 'inset-modal'});

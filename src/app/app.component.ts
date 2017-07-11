@@ -46,6 +46,7 @@ export class MyApp {
       { title: 'Login', component: 'LoginListPage', active: false, icon: 'archive' },
       { title: 'Lists', component: 'ListPage', active: false, icon: 'body' },
       { title: 'Miscellaneous', component: 'MiscellaneousListPage', active: false, icon: 'bookmarks' },
+      { title: 'Modal with Navigation', component: 'ModalWithNavigationPage', active: false, icon: 'book' },
       { title: 'Popup Fab', component: 'PopupFabPage', active: false, icon: 'map' },
       { title: 'Popup Modal', component: 'PopupModalsPage', active: false, icon: 'basket' },
       { title: 'Popup Menu', component: 'PopupMenuListPage', active: false, icon: 'beer' },

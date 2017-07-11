@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons start *ngIf="thisFolder.name === 'Documents'">
+            <button ion-button (click)="moveHere()">
+                Cancel
+            </button>
+        </ion-buttons>
+        <ion-title>{{thisFolder.name}}</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let folder of folders" (click)="goToFolder(folder)">
+            <ion-icon name="folder" item-start></ion-icon>
+            <h2>{{folder.name}}</h2>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer padding>
+    <ion-buttons end>
+        <button ion-button color="primary" (click)="moveHere(thisFolder)">
+            Move Here
+        </button>
+    </ion-buttons>
+</ion-footer>
