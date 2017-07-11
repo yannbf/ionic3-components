@@ -40,7 +40,7 @@ export class ModalWithNavigationPage {
         {
           text: 'Move',
           handler: () => {
-            this.moveDocumentModal();
+            this.moveDocumentModal(document);
             console.log('Move clicked');
           }
         }, {
@@ -67,11 +67,11 @@ export class ModalWithNavigationPage {
     actionSheet.present();
   }
 
-  moveDocumentModal() {
+  moveDocumentModal(document) {
     let myModal = this.modalCtrl.create('ModalNavPage', { page: 'MoveDocumentPage' });
     myModal.onDidDismiss(data => {
       if (data) {
-        this.toastCtrl.create('Moved to folder ' + data.name);
+        this.toastCtrl.create('"' + document.name + '" moved to folder "' + data.name + '"');
       }
     });
     myModal.present();
