@@ -11,6 +11,7 @@ export class ModalNavPage {
   
   modalParams: any = {
   }
+
   constructor(public navParams: NavParams,
     public viewCtrl: ViewController) {
   }
@@ -18,6 +19,7 @@ export class ModalNavPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalNavPage');
   }
+  
   dismissModal(data){
     this.viewCtrl.dismiss(data);
   }

@@ -1,14 +1,27 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Popup Modal</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Popup Modal</ion-title>
+    </ion-navbar>
 </ion-header>
-<ion-content padding>
-  <button ion-button block (click)="openHintModal()">Hint Modal</button>
-  <button ion-button color="danger" block (click)="openSignupModal()">Signup with slider</button>
-  <button ion-button color="secondary" block (click)="openWalkthroughModal()">Walkthrough modal</button>
-  <button ion-button block (click)="openModalNav()">Modal with Navigation</button>
+<ion-content>
+    <div padding>
+        <button ion-button block (click)="openHintModal()">Hint Modal</button>
+        <button ion-button color="danger" block (click)="openSignupModal()">Signup with slider</button>
+        <button ion-button color="secondary" block (click)="openWalkthroughModal()">Walkthrough modal</button>
+    </div>
+    <ion-list>
+        <ion-list-header>Modal with Navigation</ion-list-header>
+        <ion-item *ngFor="let document of documents">
+            <ion-icon name="document" item-start></ion-icon>
+            <ion-label>
+                {{document.name}}
+            </ion-label>
+            <button ion-button icon-only item-end clear (click)="presentActionSheet(document)">
+                <ion-icon name="more"></ion-icon>
+            </button>
+        </ion-item>
+    </ion-list>
 </ion-content>
