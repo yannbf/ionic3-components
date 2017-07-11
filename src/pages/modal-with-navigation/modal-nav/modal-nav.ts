@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { IonicPage, Nav, NavParams, ViewController } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { IonicPage, NavParams, ViewController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -7,21 +7,21 @@ import { IonicPage, Nav, NavParams, ViewController } from 'ionic-angular';
   templateUrl: 'modal-nav.html',
 })
 export class ModalNavPage {
-	modalPage: any = this.navParams.get('page');
-  
-  modalParams: any = {
-  }
+	modalPage: any;
 
-  constructor(public navParams: NavParams,
+  modalParams: any = { };
+
+  constructor(
+    public navParams: NavParams,
     public viewCtrl: ViewController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalNavPage');
+    this.modalPage = this.navParams.get('page');
   }
-  
+
   dismissModal(data){
     this.viewCtrl.dismiss(data);
   }
-
 }

@@ -1,6 +1,6 @@
+import { ModalNavPage } from '../modal-nav/modal-nav';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ModalNavPage } from '../modal-nav';
 
 @IonicPage()
 @Component({
@@ -9,11 +9,23 @@ import { ModalNavPage } from '../modal-nav';
 })
 export class MoveDocumentPage {
 
-	thisFolder: any = this.navParams.get('folder') || {
-  	name: 'Documents'
+	thisFolder: any;
+
+  folders: any;
+
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public modalNavPage: ModalNavPage) {
+    this.initData();
   }
 
-  folders:any = [{
+  initData() {
+    this.thisFolder = this.navParams.get('folder') || {
+      name: 'Documents'
+    }
+
+    this.folders = [{
   		name: 'My Folder 1',
   	}, {
   		name: 'My Folder 2'
@@ -22,9 +34,6 @@ export class MoveDocumentPage {
   	}, {
   		name: 'My Folder 4'
   	}];
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalNavPage: ModalNavPage) {
-
   }
 
   ionViewDidLoad() {
