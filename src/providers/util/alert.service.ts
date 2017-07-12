@@ -34,11 +34,13 @@ export class AlertService {
                     role: 'cancel',
                     handler: () => {
                         confirm.dismiss().then(() => resolve(false));
+                        return false;
                     }
                 }, {
                     text: 'Yes',
                     handler: () => {
                         confirm.dismiss().then(() => resolve(true));
+                        return false;
                     }
                 }]
             });
