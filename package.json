@@ -38,10 +38,10 @@
     "zone.js": "^0.8.12"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "1.3.7",
+    "@ionic/app-scripts": "2.0.1",
     "@ionic/cli-plugin-cordova": "1.4.1",
     "@ionic/cli-plugin-ionic-angular": "1.3.2",
-    "typescript": "~2.3.3"
+    "typescript": "~2.3.4"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
