@@ -2,7 +2,7 @@ import { ToastService } from '../../../providers/util/toast.service';
 import { AlertService } from '../../../providers/util/alert.service';
 import { Component } from '@angular/core';
 import { Camera } from '@ionic-native/camera';
-import { NavController, IonicPage } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -11,10 +11,10 @@ import { NavController, IonicPage } from 'ionic-angular';
 })
 
 export class ProfileSettingsPage {
-  profile_picture: string;
+  profilePicture: string;
   profileRef: any;
   errorMessage: any;
-  placeholder_picture = "http://api.adorable.io/avatar/200/bob";
+  placeholderPicture = "http://api.adorable.io/avatar/200/bob";
 
   enableNotifications = true;
   language: any;
@@ -30,8 +30,11 @@ export class ProfileSettingsPage {
     imageUrl: 'assets/img/avatar/marty-avatar.png'
   }
 
-  constructor(private navCtrl: NavController, public alertService: AlertService,
-    public toastCtrl: ToastService, public camera: Camera) {
+  constructor(
+    public alertService: AlertService,
+    public toastCtrl: ToastService,
+    public camera: Camera
+  ) {
 
   }
 
@@ -44,7 +47,7 @@ export class ProfileSettingsPage {
   }
 
   updateImage(value) {
-    this.profile_picture = 'data:image/jpeg;base64,' + value.val();
+    this.profilePicture = 'data:image/jpeg;base64,' + value.val();
   }
 
   updateProfileImage() {

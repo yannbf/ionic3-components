@@ -1,6 +1,6 @@
 // import { FormBuilder, FormControl, Validator } from '@angular/forms';
 import { Component } from '@angular/core';
-import { AlertController, App, LoadingController, NavController, IonicPage } from 'ionic-angular';
+import { AlertController, App, LoadingController, IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -12,7 +12,11 @@ export class LoginOnePage {
   public loginForm: any;
   public backgroundImage = "assets/img/background/background-5.jpg";
 
-  constructor(private navCtrl: NavController, public loadingCtrl: LoadingController, public alertCtrl: AlertController, public app: App) { }
+  constructor(
+    public loadingCtrl: LoadingController,
+    public alertCtrl: AlertController,
+    public app: App
+  ) { }
 
   login() {
     let loading = this.loadingCtrl.create({

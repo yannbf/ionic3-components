@@ -128,7 +128,4 @@ export class MessagesPage {
     }, 100);
   }
 
-  ngOnInit() {
-  }
-
 }

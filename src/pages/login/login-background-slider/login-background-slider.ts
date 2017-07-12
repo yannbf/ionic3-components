@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { NavController, IonicPage } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -17,7 +17,7 @@ export class LoginBackgroundSliderPage {
   ]
   public loginForm: any;
 
-  constructor(public navCtrl: NavController, public formBuilder: FormBuilder) {
+  constructor(public formBuilder: FormBuilder) {
     this.loginForm = formBuilder.group({
       email: ['', Validators.required],
       password: ['', Validators.compose([Validators.minLength(6),
