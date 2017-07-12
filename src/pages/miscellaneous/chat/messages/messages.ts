@@ -1,7 +1,8 @@
 import { FormControl, FormBuilder } from '@angular/forms';
 import { Component, ViewChild } from '@angular/core';
-import { NavController, Content } from 'ionic-angular';
+import { IonicPage, NavController, Content } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-messages',
   templateUrl: 'messages.html'
