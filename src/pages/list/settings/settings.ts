@@ -8,7 +8,6 @@ import { NavController, IonicPage } from 'ionic-angular';
 })
 export class SettingsListPage {
   constructor(public navCtrl: NavController) {
-
   }
 
 }

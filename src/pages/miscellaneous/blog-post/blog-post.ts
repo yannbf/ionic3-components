@@ -10,7 +10,4 @@ export class BlogPostPage {
 
   constructor(public navCtrl: NavController) { }
 
-  ionViewDidLoad() {
-  }
-
 }

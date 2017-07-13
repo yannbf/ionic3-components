@@ -4,16 +4,16 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        ExpandableHeaderPage,
-    ],
-    imports: [
-        IonicPageModule.forChild(ExpandableHeaderPage),
-        SharedModule,
-    ],
-    exports: [
-        ExpandableHeaderPage
-    ]
+  declarations: [
+    ExpandableHeaderPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(ExpandableHeaderPage),
+    SharedModule,
+  ],
+  exports: [
+    ExpandableHeaderPage
+  ]
 })
 
-export class ExpandableHeaderPageModule { };
+export class ExpandableHeaderPageModule { }

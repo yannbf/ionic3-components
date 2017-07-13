@@ -9,20 +9,20 @@ import { MenuController, NavController, IonicPage } from 'ionic-angular';
 export class SideMenuPage {
 
   MENU = {
-    DEFAULT: "menu-components",
-    MATERIAL: "menu-material",
-    AVATAR: "menu-avatar",
-  }
+    DEFAULT: 'menu-components',
+    MATERIAL: 'menu-material',
+    AVATAR: 'menu-avatar',
+  };
 
   constructor(public navCtrl: NavController, public menuCtrl: MenuController) { }
 
   // Only enables right side menu for this page. Testing purposes.
   ionViewWillEnter() {
-    this.menuCtrl.enable(true, "menu-right");
+    this.menuCtrl.enable(true, 'menu-right');
   }
 
   ionViewWillLeave() {
-    this.menuCtrl.enable(false, "menu-right");
+    this.menuCtrl.enable(false, 'menu-right');
   }
 
   changeMenu(menu) {

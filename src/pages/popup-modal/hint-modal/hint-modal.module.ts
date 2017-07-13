@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        HintModalPage,
-    ],
-    imports: [
-        IonicPageModule.forChild(HintModalPage),
-    ],
-    exports: [
-        HintModalPage
-    ]
+  declarations: [
+    HintModalPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(HintModalPage),
+  ],
+  exports: [
+    HintModalPage
+  ]
 })
 
-export class HintModalPageModule { };
+export class HintModalPageModule { }

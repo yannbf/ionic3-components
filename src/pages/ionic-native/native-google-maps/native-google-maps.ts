@@ -18,12 +18,10 @@ export class NativeGoogleMapsPage {
 
   // Load map only after view is initialized
   ngAfterViewInit() {
-    this.mapsCtrl.create(this.mapElement).then( () => {
-      this.mapsCtrl.centerToGeolocation();
-    });
+    this.mapsCtrl.create(this.mapElement).then(() => this.mapsCtrl.centerToGeolocation());
   }
 
-  addMarker(){
+  addMarker() {
     this.mapsCtrl.addMarkerToGeolocation('Click me!', this.callbackSample);
   }
 

@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        ProfileOnePage,
-    ],
-    imports: [
-        IonicPageModule.forChild(ProfileOnePage),
-    ],
-    exports: [
-        ProfileOnePage
-    ]
+  declarations: [
+    ProfileOnePage,
+  ],
+  imports: [
+    IonicPageModule.forChild(ProfileOnePage),
+  ],
+  exports: [
+    ProfileOnePage
+  ]
 })
 
-export class ProfileOnePageModule { };
+export class ProfileOnePageModule { }

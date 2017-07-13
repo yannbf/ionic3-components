@@ -13,44 +13,44 @@ export class SlideCustomPaginationPage {
 
   slides = [
     {
-      title: "Dream's Adventure",
-      imageUrl: "assets/img/lists/wishlist-1.jpg",
+      title: 'Dream\'s Adventure',
+      imageUrl: 'assets/img/lists/wishlist-1.jpg',
       songs: 2,
       private: false
     },
     {
-      title: "For the Weekend",
-      imageUrl: "assets/img/lists/wishlist-2.jpg",
+      title: 'For the Weekend',
+      imageUrl: 'assets/img/lists/wishlist-2.jpg',
       songs: 4,
       private: false
     },
     {
-      title: "Family Time",
-      imageUrl: "assets/img/lists/wishlist-3.jpg",
+      title: 'Family Time',
+      imageUrl: 'assets/img/lists/wishlist-3.jpg',
       songs: 5,
       private: true
     },
     {
-      title: "My Trip",
-      imageUrl: "assets/img/lists/wishlist-4.jpg",
+      title: 'My Trip',
+      imageUrl: 'assets/img/lists/wishlist-4.jpg',
       songs: 12,
       private: true
     }
-  ]
+  ];
 
   constructor(public navCtrl: NavController) { }
 
   ngAfterViewInit() {
     this.sliderOne.paginationBulletRender = (index, className) => {
-      return '<span class="custom-pagination ' + className + '">' + (index + 1) + '</span>';
+      return `<span class="custom-pagination ${className}>${index + 1}</span>`;
     };
 
     this.sliderTwo.paginationBulletRender = (index, className) => {
-      return '<span class="custom-pagination-2 ' + className + '">' + (index + 1) + '</span>';
-    }
+      return `<span class="custom-pagination-2 ${className}>${index + 1}</span>`;
+    };
 
     this.sliderThree.paginationBulletRender = (index, className) => {
-      return '<span class="custom-pagination-3 ' + 'bullet-icon-' + (index + 1) + ' ' + className + '"></span></span>';
-    }
+      return `<span class="custom-pagination-3 bullet-icon-${index + 1} ${className}></span>`;
+    };
   }
 }

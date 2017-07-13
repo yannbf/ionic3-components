@@ -43,7 +43,7 @@ export class NativeGoogleMapsProvider {
     return this.map.one(GoogleMapsEvent.MAP_READY);
   }
 
-  centerToGeolocation(){
+  centerToGeolocation() {
     return this.getGeolocationPosition().then((position) => {
       return this.centerToPosition(position);
     }, error => {
@@ -51,10 +51,10 @@ export class NativeGoogleMapsProvider {
     });
   }
 
-  getGeolocationPosition(){
+  getGeolocationPosition() {
     return new Promise((resolve, reject) => {
       this.geolocation.getCurrentPosition().then((position) => {
-        let latLng: LatLng = new LatLng(position.coords.latitude, position.coords.longitude);
+        const latLng: LatLng = new LatLng(position.coords.latitude, position.coords.longitude);
         resolve(latLng);
       }, error => {
         reject(error);
@@ -62,8 +62,8 @@ export class NativeGoogleMapsProvider {
     });
   }
 
-  centerToPosition(latLng: any, zoom?: number, tilt?: number){
-    let cameraPosition: CameraPosition = {
+  centerToPosition(latLng: any, zoom?: number, tilt?: number) {
+    const cameraPosition: CameraPosition = {
       target: latLng,
       zoom  : zoom || 18,
       tilt  : tilt || 10
@@ -71,15 +71,15 @@ export class NativeGoogleMapsProvider {
     return this.map.moveCamera(cameraPosition);
   }
 
-  addMarker(position, title: string, infoClickCallback, animated = true){
-     let markerOptions: MarkerOptions = {
-       position: position,
-       title: title,
-       animation: animated ? GoogleMapsAnimation.BOUNCE : null,
-       infoClick: infoClickCallback
-     };
+  addMarker(position, title: string, infoClickCallback, animated = true) {
+    const markerOptions: MarkerOptions = {
+      position,
+      title,
+      animation: animated ? GoogleMapsAnimation.BOUNCE : null,
+      infoClick: infoClickCallback
+    };
 
-     return this.map.addMarker(markerOptions);
+    return this.map.addMarker(markerOptions);
   }
 
   addMarkerToGeolocation(title: string, infoClickCallback, animated?: boolean) {

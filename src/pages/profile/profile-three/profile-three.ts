@@ -12,7 +12,9 @@ export class ProfileThreePage {
   posts = [
     {
       postImageUrl: 'assets/img/background/background-2.jpg',
-      text: 'I believe in being strong when everything seems to be going wrong. I believe that happy girls are the prettiest girls. I believe that tomorrow is another day and I believe in miracles.',
+      text: `I believe in being strong when everything seems to be going wrong.
+             I believe that happy girls are the prettiest girls.
+             I believe that tomorrow is another day and I believe in miracles.`,
       date: 'November 5, 2016',
       likes: 12,
       comments: 4,
@@ -30,7 +32,8 @@ export class ProfileThreePage {
       postImageUrl: 'assets/img/background/background-4.jpg',
       date: 'June 28, 2016',
       likes: 46,
-      text: 'Hope is the thing with feathers that perches in the soul And sings the tune without the words And never stops at all.',
+      text: `Hope is the thing with feathers that perches in the soul
+             and sings the tune without the words And never stops at all.`,
       comments: 66,
       timestamp: '4mo ago'
     },
@@ -43,7 +46,7 @@ export class ProfileThreePage {
     followers: 456,
     following: 1052,
     tweets: 35
-  }
+  };
 
   constructor(public navCtrl: NavController, public toastCtrl: ToastService) { }
 

@@ -20,12 +20,13 @@ export class ChatsPage {
     lastMessage: 'Sup, dude',
     timestamp: new Date()
   }
-    , {
+  ,
+  {
     imageUrl: 'assets/img/avatar/sarah-avatar.jpg',
     title: 'Sarah Mcconnor',
     lastMessage: 'You still ow me that pizza.',
     timestamp: new Date()
-  }]
+  }];
 
   constructor(public navCtrl: NavController) {}
 

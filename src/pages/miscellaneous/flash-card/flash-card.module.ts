@@ -4,16 +4,16 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        FlashCardPage,
-    ],
-    imports: [
-        IonicPageModule.forChild(FlashCardPage),
-        SharedModule,
-    ],
-    exports: [
-        FlashCardPage
-    ]
+  declarations: [
+    FlashCardPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(FlashCardPage),
+    SharedModule,
+  ],
+  exports: [
+    FlashCardPage
+  ]
 })
 
-export class FlashCardPageModule { };
+export class FlashCardPageModule { }

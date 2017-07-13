@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        CardImagePage,
-    ],
-    imports: [
-        IonicPageModule.forChild(CardImagePage),
-    ],
-    exports: [
-        CardImagePage
-    ]
+  declarations: [
+    CardImagePage,
+  ],
+  imports: [
+    IonicPageModule.forChild(CardImagePage),
+  ],
+  exports: [
+    CardImagePage
+  ]
 })
 
-export class CardImagePageModule { };
+export class CardImagePageModule { }

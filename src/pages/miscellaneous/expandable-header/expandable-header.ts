@@ -8,9 +8,9 @@ import { NavController, NavParams, IonicPage } from 'ionic-angular';
 })
 export class ExpandableHeaderPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
-
-  ionViewDidLoad() {
-  }
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams
+  ) {}
 
 }

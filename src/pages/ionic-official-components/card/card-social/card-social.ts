@@ -45,19 +45,19 @@ export class CardSocialPage {
   }
 
   imageTapped(card) {
-    alert(card.name + " image was tapped.");
+    alert(card.name + ' image was tapped.');
   }
 
   like(card) {
-    alert(card.name + " was liked.");
+    alert(card.name + ' was liked.');
   }
 
   comment(card) {
-    alert("Commenting to " + card.name);
+    alert('Commenting to ' + card.name);
   }
 
   avatarTapped(card) {
-    alert(card.name + " avatar was tapped.");
+    alert(card.name + ' avatar was tapped.');
   }
 
 }

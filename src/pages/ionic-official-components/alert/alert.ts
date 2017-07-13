@@ -15,7 +15,7 @@ export class AlertsPage {
   constructor(public alertCtrl: AlertController) { }
 
   doAlert() {
-    let alert = this.alertCtrl.create({
+    const alert = this.alertCtrl.create({
       title: 'New Friend!',
       subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!',
       buttons: ['Ok']
@@ -25,7 +25,7 @@ export class AlertsPage {
   }
 
   doConfirm() {
-    let alert = this.alertCtrl.create({
+    const alert = this.alertCtrl.create({
       title: 'Use this lightsaber?',
       message: 'Do you agree to use this lightsaber to do good across the intergalactic galaxy?',
       buttons: [
@@ -48,7 +48,7 @@ export class AlertsPage {
   }
 
   doPrompt() {
-    let alert = this.alertCtrl.create({
+    const alert = this.alertCtrl.create({
       title: 'Login',
       message: 'Enter a name for this new album you\'re so keen on adding',
       inputs: [
@@ -77,7 +77,7 @@ export class AlertsPage {
   }
 
   doRadio() {
-    let alert = this.alertCtrl.create();
+    const alert = this.alertCtrl.create();
     alert.setTitle('Lightsaber color');
 
     alert.addInput({
@@ -137,7 +137,7 @@ export class AlertsPage {
   }
 
   doCheckbox() {
-    let alert = this.alertCtrl.create();
+    const alert = this.alertCtrl.create();
     alert.setTitle('Which planets have you visited?');
 
     alert.addInput({

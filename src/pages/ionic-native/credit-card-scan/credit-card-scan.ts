@@ -15,7 +15,7 @@ export class CreditCardScanPage {
     console.log('Hello CreditCardScan Page');
   }
 
-  cardImage = "assets/img/misc/credit-card.png";
+  cardImage = 'assets/img/misc/credit-card.png';
 
   card = {
     cardType: '',
@@ -25,14 +25,14 @@ export class CreditCardScanPage {
     expiryYear: null,
     cvv: '',
     postalCode: ''
-  }
+  };
 
   scanCard() {
     this.cardIO.canScan()
       .then(
       (res: boolean) => {
         if (res) {
-          let options = {
+          const options = {
             scanExpiry: true,
             hideCardIOLogo: true,
             scanInstructions: 'Please position your card inside the frame',
@@ -42,18 +42,20 @@ export class CreditCardScanPage {
             requirePostalCode: false
           };
           this.cardIO.scan(options).then(response => {
-            console.log("Scan complete");
+            console.log('Scan complete');
 
-            let { cardType, cardNumber, redactedCardNumber, expiryMonth, expiryYear, cvv, postalCode } = response;
+            const { cardType, cardNumber, redactedCardNumber,
+                    expiryMonth, expiryYear, cvv, postalCode } = response;
+
             this.card = {
-              cardType: cardType,
-              cardNumber: cardNumber,
-              redactedCardNumber: redactedCardNumber,
-              expiryMonth: expiryMonth,
-              expiryYear: expiryYear,
-              cvv: cvv,
-              postalCode: postalCode
-            }
+              cardType,
+              cardNumber,
+              redactedCardNumber,
+              expiryMonth,
+              expiryYear,
+              cvv,
+              postalCode
+            };
           });
         }
       });

@@ -8,7 +8,7 @@ import { NavController, MenuController, IonicPage } from 'ionic-angular';
 })
 export class PopupMenuListPage {
   rootPage: any;
-  items: Array<{ title: string, page: any }>;
+  items: Array<{ title: string, page: any }> = [];
 
   constructor(public navCtrl: NavController, public menu: MenuController) {
     this.rootPage = PopupMenuListPage;
@@ -21,7 +21,7 @@ export class PopupMenuListPage {
         title: 'Type Two',
         page: 'PopupMenuTwoPage'
       },
-    ]
+    ];
   }
 
   itemTapped(event, item) {

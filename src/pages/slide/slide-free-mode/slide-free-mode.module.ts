@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        SlideFreeModePage,
-    ],
-    imports: [
-        IonicPageModule.forChild(SlideFreeModePage),
-    ],
-    exports: [
-        SlideFreeModePage
-    ]
+  declarations: [
+    SlideFreeModePage,
+  ],
+  imports: [
+    IonicPageModule.forChild(SlideFreeModePage),
+  ],
+  exports: [
+    SlideFreeModePage
+  ]
 })
 
-export class SlideFreeModePageModule { };
+export class SlideFreeModePageModule { }

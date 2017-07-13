@@ -8,37 +8,37 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class IonicNativePage {
 
-    rootPage: any;
-    items: Array<{ title: string, page: any }>;
+  rootPage: any;
+  items: Array<{ title: string, page: any }>;
 
-    constructor(public navCtrl: NavController) {
-        this.rootPage = 'IonicNativePage';
+  constructor(public navCtrl: NavController) {
+    this.rootPage = 'IonicNativePage';
 
-        this.items = [
-            {
-                title: 'Barcode scan',
-                page: 'BarcodeScannerPage'
-            },
-            {
-                title: 'Credit card scanning',
-                page: 'CreditCardScanPage'
-            },
-            {
-                title: 'Get image from camera/gallery',
-                page: 'GetImagePage'
-            },
-            {
-                title: 'Google Maps',
-                page: 'NativeGoogleMapsPage'
-            },
-            {
-                title: 'Runtime permissions',
-                page: 'RuntimePermissionsPage'
-            },
-        ]
-    }
+    this.items = [
+      {
+        title: 'Barcode scan',
+        page: 'BarcodeScannerPage'
+      },
+      {
+        title: 'Credit card scanning',
+        page: 'CreditCardScanPage'
+      },
+      {
+        title: 'Get image from camera/gallery',
+        page: 'GetImagePage'
+      },
+      {
+        title: 'Google Maps',
+        page: 'NativeGoogleMapsPage'
+      },
+      {
+        title: 'Runtime permissions',
+        page: 'RuntimePermissionsPage'
+      },
+    ];
+  }
 
-    itemTapped(event, item) {
-        this.navCtrl.push(item.page);
-    }
+  itemTapped(event, item) {
+    this.navCtrl.push(item.page);
+  }
 }

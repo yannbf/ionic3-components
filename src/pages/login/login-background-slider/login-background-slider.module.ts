@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        LoginBackgroundSliderPage,
-    ],
-    imports: [
-        IonicPageModule.forChild(LoginBackgroundSliderPage),
-    ],
-    exports: [
-        LoginBackgroundSliderPage
-    ]
+  declarations: [
+    LoginBackgroundSliderPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(LoginBackgroundSliderPage),
+  ],
+  exports: [
+    LoginBackgroundSliderPage
+  ]
 })
 
-export class LoginBackgroundSliderPageModule { };
+export class LoginBackgroundSliderPageModule { }

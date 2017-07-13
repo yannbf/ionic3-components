@@ -1,6 +1,11 @@
 import { CameraProvider } from '../../../providers/util/camera.provider';
 import { Component } from '@angular/core';
-import { NavController, Platform, ActionSheetController, LoadingController, IonicPage } from 'ionic-angular';
+import {
+  NavController,
+  Platform,
+  ActionSheetController,
+  LoadingController,
+  IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -12,13 +17,19 @@ export class GetImagePage {
   placeholder = 'assets/img/avatar/girl-avatar.png';
   chosenPicture: any;
 
-  constructor(public navCtrl: NavController, public actionsheetCtrl: ActionSheetController,
-    public cameraProvider: CameraProvider, public platform: Platform, public loadingCtrl: LoadingController) {
+  constructor(
+    public navCtrl: NavController,
+    public actionsheetCtrl: ActionSheetController,
+    public cameraProvider: CameraProvider,
+    public platform: Platform,
+    public loadingCtrl: LoadingController
+  ) {
+
   }
 
   changePicture() {
 
-    let actionsheet = this.actionsheetCtrl.create({
+    const actionsheet = this.actionsheetCtrl.create({
       title: 'upload picture',
       buttons: [
         {
@@ -49,7 +60,7 @@ export class GetImagePage {
   }
 
   takePicture() {
-    let loading = this.loadingCtrl.create();
+    const loading = this.loadingCtrl.create();
 
     loading.present();
     return this.cameraProvider.getPictureFromCamera().then(picture => {
@@ -63,7 +74,7 @@ export class GetImagePage {
   }
 
   getPicture() {
-    let loading = this.loadingCtrl.create();
+    const loading = this.loadingCtrl.create();
 
     loading.present();
     return this.cameraProvider.getPictureFromPhotoLibrary().then(picture => {

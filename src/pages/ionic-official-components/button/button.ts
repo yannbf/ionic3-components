@@ -26,7 +26,7 @@ export class ButtonsListPage {
         title: 'Buttons in Components',
         page: 'ButtonComponentsPage'
       },
-    ]
+    ];
   }
 
   itemTapped(event, item) {

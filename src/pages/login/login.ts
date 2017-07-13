@@ -33,7 +33,7 @@ export class LoginListPage {
         title: 'Login with slider background',
         page:  'LoginBackgroundSliderPage'
       },
-    ]
+    ];
   }
 
   itemTapped(event, item) {

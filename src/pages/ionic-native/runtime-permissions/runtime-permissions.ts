@@ -16,12 +16,16 @@ export class RuntimePermissionsPage {
     CAMERA: this.diagnostic.permission.CAMERA,
   };
 
-  constructor(public navCtrl: NavController, public diagnostic: Diagnostic, public navParams: NavParams) { }
+  constructor(
+    public navCtrl: NavController,
+    public diagnostic: Diagnostic,
+    public navParams: NavParams
+  ) { }
 
   // You can use this kind of method, which is passing a permission value..
   requestPermission(permission) {
     this.diagnostic.requestRuntimePermission(permission).then((status) => {
-      if (status == this.diagnostic.permissionStatus.GRANTED) {
+      if (status === this.diagnostic.permissionStatus.GRANTED) {
         alert('Permission granted!');
       } else {
         alert('Permission not granted. STATUS: ' + status);
@@ -39,7 +43,7 @@ export class RuntimePermissionsPage {
         alert('camera is already authorized!');
       } else {
         this.diagnostic.requestCameraAuthorization().then((status) => {
-          if (status == this.diagnostic.permissionStatus.GRANTED) {
+          if (status === this.diagnostic.permissionStatus.GRANTED) {
             alert('Permission granted!');
           } else {
             alert('Permission not granted. STATUS: ' + status);
@@ -51,7 +55,7 @@ export class RuntimePermissionsPage {
 
   // There is also a method that takes an array of permissions to ask for them at once
   requestAllPermissions() {
-    var permissions = Object.keys(this.PERMISSION).map(k => this.PERMISSION[k]);
+    const permissions = Object.keys(this.PERMISSION).map(k => this.PERMISSION[k]);
     this.diagnostic.requestRuntimePermissions(permissions).then((status) => {
       alert(JSON.stringify(status));
     }, error => {

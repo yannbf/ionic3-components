@@ -8,7 +8,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MasonryCardsPage {
 
-  posts = []
+  posts = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -59,10 +59,6 @@ export class MasonryCardsPage {
         description: 'Fastest car of all times',
         image: 'https://s-media-cache-ak0.pinimg.com/564x/5f/bf/34/5fbf3414f9de301c8f4b868b1c2e2339.jpg'
       },
-      // {
-      //   description: '',
-      //   image: ''
-      // }
     ];
   }
 

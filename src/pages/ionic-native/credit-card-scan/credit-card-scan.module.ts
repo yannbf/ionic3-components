@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        CreditCardScanPage,
-    ],
-    imports: [
-        IonicPageModule.forChild(CreditCardScanPage),
-    ],
-    exports: [
-        CreditCardScanPage
-    ]
+  declarations: [
+    CreditCardScanPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(CreditCardScanPage),
+  ],
+  exports: [
+    CreditCardScanPage
+  ]
 })
 
-export class CreditCardScanPageModule { };
+export class CreditCardScanPageModule { }

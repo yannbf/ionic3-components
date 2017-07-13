@@ -40,43 +40,43 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
 export const Modules = [
-    SwingModule,
-    BrowserModule,
-    HttpModule,
-]
+  SwingModule,
+  BrowserModule,
+  HttpModule,
+];
 
 export const Pipes = [
-    TemperaturePipe, MomentPipe, OrderByPipe, CapitalizePipe, ShortenStringPipe
-]
+  TemperaturePipe, MomentPipe, OrderByPipe, CapitalizePipe, ShortenStringPipe
+];
 
 export const Providers = [
-    AlertService,
-    ToastService,
-    AppState,
-    CameraProvider,
-    NativeGoogleMapsProvider,
+  AlertService,
+  ToastService,
+  AppState,
+  CameraProvider,
+  NativeGoogleMapsProvider,
 
     // Ionic native specific providers
-    BarcodeScanner,
-    Camera,
-    Diagnostic,
-    Geolocation,
-    CardIO,
-    StatusBar,
-    SplashScreen,
-    GoogleMaps,
-]
+  BarcodeScanner,
+  Camera,
+  Diagnostic,
+  Geolocation,
+  CardIO,
+  StatusBar,
+  SplashScreen,
+  GoogleMaps,
+];
 
 export const Components = [
-    FlashCardComponent,
-    TimerProgress,
-    Timer,
-    ExpandableHeader,
-    Autosize
-]
+  FlashCardComponent,
+  TimerProgress,
+  Timer,
+  ExpandableHeader,
+  Autosize
+];
 
 export const Directives = [
-    SlidingDrawer,
-    Timer,
-    Autosize,
-]
+  SlidingDrawer,
+  Timer,
+  Autosize,
+];

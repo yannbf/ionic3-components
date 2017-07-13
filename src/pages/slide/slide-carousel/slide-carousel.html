@@ -16,7 +16,7 @@
 						<img (click)="goToCityPage(city, $event)" src="{{city.image}}"/>
 					</div>
 
-					<button ion-button (click)="ToggleFavorite(city, $event)" clear color="danger" class="favDiv">
+					<button ion-button (click)="toggleFavorite(city, $event)" clear color="danger" class="favDiv">
 						<ion-icon ios="ios-heart" md="md-heart" *ngIf="city.favorited"></ion-icon>
 						<ion-icon  class="favDivInactiveHeart" ios="ios-heart-outline" md="md-heart-outline" *ngIf="!city.favorited"></ion-icon>
 					</button>
@@ -35,7 +35,7 @@
 				<ion-row no-padding>
 					<ion-col>
 
-						<button ion-button icon-left (click)="ToggleFavorite(city, $event)" clear small color="primary">
+						<button ion-button icon-left (click)="toggleFavorite(city, $event)" clear small color="primary">
 							<ion-icon ios="ios-heart" md="md-heart" *ngIf="city.favorited"></ion-icon>
 							<ion-icon ios="ios-heart-outline" md="md-heart-outline" *ngIf="!city.favorited"></ion-icon>
 							<label text-capitalize>{{city.favoriteCount}}</label>

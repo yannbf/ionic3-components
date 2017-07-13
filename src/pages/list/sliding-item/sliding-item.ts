@@ -26,20 +26,20 @@ export class SlidingItemPage {
       place: 'Castelão',
       date: '05/12/2015'
     },
-  ]
+  ];
 
   constructor(public navCtrl: NavController) {}
 
   delete(item) {
-    alert("Deleted " + item.title);
+    alert('Deleted ' + item.title);
   }
 
   viewComments(item) {
-    alert("Viewing comments of " + item.title);
+    alert('Viewing comments of ' + item.title);
   }
 
   viewPlayers(item) {
-    alert("Viewing players of " + item.title);
+    alert('Viewing players of ' + item.title);
   }
 
 }
