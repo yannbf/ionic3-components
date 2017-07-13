@@ -30,6 +30,7 @@ export class LoginBackgroundSliderPage {
   }
 
   openResetPassword() {
+    console.log('Reset password clicked');
   }
 
   doLogin() {

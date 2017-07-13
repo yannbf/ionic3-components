@@ -10,8 +10,6 @@ export class FlashCardComponent {
   @ViewChild('back') fcBack;
   toggled: boolean = false;
 
-  constructor(private flashCard: ElementRef) { }
-
   ngAfterViewChecked() {
     const frontH = this.fcFront.nativeElement.querySelector('.fc-front').offsetHeight + 40;
     const backH = this.fcBack.nativeElement.querySelector('.fc-back').offsetHeight + 40;

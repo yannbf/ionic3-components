@@ -39,17 +39,17 @@ import { SwingModule } from 'angular2-swing';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
-export const Modules = [
+export const MODULES = [
   SwingModule,
   BrowserModule,
   HttpModule,
 ];
 
-export const Pipes = [
+export const PIPES = [
   TemperaturePipe, MomentPipe, OrderByPipe, CapitalizePipe, ShortenStringPipe
 ];
 
-export const Providers = [
+export const PROVIDERS = [
   AlertService,
   ToastService,
   AppState,
@@ -67,7 +67,7 @@ export const Providers = [
   GoogleMaps,
 ];
 
-export const Components = [
+export const COMPONENTS = [
   FlashCardComponent,
   TimerProgress,
   Timer,
@@ -75,7 +75,7 @@ export const Components = [
   Autosize
 ];
 
-export const Directives = [
+export const DIRECTIVES = [
   SlidingDrawer,
   Timer,
   Autosize,

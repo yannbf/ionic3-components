@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class OrderByPipe implements PipeTransform {
   value: string[] = [];
 
-  static _orderByComparator(a: any, b: any): number {
+  static orderByComparator(a: any, b: any): number {
 
     if (a === null || typeof a === 'undefined') { a = 0; }
     if (b === null || typeof b === 'undefined') { b = 0; }
@@ -64,8 +64,8 @@ export class OrderByPipe implements PipeTransform {
           }
 
           return !desc
-                        ? OrderByPipe._orderByComparator(aValue, bValue)
-                        : -OrderByPipe._orderByComparator(aValue, bValue);
+                        ? OrderByPipe.orderByComparator(aValue, bValue)
+                        : -OrderByPipe.orderByComparator(aValue, bValue);
         });
       }
     } else {
@@ -92,8 +92,8 @@ export class OrderByPipe implements PipeTransform {
           }
 
           const comparison = !desc
-                        ? OrderByPipe._orderByComparator(aValue, bValue)
-                        : -OrderByPipe._orderByComparator(aValue, bValue);
+                        ? OrderByPipe.orderByComparator(aValue, bValue)
+                        : -OrderByPipe.orderByComparator(aValue, bValue);
 
           // Don't return 0 yet in case of needing to sort by next property
           if (comparison !== 0) { return comparison; }

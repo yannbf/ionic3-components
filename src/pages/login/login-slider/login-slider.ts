@@ -1,6 +1,5 @@
 // import { FormBuilder, FormControl, Validator } from '@angular/forms';
-import { Component } from '@angular/core';
-import { ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { AlertController, App, LoadingController, NavController, Slides, IonicPage } from 'ionic-angular';
 
 @IonicPage()

@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
-import Chart from 'chart.js';
+import chartJs from 'chart.js';
 
 @IonicPage()
 @Component({
@@ -30,17 +30,23 @@ export class ChartsPage {
 
   constructor(public navCtrl: NavController) { }
 
-  ionViewDidLoad() {
-    this.barChart = this.getBarChart();
-    this.doughnutChart = this.getDoughnutChart();
-    this.halfDoughnutChart = this.getHalfDoughnutChart();
-    this.lineChart = this.getLineChart();
-    this.radarChart = this.getRadarChart();
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.barChart = this.getBarChart();
+      this.doughnutChart = this.getDoughnutChart();
+      this.halfDoughnutChart = this.getHalfDoughnutChart();
+    }, 150);
+    setTimeout(() => {
+      this.lineChart = this.getLineChart();
+      this.radarChart = this.getRadarChart();
+      this.polarAreaChart = this.getPolarAreaChart();
+    }, 250);
+    setTimeout(() => {
+      this.bubbleChart = this.getBubbleChart();
+      this.mixedChart = this.getMixedChart();
+      this.pieChart = this.getPieChart();
+    }, 350);
 
-    this.polarAreaChart = this.getPolarAreaChart();
-    this.bubbleChart = this.getBubbleChart();
-    this.mixedChart = this.getMixedChart();
-    this.pieChart = this.getPieChart();
   }
 
   updateData() {
@@ -52,7 +58,7 @@ export class ChartsPage {
   }
 
   getChart(context, chartType, data, options?) {
-    return new Chart(context, {
+    return new chartJs(context, {
       data,
       options,
       type: chartType,

@@ -119,7 +119,6 @@ export class SlideCarouselPage {
     comments: [1, 4, 2, 3],
   };
 
-
   // Starting with an empty slider
   citiesSlides: any = [];
 

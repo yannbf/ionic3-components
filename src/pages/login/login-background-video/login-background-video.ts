@@ -30,9 +30,10 @@ export class LoginBackgroundVideoPage {
   }
 
   goToSignup() {
+    console.log('Signup clicked');
   }
 
   goToLogin() {
+    console.log('Login clicked');
   }
-
 }
