@@ -10,18 +10,18 @@ import { IonicPage } from 'ionic-angular';
 export class LoginBackgroundSliderPage {
 
   backgrounds = [
-    "assets/img/background/background-1.jpg",
-    "assets/img/background/background-2.jpg",
-    "assets/img/background/background-3.jpg",
-    "assets/img/background/background-4.jpg"
-  ]
+    'assets/img/background/background-1.jpg',
+    'assets/img/background/background-2.jpg',
+    'assets/img/background/background-3.jpg',
+    'assets/img/background/background-4.jpg'
+  ];
   public loginForm: any;
 
   constructor(public formBuilder: FormBuilder) {
     this.loginForm = formBuilder.group({
       email: ['', Validators.required],
       password: ['', Validators.compose([Validators.minLength(6),
-      Validators.required])]
+        Validators.required])]
     });
   }
 
@@ -30,14 +30,15 @@ export class LoginBackgroundSliderPage {
   }
 
   openResetPassword() {
+    console.log('Reset password clicked');
   }
 
   doLogin() {
     if (!this.loginForm.valid) {
-      console.log("Invalid or empty data");
+      console.log('Invalid or empty data');
     } else {
-      let userEmail = this.loginForm.value.email;
-      let userPassword = this.loginForm.value.password;
+      const userEmail = this.loginForm.value.email;
+      const userPassword = this.loginForm.value.password;
 
       console.log('user data', userEmail, userPassword);
     }

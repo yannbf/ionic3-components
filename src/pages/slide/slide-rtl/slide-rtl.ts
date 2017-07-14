@@ -11,34 +11,34 @@ export class SlideRightToLeftPage {
 
   slides = [
     {
-      title: "Dream's Adventure",
-      imageUrl: "assets/img/lists/wishlist-1.jpg",
+      title: 'Dream\'s Adventure',
+      imageUrl: 'assets/img/lists/wishlist-1.jpg',
       songs: 2,
       private: false
     },
     {
-      title: "For the Weekend",
-      imageUrl: "assets/img/lists/wishlist-2.jpg",
+      title: 'For the Weekend',
+      imageUrl: 'assets/img/lists/wishlist-2.jpg',
       songs: 4,
       private: false
     },
     {
-      title: "Family Time",
-      imageUrl: "assets/img/lists/wishlist-3.jpg",
+      title: 'Family Time',
+      imageUrl: 'assets/img/lists/wishlist-3.jpg',
       songs: 5,
       private: true
     },
     {
-      title: "My Trip",
-      imageUrl: "assets/img/lists/wishlist-4.jpg",
+      title: 'My Trip',
+      imageUrl: 'assets/img/lists/wishlist-4.jpg',
       songs: 12,
       private: true
     }
-  ]
+  ];
 
   onSlideChanged() {
-    let currentIndex = this.slider.getActiveIndex();
-    console.log("Slide changed! Current index is", currentIndex);
+    const currentIndex = this.slider.getActiveIndex();
+    console.log('Slide changed! Current index is', currentIndex);
   }
 
   constructor(public navCtrl: NavController) { }

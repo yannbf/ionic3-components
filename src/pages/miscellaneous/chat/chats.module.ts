@@ -4,16 +4,16 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        ChatsPage,
-    ],
-    imports: [
-        IonicPageModule.forChild(ChatsPage),
-        SharedModule
-    ],
-    exports: [
-        ChatsPage
-    ]
+  declarations: [
+    ChatsPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(ChatsPage),
+    SharedModule
+  ],
+  exports: [
+    ChatsPage
+  ]
 })
 
-export class ChatsPageModule { };
+export class ChatsPageModule { }

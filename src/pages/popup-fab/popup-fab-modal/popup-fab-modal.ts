@@ -8,7 +8,11 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 })
 export class PopupFabModalPage {
 
-  constructor(public navCtrl: NavController, public viewCtrl: ViewController, public navParams: NavParams) {  }
+  constructor(
+    public navCtrl: NavController,
+    public viewCtrl: ViewController,
+    public navParams: NavParams
+  ) { }
 
   dismiss() {
     this.viewCtrl.dismiss();

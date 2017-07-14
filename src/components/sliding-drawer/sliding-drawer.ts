@@ -14,9 +14,12 @@ export class SlidingDrawer {
   thresholdTop: number = 200;
   thresholdBottom: number = 200;
 
-  constructor(public element: ElementRef, public renderer: Renderer, public domCtrl: DomController, public platform: Platform) {
-
-  }
+  constructor(
+    public element: ElementRef,
+    public renderer: Renderer,
+    public domCtrl: DomController,
+    public platform: Platform
+  ) { }
 
   ngAfterViewInit() {
 
@@ -36,10 +39,12 @@ export class SlidingDrawer {
       this.thresholdTop = this.options.thresholdFromTop;
     }
 
-    this.renderer.setElementStyle(this.element.nativeElement, 'top', this.platform.height() - this.handleHeight + 'px');
+    this.renderer.setElementStyle(this.element.nativeElement,
+                                  'top',
+                                  this.platform.height() - this.handleHeight + 'px');
     this.renderer.setElementStyle(this.element.nativeElement, 'padding-top', this.handleHeight + 'px');
 
-    let hammer = new window['Hammer'](this.element.nativeElement);
+    const hammer = new window['Hammer'](this.element.nativeElement);
     hammer.get('pan').set({ direction: window['Hammer'].DIRECTION_VERTICAL });
 
     hammer.on('pan', (ev) => {
@@ -50,36 +55,38 @@ export class SlidingDrawer {
 
   handlePan(ev) {
 
-    let newTop = ev.center.y;
+    const newTop = ev.center.y;
 
     let bounceToBottom = false;
     let bounceToTop = false;
 
     if (this.bounceBack && ev.isFinal) {
-      let topDiff = newTop - this.thresholdTop;
-      let bottomDiff = (this.platform.height() - this.thresholdBottom) - newTop;
+      const topDiff = newTop - this.thresholdTop;
+      const bottomDiff = (this.platform.height() - this.thresholdBottom) - newTop;
 
       topDiff >= bottomDiff ? bounceToBottom = true : bounceToTop = true;
 
     }
 
-    if ((newTop < this.thresholdTop && ev.additionalEvent === "panup") || bounceToTop) {
+    if ((newTop < this.thresholdTop && ev.additionalEvent === 'panup') || bounceToTop) {
       this.domCtrl.write(() => {
         this.renderer.setElementStyle(this.element.nativeElement, 'transition', 'top 0.5s');
         this.renderer.setElementStyle(this.element.nativeElement, 'top', '0px');
       });
 
-    } else if (((this.platform.height() - newTop) < this.thresholdBottom && ev.additionalEvent === "pandown") || bounceToBottom) {
+    } else if (((this.platform.height() - newTop) < this.thresholdBottom && ev.additionalEvent === 'pandown')
+                  || bounceToBottom) {
       this.domCtrl.write(() => {
         this.renderer.setElementStyle(this.element.nativeElement, 'transition', 'top 0.5s');
-        this.renderer.setElementStyle(this.element.nativeElement, 'top', this.platform.height() - this.handleHeight + 'px');
+        this.renderer.setElementStyle(this.element.nativeElement,
+                                      'top',
+                                      this.platform.height() - this.handleHeight + 'px');
       });
 
     } else {
-
       this.renderer.setElementStyle(this.element.nativeElement, 'transition', 'none');
       if (newTop > 0 && newTop < (this.platform.height() - this.handleHeight)) {
-        if (ev.additionalEvent === "panup" || ev.additionalEvent === "pandown") {
+        if (ev.additionalEvent === 'panup' || ev.additionalEvent === 'pandown') {
 
           this.domCtrl.write(() => {
             this.renderer.setElementStyle(this.element.nativeElement, 'top', newTop + 'px');

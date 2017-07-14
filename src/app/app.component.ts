@@ -37,11 +37,12 @@ export class MyApp {
       { icon: 'camera', active: false },
       { icon: 'beer', active: false },
       { icon: 'power', active: false },
-    ]
+    ];
 
     this.pages = [
       { title: 'Home', component: 'HomePage', active: true, icon: 'home' },
-      { title: 'Ionic Official Components', component: 'IonicOfficialComponentsPage', active: false, icon: 'ionic' },
+      { title: 'Ionic Official Components',
+        component: 'IonicOfficialComponentsPage', active: false, icon: 'ionic' },
       { title: 'Ionic Native Features', component: 'IonicNativePage', active: false, icon: 'ionic' },
       { title: 'Login', component: 'LoginListPage', active: false, icon: 'archive' },
       { title: 'Lists', component: 'ListPage', active: false, icon: 'body' },

@@ -34,7 +34,7 @@ export class CardsListPage {
         title: 'Cards with Badge',
         page: 'CardBadgePage'
       },
-    ]
+    ];
   }
 
   itemTapped(event, item) {

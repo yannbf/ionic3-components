@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        PopupMenuOnePage,
-    ],
-    imports: [
-        IonicPageModule.forChild(PopupMenuOnePage),
-    ],
-    exports: [
-        PopupMenuOnePage
-    ]
+  declarations: [
+    PopupMenuOnePage,
+  ],
+  imports: [
+    IonicPageModule.forChild(PopupMenuOnePage),
+  ],
+  exports: [
+    PopupMenuOnePage
+  ]
 })
 
-export class PopupMenuOnePageModule { };
+export class PopupMenuOnePageModule { }

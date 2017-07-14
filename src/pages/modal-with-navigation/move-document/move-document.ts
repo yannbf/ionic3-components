@@ -8,22 +8,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'move-document.html',
 })
 export class MoveDocumentPage {
-
-	thisFolder: any;
-
+  thisFolder: any;
   folders: any;
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public modalNavPage: ModalNavPage) {
+    public modalNavPage: ModalNavPage
+  ) {
     this.initData();
   }
 
   initData() {
     this.thisFolder = this.navParams.get('folder') || {
       name: 'Documents'
-    }
+    };
 
     this.folders = [{
   		name: 'My Folder 1',
@@ -40,11 +39,11 @@ export class MoveDocumentPage {
     console.log('ionViewDidLoad MoveDocumentPage');
   }
 
-  goToFolder(folder){
-  	this.navCtrl.push('MoveDocumentPage', { folder: folder });
+  goToFolder(folder) {
+  	this.navCtrl.push('MoveDocumentPage', { folder });
   }
 
-  moveHere(folder){
+  moveHere(folder) {
   	this.modalNavPage.dismissModal(folder);
   }
 }

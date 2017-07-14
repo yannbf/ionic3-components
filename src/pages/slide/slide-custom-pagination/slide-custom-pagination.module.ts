@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        SlideCustomPaginationPage,
-    ],
-    imports: [
-        IonicPageModule.forChild(SlideCustomPaginationPage),
-    ],
-    exports: [
-        SlideCustomPaginationPage
-    ]
+  declarations: [
+    SlideCustomPaginationPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(SlideCustomPaginationPage),
+  ],
+  exports: [
+    SlideCustomPaginationPage
+  ]
 })
 
-export class SlideCustomPaginationPageModule { };
+export class SlideCustomPaginationPageModule { }

@@ -34,7 +34,7 @@ export class CardBackgroundPage {
   }
 
   cardTapped(card) {
-    alert(card.title + " was tapped.");
+    alert(card.title + ' was tapped.');
   }
 
 }

@@ -42,14 +42,14 @@ export class CardBadgePage {
   }
 
   cardTapped(card) {
-    alert(card.title + " was tapped.");
+    alert(card.title + ' was tapped.');
   }
 
   followersTapped(card) {
-    alert(card.title + " followers tapped.");
+    alert(card.title + ' followers tapped.');
   }
 
   albumsTapped(card) {
-    alert(card.title + " albums tapped.");
+    alert(card.title + ' albums tapped.');
   }
 }

@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        SlideCarouselPage,
-    ],
-    imports: [
-        IonicPageModule.forChild(SlideCarouselPage),
-    ],
-    exports: [
-        SlideCarouselPage
-    ]
+  declarations: [
+    SlideCarouselPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(SlideCarouselPage),
+  ],
+  exports: [
+    SlideCarouselPage
+  ]
 })
 
-export class SlideCarouselPageModule { };
+export class SlideCarouselPageModule { }

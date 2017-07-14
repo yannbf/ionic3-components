@@ -12,7 +12,7 @@ export class MessagesPage {
     _id: '534b8e5aaa5e7afc1b23e69b',
     pic: 'assets/img/avatar/ian-avatar.png',
     username: 'Venkman',
-  }
+  };
 
   user = {
     _id: '534b8fb2aa5e7afc1b23e69c',
@@ -71,7 +71,7 @@ export class MessagesPage {
       pic: this.toUser.pic,
       text: 'yes!'
     }
-  ]
+  ];
 
   @ViewChild(Content) content: Content;
 
@@ -82,15 +82,15 @@ export class MessagesPage {
     this.messageForm = formBuilder.group({
       message: new FormControl('')
     });
-    this.chatBox = "";
+    this.chatBox = '';
 
   }
 
   send(message) {
-    if (message && message != "") {
-      //this.messageService.sendMessage(chatId, message);
+    if (message && message !== '') {
+      // this.messageService.sendMessage(chatId, message);
 
-      let messageData =
+      const messageData =
         {
           toId: this.toUser._id,
           _id: 6,
@@ -99,13 +99,13 @@ export class MessagesPage {
           username: this.toUser.username,
           pic: this.toUser.pic,
           text: message
-        }
+        };
 
       this.messages.push(messageData);
       this.scrollToBottom();
 
       setTimeout(() => {
-        let replyData =
+        const replyData =
           {
             toId: this.toUser._id,
             _id: 6,
@@ -113,13 +113,13 @@ export class MessagesPage {
             userId: this.toUser._id,
             username: this.toUser.username,
             pic: this.toUser.pic,
-            text: "Just a quick reply"
-          }
+            text: 'Just a quick reply'
+          };
         this.messages.push(replyData);
         this.scrollToBottom();
       }, 1000);
     }
-    this.chatBox = "";
+    this.chatBox = '';
   }
 
   scrollToBottom() {

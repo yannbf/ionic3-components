@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        SlideColorChangingPage,
-    ],
-    imports: [
-        IonicPageModule.forChild(SlideColorChangingPage),
-    ],
-    exports: [
-        SlideColorChangingPage
-    ]
+  declarations: [
+    SlideColorChangingPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(SlideColorChangingPage),
+  ],
+  exports: [
+    SlideColorChangingPage
+  ]
 })
 
-export class SlideColorChangingPageModule { };
+export class SlideColorChangingPageModule { }

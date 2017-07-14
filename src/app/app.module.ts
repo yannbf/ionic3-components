@@ -3,7 +3,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { Modules, Providers } from './app.imports';
+import { MODULES, PROVIDERS } from './app.imports';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,7 @@ import { Modules, Providers } from './app.imports';
     MyApp,
   ],
   imports: [
-    Modules,
+    MODULES,
     IonicModule.forRoot(MyApp),
     SharedModule,
   ],
@@ -19,6 +19,6 @@ import { Modules, Providers } from './app.imports';
   entryComponents: [
     MyApp,
   ],
-  providers: [Providers, { provide: ErrorHandler, useClass: IonicErrorHandler }]
+  providers: [PROVIDERS, { provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
 export class AppModule { }

@@ -25,7 +25,7 @@ export class ListPage {
         title: 'Delete Items',
         page: 'DeleteItemsPage'
       }
-    ]
+    ];
   }
 
   itemTapped(event, item) {

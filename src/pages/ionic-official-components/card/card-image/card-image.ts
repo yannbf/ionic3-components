@@ -34,24 +34,22 @@ export class CardImagePage {
       description: 'The American hip hop group widely acknowledged as one of the most influential acts in the history of hip hop.'
     },];
 
-  constructor(public navCtrl: NavController) {
-
-  }
+  constructor(public navCtrl: NavController) { }
 
   cardTapped(card) {
-    alert(card.title + " was tapped.");
+    alert(card.title + ' was tapped.');
   }
 
   share(card) {
-    alert(card.title + " was shared.");
+    alert(card.title + ' was shared.');
   }
 
   listen(card) {
-    alert("Listening to " + card.title);
+    alert('Listening to ' + card.title);
   }
 
   favorite(card) {
-    alert(card.title + " was favorited.");
+    alert(card.title + ' was favorited.');
   }
 
 }

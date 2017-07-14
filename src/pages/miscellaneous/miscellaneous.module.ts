@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        MiscellaneousListPage,
-    ],
-    imports: [
-        IonicPageModule.forChild(MiscellaneousListPage),
-    ],
-    exports: [
-        MiscellaneousListPage
-    ]
+  declarations: [
+    MiscellaneousListPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(MiscellaneousListPage),
+  ],
+  exports: [
+    MiscellaneousListPage
+  ]
 })
 
-export class MiscellaneousListPageModule { };
+export class MiscellaneousListPageModule { }

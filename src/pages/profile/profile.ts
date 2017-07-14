@@ -35,7 +35,7 @@ export class ProfileListPage {
         title: 'Profile Settings',
         page: 'ProfileSettingsPage'
       },
-    ]
+    ];
   }
 
   itemTapped(event, item) {

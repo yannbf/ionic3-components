@@ -64,20 +64,18 @@ export class CardMapPage {
     },
   ];
 
-  constructor(public navCtrl: NavController) {
-
-  }
+  constructor(public navCtrl: NavController) { }
 
   placeTapped(place) {
-    alert(place.name + " was tapped.");
+    alert(place.name + ' was tapped.');
   }
 
   getDirections(card) {
-    alert("Getting directions to " + card.name);
+    alert('Getting directions to ' + card.name);
   }
 
   seeInMap(card) {
-    alert("Seeing " + card.name + " on maps.");
+    alert('Seeing ' + card.name + ' on maps.');
   }
 
 }

@@ -57,7 +57,7 @@ export class SlidesPage {
       //   title: 'Photo Gallery (not working)',
       //   page: 'SlidePhotoGalleryPage'
       // },
-    ]
+    ];
   }
 
   itemTapped(event, item) {

@@ -28,17 +28,18 @@
 //     }
 
 //     /**
-//      * Toggle the left nav menu on back 
+//      * Toggle the left nav menu on back
 //      * Also will display a toast message stating that the app will close on next back button click
 //      * @param  {boolean} doubleBackToExit
 //      */
 //     toggleMenuOnBack(doubleBackToExit = false) {
 //         this._platform.registerBackButtonAction(() => {
-//             // Open the menu 
+//             // Open the menu
 //             this._menuCtrl.toggle();
 
 //             if (doubleBackToExit) {
-//                 //If its first time clicking back button, show toast that they need to click back button again
+//                 // If its first time clicking back button,
+//                 // show toast that they need to click back button again
 //                 if (!this._didBackAlready) {
 //                     this._didBackAlready = true;
 //                     this._presentToast("Press back button again to exit");
@@ -72,7 +73,6 @@
 //         });
 //     }
 
-
 //     /**
 //      * Present Content as a toast message
 //      * @param  {string} content
@@ -86,7 +86,6 @@
 
 //         toast.present();
 //     }
-
 
 //     /* Use as follow in your page:
 //       ionViewDidEnter() {
@@ -143,5 +142,4 @@
 
 //         }
 //     }
-
 // }

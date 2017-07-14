@@ -14,7 +14,7 @@ export class ProfileSettingsPage {
   profilePicture: string;
   profileRef: any;
   errorMessage: any;
-  placeholderPicture = "http://api.adorable.io/avatar/200/bob";
+  placeholderPicture = 'http://api.adorable.io/avatar/200/bob';
 
   enableNotifications = true;
   language: any;
@@ -28,21 +28,19 @@ export class ProfileSettingsPage {
   user = {
     name: 'Marty Mcfly',
     imageUrl: 'assets/img/avatar/marty-avatar.png'
-  }
+  };
 
   constructor(
     public alertService: AlertService,
     public toastCtrl: ToastService,
     public camera: Camera
-  ) {
-
-  }
+  ) { }
 
   toggleNotifications() {
     if (this.enableNotifications) {
-      this.toastCtrl.create("Notifications enabled.");
+      this.toastCtrl.create('Notifications enabled.');
     } else {
-      this.toastCtrl.create("Notifications disabled.");
+      this.toastCtrl.create('Notifications disabled.');
     }
   }
 
@@ -59,15 +57,15 @@ export class ProfileSettingsPage {
     }).then((imageData) => {
       this.user.imageUrl = imageData;
     }, (err) => {
-      this.toastCtrl.create("Error: " + err);
+      this.toastCtrl.create('Error: ' + err);
     });
   }
 
   logOut() {
-    this.alertService.presentAlertWithCallback("Are you sure?",
-      "This will log you out of this application.").then((yes) => {
+    this.alertService.presentAlertWithCallback('Are you sure?',
+      'This will log you out of this application.').then((yes) => {
         if (yes) {
-          this.toastCtrl.create("Logged out of the application");
+          this.toastCtrl.create('Logged out of the application');
         }
       });
   }

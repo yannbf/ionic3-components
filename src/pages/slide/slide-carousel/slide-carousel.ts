@@ -11,122 +11,121 @@ export class SlideCarouselPage {
 
   mySlideOptions = {
     slidesPerView: 'auto',
-    //watchSlidesVisibility: true,
+    // watchSlidesVisibility: true,
     centeredSlides: true,
-    //observer: true,
-    //passiveListeners: false,
-    //loop: true,
-    //lazyLoading: true,
+    // observer: true,
+    // passiveListeners: false,
+    // loop: true,
+    // lazyLoading: true,
     spaceBetween: 9
   };
 
   city1: any = {
-    name: "Paris",
+    name: 'Paris',
     favorited: false,
-    image: "http://bit.ly/2aXzczV",
-    authorPic: "http://bit.ly/2dMCa9y",
+    image: 'http://bit.ly/2aXzczV',
+    authorPic: 'http://bit.ly/2dMCa9y',
     favoriteCount: 10,
     comments: [1, 2, 3],
-  }
+  };
 
   city2: any = {
-    name: "London",
+    name: 'London',
     favorited: false,
-    authorPic: "http://bit.ly/2dMCa9y",
-    image: "http://bit.ly/26lzMu0",
+    authorPic: 'http://bit.ly/2dMCa9y',
+    image: 'http://bit.ly/26lzMu0',
     favoriteCount: 10,
     comments: [1, 2, 3],
-  }
+  };
 
   city3: any = {
-    name: "Gramalote",
+    name: 'Gramalote',
     favorited: false,
-    authorPic: "http://bit.ly/2dMCa9y",
-    image: "http://bit.ly/2dW9ZEl",
+    authorPic: 'http://bit.ly/2dMCa9y',
+    image: 'http://bit.ly/2dW9ZEl',
     favoriteCount: 10,
     comments: [1, 2, 3],
-  }
+  };
 
   city4: any = {
-    name: "Vladivostok",
+    name: 'Vladivostok',
     favorited: false,
-    authorPic: "http://bit.ly/2dMCa9y",
-    image: "http://bit.ly/2e0NFe4",
+    authorPic: 'http://bit.ly/2dMCa9y',
+    image: 'http://bit.ly/2e0NFe4',
     favoriteCount: 10,
     comments: [1, 2, 3],
-  }
+  };
 
   water1: any = {
-    name: "Water1",
+    name: 'Water1',
     favorited: false,
-    authorPic: "http://bit.ly/2dMCa9y",
-    image: "https://placeimg.com/600/400/nature",
+    authorPic: 'http://bit.ly/2dMCa9y',
+    image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 10,
     comments: [1, 2, 3],
-  }
+  };
 
   water2: any = {
-    name: "Water2",
+    name: 'Water2',
     favorited: false,
-    authorPic: "http://bit.ly/2dMCa9y",
-    image: "https://placeimg.com/600/400/nature",
+    authorPic: 'http://bit.ly/2dMCa9y',
+    image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 5,
     comments: [1],
-  }
+  };
 
   water3: any = {
-    name: "Water3",
+    name: 'Water3',
     favorited: false,
-    authorPic: "http://bit.ly/2dMCa9y",
-    image: "https://placeimg.com/600/400/nature",
+    authorPic: 'http://bit.ly/2dMCa9y',
+    image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 2,
     comments: [1],
-  }
+  };
 
   water4: any = {
-    name: "Water4",
+    name: 'Water4',
     favorited: false,
-    authorPic: "http://bit.ly/2dMCa9y",
-    image: "https://placeimg.com/600/400/nature",
+    authorPic: 'http://bit.ly/2dMCa9y',
+    image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 8,
     comments: [1, 4, 2, 3],
-  }
+  };
 
   water5: any = {
-    name: "Water5",
+    name: 'Water5',
     favorited: false,
-    authorPic: "http://bit.ly/2dMCa9y",
-    image: "https://placeimg.com/600/400/nature",
+    authorPic: 'http://bit.ly/2dMCa9y',
+    image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 4,
     comments: [1, 4, 2],
-  }
+  };
 
   water6: any = {
-    name: "Water6",
+    name: 'Water6',
     favorited: false,
-    authorPic: "http://bit.ly/2dMCa9y",
-    image: "https://placeimg.com/600/400/nature",
+    authorPic: 'http://bit.ly/2dMCa9y',
+    image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 7,
     comments: [1, 4],
-  }
+  };
 
   water7: any = {
-    name: "Water7",
+    name: 'Water7',
     favorited: false,
-    authorPic: "http://bit.ly/2dMCa9y",
-    image: "https://placeimg.com/600/400/nature",
+    authorPic: 'http://bit.ly/2dMCa9y',
+    image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 8,
     comments: [1, 4, 2, 3],
-  }
+  };
 
-
-  //Starting with an empty slider
+  // Starting with an empty slider
   citiesSlides: any = [];
 
-  //cities: any = {city1, city2, city3, city4};
+  // cities: any = {city1, city2, city3, city4};
   cities: any = [];
 
-  //water: any = {water1, water2, water3, water4, water5, water6, water7};
+  // water: any = {water1, water2, water3, water4, water5, water6, water7};
   water: any = [];
 
   toggle: number = 0;
@@ -138,25 +137,25 @@ export class SlideCarouselPage {
   }
 
   addingNewCity() {
-    let newCity: any = {
-      name: "NewCity",
+    const newCity: any = {
+      name: 'NewCity',
       favorited: false,
-      authorPic: "http://bit.ly/2dMCa9y",
-      image: "http://placekitten.com/g/900/550",
+      authorPic: 'http://bit.ly/2dMCa9y',
+      image: 'http://placekitten.com/g/900/550',
       favoriteCount: 0,
       comments: [],
-    }
+    };
 
     this.cities.push(newCity);
   }
 
   changeCities() {
-    if (this.toggle == 0) {
+    if (this.toggle === 0) {
 
       this.toggle = 1;
       this.citiesSlides = this.cities;
 
-    } else if (this.toggle == 1) {
+    } else if (this.toggle === 1) {
 
       this.toggle = 2;
       this.citiesSlides = this.water;
@@ -170,15 +169,15 @@ export class SlideCarouselPage {
   }
 
   goToCityPage(city, event) {
-
+    console.log('Going to city' + city);
   }
 
   goToProfilePage() {
-    //this.navCtrl.push(ContactPage)
+    // this.navCtrl.push(ContactPage)
   }
 
-  ToggleFavorite(city, event) {
-    console.log("in the ToggleFavorite() with ", city.name);
+  toggleFavorite(city, event) {
+    console.log('in the ToggleFavorite() with ', city.name);
 
     event.preventDefault();
 

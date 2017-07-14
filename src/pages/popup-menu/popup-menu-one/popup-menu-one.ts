@@ -8,11 +8,12 @@ import { NavController, IonicPage } from 'ionic-angular';
 })
 export class PopupMenuOnePage {
   openMenu = false;
+
   constructor(public navCtrl: NavController) { }
 
   togglePopupMenu() {
     return this.openMenu = !this.openMenu;
-  };
+  }
 
   goToAccount() {
     alert('Account clicked.');

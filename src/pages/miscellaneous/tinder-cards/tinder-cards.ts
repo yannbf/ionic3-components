@@ -50,10 +50,10 @@ export class TinderCardsPage {
 
   // Called whenever we drag an element
   onItemMove(element, x, y, r) {
-    var color = '';
-    var abs = Math.abs(x);
-    let min = Math.trunc(Math.min(16 * 16 - abs, 16 * 16));
-    let hexCode = this.decimalToHex(min, 2);
+    let color = '';
+    const abs = Math.abs(x);
+    const min = Math.trunc(Math.min(16 * 16 - abs, 16 * 16));
+    const hexCode = this.decimalToHex(min, 2);
 
     if (x > 0) {
       color = '#' + hexCode + 'FF' + hexCode;
@@ -67,7 +67,7 @@ export class TinderCardsPage {
 
   // Connected through HTML
   voteUp(like: boolean) {
-    let removedCard = this.cards.pop();
+    const removedCard = this.cards.pop();
     this.addNewCards(1);
     if (like) {
       this.toastCtrl.create('You liked: ' + removedCard.email);
@@ -81,19 +81,19 @@ export class TinderCardsPage {
     this.http.get('https://randomuser.me/api/?results=' + count)
       .map(data => data.json().results)
       .subscribe(result => {
-        for (let val of result) {
+        for (const val of result) {
           this.cards.push(val);
         }
-      })
+      });
   }
 
   // http://stackoverflow.com/questions/57803/how-to-convert-decimal-to-hex-in-javascript
   decimalToHex(d, padding) {
-    var hex = Number(d).toString(16);
-    padding = typeof (padding) === "undefined" || padding === null ? padding = 2 : padding;
+    let hex = Number(d).toString(16);
+    padding = typeof (padding) === 'undefined' || padding === null ? padding = 2 : padding;
 
     while (hex.length < padding) {
-      hex = "0" + hex;
+      hex = '0' + hex;
     }
 
     return hex;

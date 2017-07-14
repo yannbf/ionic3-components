@@ -5,17 +5,17 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 
 @NgModule({
-    declarations: [
-        TinderCardsPage,
-    ],
-    imports: [
-        IonicPageModule.forChild(TinderCardsPage),
-        SwingModule,
-        SharedModule
-    ],
-    exports: [
-        TinderCardsPage
-    ]
+  declarations: [
+    TinderCardsPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(TinderCardsPage),
+    SwingModule,
+    SharedModule
+  ],
+  exports: [
+    TinderCardsPage
+  ]
 })
 
-export class TinderCardsPageModule { };
+export class TinderCardsPageModule { }

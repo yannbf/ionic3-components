@@ -10,7 +10,7 @@ import { AlertController, App, LoadingController, IonicPage } from 'ionic-angula
 export class LoginOnePage {
 
   public loginForm: any;
-  public backgroundImage = "assets/img/background/background-5.jpg";
+  public backgroundImage = 'assets/img/background/background-5.jpg';
 
   constructor(
     public loadingCtrl: LoadingController,
@@ -19,12 +19,12 @@ export class LoginOnePage {
   ) { }
 
   login() {
-    let loading = this.loadingCtrl.create({
+    const loading = this.loadingCtrl.create({
       duration: 500
     });
 
     loading.onDidDismiss(() => {
-      let alert = this.alertCtrl.create({
+      const alert = this.alertCtrl.create({
         title: 'Logged in!',
         subTitle: 'Thanks for logging in.',
         buttons: ['Dismiss']

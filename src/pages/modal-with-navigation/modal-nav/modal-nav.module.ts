@@ -13,4 +13,4 @@ import { IonicPageModule } from 'ionic-angular';
     ModalNavPage
   ]
 })
-export class ModalNavPageModule {};
+export class ModalNavPageModule {}

@@ -39,44 +39,44 @@ import { SwingModule } from 'angular2-swing';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
-export const Modules = [
-    SwingModule,
-    BrowserModule,
-    HttpModule,
-]
+export const MODULES = [
+  SwingModule,
+  BrowserModule,
+  HttpModule,
+];
 
-export const Pipes = [
-    TemperaturePipe, MomentPipe, OrderByPipe, CapitalizePipe, ShortenStringPipe
-]
+export const PIPES = [
+  TemperaturePipe, MomentPipe, OrderByPipe, CapitalizePipe, ShortenStringPipe
+];
 
-export const Providers = [
-    AlertService,
-    ToastService,
-    AppState,
-    CameraProvider,
-    NativeGoogleMapsProvider,
+export const PROVIDERS = [
+  AlertService,
+  ToastService,
+  AppState,
+  CameraProvider,
+  NativeGoogleMapsProvider,
 
     // Ionic native specific providers
-    BarcodeScanner,
-    Camera,
-    Diagnostic,
-    Geolocation,
-    CardIO,
-    StatusBar,
-    SplashScreen,
-    GoogleMaps,
-]
+  BarcodeScanner,
+  Camera,
+  Diagnostic,
+  Geolocation,
+  CardIO,
+  StatusBar,
+  SplashScreen,
+  GoogleMaps,
+];
 
-export const Components = [
-    FlashCardComponent,
-    TimerProgress,
-    Timer,
-    ExpandableHeader,
-    Autosize
-]
+export const COMPONENTS = [
+  FlashCardComponent,
+  TimerProgress,
+  Timer,
+  ExpandableHeader,
+  Autosize
+];
 
-export const Directives = [
-    SlidingDrawer,
-    Timer,
-    Autosize,
-]
+export const DIRECTIVES = [
+  SlidingDrawer,
+  Timer,
+  Autosize,
+];

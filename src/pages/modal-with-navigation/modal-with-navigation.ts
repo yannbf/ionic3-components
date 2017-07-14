@@ -34,7 +34,7 @@ export class ModalWithNavigationPage {
   }];
 
   presentActionSheet(document) {
-    let actionSheet = this.actionSheetCtrl.create({
+    const actionSheet = this.actionSheetCtrl.create({
       title: document.name,
       buttons: [
         {
@@ -46,7 +46,7 @@ export class ModalWithNavigationPage {
         }, {
           text: 'Rename',
           handler: () => {
-            let navTransition = actionSheet.dismiss();
+            const navTransition = actionSheet.dismiss();
             navTransition.then(() => {
               // wait until action sheet dismisses
               // https://ionicframework.com/docs/api/components/action-sheet/ActionSheetController/#advanced
@@ -68,7 +68,7 @@ export class ModalWithNavigationPage {
   }
 
   moveDocumentModal(document) {
-    let myModal = this.modalCtrl.create('ModalNavPage', { page: 'MoveDocumentPage' });
+    const myModal = this.modalCtrl.create('ModalNavPage', { page: 'MoveDocumentPage' });
     myModal.onDidDismiss(data => {
       if (data) {
         this.toastCtrl.create('"' + document.name + '" moved to folder "' + data.name + '"');
@@ -78,7 +78,7 @@ export class ModalWithNavigationPage {
   }
 
   renameDocument(document) {
-    let prompt = this.alertCtrl.create({
+    const prompt = this.alertCtrl.create({
       title: 'Rename Document',
       inputs: [
         {

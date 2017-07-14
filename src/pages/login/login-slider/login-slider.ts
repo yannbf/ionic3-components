@@ -1,6 +1,5 @@
 // import { FormBuilder, FormControl, Validator } from '@angular/forms';
-import { Component } from '@angular/core';
-import { ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { AlertController, App, LoadingController, NavController, Slides, IonicPage } from 'ionic-angular';
 
 @IonicPage()
@@ -10,16 +9,20 @@ import { AlertController, App, LoadingController, NavController, Slides, IonicPa
 })
 export class LoginSliderPage {
   public loginForm: any;
-  public backgroundImage = "assets/img/background/background-6.jpg";
+  public backgroundImage = 'assets/img/background/background-6.jpg';
 
-  constructor(private navCtrl: NavController, public loadingCtrl: LoadingController, public alertCtrl: AlertController, public app: App) { }
+  constructor(
+    private navCtrl: NavController,
+    public loadingCtrl: LoadingController,
+    public alertCtrl: AlertController,
+    public app: App
+  ) { }
 
   // Slider methods
   @ViewChild('slider') slider: Slides;
   @ViewChild('innerSlider') innerSlider: Slides;
 
   goToLogin() {
-    console.log('chamou');
     this.slider.slideTo(1);
   }
 
@@ -36,12 +39,12 @@ export class LoginSliderPage {
   }
 
   presentLoading(message) {
-    let loading = this.loadingCtrl.create({
+    const loading = this.loadingCtrl.create({
       duration: 500
     });
 
     loading.onDidDismiss(() => {
-      let alert = this.alertCtrl.create({
+      const alert = this.alertCtrl.create({
         title: 'Success',
         subTitle: message,
         buttons: ['Dismiss']
