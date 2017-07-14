@@ -1,13 +1,13 @@
-import { Injectable, ElementRef } from '@angular/core';
-
+import { ElementRef, Injectable } from '@angular/core';
 import {
- GoogleMaps,
- GoogleMap,
- GoogleMapsEvent,
- LatLng,
- CameraPosition,
- MarkerOptions,
- GoogleMapsAnimation
+    CameraPosition,
+    GoogleMap,
+    GoogleMaps,
+    GoogleMapsAnimation,
+    GoogleMapsEvent,
+    GoogleMapsMapTypeId,
+    LatLng,
+    MarkerOptions,
 } from '@ionic-native/google-maps';
 
 import { Geolocation } from '@ionic-native/geolocation';
@@ -23,7 +23,16 @@ export class NativeGoogleMapsProvider {
 
   // Note: Call this method on ngAfterViewInit
   create(element: ElementRef) {
+
+    const cameraPosition: CameraPosition = {
+      zoom  : 18,
+      tilt  : 10
+    };
+
     const options = {
+      mapType: GoogleMapsMapTypeId.NORMAL,
+      styles: [],
+      camera: cameraPosition,
       backgroundColor: 'white',
       controls: {
         compass: true,
@@ -36,7 +45,8 @@ export class NativeGoogleMapsProvider {
         tilt: true,
         rotate: true,
         zoom: true
-      }
+      },
+      preferences: null,
     };
 
     this.map = this.googleMaps.create(element.nativeElement, options);
@@ -76,7 +86,7 @@ export class NativeGoogleMapsProvider {
       position,
       title,
       animation: animated ? GoogleMapsAnimation.BOUNCE : null,
-      infoClick: infoClickCallback
+      infoWindowAnchor: infoClickCallback
     };
 
     return this.map.addMarker(markerOptions);
