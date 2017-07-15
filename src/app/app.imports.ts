@@ -26,6 +26,7 @@ import { Timer } from '../components/countdown-timer/timer';
 import { TimerProgress } from '../components/timer-progress/timer-progress';
 import { ExpandableHeader } from '../components/expandable-header/expandable-header';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
+import { AccordionListComponent } from '../components/accordion-list/accordion-list';
 
 // Pipes
 import { MomentPipe } from '../pipes/moment.pipe';
@@ -72,7 +73,8 @@ export const COMPONENTS = [
   TimerProgress,
   Timer,
   ExpandableHeader,
-  Autosize
+  Autosize,
+  AccordionListComponent,
 ];
 
 export const DIRECTIVES = [

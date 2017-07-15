@@ -41,6 +41,7 @@ export class MyApp {
 
     this.pages = [
       { title: 'Home', component: 'HomePage', active: true, icon: 'home' },
+      { title: 'Accordion List', component: 'AccordionListPage', active: false, icon: 'map' },
       { title: 'Ionic Official Components',
         component: 'IonicOfficialComponentsPage', active: false, icon: 'ionic' },
       { title: 'Ionic Native Features', component: 'IonicNativePage', active: false, icon: 'ionic' },

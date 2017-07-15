@@ -1,0 +1,33 @@
+accordion-list {
+    .nomargin {
+        margin: 0 !important;
+    }
+
+    .accordion-header {
+        color: white;
+
+        .item-inner {
+            margin-left: 0 !important;
+        }
+
+        ion-icon {
+            transition: all .25s ease-in;
+            transform: rotate(0);
+        }
+    }
+
+    .active ion-icon {
+        transform: rotate(90deg);
+    }
+
+    .accordion-content {
+        transition: 0.3s ease-in-out;
+        &.active {
+            padding: .75rem;
+        }
+    }
+
+    .label {
+        margin: 0px;
+    }
+}
