@@ -45,6 +45,10 @@ export class MiscellaneousListPage {
         page: 'MasonryCardsPage'
       },
       {
+        title: 'Real Estate Listing',
+        page: 'RealEstateListingPage'
+      },
+      {
         title: 'Testimonials',
         page: 'TestimonialsPage'
       },
@@ -52,10 +56,6 @@ export class MiscellaneousListPage {
         title: 'Tinder Cards',
         page: 'TinderCardsPage'
       },
-      // {
-      //     title: 'Weather',
-      //     page: WeatherPage
-      // },
     ];
   }
 

@@ -4,7 +4,6 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { MODULES, PROVIDERS } from './app.imports';
-import { AccordionListComponent } from '../components/accordion-list/accordion-list';
 
 @NgModule({
   declarations: [

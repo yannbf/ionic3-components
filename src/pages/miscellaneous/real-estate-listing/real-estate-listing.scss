@@ -1,0 +1,77 @@
+page-real-estate-listing {
+     $black-overlay: rgba(0,0,0,.3);
+     $text-color: #666;
+     $banner-text-color: white;
+     $content-color: whitesmoke;
+     $detail-background: rgba(236,236,236,.8);
+
+    /* Header */
+    .toolbar-background {
+        border-color: transparent;
+        background: $black-overlay;
+    }
+
+    .bar-button,
+    .toolbar-title {
+        color: $banner-text-color;
+    }
+
+    /* Image */
+    .housing-image{
+        background-size: cover;
+        height: 50vh;
+        position: relative;
+    }
+
+    .housing-banner {
+        color: $banner-text-color;
+        background: $black-overlay;
+        height: 10vh;
+        width: 100vw;
+        position: absolute;
+        bottom: -1px;
+
+        .housing-title {
+            display: block;
+            font-size: 1.2rem;
+        }
+
+        .price {
+            font-size: 3rem;
+        }
+    }
+    /* Content */
+    .content {
+        background: $content-color;
+    }
+
+    .scroll-content {
+        padding-top: 0 !important;
+    }
+
+    .main-content {
+        color: $text-color;
+
+    }
+    .listing-details ion-col {
+        padding: 1rem;
+        margin: 0.45rem;
+        background: $detail-background;
+        ion-icon {
+            margin-right: .5rem;
+        }
+    }
+
+    .main-features {
+        color: #3cc59a;
+
+        ion-icon {
+            font-size: 5.5rem !important;
+        }
+    }
+
+    .item-block {
+        text-align: center;
+        display: block;
+    }
+}

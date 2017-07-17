@@ -1,0 +1,52 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>
+      {{estateProperty.name}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen elestic-header>
+  <section class="housing-image"
+           [ngStyle]="{ 'background-image': 'url(' + estateProperty.image + ')'}">
+    <section class="housing-banner" padding>
+      <span class="housing-title">{{estateProperty.name}}</span>
+      <span class="price">${{estateProperty.price}}</span>
+    </section>
+  </section>
+  <section class="main-content">
+    <ion-grid class="main-features">
+      <ion-row>
+        <ion-col text-center *ngFor="let feature of estateProperty.features">
+          <ion-icon [name]="feature.icon"></ion-icon>
+          <span class="item-block">{{feature.title}}</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="listing-details">
+      <ion-row>
+        <p margin-left margin-right no-margin-top style="text-align: justify">
+          {{estateProperty.description}}
+        </p>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-icon name="home"></ion-icon>{{estateProperty.style}}
+        </ion-col>
+        <ion-col>
+          <ion-icon name="pin"></ion-icon>{{estateProperty.size}}
+        </ion-col>
+      </ion-row>
+      <ion-row *ngFor="let a of [1,1,1,1,1,1,1,1,1,1]">
+        <ion-col>
+          info here
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+</ion-content>
+<ion-footer>
+  <button ion-button large full no-margin color="danger" >
+    get in touch now
+  </button>
+</ion-footer>
