@@ -60,3 +60,4 @@ $ ionic serve
 - [Javier](https://github.com/javico2609)
 - [Miguel Carrasco](https://github.com/miguelcarrascoq)
 - [Cory](https://github.com/corysmc)
+- [Rafael Medeiros](https://github.com/medeirosrafael)
