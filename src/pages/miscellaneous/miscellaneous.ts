@@ -29,6 +29,10 @@ export class MiscellaneousListPage {
         page: 'ChatsPage'
       },
       {
+        title: 'Concert Card',
+        page: 'ConcertCardPage'
+      },
+      {
         title: 'Countdown',
         page: 'CountdownPage'
       },

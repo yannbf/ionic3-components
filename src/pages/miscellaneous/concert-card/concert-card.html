@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar transparent>
+    <ion-title>Upcoming events</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="md-heart-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <section margin-top margin-bottom>
+    <ion-slides autoplay="2000">
+      <ion-slide *ngFor="let concert of concerts">
+        <ion-card>
+          <div class="the-header">
+            <div class="header-text">
+              <h1>{{concert.artistName}}</h1>
+              <p>{{concert.name}}</p>
+            </div>
+            <div class="background" [style.background]="concert.color">
+              <img [src]="concert.artistImage"/>
+            </div>
+            <button ion-fab>
+              <ion-icon name="musical-notes"></ion-icon>
+            </button>
+          </div>
+          <div class="the-content" padding>
+            <h2>POWER PASS</h2>
+            <div padding>
+                <small>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </small>
+            </div>
+            <h2>SOMETHING ELSE</h2>
+            <div padding>
+                <small>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. dicta sunt explicabo.
+                </small>
+            </div>
+            <button ion-button block [style.background]="concert.color">Purchase</button>
+          </div>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </section>
+</ion-content>

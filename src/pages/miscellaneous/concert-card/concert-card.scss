@@ -1,0 +1,96 @@
+page-concert-card {
+
+    $header-color: #f73e53;
+    $content-color: #1c1c1c;
+    $clip-color: #494949;
+
+    .bar-buttons,
+    .toolbar-title, button {
+        color: #fff !important;
+    }
+
+    .toolbar-background {
+        background: transparentize(black,0.8) !important;
+    }
+
+    .scroll-content {
+        background: $clip-color;
+    }
+
+    ion-card {
+        margin: 0 auto !important;
+        max-width: 500px;
+        background: #494949 !important;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .the-header {
+        position: relative;
+        height: 30vh;
+
+        .header-text {
+            position: absolute;
+            z-index: 2;
+            top: 40px;
+            left: 15px;
+        }
+
+        .header-text h1 {
+            font-weight: bold;
+        }
+
+        .header-text p {
+            padding-left: 2rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .background {
+            height: 30vh;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 170px, 0 115%);
+            img {
+                max-width: 34rem;
+                position: absolute;
+                right: -90px;
+                bottom: 0;
+            }
+        }
+
+        button {
+            position: absolute;
+            bottom: -30px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            background: $content-color;
+            border: 6px solid $clip-color;
+            z-index: 2;
+            ion-icon {
+                font-size: 2.8rem;
+            }
+            &.activated {
+                background: $content-color;
+            }
+            &.activated ion-icon{
+                transition: .1s linear;
+                color: $header-color;
+            }
+        }
+    }
+
+    .the-content {
+        padding-top: 40px !important;
+        background: $content-color;
+        clip-path: polygon(0 24px, 100% -20px, 100% 100%, 0 101%);
+        min-height: 50vh;
+
+        h2, small, p {
+            color: white;
+        }
+
+        button {
+            background-color: $header-color;
+        }
+    }
+}
