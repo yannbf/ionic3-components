@@ -1,6 +1,7 @@
 import { TimelinePage } from './timeline';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
+import { SharedModule } from '../../app/shared.module';
 
 @NgModule({
   declarations: [
@@ -8,10 +9,11 @@ import { IonicPageModule } from 'ionic-angular';
   ],
   imports: [
     IonicPageModule.forChild(TimelinePage),
+    SharedModule
   ],
   exports: [
     TimelinePage
   ]
 })
 
-export class SlidingItemPageModule { }
+export class TimelinePageModule { }
