@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>timeline</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <timeline endIcon="call">
+    <timeline-item *ngFor="let item of items">
+      <timeline-time [time]="item.time"></timeline-time>
+      <ion-icon [name]="item.icon"></ion-icon>
+      <ion-card>
+        <ion-card-header>
+          {{item.title}}
+        </ion-card-header>
+        <ion-card-content>
+          {{item.content}}
+        </ion-card-content>
+      </ion-card>
+    </timeline-item>
+
+  </timeline>
+</ion-content>

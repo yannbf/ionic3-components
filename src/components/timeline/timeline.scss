@@ -1,0 +1,146 @@
+timeline {
+  .timeline {
+    margin: 30px 0 0 0;
+    padding: 0;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 10px;
+      background: #afdcf8;
+      left: 20%;
+      margin-left: -10px;
+    }
+    timeline-item {
+      position: relative;
+      display: inline-block;
+
+      timeline-time {
+        display: block;
+        width: 20%;
+        padding-right: 50px;
+        position: absolute;
+        span {
+          display: block;
+          text-align: right;
+          &:last-child {
+            font-size: 2.9em;
+            color: #3594cb;
+          }
+        }
+      }
+      /* Right content */
+      ion-card {
+        margin-left: 25% !important;
+        width: 75% !important;
+        position: relative;
+      }
+      ion-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.4em;
+        position: absolute;
+        color: #fff;
+        background: #46a4da;
+        border-radius: 50%;
+        box-shadow: 0 0 0 8px #afdcf8;
+        text-align: center;
+        left: 20%;
+        top: 0;
+        margin: 0 0 0 -25px;
+        line-height: 40px;
+        &:after {
+            left: 46px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-left-color: #afdcf8;
+            border-width: 10px;
+            top: 10px;
+          }
+      }
+        &:last-child{
+          width: 100%;
+          ion-icon{
+            box-shadow: none;
+            &:after{
+              border-width: 0;
+            }
+          }
+        }
+    }
+    @media screen and (max-width: map-get($grid-breakpoints,'lg')){
+      timeline-item{
+        timeline-time{
+          font-size: 0.7em;
+        }
+      }
+    }
+    @media screen and (max-width: map-get($grid-breakpoints,'md')){
+      &:before{
+        left: 30px;
+      }
+      timeline-item{
+        ion-card{
+          margin-left: 80px !important;
+        }
+        ion-icon{
+          left: 30px;
+        }
+        timeline-time{
+          font-size: 0.8em;
+          width: 100%;
+          left: 80px;
+          position: relative;
+          span{
+            text-align: left;
+          }
+
+        }
+      }
+    }
+    @media screen and (max-width: map-get($grid-breakpoints, 'sm' )){
+      &:before{
+        display: none;
+      }
+      timeline-item{
+        &:last-child{
+          visibility: hidden;
+        }
+        ion-icon{
+          position: relative;
+          float: right;
+          left: auto;
+          margin: -55px 5px 0 0;
+          &:after{
+            border-left-color: transparent;
+            border-top-color: #afdcf8;
+            top: 46px;
+            left: 10px;
+          }
+        }
+        timeline-time{
+          width: 100%;
+          position: relative;
+          padding: 0 0 20px 0;
+          left: 20px;
+          span{
+            text-align: left;
+          }
+        }
+
+        ion-card{
+          width: calc(100% - 20px) !important;
+          margin-left: 10px !important;
+        }
+      }
+    }
+  }
+
+}
