@@ -18,7 +18,7 @@ timeline {
       position: relative;
       display: inline-block;
 
-      time {
+      timeline-time {
         display: block;
         width: 20%;
         padding-right: 50px;
@@ -77,7 +77,7 @@ timeline {
     }
     @media screen and (max-width: map-get($grid-breakpoints,'lg')){
       timeline-item{
-        time{
+        timeline-time{
           font-size: 0.7em;
         }
       }
@@ -93,7 +93,7 @@ timeline {
         ion-icon{
           left: 30px;
         }
-        time{
+        timeline-time{
           font-size: 0.8em;
           width: 100%;
           left: 80px;
@@ -119,10 +119,13 @@ timeline {
           left: auto;
           margin: -55px 5px 0 0;
           &:after{
-            border-width: 0;
+            border-left-color: transparent;
+            border-top-color: #afdcf8;
+            top: 46px;
+            left: 10px;
           }
         }
-        time{
+        timeline-time{
           width: 100%;
           position: relative;
           padding: 0 0 20px 0;

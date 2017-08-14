@@ -10,29 +10,16 @@
 
 
 <ion-content padding>
-  <timeline>
-    <timeline-item>
-      <time datetime="2013-04-16 21:30"><span>4/16/13</span> <span>21:30</span></time>
-      <ion-icon class="" name="calendar"></ion-icon>
+  <timeline endIcon="call">
+    <timeline-item *ngFor="let item of items">
+      <timeline-time [time]="item.time"></timeline-time>
+      <ion-icon [name]="item.icon"></ion-icon>
       <ion-card>
         <ion-card-header>
-          <h3>Courgette daikon</h3>
+          {{item.title}}
         </ion-card-header>
         <ion-card-content>
-          <p>Parsley amaranth tigernut silver beet maize fennel spinach. Ricebean black-eyed pea maize scallion green bean spinach cabbage jícama bell pepper carrot onion corn plantain garbanzo. Sierra leone bologi komatsuna celery peanut swiss chard silver beet squash dandelion maize chicory burdock tatsoi dulse radish wakame beetroot.</p>
-        </ion-card-content>
-      </ion-card>
-    </timeline-item>
-
-    <timeline-item>
-      <time class="cbp_tmtime" datetime="2013-04-16 21:30"><span>4/16/13</span> <span>21:30</span></time>
-      <ion-icon class="" name="calendar"></ion-icon>
-      <ion-card>
-        <ion-card-header>
-          <h3>Courgette daikon</h3>
-        </ion-card-header>
-        <ion-card-content>
-          <p>Parsley amaranth tigernut silver beet maize fennel spinach. Ricebean black-eyed pea maize scallion green bean spinach cabbage jícama bell pepper carrot onion corn plantain garbanzo. Sierra leone bologi komatsuna celery peanut swiss chard silver beet squash dandelion maize chicory burdock tatsoi dulse radish wakame beetroot.</p>
+          {{item.content}}
         </ion-card-content>
       </ion-card>
     </timeline-item>

@@ -1,17 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-/**
- * Generated class for the TimelineComponent component.
- *
- * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
- * for more info on Angular Components.
- */
 @Component({
   selector: 'timeline',
   templateUrl: 'timeline.html'
 })
 export class TimelineComponent {
-
+  @Input('endIcon') endIcon = "ionic";
   constructor() {
 
   }
@@ -23,6 +17,18 @@ export class TimelineComponent {
   template: '<ng-content></ng-content>'
 })
 export class TimelineItemComponent{
+  constructor(){
+
+  }
+}
+
+
+@Component({
+  selector:'timeline-time',
+  template: '<span>{{time.subtitle}}</span> <span>{{time.title}}</span>'
+})
+export class TimelineTimeComponent{
+  @Input('time') time = {};
   constructor(){
 
   }

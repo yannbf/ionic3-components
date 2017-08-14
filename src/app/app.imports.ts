@@ -29,6 +29,7 @@ import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { AccordionListComponent } from '../components/accordion-list/accordion-list';
 import { TimelineComponent } from '../components/timeline/timeline';
 import { TimelineItemComponent } from '../components/timeline/timeline';
+import { TimelineTimeComponent } from '../components/timeline/timeline';
 
 
 // Pipes
@@ -79,7 +80,8 @@ export const COMPONENTS = [
   Autosize,
   AccordionListComponent,
   TimelineComponent,
-  TimelineItemComponent
+  TimelineItemComponent,
+  TimelineTimeComponent
 ];
 
 export const DIRECTIVES = [
