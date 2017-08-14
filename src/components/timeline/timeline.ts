@@ -12,11 +12,18 @@ import { Component } from '@angular/core';
 })
 export class TimelineComponent {
 
-  text: string;
-
   constructor() {
-    console.log('Hello TimelineComponent Component');
-    this.text = 'Hello World';
+
   }
 
+}
+
+@Component({
+  selector: 'timeline-item',
+  template: '<ng-content></ng-content>'
+})
+export class TimelineItemComponent{
+  constructor(){
+
+  }
 }
