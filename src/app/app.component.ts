@@ -55,6 +55,7 @@ export class MyApp {
       { title: 'Profile', component: 'ProfileListPage', active: false, icon: 'camera' },
       { title: 'Side Menu', component: 'SideMenuPage', active: false, icon: 'bookmark' },
       // Removed for now as there were breaking changes in slides
+      { title: 'Timeline', component: 'TimelinePage', active: false, icon: 'calendar'},
       { title: 'Slides', component: 'SlidesPage', active: false, icon: 'contact' },
       { title: 'Theming', component: 'ThemingPage', active: false, icon: 'power' },
     ];
