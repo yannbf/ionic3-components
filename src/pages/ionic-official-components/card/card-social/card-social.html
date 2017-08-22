@@ -16,7 +16,7 @@
     <ion-card-content>
       <p>{{card.postText}}</p>
     </ion-card-content>
-    <ion-row>
+    <ion-row class="dark-row">
       <ion-col>
         <button ion-button color="primary" clear small icon-left (click)="like(card)">
         <ion-icon name='thumbs-up'></ion-icon>
@@ -29,7 +29,7 @@
         {{card.comments}} Comments
       </button>
       </ion-col>
-      <ion-col center text-center>
+      <ion-col center text-center class="time-ago">
         <ion-note>
           {{card.timestamp}}
         </ion-note>
