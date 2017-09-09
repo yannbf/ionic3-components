@@ -11,7 +11,7 @@
     "no-increment-decrement": false,
     "no-param-reassign": false,
     "no-consecutive-blank-lines": true,
-    "max-line-length": [ true, 110 ],
+    "max-line-length": [ true, 120 ],
      "variable-name": [true, "allow-leading-underscore"]
   },
   "rulesDirectory": [
