@@ -32,7 +32,7 @@ export class RealEstateListingPage {
         title: 'Beautiful Garden'
       }
     ]
-  }
+  };
 
   constructor(public navCtrl: NavController) { }
 
