@@ -31,7 +31,7 @@
     "@ionic/storage": "2.0.1",
     "angular2-swing": "^0.12.1",
     "chart.js": "^2.4.0",
-    "ionic-angular": "3.5.2",
+    "ionic-angular": "^3.6.1",
     "ionicons": "3.0.0",
     "moment": "^2.15.2",
     "rxjs": "5.4.2",
@@ -40,7 +40,7 @@
     "zone.js": "^0.8.12"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "2.0.2",
+    "@ionic/app-scripts": "^2.1.4",
     "typescript": "~2.3.4"
   },
   "cordovaPlugins": [
