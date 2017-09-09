@@ -1,56 +1,91 @@
 {
-  "name": "ionic3-components",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
-  "private": true,
-  "scripts": {
-    "clean": "ionic-app-scripts clean",
-    "build": "ionic-app-scripts build",
-    "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
-  },
-  "dependencies": {
-    "@angular/common": "4.1.3",
-    "@angular/compiler": "4.1.3",
-    "@angular/compiler-cli": "4.1.3",
-    "@angular/core": "4.1.3",
-    "@angular/forms": "4.1.3",
-    "@angular/http": "4.1.3",
-    "@angular/platform-browser": "4.1.3",
-    "@angular/platform-browser-dynamic": "4.1.3",
-    "@angular/tsc-wrapped": "4.2.6",
-    "@ionic-native/barcode-scanner": "4.0.0",
-    "@ionic-native/camera": "4.0.0",
-    "@ionic-native/card-io": "4.0.0",
-    "@ionic-native/core": "4.0.0",
-    "@ionic-native/diagnostic": "4.0.0",
-    "@ionic-native/geolocation": "4.0.0",
-    "@ionic-native/google-maps": "4.0.0",
-    "@ionic-native/splash-screen": "4.0.0",
-    "@ionic-native/status-bar": "4.0.0",
-    "@ionic/storage": "2.0.1",
-    "angular2-swing": "^0.12.1",
-    "chart.js": "^2.4.0",
-    "ionic-angular": "^3.6.1",
-    "ionicons": "3.0.0",
-    "moment": "^2.15.2",
-    "rxjs": "5.4.2",
-    "sw-toolbox": "3.6.0",
-    "tslint-config-airbnb": "^5.2.1",
-    "zone.js": "^0.8.12"
-  },
-  "devDependencies": {
-    "@ionic/app-scripts": "^2.1.4",
-    "typescript": "~2.3.4"
-  },
-  "cordovaPlugins": [
-    "cordova-plugin-whitelist",
-    "cordova-plugin-console",
-    "cordova-plugin-statusbar",
-    "cordova-plugin-device",
-    "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
-  ],
-  "cordovaPlatforms": [],
-  "description": "Advanced Ionic Components: An Awesome Ionic project"
+    "name": "ionic3-components",
+    "author": "Ionic Framework",
+    "homepage": "https://ionicframework.com/",
+    "private": true,
+    "scripts": {
+        "clean": "ionic-app-scripts clean",
+        "build": "ionic-app-scripts build",
+        "ionic:build": "ionic-app-scripts build",
+        "ionic:serve": "ionic-app-scripts serve"
+    },
+    "dependencies": {
+        "@angular/common": "4.1.3",
+        "@angular/compiler": "4.1.3",
+        "@angular/compiler-cli": "4.1.3",
+        "@angular/core": "4.1.3",
+        "@angular/forms": "4.1.3",
+        "@angular/http": "4.1.3",
+        "@angular/platform-browser": "4.1.3",
+        "@angular/platform-browser-dynamic": "4.1.3",
+        "@angular/tsc-wrapped": "4.2.6",
+        "@ionic-native/barcode-scanner": "4.0.0",
+        "@ionic-native/camera": "4.0.0",
+        "@ionic-native/card-io": "4.0.0",
+        "@ionic-native/core": "4.0.0",
+        "@ionic-native/diagnostic": "4.0.0",
+        "@ionic-native/geolocation": "4.0.0",
+        "@ionic-native/google-maps": "4.0.0",
+        "@ionic-native/splash-screen": "4.0.0",
+        "@ionic-native/status-bar": "4.0.0",
+        "@ionic/storage": "2.0.1",
+        "angular2-swing": "^0.12.1",
+        "chart.js": "^2.4.0",
+        "ionic-angular": "^3.6.1",
+        "ionicons": "3.0.0",
+        "moment": "^2.15.2",
+        "rxjs": "5.4.2",
+        "sw-toolbox": "3.6.0",
+        "tslint-config-airbnb": "^5.2.1",
+        "zone.js": "^0.8.12",
+        "cordova-android": "~6.1.2",
+        "card.io.cordova.mobilesdk": "https://github.com/card-io/card.io-Cordova-Plugin",
+        "cordova-plugin-camera": "~2.3.1",
+        "cordova-plugin-console": "1.0.5",
+        "cordova-plugin-device": "1.1.4",
+        "cordova-plugin-geolocation": "~2.4.2",
+        "cordova-plugin-googlemaps": "~1.4.0",
+        "cordova-plugin-splashscreen": "~4.0.1",
+        "cordova-plugin-statusbar": "2.2.1",
+        "cordova-plugin-whitelist": "1.3.1",
+        "cordova.plugins.diagnostic": "~3.4.1",
+        "ionic-plugin-keyboard": "~2.2.1",
+        "phonegap-plugin-barcodescanner": "~6.0.6"
+    },
+    "devDependencies": {
+        "@ionic/app-scripts": "^2.1.4",
+        "typescript": "~2.3.4"
+    },
+    "cordovaPlugins": [
+        "cordova-plugin-whitelist",
+        "cordova-plugin-console",
+        "cordova-plugin-statusbar",
+        "cordova-plugin-device",
+        "cordova-plugin-splashscreen",
+        "ionic-plugin-keyboard"
+    ],
+    "cordovaPlatforms": [],
+    "description": "Advanced Ionic Components: An Awesome Ionic project",
+    "cordova": {
+        "platforms": [
+            "android"
+        ],
+        "plugins": {
+            "card.io.cordova.mobilesdk": {},
+            "cordova-plugin-camera": {},
+            "cordova-plugin-console": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-geolocation": {},
+            "cordova-plugin-googlemaps": {
+                "API_KEY_FOR_ANDROID": "AIzaSyBaTVlHDndpSgbdDnRsCy2xFJt2tB41NB0",
+                "API_KEY_FOR_IOS": "AIzaSyBaTVlHDndpSgbdDnRsCy2xFJt2tB41NB0"
+            },
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-whitelist": {},
+            "cordova.plugins.diagnostic": {},
+            "ionic-plugin-keyboard": {},
+            "phonegap-plugin-barcodescanner": {}
+        }
+    }
 }
