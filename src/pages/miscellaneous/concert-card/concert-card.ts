@@ -27,7 +27,7 @@ export class ConcertCardPage {
       artistImage: 'assets/img/misc/kanye_west.png',
       color: '#fdd427'
     },
-  ]
+  ];
 
   constructor(public navCtrl: NavController) { }
 }
