@@ -32,6 +32,10 @@ export class ProfileListPage {
         page: 'ProfileFourPage'
       },
       {
+        title: 'Type Five',
+        page: 'ProfileFivePage'
+      },
+      {
         title: 'Profile Settings',
         page: 'ProfileSettingsPage'
       },
