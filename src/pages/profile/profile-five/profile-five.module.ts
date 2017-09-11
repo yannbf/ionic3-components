@@ -10,7 +10,6 @@ import { IonicPageModule } from 'ionic-angular';
   imports: [
     IonicPageModule.forChild(ProfileFivePage),
     ParallaxHeaderDirectiveModule
-  
   ],
   exports: [
     ProfileFivePage

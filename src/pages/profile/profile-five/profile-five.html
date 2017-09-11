@@ -8,32 +8,32 @@
     <div class="header-image"></div>
     <div class="main-content" text-wrap text-center>
         <div class="circular"></div>
-        <h2>Mohd Mazlan</h2>
-        <p>Programmer &bull; UPM, MY</p>
-        <p class="profile-description">Passionate Front-end developer with over 2 years experience. Recently focusing on developing mobile hybrid apps and web development.</p>
+        <h2>{{user.name}}</h2>
+        <p>{{user.occupation}} &bull; {{user.location}}</p>
+        <p class="profile-description">{{user.description}}</p>
         <hr>
         <ion-list no-lines>
             <ion-item>
                 <ion-icon name="mail" color="primary" item-start></ion-icon>
                 <p>Email</p>
-                johndoe@gmail.com
-                <a button ion-button color="primary" item-end medium>Open App</a>
+                {{user.email}}
+                <a button ion-button href="mailto:{{user.email}}" color="primary" item-end medium>Open App</a>
             </ion-item>
             <ion-item>
                 <ion-icon item-start name="call" color="danger"></ion-icon>
                 <p>Mobile</p>
-                555 555 555
-                <a button ion-button href="tel:123456789" color="danger" item-end medium>Poke me</a>
+                {{user.phone}}
+                <a button ion-button href="tel:{{user.phone}}" color="danger" item-end medium>Poke me</a>
             </ion-item>
             <ion-item>
                 <ion-icon item-start name="logo-whatsapp" color="secondary"></ion-icon>
                 <p>Whatsapp</p>
-                555 555 555
-                <a button ion-button color="secondary" item-end medium href="whatsapp://send?text=Hi from ionic&phone=+5555555&abid=+555555555">Open App</a>
+                {{user.whatsapp}}
+                <a button ion-button color="secondary" item-end medium href="whatsapp://send?text=Hi from ionic&phone=+{{user.phone}}&abid=+{{user.phone}}">Open App</a>
             </ion-item>
             <ion-item>
                 <ion-icon item-start name="pin" color="twitter"></ion-icon>
-                <p>Jalan Kelisa 9, Taman Kelisa 45800 Jeram Kuala Selangor</p>
+                <p>{{user.address}}</p>
             </ion-item>
         </ion-list>
         <h2>Get in touch</h2>
