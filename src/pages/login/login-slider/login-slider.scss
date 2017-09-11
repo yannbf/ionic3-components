@@ -33,9 +33,9 @@ page-login-slider {
   }
   .logo {
     width: 100%;
+    max-width: 19em;
     height: auto;
     margin: 0 auto;
-    padding-bottom: 30%;
   }
   ion-row {
     align-items: center;
@@ -75,6 +75,7 @@ page-login-slider {
   //
   .login-button {
     width: 100%;
+    max-width: 40rem;
     height: 50px;
     font-size: 1.2em;
     span {

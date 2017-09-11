@@ -12,7 +12,6 @@ export class LoginSliderPage {
   public backgroundImage = 'assets/img/background/background-6.jpg';
 
   constructor(
-    private navCtrl: NavController,
     public loadingCtrl: LoadingController,
     public alertCtrl: AlertController,
     public app: App

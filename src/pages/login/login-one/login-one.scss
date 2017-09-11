@@ -15,6 +15,7 @@ page-login-one {
   .logo {
     width: 50%;
     height: auto;
+    max-width: 12em;
     margin: 0 auto;
     padding-bottom: 50px;
   }
@@ -25,6 +26,12 @@ page-login-one {
   ion-row {
     align-items: center;
     text-align: center;
+  }
+  @media only screen and (min-width: 768px) {
+    ion-col.col {
+      margin: 0 auto;
+      max-width: 40%;
+    }
   }
   span {
     color: white;
