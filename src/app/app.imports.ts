@@ -31,7 +31,6 @@ import { TimelineComponent } from '../components/timeline/timeline';
 import { TimelineItemComponent } from '../components/timeline/timeline';
 import { TimelineTimeComponent } from '../components/timeline/timeline';
 
-
 // Pipes
 import { MomentPipe } from '../pipes/moment.pipe';
 import { TemperaturePipe } from '../pipes/temperature.pipe';
@@ -51,7 +50,11 @@ export const MODULES = [
 ];
 
 export const PIPES = [
-  TemperaturePipe, MomentPipe, OrderByPipe, CapitalizePipe, ShortenStringPipe
+  TemperaturePipe,
+  MomentPipe,
+  OrderByPipe,
+  CapitalizePipe,
+  ShortenStringPipe
 ];
 
 export const PROVIDERS = [
@@ -61,7 +64,7 @@ export const PROVIDERS = [
   CameraProvider,
   NativeGoogleMapsProvider,
 
-    // Ionic native specific providers
+  // Ionic native specific providers
   BarcodeScanner,
   Camera,
   Diagnostic,
