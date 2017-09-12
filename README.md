@@ -8,7 +8,7 @@ You will find many many different components, pages, pipes, services, of which c
 The content here is a mix of tutorials found online, a few adapted codepen stuff, a few dribbble inspired layouts, and also other stuff made by the contributors of this project.
 
 **HOPEFULLY** you will like this repo and feel like contributing, so please if you can, contribute so we can have even more amazing content!
- 
+
 ## Demo
 If you just want to check this project out, you can see the online demo at https://ioniccomponents.yannbraga.com/ or use [Ionic View](http://view.ionic.io/) with the code **bd1b6d71**.
 
@@ -61,3 +61,4 @@ $ ionic serve
 - [Miguel Carrasco](https://github.com/miguelcarrascoq)
 - [Cory](https://github.com/corysmc)
 - [Rafael Medeiros](https://github.com/medeirosrafael)
+- [Mohd Mazlan Bin Mohd Nor](https://github.com/mazlanmohdnor)
