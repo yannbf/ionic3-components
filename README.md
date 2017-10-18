@@ -1,4 +1,5 @@
 # Ionic Advanced Components [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 _Currently this project is using the latest versions of all: Ionic and Angular 4_
 
@@ -62,3 +63,14 @@ $ ionic serve
 - [Cory](https://github.com/corysmc)
 - [Rafael Medeiros](https://github.com/medeirosrafael)
 - [Mohd Mazlan Bin Mohd Nor](https://github.com/mazlanmohdnor)
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars1.githubusercontent.com/u/6360216?v=4" width="100px;"/><br /><sub>Damodar Lohani</sub>](http://www.dlohani.com.np)<br />[💻](https://github.com/yannbf/ionic3-components/commits?author=lohanidamodar "Code") [📢](#talk-lohanidamodar "Talks") [🎨](#design-lohanidamodar "Design") [📝](#blog-lohanidamodar "Blogposts") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!

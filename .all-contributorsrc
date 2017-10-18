@@ -6,5 +6,18 @@
   ],
   "imageSize": 100,
   "commit": true,
-  "contributors": []
+  "contributors": [
+    {
+      "login": "lohanidamodar",
+      "name": "Damodar Lohani",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6360216?v=4",
+      "profile": "http://www.dlohani.com.np",
+      "contributions": [
+        "code",
+        "talk",
+        "design",
+        "blog"
+      ]
+    }
+  ]
 }
