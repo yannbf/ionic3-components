@@ -38,6 +38,15 @@
       "contributions": [
         "plugin"
       ]
+    },
+    {
+      "login": "Fdom92",
+      "name": "Fernando del olmo",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7361737?v=4",
+      "profile": "https://fdom-website.firebaseapp.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
