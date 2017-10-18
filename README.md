@@ -1,5 +1,5 @@
 # Ionic Advanced Components [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
 
 _Currently this project is using the latest versions of all: Ionic and Angular 4_
 
@@ -69,8 +69,8 @@ $ ionic serve
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars1.githubusercontent.com/u/6360216?v=4" width="100px;"/><br /><sub>Damodar Lohani</sub>](http://www.dlohani.com.np)<br />[💻](https://github.com/yannbf/ionic3-components/commits?author=lohanidamodar "Code") [📢](#talk-lohanidamodar "Talks") [🎨](#design-lohanidamodar "Design") [📝](#blog-lohanidamodar "Blogposts") | [<img src="https://avatars0.githubusercontent.com/u/6452188?v=4" width="100px;"/><br /><sub>Cory McArthur</sub>](https://github.com/corysmc)<br />[💻](https://github.com/yannbf/ionic3-components/commits?author=corysmc "Code") [📢](#talk-corysmc "Talks") [🎨](#design-corysmc "Design") | [<img src="https://avatars1.githubusercontent.com/u/1894500?v=4" width="100px;"/><br /><sub>mike-carr</sub>](http://ServiciosGlobalesTecnologicos.com/)<br />[🔌](#plugin-miguelcarrascoq "Plugin/utility libraries") | [<img src="https://avatars3.githubusercontent.com/u/7361737?v=4" width="100px;"/><br /><sub>Fernando del olmo</sub>](https://fdom-website.firebaseapp.com/)<br />[💻](https://github.com/yannbf/ionic3-components/commits?author=Fdom92 "Code") |
-| :---: | :---: | :---: | :---: |
+| [<img src="https://avatars1.githubusercontent.com/u/6360216?v=4" width="100px;"/><br /><sub>Damodar Lohani</sub>](http://www.dlohani.com.np)<br />[💻](https://github.com/yannbf/ionic3-components/commits?author=lohanidamodar "Code") [📢](#talk-lohanidamodar "Talks") [🎨](#design-lohanidamodar "Design") [📝](#blog-lohanidamodar "Blogposts") | [<img src="https://avatars0.githubusercontent.com/u/6452188?v=4" width="100px;"/><br /><sub>Cory McArthur</sub>](https://github.com/corysmc)<br />[💻](https://github.com/yannbf/ionic3-components/commits?author=corysmc "Code") [📢](#talk-corysmc "Talks") [🎨](#design-corysmc "Design") | [<img src="https://avatars1.githubusercontent.com/u/1894500?v=4" width="100px;"/><br /><sub>mike-carr</sub>](http://ServiciosGlobalesTecnologicos.com/)<br />[🔌](#plugin-miguelcarrascoq "Plugin/utility libraries") | [<img src="https://avatars3.githubusercontent.com/u/7361737?v=4" width="100px;"/><br /><sub>Fernando del olmo</sub>](https://fdom-website.firebaseapp.com/)<br />[💻](https://github.com/yannbf/ionic3-components/commits?author=Fdom92 "Code") | [<img src="https://avatars1.githubusercontent.com/u/13787877?v=4" width="100px;"/><br /><sub>medeirosrafael</sub>](https://github.com/medeirosrafael)<br />[🐛](https://github.com/yannbf/ionic3-components/issues?q=author%3Amedeirosrafael "Bug reports") |
+| :---: | :---: | :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
