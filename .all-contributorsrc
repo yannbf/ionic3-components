@@ -18,6 +18,17 @@
         "design",
         "blog"
       ]
+    },
+    {
+      "login": "corysmc",
+      "name": "Cory McArthur",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6452188?v=4",
+      "profile": "https://github.com/corysmc",
+      "contributions": [
+        "code",
+        "talk",
+        "design"
+      ]
     }
   ]
 }

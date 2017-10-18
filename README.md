@@ -1,5 +1,5 @@
 # Ionic Advanced Components [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 _Currently this project is using the latest versions of all: Ionic and Angular 4_
 
@@ -69,8 +69,8 @@ $ ionic serve
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars1.githubusercontent.com/u/6360216?v=4" width="100px;"/><br /><sub>Damodar Lohani</sub>](http://www.dlohani.com.np)<br />[💻](https://github.com/yannbf/ionic3-components/commits?author=lohanidamodar "Code") [📢](#talk-lohanidamodar "Talks") [🎨](#design-lohanidamodar "Design") [📝](#blog-lohanidamodar "Blogposts") |
-| :---: |
+| [<img src="https://avatars1.githubusercontent.com/u/6360216?v=4" width="100px;"/><br /><sub>Damodar Lohani</sub>](http://www.dlohani.com.np)<br />[💻](https://github.com/yannbf/ionic3-components/commits?author=lohanidamodar "Code") [📢](#talk-lohanidamodar "Talks") [🎨](#design-lohanidamodar "Design") [📝](#blog-lohanidamodar "Blogposts") | [<img src="https://avatars0.githubusercontent.com/u/6452188?v=4" width="100px;"/><br /><sub>Cory McArthur</sub>](https://github.com/corysmc)<br />[💻](https://github.com/yannbf/ionic3-components/commits?author=corysmc "Code") [📢](#talk-corysmc "Talks") [🎨](#design-corysmc "Design") |
+| :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
