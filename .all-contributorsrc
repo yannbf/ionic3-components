@@ -29,6 +29,15 @@
         "talk",
         "design"
       ]
+    },
+    {
+      "login": "miguelcarrascoq",
+      "name": "mike-carr",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1894500?v=4",
+      "profile": "http://ServiciosGlobalesTecnologicos.com/",
+      "contributions": [
+        "plugin"
+      ]
     }
   ]
 }
