@@ -55,16 +55,6 @@ $ ionic serve
 ```
 
 ## Amazing contributors
-- [Damodar Lohani](https://github.com/lohanidamodar)
-- [Fernando del Olmo](https://github.com/Fdom92)
-- [Daniel Sogl](https://github.com/danielsogl)
-- [Javier](https://github.com/javico2609)
-- [Miguel Carrasco](https://github.com/miguelcarrascoq)
-- [Cory](https://github.com/corysmc)
-- [Rafael Medeiros](https://github.com/medeirosrafael)
-- [Mohd Mazlan Bin Mohd Nor](https://github.com/mazlanmohdnor)
-
-## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
