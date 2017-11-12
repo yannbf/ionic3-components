@@ -60,6 +60,10 @@ export class MiscellaneousListPage {
         title: 'Tinder Cards',
         page: 'TinderCardsPage'
       },
+      {
+        title: 'Item Ribbon',
+        page: 'ItemRibbonPage'
+      },
     ];
   }
 
