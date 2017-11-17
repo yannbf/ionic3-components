@@ -10,21 +10,20 @@ export class AccordionListComponent {
   @Input() contentColor: string = '#F9F9F9';
   @Input() title: string;
   @Input() hasMargin: boolean = true;
-  @Input() initialState: string;
-  @Input () expanded: boolean;
+  @Input() expanded: boolean;
 
   @ViewChild('accordionContent') elementView: ElementRef;
 
   viewHeight: number;
 
   constructor(public renderer: Renderer) { }
-  
+
   ngAfterViewInit() {
-    this.handleInitialState();
     this.viewHeight = this.elementView.nativeElement.offsetHeight;
-    console.log(this.expanded);
-    if(!this.expanded)
+
+    if (!this.expanded) {
       this.renderer.setElementStyle(this.elementView.nativeElement, 'height', 0 + 'px');
+    }
   }
 
   toggleAccordion() {
@@ -33,8 +32,4 @@ export class AccordionListComponent {
     this.renderer.setElementStyle(this.elementView.nativeElement, 'height', newHeight);
   }
 
-  handleInitialState(){
-    this.expanded = this.initialState === 'expanded'
-  }
-  
 }
