@@ -9,7 +9,9 @@
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
     "add-contributor": "all-contributors add",
-    "generate-contributors": "all-contributors generate"
+    "generate-contributors": "all-contributors generate",
+    "deploy": "npm run build --prod",
+    "postdeploy": "node copy_www_to_docs.js"
   },
   "dependencies": {
     "@angular/common": "5.0.0",
