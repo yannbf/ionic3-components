@@ -52,6 +52,7 @@ export class MyApp {
       { title: 'Miscellaneous', component: 'MiscellaneousListPage', active: false, icon: 'bookmarks' },
       { title: 'Modal with Navigation', component: 'ModalWithNavigationPage', active: false, icon: 'book' },
       { title: 'Popup Fab', component: 'PopupFabPage', active: false, icon: 'map' },
+      { title: 'Fab with Label', component: 'IonFabLabelPage', active: false, icon: 'map' },
       { title: 'Popup Modal', component: 'PopupModalsPage', active: false, icon: 'basket' },
       { title: 'Popup Menu', component: 'PopupMenuListPage', active: false, icon: 'beer' },
       { title: 'Profile', component: 'ProfileListPage', active: false, icon: 'camera' },

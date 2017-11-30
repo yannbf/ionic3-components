@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Accordion List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-fab bottom right>
+        <button ion-fab ><ion-icon name="md-share"></ion-icon></button>
+        <ion-fab-list side="top">
+
+          <button ion-fab [style.background-color]="color">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <div class="label">Facebook</div>
+          </button>
+
+          <button ion-fab (click)="instagramShare(new.title,new.shedule)" [style.background-color]="color">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <div  class="label"dir="rtl">Instagram</div>
+          </button>
+
+          <button ion-fab (click)="twitterShare(new.title,new.shedule,new.url)" [style.background-color]="color">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <div  class="label"dir="rtl">Twitter</div>
+          </button>
+
+          <button ion-fab (click)="whatsappShare(new.title,new.shedule,new.url)" [style.background-color]="color">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <div  class="label"dir="rtl">Whattsapp</div>
+          </button>
+
+      </ion-fab-list>
+  </ion-fab>
+</ion-content>
