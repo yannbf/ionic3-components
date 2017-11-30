@@ -43,11 +43,18 @@ $ npm install
 ```
 
 ## Install cordova plugin Dependencies
-Run this command on your terminal to install all needed puglins:
+Run this command on your terminal to add a platform and install all needed puglins:
+Android:
 ```sh
-$ cordova prepare
+$ ionic cordova platform add ios
+$ ionic cordova run ios
 ```
 
+iOS:
+```sh
+$ ionic cordova platform add android
+$ ionic cordova run android
+```
 ## Launching the App
 After installing the needed dependencies you are done, launch your app with a simple
 ```sh
