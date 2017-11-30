@@ -5,11 +5,8 @@ import { Component, Input } from '@angular/core';
   templateUrl: 'timeline.html'
 })
 export class TimelineComponent {
-  @Input('endIcon') endIcon = "ionic";
-  constructor() {
-
-  }
-
+  @Input('endIcon') endIcon = 'ionic';
+  constructor() { }
 }
 
 @Component({
@@ -17,19 +14,14 @@ export class TimelineComponent {
   template: '<ng-content></ng-content>'
 })
 export class TimelineItemComponent{
-  constructor(){
-
-  }
+  constructor() { }
 }
-
 
 @Component({
   selector:'timeline-time',
   template: '<span>{{time.subtitle}}</span> <span>{{time.title}}</span>'
 })
 export class TimelineTimeComponent{
-  @Input('time') time = {};
-  constructor(){
-
-  }
+  @Input('time') time: { title?: string, subtitle?: string} = {};
+  constructor() { }
 }

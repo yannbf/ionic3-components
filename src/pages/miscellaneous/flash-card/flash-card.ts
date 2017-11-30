@@ -7,7 +7,7 @@ import { NavController, NavParams, IonicPage } from 'ionic-angular';
   templateUrl: 'flash-card.html'
 })
 export class FlashCardPage {
-  private flashCards = [];
+  flashCards = [];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.flashCards = [
       {

@@ -6,9 +6,6 @@ import {
     TimelineTimeComponent
 } from './timeline';
 
-export const components = [
-];
-
 @NgModule({
   declarations: [
     TimelineComponent,

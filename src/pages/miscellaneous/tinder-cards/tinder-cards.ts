@@ -1,7 +1,5 @@
 import { ToastService } from '../../../providers/util/toast.service';
 import { Component, ViewChild, ViewChildren, QueryList } from '@angular/core';
-import { Http } from '@angular/http';
-import 'rxjs/Rx';
 
 import {
   StackConfig,
@@ -10,6 +8,7 @@ import {
   SwingCardComponent
 } from 'angular2-swing';
 import { NavController, IonicPage } from 'ionic-angular';
+import { HttpClient } from '@angular/common/http';
 
 @IonicPage()
 @Component({
@@ -24,7 +23,7 @@ export class TinderCardsPage {
   stackConfig: StackConfig;
   recentCard: string = '';
 
-  constructor(public navCtrl: NavController, public http: Http, public toastCtrl: ToastService) {
+  constructor(public navCtrl: NavController, public http: HttpClient, public toastCtrl: ToastService) {
     this.stackConfig = {
       throwOutConfidence: (offset, element: any) => {
         return Math.min(Math.abs(offset) / (element.offsetWidth / 2), 1);
@@ -79,9 +78,8 @@ export class TinderCardsPage {
   // Add new cards to our array
   addNewCards(count: number) {
     this.http.get('https://randomuser.me/api/?results=' + count)
-      .map(data => data.json().results)
-      .subscribe(result => {
-        for (const val of result) {
+      .subscribe((result: any) => {
+        for (const val of result.results) {
           this.cards.push(val);
         }
       });
@@ -90,9 +88,9 @@ export class TinderCardsPage {
   // http://stackoverflow.com/questions/57803/how-to-convert-decimal-to-hex-in-javascript
   decimalToHex(d, padding) {
     let hex = Number(d).toString(16);
-    padding = typeof (padding) === 'undefined' || padding === null ? padding = 2 : padding;
+    const numPadding = typeof (padding) === 'undefined' || padding === null ? 2 : padding;
 
-    while (hex.length < padding) {
+    while (hex.length < numPadding) {
       hex = '0' + hex;
     }
 

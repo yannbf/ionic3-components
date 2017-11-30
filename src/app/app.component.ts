@@ -3,7 +3,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { Subject } from 'rxjs';
+import { Subject } from 'rxjs/Subject';
 
 @Component({
   templateUrl: 'app.html'
@@ -17,6 +17,8 @@ export class MyApp {
   pages: Array<{ title: string, component: any, active: boolean, icon: string }>;
   rightMenuItems: Array<{ icon: string, active: boolean }>;
   state: any;
+  placeholder = 'assets/img/avatar/girl-avatar.png';
+  chosenPicture: any;
 
   constructor(
     public platform: Platform,
@@ -54,8 +56,7 @@ export class MyApp {
       { title: 'Popup Menu', component: 'PopupMenuListPage', active: false, icon: 'beer' },
       { title: 'Profile', component: 'ProfileListPage', active: false, icon: 'camera' },
       { title: 'Side Menu', component: 'SideMenuPage', active: false, icon: 'bookmark' },
-      // Removed for now as there were breaking changes in slides
-      { title: 'Timeline', component: 'TimelinePage', active: false, icon: 'calendar'},
+      { title: 'Timeline', component: 'TimelinePage', active: false, icon: 'calendar' },
       { title: 'Slides', component: 'SlidesPage', active: false, icon: 'contact' },
       { title: 'Theming', component: 'ThemingPage', active: false, icon: 'power' },
     ];
