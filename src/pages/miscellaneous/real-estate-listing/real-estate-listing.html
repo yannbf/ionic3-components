@@ -11,7 +11,7 @@
            [ngStyle]="{ 'background-image': 'url(' + estateProperty.image + ')'}">
     <section class="housing-banner" padding>
       <span class="housing-title">{{estateProperty.name}}</span>
-      <span class="price">${{estateProperty.price}}</span>
+      <span class="price">{{estateProperty.price | currency:'USD' }}</span>
     </section>
   </section>
   <section class="main-content">
