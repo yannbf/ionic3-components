@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the ReactiveListLabelPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { LIST_DATA } from './list-data';
 
 @IonicPage()
 @Component({
@@ -15,7 +10,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ReactiveListLabelPage {
 
+  public dataList: IDataList = LIST_DATA;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  private initDataList() {
+
   }
 
   ionViewDidLoad() {
