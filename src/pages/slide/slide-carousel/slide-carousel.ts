@@ -23,8 +23,8 @@ export class SlideCarouselPage {
   city1: any = {
     name: 'Paris',
     favorited: false,
-    image: 'http://bit.ly/2aXzczV',
-    authorPic: 'http://bit.ly/2dMCa9y',
+    image: 'https://bit.ly/2aXzczV',
+    authorPic: 'https://bit.ly/2dMCa9y',
     favoriteCount: 10,
     comments: [1, 2, 3],
   };
@@ -32,8 +32,8 @@ export class SlideCarouselPage {
   city2: any = {
     name: 'London',
     favorited: false,
-    authorPic: 'http://bit.ly/2dMCa9y',
-    image: 'http://bit.ly/26lzMu0',
+    authorPic: 'https://bit.ly/2dMCa9y',
+    image: 'https://bit.ly/26lzMu0',
     favoriteCount: 10,
     comments: [1, 2, 3],
   };
@@ -41,8 +41,8 @@ export class SlideCarouselPage {
   city3: any = {
     name: 'Gramalote',
     favorited: false,
-    authorPic: 'http://bit.ly/2dMCa9y',
-    image: 'http://bit.ly/2dW9ZEl',
+    authorPic: 'https://bit.ly/2dMCa9y',
+    image: 'https://bit.ly/2dW9ZEl',
     favoriteCount: 10,
     comments: [1, 2, 3],
   };
@@ -50,8 +50,8 @@ export class SlideCarouselPage {
   city4: any = {
     name: 'Vladivostok',
     favorited: false,
-    authorPic: 'http://bit.ly/2dMCa9y',
-    image: 'http://bit.ly/2e0NFe4',
+    authorPic: 'https://bit.ly/2dMCa9y',
+    image: 'https://bit.ly/2e0NFe4',
     favoriteCount: 10,
     comments: [1, 2, 3],
   };
@@ -59,7 +59,7 @@ export class SlideCarouselPage {
   water1: any = {
     name: 'Water1',
     favorited: false,
-    authorPic: 'http://bit.ly/2dMCa9y',
+    authorPic: 'https://bit.ly/2dMCa9y',
     image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 10,
     comments: [1, 2, 3],
@@ -68,7 +68,7 @@ export class SlideCarouselPage {
   water2: any = {
     name: 'Water2',
     favorited: false,
-    authorPic: 'http://bit.ly/2dMCa9y',
+    authorPic: 'https://bit.ly/2dMCa9y',
     image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 5,
     comments: [1],
@@ -77,7 +77,7 @@ export class SlideCarouselPage {
   water3: any = {
     name: 'Water3',
     favorited: false,
-    authorPic: 'http://bit.ly/2dMCa9y',
+    authorPic: 'https://bit.ly/2dMCa9y',
     image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 2,
     comments: [1],
@@ -86,7 +86,7 @@ export class SlideCarouselPage {
   water4: any = {
     name: 'Water4',
     favorited: false,
-    authorPic: 'http://bit.ly/2dMCa9y',
+    authorPic: 'https://bit.ly/2dMCa9y',
     image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 8,
     comments: [1, 4, 2, 3],
@@ -95,7 +95,7 @@ export class SlideCarouselPage {
   water5: any = {
     name: 'Water5',
     favorited: false,
-    authorPic: 'http://bit.ly/2dMCa9y',
+    authorPic: 'https://bit.ly/2dMCa9y',
     image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 4,
     comments: [1, 4, 2],
@@ -104,7 +104,7 @@ export class SlideCarouselPage {
   water6: any = {
     name: 'Water6',
     favorited: false,
-    authorPic: 'http://bit.ly/2dMCa9y',
+    authorPic: 'https://bit.ly/2dMCa9y',
     image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 7,
     comments: [1, 4],
@@ -113,7 +113,7 @@ export class SlideCarouselPage {
   water7: any = {
     name: 'Water7',
     favorited: false,
-    authorPic: 'http://bit.ly/2dMCa9y',
+    authorPic: 'https://bit.ly/2dMCa9y',
     image: 'https://placeimg.com/600/400/nature',
     favoriteCount: 8,
     comments: [1, 4, 2, 3],
@@ -140,8 +140,8 @@ export class SlideCarouselPage {
     const newCity: any = {
       name: 'NewCity',
       favorited: false,
-      authorPic: 'http://bit.ly/2dMCa9y',
-      image: 'http://placekitten.com/g/900/550',
+      authorPic: 'https://bit.ly/2dMCa9y',
+      image: 'https://placekitten.com/g/900/550',
       favoriteCount: 0,
       comments: [],
     };

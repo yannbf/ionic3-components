@@ -14,7 +14,7 @@ export class ProfileSettingsPage {
   profilePicture: string;
   profileRef: any;
   errorMessage: any;
-  placeholderPicture = 'http://api.adorable.io/avatar/200/bob';
+  placeholderPicture = 'https://api.adorable.io/avatar/200/bob';
 
   enableNotifications = true;
   language: any;
