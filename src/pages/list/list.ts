@@ -24,6 +24,14 @@ export class ListPage {
       {
         title: 'Delete Items',
         page: 'DeleteItemsPage'
+      },
+      {
+        title: 'Users Listing',
+        page: 'UsersPage'
+      },
+      {
+        title: 'Crypto Currencies',
+        page: 'CryptoListPage'
       }
     ];
   }

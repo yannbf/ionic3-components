@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Users</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list no-lines>
+    <ion-item *ngFor="let user of users">
+      <ion-avatar item-start>
+        <img src="assets/img/avatar/ian-avatar.png">
+      </ion-avatar>
+      <h2>John Doe</h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint consectetur, neque cum porro iste aperiam eveniet, corporis earum error similique. Cupiditate consequuntur autem doloribus nihil totam quibusdam aliquid omnis? </p>
+      <div class="rating">
+        <ion-icon icon="md-star"></ion-icon>
+        <ion-icon icon="md-star"></ion-icon>
+        <ion-icon icon="md-star"></ion-icon>
+        <ion-icon icon="md-star"></ion-icon>
+        <ion-icon icon="md-star"></ion-icon>
+      </div>
+      <button ion-button clear item-end>
+        <span class="number-circle">5</span>
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>

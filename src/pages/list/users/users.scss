@@ -1,0 +1,33 @@
+page-users {
+    .item-md,.item-ios {
+        padding-left:0px;
+
+        ion-avatar img {
+            width:55px;
+            height:55px;
+        }
+
+        ion-avatar[item-start]{
+            margin: 0px 30px 8px 0;
+        }
+
+        .number-circle{
+            color:white;
+            font-weight: 700;
+            border-radius: 50%;
+            background-color:red;
+            width: 20px;height:20px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+
+    .rating {
+      ion-icon {
+          font-size: 15px;
+          padding: 0px 1px !important;
+          background: none;
+          color:color($colors,primary);
+      }
+    }
+}

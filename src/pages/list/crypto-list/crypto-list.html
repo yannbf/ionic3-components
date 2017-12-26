@@ -1,0 +1,33 @@
+<ion-content class="page-background transparent-header">
+  <ion-header>
+    <ion-navbar>
+    </ion-navbar>
+  </ion-header>
+  <div class="welcome-header">
+    <div class="content">
+      <div class="title">Crypto Currencies</div>
+      <div class="subtitle">Find The latest info about Crypto currencies</div>
+    </div>
+    <button ion-fab color="dark" class="refresh"><ion-icon name="md-refresh"></ion-icon></button>
+  </div>
+  <div class="body" padding>
+    <div class="currencies">
+      <ion-row class="currency" *ngFor="let d of data">
+        <ion-col class="image">
+          <img src="{{'assets/img/currencies/'+d.symbol+'.png'}}" alt="">
+        </ion-col>
+        <ion-col col-4 class="text">
+          <p class="rank">Rank {{d.rank}}</p>
+          <p class="name">{{d.name}}</p>
+        </ion-col>
+        <ion-col col-4 class="text">
+          <p class="usd">{{ precision(d.price_usd,1) }} $</p>
+          <p class="evolution" [innerHtml]="evolution(d.percent_change_1h)"></p>
+        </ion-col>
+        <ion-col col-1>
+          <span class="indicator"><ion-icon icon="md-arrow-dropright"></ion-icon></span>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
