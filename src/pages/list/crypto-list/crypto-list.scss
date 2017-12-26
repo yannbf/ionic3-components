@@ -1,36 +1,43 @@
 page-crypto-list {
   .page-background{
-    background-color: #36455F;
+    background-color: rgb(89, 138, 223);
   }
+
   p{
     margin:0;
   }
+
   .welcome-header{
     position: relative;
     background: linear-gradient(135deg, #8B7FE0, #F75F9D);
     width:100%;
     padding: 30px 0;
     margin-bottom: 20px;
+
     .refresh {
       position: absolute;
       right: 10px;
       background-color: #4c5b79;
       box-shadow: 0px 0px 5px #5b6a89;
     }
+
     .content {
       text-align: center;
       padding: 20px;
       color:white;
+
       img {
         width: 100px;
         margin-bottom: 10px;
       }
+
       .title {
         font-size:20px;
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 10px;
       }
+
       .subtitle {
         font-size: 15px;
         font-weight: 400;
@@ -38,6 +45,7 @@ page-crypto-list {
       }
     }
   }
+
   .body {
     .currencies {
       .currency {
@@ -45,32 +53,39 @@ page-crypto-list {
         padding: 10px;
         border-radius: 10px;
         margin: 10px auto;
+
         .image {
           text-align: left;
+
           img {
             width: 50px;
             margin: 0;
             display: block;
           }
         }
+
         .text {
           .name {
             color: #BCC6D4;
             font-size: 15px;
             font-weight: 700;
           }
+
           .rank {
             color: #8b9bbd;
             font-size: 15px;
             font-weight: 500;
           }
+
           .usd{
             color: #BCC6D4;
             font-size: 15px;
             font-weight: 700;
           }
+
           .evolution{
             color:#00CB78;
+
             .red{
               color: #F44447;
             }
@@ -78,6 +93,7 @@ page-crypto-list {
             font-weight: 500;
           }
         }
+
         .indicator {
           position: absolute;
           top: 50%;
@@ -88,5 +104,4 @@ page-crypto-list {
       }
     }
   }
-
 }
