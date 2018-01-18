@@ -2,6 +2,7 @@ import { ElementRef, Injectable } from '@angular/core';
 import {
     CameraPosition,
     GoogleMap,
+    GoogleMapOptions,
     GoogleMaps,
     GoogleMapsAnimation,
     GoogleMapsEvent,
@@ -23,17 +24,16 @@ export class NativeGoogleMapsProvider {
 
   // Note: Call this method on ngAfterViewInit
   create(element: ElementRef) {
-
-    const cameraPosition: CameraPosition = {
-      zoom  : 18,
-      tilt  : 10
-    };
-
-    const options = {
+    const mapOptions: GoogleMapOptions = {
+      camera: {
+        target: {
+          lat: 43.0741904,
+          lng: -89.3809802
+        },
+        zoom: 18,
+        tilt: 10
+      },
       mapType: GoogleMapsMapTypeId.NORMAL,
-      styles: [],
-      camera: cameraPosition,
-      backgroundColor: 'white',
       controls: {
         compass: true,
         myLocationButton: true,
@@ -46,10 +46,10 @@ export class NativeGoogleMapsProvider {
         rotate: true,
         zoom: true
       },
-      preferences: null,
+      preferences: null
     };
 
-    this.map = this.googleMaps.create(element.nativeElement, options);
+    this.map = this.googleMaps.create(element.nativeElement, mapOptions);
     return this.map.one(GoogleMapsEvent.MAP_READY);
   }
 
@@ -73,12 +73,12 @@ export class NativeGoogleMapsProvider {
   }
 
   centerToPosition(latLng: any, zoom?: number, tilt?: number) {
-    const cameraPosition: CameraPosition = {
+    const cameraPosition = {
       target: latLng,
       zoom  : zoom || 18,
       tilt  : tilt || 10
     };
-    return this.map.moveCamera(cameraPosition);
+    return this.map.animateCamera(cameraPosition);
   }
 
   addMarker(position, title: string, infoClickCallback, animated = true) {
