@@ -10,13 +10,9 @@ import { LIST_DATA } from './list-data';
 })
 export class ReactiveListLabelPage {
 
-  public dataList: IDataList = LIST_DATA;
+  public dataList = LIST_DATA;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  private initDataList() {
-
   }
 
   ionViewDidLoad() {

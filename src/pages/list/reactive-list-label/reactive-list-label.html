@@ -7,12 +7,23 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>reactive-list-label</ion-title>
+    <ion-title>Reactive List Label</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
+  <ion-card *ngFor="let book of dataList">
+      <img [src]="book.pictureProduct"/>
+      <ion-card-content>
+          <ion-card-title>
+            {{ book.nameProduct }}
+          </ion-card-title>
+          <p>
+              {{ book.author }}
+          </p>
+      </ion-card-content>
 
+  </ion-card>
 </ion-content>

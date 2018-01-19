@@ -10,29 +10,29 @@ export const LIST_DATA: IDataList[] = [
   {
     nameProduct: `Beneath a Scarlet Sky: A Novel`,
     author: 'Mark Sullivan',
-    pictureProduct: '',
+    pictureProduct: './assets/img/reactive-list-labels/beneath _scarlet.jpg',
     category: 'Literature & Fiction',
     price: 5.99
   },
   {
     nameProduct: `The Orphan's Tale: A Novel`,
     author: 'Pam Jenoff',
-    pictureProduct: 'Literature & Fiction',
-    category: '',
+    pictureProduct: './assets/img/reactive-list-labels/the_orphan_tale.jpg',
+    category: 'Literature & Fiction',
     price: 10.37
   },
   {
     nameProduct: 'All the Light We Cannot See: A Novel',
     author: 'Anthony Doerr',
-    pictureProduct: 'Literature & Fiction',
-    category: '',
+    pictureProduct: './assets/img/reactive-list-labels/all_light_we_cannot_see.jpg',
+    category: 'Literature & Fiction',
     price: 12.99
   },
   {
     nameProduct: 'Rules of Civility: A Novel',
     author: 'Rules of Civility: A Novel',
-    pictureProduct: 'Literature & Fiction',
-    category: '',
+    pictureProduct: './assets/img/reactive-list-labels/rules_civility.jpg',
+    category: 'Literature & Fiction',
     price: 11.79
   },
   {
