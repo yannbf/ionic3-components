@@ -28,6 +28,14 @@ export class ListPage {
       {
         title: 'Reactive List Label',
         page: 'ReactiveListLabelPage'
+      },
+      {
+        title: 'Users Listing',
+        page: 'UsersPage'
+      },
+      {
+        title: 'Crypto Currencies',
+        page: 'CryptoListPage'
       }
     ];
   }

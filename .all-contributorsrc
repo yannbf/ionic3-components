@@ -114,6 +114,25 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Sletheren",
+      "name": "Abdelghafour Rakhma",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/12659402?v=4",
+      "profile": "http://www.fahrenbyte.com",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "AndreasGassmann",
+      "name": "AndreasGassmann",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/680814?v=4",
+      "profile": "https://github.com/AndreasGassmann",
+      "contributions": [
+        "bug"
+      ]
     }
   ]
 }
