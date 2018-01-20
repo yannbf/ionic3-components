@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { ReactiveListLabelPage } from './reactive-list-label';
+import { DirectivesModule } from '../../../directives/directives.module';
 
 @NgModule({
   declarations: [
@@ -8,6 +9,7 @@ import { ReactiveListLabelPage } from './reactive-list-label';
   ],
   imports: [
     IonicPageModule.forChild(ReactiveListLabelPage),
+    DirectivesModule
   ],
 })
 export class ReactiveListLabelPageModule {}

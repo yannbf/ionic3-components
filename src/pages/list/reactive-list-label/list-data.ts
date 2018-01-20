@@ -4,6 +4,7 @@ export interface IDataList {
   pictureProduct: string;
   category: string;
   price: number;
+  visible?: boolean;
 }
 
 export const LIST_DATA: IDataList[] = [

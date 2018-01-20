@@ -13,16 +13,18 @@
 </ion-header>
 
 
-<ion-content>
-  <ion-card *ngFor="let book of dataList">
+<ion-content #content>
+  <ion-fab class="fab-reactive-list" top center>
+    <button ion-fab> {{ currentCategory }} </button>
+  </ion-fab>
+  <ion-card is-visible [content]="content" (visible)="itemIsVisible($event, book)" *ngFor="let book of dataList">
       <img [src]="book.pictureProduct"/>
       <ion-card-content>
           <ion-card-title>
             {{ book.nameProduct }}
           </ion-card-title>
           <p> {{ book.author }} </p>
-          <b> {{ book.category }} </b>
+          <b> {{ book.category }} - {{ book.price | currency:'USD' }}</b>
       </ion-card-content>
-
   </ion-card>
 </ion-content>
