@@ -1,4 +1,5 @@
 import { ElementRef, HostListener, Directive, OnInit } from '@angular/core';
+import { AlertService } from '../../providers/util/alert.service';
 
 @Directive({
   selector: 'ion-textarea[autosize]'

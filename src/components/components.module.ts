@@ -7,6 +7,7 @@ import { TimerProgress } from './timer-progress/timer-progress';
 import { ExpandableHeader } from './expandable-header/expandable-header';
 import { FlashCardComponent } from './flash-card/flash-card';
 import { AccordionListComponent } from './accordion-list/accordion-list';
+import { Autosize } from './autosize/autosize';
 
 export const components = [
   Timer,
@@ -14,6 +15,7 @@ export const components = [
   ExpandableHeader,
   FlashCardComponent,
   AccordionListComponent,
+  Autosize
 ];
 
 @NgModule({
