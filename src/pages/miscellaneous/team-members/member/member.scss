@@ -1,0 +1,22 @@
+page-member {
+  h1 {
+    padding:10px 0 5px !important;
+    text-align: left !important;
+    font: 300 20px/1.3 Roboto, sans-serif !important;
+    color: map-get($colors, dark);
+    margin: 0 !important;
+  }
+  p {
+    text-align: left;
+    color: map-get($colors, dark);
+    font: 400 13px/1.5 Roboto, sans-serif !important;
+    margin:0 0 10px;
+    letter-spacing: .5px;
+  }
+  span {
+    color: map-get($colors, primary);
+    display: block;
+    font: 600 10px/1.2 Roboto, sans-serif !important;
+    padding: 0 0 30px;
+  }
+}
