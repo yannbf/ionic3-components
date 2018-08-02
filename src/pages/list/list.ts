@@ -26,6 +26,10 @@ export class ListPage {
         page: 'DeleteItemsPage'
       },
       {
+        title: 'Reactive List Label',
+        page: 'ReactiveListLabelPage'
+      },
+      {
         title: 'Users Listing',
         page: 'UsersPage'
       },
