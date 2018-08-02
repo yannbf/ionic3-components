@@ -18,13 +18,13 @@
     <button ion-fab> {{ currentCategory }} </button>
   </ion-fab>
   <ion-card is-visible [content]="content" (visible)="itemIsVisible($event, book)" *ngFor="let book of dataList">
-      <img [src]="book.pictureProduct"/>
-      <ion-card-content>
-          <ion-card-title>
-            {{ book.nameProduct }}
-          </ion-card-title>
-          <p> {{ book.author }} </p>
-          <b> {{ book.category }} - {{ book.price | currency:'USD' }}</b>
-      </ion-card-content>
+    <img [src]="book.pictureProduct" />
+    <ion-card-content>
+      <ion-card-title>
+        {{ book.productName }}
+      </ion-card-title>
+      <p> {{ book.author }} </p>
+      <b> {{ book.category }} - {{ book.price | currency:'USD' }}</b>
+    </ion-card-content>
   </ion-card>
 </ion-content>
