@@ -133,6 +133,24 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "lucascco",
+      "name": "Lucas Carvalho Corrêa",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6581094?v=4",
+      "profile": "https://github.com/lucascco",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "stephan-strate",
+      "name": "Stephan Strate",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/19595615?v=4",
+      "profile": "https://www.stephan-strate.de/",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }

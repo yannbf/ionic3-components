@@ -173,3 +173,13 @@
     color: #777;
   }
 }
+
+.fab-reactive-list {
+  left: 35% !important;
+  .fab {
+    border-radius: 10%;
+    width: 12em;
+    background-color: map-get($colors, light);
+    color: map-get($colors, primary);
+  }
+}
