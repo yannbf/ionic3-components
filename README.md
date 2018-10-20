@@ -5,9 +5,9 @@ _Currently this project is using the latest versions of all: Ionic and Angular 5
 
 
 ## Demo
-If you just want to check this project out, you can see the online demo at https://yannbf.github.io/ionic3-components or use [Ionic View](http://view.ionic.io/) with the code **bd1b6d71**.
+If you just want to check this project out, you can see the online demo at https://yannbf.github.io/ionic3-components.
 
-Please notice that some plugins may **only work** when using a real device, so don't expect everything to work on ionic view or the browser.
+Please note that some plugins may **only work** when using a real device, so don't expect everything to work in the browser.
 
 ****
 
