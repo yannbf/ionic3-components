@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, Renderer2 } from '@angular/core';
 import { NavController, IonicPage, Tabs } from 'ionic-angular';
 import { MemberPage } from './member/member';
 
@@ -50,7 +50,7 @@ export class TeamMembersPage {
       image: 'assets/img/avatar/girl-avatar.png'
     }
   ];
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private renderer: Renderer2) {
 
   }
   ngAfterViewInit() {
@@ -58,11 +58,11 @@ export class TeamMembersPage {
     for (let i = tabbar.childElementCount-1; i > 0; i--) {
       const element = tabbar.childNodes[i];
       if(element) {
-        element.removeChild(element.childNodes[1]);
-        const img = document.createElement('img');
+        this.renderer.removeChild(element, element.childNodes[1]);
+        const img = this.renderer.createElement('img');
         img.setAttribute('class', 'tab-icon-custom tab-button-icon icon icon-md team-icon');
         img.setAttribute('src', this.tabs[i-1].image);
-        element.insertBefore(img, element.childNodes[1]);
+        this.renderer.insertBefore(element, img, element.childNodes[1]);
       }
     }
 
