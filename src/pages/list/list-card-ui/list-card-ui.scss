@@ -1,0 +1,74 @@
+page-list-card-ui {
+    ion-title{
+        
+      }
+
+      .toolbar-ios-primary .searchbar-ios{
+        .searchbar-search-icon {
+          background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2013%2013'><path%20fill='#999'%20d='M5,1c2.2,0,4,1.8,4,4S7.2,9,5,9S1,7.2,1,5S2.8,1,5,1%20M5,0C2.2,0,0,2.2,0,5s2.2,5,5,5s5-2.2,5-5S7.8,0,5,0%20L5,0z'/><line%20stroke='#999'%20stroke-miterlimit='10'%20x1='12.6'%20y1='12.6'%20x2='8.2'%20y2='8.2'/></svg>") !important;
+        }
+        .searchbar-clear-icon{
+          background-image:url("data:image/svg+xml;charset=utf-8,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'><path%20fill='#999'%20d='M403.1,108.9c-81.2-81.2-212.9-81.2-294.2,0s-81.2,212.9,0,294.2c81.2,81.2,212.9,81.2,294.2,0S484.3,190.1,403.1,108.9z%20M352,340.2L340.2,352l-84.4-84.2l-84,83.8L160,339.8l84-83.8l-84-83.8l11.8-11.8l84,83.8l84.4-84.2l11.8,11.8L267.6,256L352,340.2z'/></svg>") !important;
+        }
+      }
+
+
+      ion-content#produtos{
+        .scroll-horizontal{
+          width: 100%;
+          white-space: nowrap;
+          overflow: auto;
+          overflow-y: hidden;
+
+          ion-card{
+            width: 60%;
+            display: inline-block;
+            ion-card-content{
+              padding: 0px !important;
+            }
+
+          }
+        }
+        [col-8] {
+          padding: 5px 5px 5px 10px !important;
+        }
+        [col-4] {
+          padding: 5px 10px 5px 5px !important;
+        }
+        .preco{
+          font-weight: 900;
+        }
+        ion-item-divider{
+          margin-bottom: -20px;
+          h2{
+            font-weight: 800;
+            color:#666;
+          }
+          small{
+            color:map-get($colors, primary );
+          }
+          span{
+            ion-icon{
+              font-size: 9pt;
+              color: map-get($colors, primary );
+              margin-left: 5px;
+            }
+          }
+        }
+        #doces{
+          width: 95%;
+          ion-img{
+            img{
+              margin-top: -50px;
+            }
+          }
+          ion-grid{
+            padding: 0px 5px 0px 5px !important;
+          }
+        }
+
+
+
+      }
+
+}

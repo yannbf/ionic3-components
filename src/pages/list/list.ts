@@ -36,6 +36,10 @@ export class ListPage {
       {
         title: 'Crypto Currencies',
         page: 'CryptoListPage'
+      },
+      {
+        title: 'List Card',
+        page: 'ListCardUiPage'
       }
     ];
   }
