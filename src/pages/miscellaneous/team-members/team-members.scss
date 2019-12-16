@@ -1,0 +1,21 @@
+page-team-members {
+  .tabbar {
+    background-color: map-get($colors, primary) !important;
+  }
+  .tabbar::after {
+    background-image: unset !important;
+  }
+  .team-icon {
+    height: 50px !important;
+    object-fit: cover;
+    margin: 0 auto;
+    width: 50px;
+    border-radius: 50% !important;
+  }
+  .tab-button {
+    min-height: 100px !important;
+  }
+  .tab-button[aria-selected=true] img {
+    border: 2px solid map-get($colors, secondary);
+  }
+}
