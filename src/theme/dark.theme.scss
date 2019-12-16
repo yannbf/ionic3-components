@@ -70,5 +70,19 @@
     background-color: white !important;
     color: black !important;
   }
+
+  .chat-bubble.left.slide-left {
+    .message {
+      color: black;
+    };
+    .message-detail {
+      color: grey;
+    }
+  }
+
+  .text-input.text-input-md {
+    color: white;
+    background-color: #303030 !important;
+  }
 }
 
