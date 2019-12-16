@@ -189,6 +189,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Luancarlos",
+      "name": "Luan Rocha",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/15051544?v=4",
+      "profile": "https://github.com/Luancarlos",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "repoType": "github",
