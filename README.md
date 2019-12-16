@@ -92,6 +92,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
   <tr>
     <td align="center"><a href="https://www.stephan-strate.de/"><img src="https://avatars2.githubusercontent.com/u/19595615?v=4" width="100px;" alt=""/><br /><sub><b>Stephan Strate</b></sub></a><br /><a href="https://github.com/yannbf/ionic3-components/commits?author=stephan-strate" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Sab94"><img src="https://avatars0.githubusercontent.com/u/15252513?v=4" width="100px;" alt=""/><br /><sub><b>Sabyasachi Patra</b></sub></a><br /><a href="https://github.com/yannbf/ionic3-components/commits?author=Sab94" title="Code">💻</a> <a href="#design-Sab94" title="Design">🎨</a></td>
+    <td align="center"><a href="http://xpressivetech.com/"><img src="https://avatars2.githubusercontent.com/u/1063019?v=4" width="100px;" alt=""/><br /><sub><b>Duane Helton</b></sub></a><br /><a href="#infra-tallcoder" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>
 
