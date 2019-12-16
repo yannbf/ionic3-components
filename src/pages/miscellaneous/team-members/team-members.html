@@ -1,0 +1,14 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Team Members</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-tabs selectedIndex="0" #teamTab tabsPlacement="top">
+    <ion-tab *ngFor="let tab of tabs" [rootParams]="tab" tabIcon="notifications-outline" [root]='member'></ion-tab>
+  </ion-tabs>
+</ion-content>

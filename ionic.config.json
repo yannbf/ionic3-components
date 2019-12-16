@@ -1,8 +1,8 @@
 {
   "name": "Advanced Ionic2 Components",
-  "app_id": "bd1b6d71",
-  "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "pro_id": "bd1b6d71"
 }

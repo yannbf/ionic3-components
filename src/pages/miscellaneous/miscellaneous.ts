@@ -64,6 +64,10 @@ export class MiscellaneousListPage {
         title: 'Item Ribbon',
         page: 'ItemRibbonPage'
       },
+      {
+        title: 'Team Members',
+        page: 'TeamMembersPage'
+      },
     ];
   }
 
