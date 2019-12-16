@@ -180,6 +180,15 @@
         "review",
         "design"
       ]
+    },
+    {
+      "login": "ShadowMitia",
+      "name": "Dimitri Belopopsky",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3752363?v=4",
+      "profile": "http://shadowmitia.github.io",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
