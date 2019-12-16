@@ -170,6 +170,16 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "Bengejd",
+      "name": "Jordan Benge",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/11723093?v=4",
+      "profile": "https://www.jordanbenge.com",
+      "contributions": [
+        "review",
+        "design"
+      ]
     }
   ],
   "repoType": "github",
