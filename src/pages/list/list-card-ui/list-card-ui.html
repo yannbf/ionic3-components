@@ -1,0 +1,138 @@
+
+<ion-header>
+
+  <ion-navbar color="primary" class="cabecalho-maior">
+      <ion-buttons left>
+        <button  ion-button icon-only menuToggle >
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+
+    <ion-title>List Card</ion-title>
+
+  </ion-navbar>
+  <ion-toolbar color="primary">
+      <ion-searchbar placeholder="Pesquisar..."></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content id="produtos">
+  <ion-item-divider color="light">
+    <h2>Bolos</h2>
+    <span item-right><small>Ver Todos</small></span>
+  </ion-item-divider>
+  <br />
+  <div class="scroll-horizontal">
+    <ion-card *ngFor="let i of bolos">
+      <ion-img [src]="i.imagemUrl"  style="width: 100%;height: 151px;"> </ion-img>
+      <ion-card-content>
+        <ion-item>
+          <h2>{{ i.nome }}</h2>
+          <p>{{ i.descricao }}</p>
+        </ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-8>
+              <ion-icon name="star" color="amarelo" *ngFor="let c of [1,2,3,4,5]"></ion-icon>
+            </ion-col>
+            <ion-col col-4>
+              <p class="preco">R$ {{ i.preco }}</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- Doces -->
+
+  <ion-item-divider color="light">
+      <h2>Doces</h2>
+      <span item-right><small>{{doces?.length}} doces</small><ion-icon name="arrow-forward"></ion-icon></span>
+    </ion-item-divider>
+    <br />
+    <div class="scroll-horizontal">
+      <ion-card *ngFor="let i of doces" id="doces">
+        <ion-img [src]="i.imagemUrl"  style="width: 100%;height: 130px;"> </ion-img>
+        <ion-card-content>
+          <ion-item>
+            <h2>{{ i.nome }}</h2>
+            <p>{{ i.descricao }}</p>
+          </ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col col-8>
+                <ion-icon name="star" color="amarelo" *ngFor="let c of [1,2,3,4,5]"></ion-icon>
+              </ion-col>
+              <ion-col col-4>
+                <p class="preco" style="text-align: right
+                ">R$ {{ i.preco }}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <!-- Salgados -->
+
+    <ion-item-divider color="light">
+        <h2>Salgos</h2>
+        <span item-right><small>Ver Todos</small></span>
+      </ion-item-divider>
+      <br />
+      <div class="scroll-horizontal">
+        <ion-card *ngFor="let i of salgados">
+          <ion-img [src]="i.imagemUrl"  style="width: 100%;height: 151px;"> </ion-img>
+          <ion-card-content>
+            <ion-item>
+              <h2>{{ i.nome }}</h2>
+              <p>{{ i.descricao }}</p>
+            </ion-item>
+            <ion-grid>
+              <ion-row>
+                <ion-col col-8>
+                  <ion-icon name="star" color="amarelo" *ngFor="let c of [1,2,3,4,5]"></ion-icon>
+                </ion-col>
+                <ion-col col-4>
+                  <p class="preco">R$ {{ i.preco }}</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+       <!-- Torta -->
+
+    <ion-item-divider color="light">
+        <h2>Tortas</h2>
+        <span item-right><small>Ver Todos</small></span>
+      </ion-item-divider>
+      <br />
+      <div class="scroll-horizontal">
+        <ion-card *ngFor="let i of tortas">
+          <ion-img [src]="i.imagemUrl"  style="width: 100%;height: 151px;"> </ion-img>
+          <ion-card-content>
+            <ion-item>
+              <h2>{{ i.nome }}</h2>
+              <p>{{ i.descricao }}</p>
+            </ion-item>
+            <ion-grid>
+              <ion-row>
+                <ion-col col-8>
+                  <ion-icon name="star" color="amarelo" *ngFor="let c of [1,2,3,4,5]"></ion-icon>
+                </ion-col>
+                <ion-col col-4>
+                  <p class="preco">R$ {{ i.preco }}</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </div>
+</ion-content>
+
