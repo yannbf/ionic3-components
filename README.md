@@ -1,15 +1,16 @@
 # Ionic Advanced Components [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors)
 
-_Currently this project is using the latest versions of all: Ionic and Angular 5_
-
+## This project uses Ionic 3 and Angular 5
 
 ## Demo
+
 If you just want to check this project out, you can see the online demo at https://yannbf.github.io/ionic3-components.
 
 Please note that some plugins may **only work** when using a real device, so don't expect everything to work in the browser.
 
-****
+---
 
 This repository was made in order to help people learn and speed up their development process.
 You will find many many different components, pages, pipes, services, of which can be very useful to you. Note though that these are all experimental!
@@ -18,6 +19,9 @@ The content here is a mix of tutorials found online, a few adapted codepen stuff
 
 **HOPEFULLY** you will like this repo and feel like contributing, so please if you can, contribute so we can have even more amazing content!
 
+## How do I use this in my project?
+
+If you find something useful for you, all you gotta do is extract the code related to that page/component/functionality and move it to your project. Most of the pages and components do not use global code/style so that it is easier to extract to your project.
 
 ## Setup
 
@@ -26,41 +30,55 @@ Requirements to use this project:
 ##### Node.js (https://nodejs.org/download/)
 
 ##### npm (Node Package Manager, it comes with node.js installation)
+
 In case you're not with the latest version of npm:
+
 ```sh
 $ sudo npm install npm -g
 ```
 
 ##### Cordova & Ionic Cli
+
 To install both of them on your system just launch this command:
+
 ```sh
 $ sudo npm install cordova ionic -g
 ```
 
 ## Install NPM Dependencies
+
 Once you clone this repository, run this command on your terminal to install all needed dependencies:
+
 ```sh
 $ npm install
 ```
 
 ## Install cordova plugin Dependencies
+
 Run this command on your terminal to add a platform and install all needed puglins:
 
 iOS:
+
 ```sh
 $ ionic cordova platform add ios
 $ ionic cordova run ios
 ```
 
 Android:
+
 ```sh
 $ ionic cordova platform add android
 $ ionic cordova run android
 ```
+
 ## Launching the App
-After installing the needed dependencies you are done, launch your app with a simple
+
+After installing the needed dependencies you are done, launch your app with any of these commands
+
 ```sh
-$ ionic serve
+$ npm run ionic:serve (for npm)
+$ yarn ionic:serve (for yarn)
+$ ionic serve (if you have ionic installed globally)
 ```
 
 ## Amazing contributors
@@ -101,6 +119,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
