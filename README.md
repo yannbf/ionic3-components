@@ -95,6 +95,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="http://xpressivetech.com/"><img src="https://avatars2.githubusercontent.com/u/1063019?v=4" width="100px;" alt=""/><br /><sub><b>Duane Helton</b></sub></a><br /><a href="#infra-tallcoder" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://www.jordanbenge.com"><img src="https://avatars3.githubusercontent.com/u/11723093?v=4" width="100px;" alt=""/><br /><sub><b>Jordan Benge</b></sub></a><br /><a href="https://github.com/yannbf/ionic3-components/pulls?q=is%3Apr+reviewed-by%3ABengejd" title="Reviewed Pull Requests">👀</a> <a href="#design-Bengejd" title="Design">🎨</a></td>
     <td align="center"><a href="http://shadowmitia.github.io"><img src="https://avatars1.githubusercontent.com/u/3752363?v=4" width="100px;" alt=""/><br /><sub><b>Dimitri Belopopsky</b></sub></a><br /><a href="https://github.com/yannbf/ionic3-components/commits?author=ShadowMitia" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Luancarlos"><img src="https://avatars1.githubusercontent.com/u/15051544?v=4" width="100px;" alt=""/><br /><sub><b>Luan Rocha</b></sub></a><br /><a href="https://github.com/yannbf/ionic3-components/commits?author=Luancarlos" title="Code">💻</a> <a href="#design-Luancarlos" title="Design">🎨</a></td>
   </tr>
 </table>
 
