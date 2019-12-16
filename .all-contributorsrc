@@ -161,6 +161,15 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "tallcoder",
+      "name": "Duane Helton",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1063019?v=4",
+      "profile": "http://xpressivetech.com/",
+      "contributions": [
+        "infra"
+      ]
     }
   ],
   "repoType": "github",
