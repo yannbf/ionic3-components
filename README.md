@@ -3,6 +3,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors)
 
 ## This project uses Ionic 3 and Angular 5
+There are currently no plans to update this project to the latest Ionic and Angular as the effort is quite big. If you are interested in doing so, contributions are appreciated!
 
 ## Demo
 
